@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>On Nash's theorem and computation of Nash equilibria</title>
+<!-- 2015-08-07 Fri 14:35 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Christoph" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<style type="text/css"><!--body {background-color : #F0F0F0; font-face: "Open Sans", Arial, Helvetica, sans-serif;} h1 {font-size:30px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top:-1px; margin-bottom:-1px; }--></style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">On Nash's theorem and computation of Nash equilibria</h1>
+<p>
+We showed that the function \(f=(g,h)\) where
+$$g(\alpha,\beta)=max\left\{0,\frac{\alpha+u_1(U,\beta)-u_1(D,\beta)}{1+|u_1(U,\beta)-u_1(D,\beta)|}\right\}$$
+$$h(\alpha,\beta)=max\left\{0,\frac{\beta+u_2(L,\alpha)-u_2(R,\alpha)}{1+|\beta+u_2(L,\alpha)-u_2(R,\alpha)|}\right\}$$
+has a fixed point using Brouwer's fixed point theorem. Since every fixed point of this function was an equiibrium of out 2x2 game, this proved equilibrium existence. To get a better idea how these \(g\) and \(h\) functions work, we are going to print and plot them here for a simple example: chicken 
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+<caption class="t-above"><span class="table-number">Table 1:</span> Chicken</caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">L \((\beta)\)</th>
+<th scope="col" class="left">R \((1-\beta)\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">U    \((\alpha)\)</td>
+<td class="left">0,0</td>
+<td class="left">2,1</td>
+</tr>
+
+<tr>
+<td class="left">D \((1-\alpha)\)</td>
+<td class="left">1,2</td>
+<td class="left">1,1</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+We start with some arbitrary strategy profile, say \(\alpha=0.5\) and \(\beta=0.6\), and plug this into \(f\). 
+</p>
+
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">from</span> numpy <span style="color: #859900;">import</span> *
+<span style="color: #859900;">import</span> matplotlib.pyplot <span style="color: #859900;">as</span> plt
+<span style="color: #859900;">import</span> matplotlib
+<span style="color: #859900;">from</span> prettytable <span style="color: #859900;">import</span> PrettyTable
+
+
+<span style="color: #586e75; font-style: italic;">##</span><span style="color: #586e75; font-style: italic;">payoffs from our 2x2 game; here chicken</span>
+<span style="color: #268bd2;">game</span> = [[(0,0),(2,1)],[(1,2),(1,1)]] 
+<span style="color: #586e75; font-style: italic;">##</span><span style="color: #586e75; font-style: italic;">strategy profile to start with; first entry is alpha, second is beta</span>
+<span style="color: #268bd2;">start</span> = 0.5,0.6
+
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">g</span>(a,b):
+    <span style="color: #268bd2;">utility_difference</span> = b*game[0][0][0]+(1-b)*game[0][1][0]-b*game[1][0][0]-(1-b)*game[1][1][0]
+    <span style="color: #859900;">return</span> <span style="color: #859900;">max</span>(0,(a+utility_difference)/(1+<span style="color: #859900;">abs</span>(utility_difference))), utility_difference
+
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">h</span>(a,b):
+    <span style="color: #268bd2;">utility_difference</span> = a*game[0][0][1]+(1-a)*game[1][0][1]-a*game[0][1][1]-(1-a)*game[1][1][1]
+    <span style="color: #859900;">return</span> <span style="color: #859900;">max</span>(0,(b+utility_difference)/(1+<span style="color: #859900;">abs</span>(utility_difference))), utility_difference
+
+<span style="color: #859900;">print</span> g(start[0],start[1])[0],h(start[0],start[1])[0]
+</pre>
+</div>
+
+<pre class="example">
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... &gt;&gt;&gt; ... &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; 0.25 0.6
+</pre>
+
+<p>
+Now some of you might have the following idea: If we plug the result again into \(f\), will we get closer to some equilibrium? What if we repeatedly plug the results of \(f\) back into \(f\)? Will we get to an equilibrium after enough repetitions? Well, let us try:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #268bd2;">index</span> = <span style="color: #859900;">range</span>(1,25,1)
+<span style="color: #268bd2;">x</span> = start[0],0.,start[1],0.
+<span style="color: #268bd2;">a_list</span> = []<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will contain the alpha values</span>
+<span style="color: #268bd2;">b_list</span> = []<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">will contain the beta values</span>
+<span style="color: #268bd2;">d_u_1</span> = []<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">will contain utility difference between playing U and D</span>
+<span style="color: #268bd2;">d_u_2</span> = []<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">will contain utility difference between playing L and R</span>
+
+<span style="color: #268bd2;">t</span> = PrettyTable([<span style="color: #2aa198;">'alpha'</span>,<span style="color: #2aa198;">'beta'</span>])
+
+<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> index:
+    <span style="color: #268bd2;">g_return</span> = g(x[0],x[2])
+    <span style="color: #268bd2;">h_return</span> = h(x[0],x[2])
+    <span style="color: #268bd2;">x</span> = g_return[0],g_return[1],h_return[0],h_return[1]
+    t.add_row([<span style="color: #859900;">round</span>(x[0],3),<span style="color: #859900;">round</span>(x[2],3)])
+    a_list.append(x[0])
+    d_u_1.append(x[1])
+    b_list.append(x[2])
+    d_u_2.append(x[3])
+
+<span style="color: #859900;">print</span> t
+</pre>
+</div>
+
+<pre class="example">
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... ... ... &gt;&gt;&gt; +-------+-------+
+| alpha |  beta |
++-------+-------+
+|  0.25 |  0.6  |
+| 0.042 | 0.733 |
+|  0.0  | 0.861 |
+|  0.0  |  0.93 |
+|  0.0  | 0.965 |
+|  0.0  | 0.983 |
+|  0.0  | 0.991 |
+|  0.0  | 0.996 |
+|  0.0  | 0.998 |
+|  0.0  | 0.999 |
+|  0.0  | 0.999 |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
++-------+-------+
+</pre>
+
+<div class="org-src-container">
+
+<pre class="src src-python">matplotlib.use(<span style="color: #2aa198;">'Agg'</span>)
+<span style="color: #268bd2;">d_u_1_shift</span> = d_u_1[1:] + [x[2]*game[0][0][0]+(1-x[2])*game[0][1][0]-x[2]*game[1][0][0]-(1-x[2])*game[1][1][0]]
+<span style="color: #268bd2;">d_u_2_shift</span> = d_u_2[1:] + [x[0]*game[0][0][1]+(1-x[0])*game[1][0][1]-x[0]*game[0][1][1]-(1-x[0])*game[1][1][1]]
+
+
+plt.figure(1)
+plt.subplot(2,1,1)
+plt.plot(index,a_list,<span style="color: #2aa198;">'bo'</span>,index,b_list,<span style="color: #2aa198;">'ro'</span>)
+
+plt.subplot(2,1,2)
+plt.plot(index,d_u_1_shift,<span style="color: #2aa198;">'b'</span>,d_u_2_shift,<span style="color: #2aa198;">'r'</span>)
+plt.savefig(<span style="color: #2aa198;">'chicken.png'</span>)
+<span style="color: #859900;">return</span> <span style="color: #2aa198;">'chicken.png'</span>
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="./chicken.png" alt="chicken.png" align="center" />
+</p>
+<p><span class="figure-number">Figure 1:</span> Chicken: \(\alpha\) and \(\beta\) over several iterations (top panel) and corresponsing utility differences (bottom panel)</p>
+</div>
+
+<pre class="example">
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... ... ... &gt;&gt;&gt; +-------+-------+
+| alpha |  beta |
++-------+-------+
+|  0.25 |  0.6  |
+| 0.042 | 0.733 |
+|  0.0  | 0.861 |
+|  0.0  |  0.93 |
+|  0.0  | 0.965 |
+|  0.0  | 0.983 |
+|  0.0  | 0.991 |
+|  0.0  | 0.996 |
+|  0.0  | 0.998 |
+|  0.0  | 0.999 |
+|  0.0  | 0.999 |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
+|  0.0  |  1.0  |
++-------+-------+
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &lt;matplotlib.figure.Figure object at 0x7fe0637f5810&gt;
+&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fe0637f5690&gt;
+[&lt;matplotlib.lines.Line2D object at 0x7fe05585a0d0&gt;, &lt;matplotlib.lines.Line2D object at 0x7fe05585a350&gt;]
+&gt;&gt;&gt; &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fe05585a9d0&gt;
+[&lt;matplotlib.lines.Line2D object at 0x7fe0557f5190&gt;, &lt;matplotlib.lines.Line2D object at 0x7fe0557f5410&gt;]
+</pre>
+
+<p>
+That seemed to work rather nicely. Will this always work? Unfortunately, the answer is "No". As an example, we do the same that we did above but this time we use the matching pennies game.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+<caption class="t-above"><span class="table-number">Table 2:</span> Matching pennies</caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">L \((\beta)\)</th>
+<th scope="col" class="left">R \((1-\beta)\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">U    \((\alpha)\)</td>
+<td class="left">1,-1</td>
+<td class="left">-1,1</td>
+</tr>
+
+<tr>
+<td class="left">D \((1-\alpha)\)</td>
+<td class="left">-1,1</td>
+<td class="left">1,-1</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #586e75; font-style: italic;">##</span><span style="color: #586e75; font-style: italic;">payoffs from our 2x2 game; here matching pennies</span>
+<span style="color: #859900;">from</span> numpy <span style="color: #859900;">import</span> *
+<span style="color: #859900;">import</span> matplotlib.pyplot <span style="color: #859900;">as</span> plt
+<span style="color: #859900;">import</span> matplotlib
+<span style="color: #859900;">from</span> prettytable <span style="color: #859900;">import</span> PrettyTable
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">now we use matching pennies as our game</span>
+<span style="color: #268bd2;">game</span> =[[(1.,-1.),(-1.,1.)],[(-1.,1.),(1.,-1.)]]
+
+<span style="color: #586e75; font-style: italic;">##</span><span style="color: #586e75; font-style: italic;">strategy profile to start with; first entry is alpha, second is beta</span>
+<span style="color: #268bd2;">start</span> = 0.5,0.6
+
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">g</span>(a,b):
+    <span style="color: #268bd2;">utility_difference</span> = b*game[0][0][0]+(1-b)*game[0][1][0]-b*game[1][0][0]-(1-b)*game[1][1][0]
+    <span style="color: #859900;">return</span> <span style="color: #859900;">max</span>(0,(a+utility_difference)/(1+<span style="color: #859900;">abs</span>(utility_difference))), utility_difference
+
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">h</span>(a,b):
+    <span style="color: #268bd2;">utility_difference</span> = a*game[0][0][1]+(1-a)*game[1][0][1]-a*game[0][1][1]-(1-a)*game[1][1][1]
+    <span style="color: #859900;">return</span> <span style="color: #859900;">max</span>(0,(b+utility_difference)/(1+<span style="color: #859900;">abs</span>(utility_difference))), utility_difference
+
+<span style="color: #859900;">print</span> g(start[0],start[1])[0],h(start[0],start[1])[0]
+
+<span style="color: #268bd2;">index</span> = <span style="color: #859900;">range</span>(1,25,1)
+<span style="color: #268bd2;">x</span> = start[0],0.,start[1],0.
+<span style="color: #268bd2;">a_list</span> = []<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will contain the alpha values</span>
+<span style="color: #268bd2;">b_list</span> = []<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">will contain the beta values</span>
+<span style="color: #268bd2;">d_u_1</span> = []<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">will contain utility difference between playing U and D</span>
+<span style="color: #268bd2;">d_u_2</span> = []<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">will contain utility difference between playing L and R</span>
+
+<span style="color: #268bd2;">t</span> = PrettyTable([<span style="color: #2aa198;">'alpha'</span>,<span style="color: #2aa198;">'beta'</span>])
+
+<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> index:
+    <span style="color: #268bd2;">g_return</span> = g(x[0],x[2])
+    <span style="color: #268bd2;">h_return</span> = h(x[0],x[2])
+    <span style="color: #268bd2;">x</span> = g_return[0],g_return[1],h_return[0],h_return[1]
+    t.add_row([<span style="color: #859900;">round</span>(x[0],3),<span style="color: #859900;">round</span>(x[2],3)])
+    a_list.append(x[0])
+    d_u_1.append(x[1])
+    b_list.append(x[2])
+    d_u_2.append(x[3])
+
+<span style="color: #859900;">print</span> t
+</pre>
+</div>
+
+<pre class="example">
+&gt;&gt;&gt; &gt;&gt;&gt; ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... &gt;&gt;&gt; ... ... &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; 0.642857142857 0.6
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... ... ... &gt;&gt;&gt; +-------+-------+
+| alpha |  beta |
++-------+-------+
+| 0.643 |  0.6  |
+| 0.745 | 0.018 |
+|  0.0  |  0.0  |
+|  0.0  | 0.667 |
+|  0.4  | 0.889 |
+| 0.765 | 0.921 |
+| 0.912 |  0.0  |
+|  0.0  |  0.0  |
+|  0.0  | 0.667 |
+|  0.4  | 0.889 |
+| 0.765 | 0.921 |
+| 0.912 |  0.0  |
+|  0.0  |  0.0  |
+|  0.0  | 0.667 |
+|  0.4  | 0.889 |
+| 0.765 | 0.921 |
+| 0.912 |  0.0  |
+|  0.0  |  0.0  |
+|  0.0  | 0.667 |
+|  0.4  | 0.889 |
+| 0.765 | 0.921 |
+| 0.912 |  0.0  |
+|  0.0  |  0.0  |
+|  0.0  | 0.667 |
++-------+-------+
+</pre>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #268bd2;">d_u_1_shift</span> = d_u_1[1:] + [x[2]*game[0][0][0]+(1-x[2])*game[0][1][0]-x[2]*game[1][0][0]-(1-x[2])*game[1][1][0]]
+<span style="color: #268bd2;">d_u_2_shift</span> = d_u_2[1:] + [x[0]*game[0][0][1]+(1-x[0])*game[1][0][1]-x[0]*game[0][1][1]-(1-x[0])*game[1][1][1]]
+
+
+plt.figure(1)
+plt.subplot(2,1,1)
+plt.plot(index,a_list,<span style="color: #2aa198;">'bo'</span>,index,b_list,<span style="color: #2aa198;">'ro'</span>)
+
+plt.subplot(2,1,2)
+plt.plot(index,d_u_1_shift,<span style="color: #2aa198;">'b'</span>,d_u_2_shift,<span style="color: #2aa198;">'r'</span>)
+plt.savefig(<span style="color: #2aa198;">'matching_pennies.png'</span>)
+<span style="color: #859900;">return</span> <span style="color: #2aa198;">'matching_pennies.png'</span>
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="./matching_pennies.png" alt="matching_pennies.png" align="center" />
+</p>
+<p><span class="figure-number">Figure 2:</span> Matching pennies: \(\alpha\) and \(\beta\) over several iterations (top panel) and corresponsing utility differences (bottom panel)</p>
+</div>
+
+<p>
+As you can see, there is some "cycling" going on: Instead of converging to the Nash equilibrium \((0.5,0.5)\), the strategies jump across the NE and repeat every few iterations. The important lesson from all this is the following: Nash's theorem proves that Nash equilibria exist (in finite games) but neither the theorem nor its proof gives us a way of how to compute the/a NE. More generally, fixed point theorems like Brouwer's theorem establish existence of a fixed point but do not hlep us to find the fixed point. Computation of Nash equilibria (in large but finite games) has been (and still is!) a topic in game theoretic research for a long time (see Herings, P. Jean-Jacques, and Ronald Peeters. "Homotopy methods to compute equilibria in game theory." <i>Economic Theory</i> 42.1 (2010): 119-156 for a survey of some of this literature).
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2015-08-07 Fri</p>
+<p class="author">Author: Christoph</p>
+<p class="date">Created: 2015-08-07 Fri 14:35</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

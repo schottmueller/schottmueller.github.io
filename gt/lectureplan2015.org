@@ -1,0 +1,109 @@
+#+OPTIONS:    H:1 num:nil toc:1 \n:nil @:t ::t |:t ^:{} -:t f:t *:t TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
+#+SEQ_TODO:   TODO(t) INPROGRESS(i) WAITING(w@) | DONE(d) CANCELED(c@)
+#+TAGS:       Write(w) Update(u) Fix(f) Check(c) 
+#+TITLE:    Lecture Plan "Game Theory" 2015
+#+AUTHOR:    Christoph Schottmueller
+#+DATE:  
+#+LANGUAGE:   en
+#+STYLE:      <style type="text/css">#outline-container-introduction{ clear:both; }</style>
+#+STYLE: <SCRIPT SRC="../jsMath/easy/load.js"></SCRIPT>
+
+
+
+* Lecture 1: Intro expected utility theorem 
+** Introduction
+** What is GT? 
+** expected utility theorem
+** reading:  MSZ 2.1-2.5 or MWG 6.A-6.B, (supplementary reading: Aumann 1985)
+# python: exercise lottery competition
+
+* Lecture 2: Strategic games and equilibrium 
+** Strategic games
+** Nash equilibrium 
+# (+evolutionary stable strategies)
+** Mixed strategies 
+# ** Purification
+** reading:  OR 2.1-2.3, 3.1-3.2 or MSZ 4.1,4.3,4.4,4.8,4.9, 5.1-5.2 
+# python: NE solver
+   
+* Lecture 3: NE
+** Fixed point theorems
+** Nash existence theorem
+** reading: MSZ 5.3, (supplementary reading: OR 2.4; a proof of Brouwer's fixed point theorem can be found in MSZ 23.1 but reading this proof is by no means necessary)
+# python: function that does the steps in the proof of Nash theorem (=fixed point solver?)
+ 
+* Lecture 4: Rationalizability and dominance
+** Rationalizability and iterated elimination of dominated strategies
+** (Global game example)
+** reading: OR 4 or MSZ 4.5, 4.7, 4.11, 
+# python: iterative elimination of strictly dominated strategies in finite games and in Cournot (graphical)
+
+* Lecture 5: Correlated equilibrium
+** Correlated equilibrium
+** reading: OR 3.3 or MSZ 8 
+# python: correlated equilibrium solver
+* Lecture 6: Supermodular games
+** Amir paper, Milgrom and Roberts paper
+# python:??
+* Lecture 7: Refinements in strategic form games
+** Perfect equilibrium
+** reading: lecture notes by Hans Keiding, (MSZ 7.3.1)
+# python: perfect equilibrium infinite games solver
+
+* Lecture 8: Refinements in extensive form games with imperfect information 
+** Behavior strategies
+** Perfect equilibrium
+# ** Sequential equilibrium
+** reading: OR 11.1, 11.4, 11.5, 12.1, 12.5 or MSZ 9.4, 7.3.2
+* Lecture 9: Midterm Assignment
+** discussing solutions to midterm assignment
+
+
+* Lecture 10: Knowledge I
+** Hat game
+** Aumann model
+** reading: OR 5.1-5.2 or MSZ 9.1
+# python: check whether event F is common knowledge in state w
+
+* Lecture 11: Knowledge II
+** No agree to disagree
+** (Common) knowledge and solution concepts
+** Electronic mail game
+** reading: OR 5.3-5.5 or MSZ 9.2
+# python: ? sth about email game proof or induction ?
+
+* Lecture 12: Global Games
+** Carlson and van Damme (p. 989-993), Morris and Shin paper
+# python: iterative elimination of strictly dominated strategies in stag hunt
+* Lecture 13: Social Choice I
+** Social welfare functions
+** Arrow's impossibility theorem
+** reading: MSZ 21.1
+
+* Lecture 14: Social Choice II
+** Social choice functions
+** Gibbard-Satterthwaite theorem
+** reading: MSZ 21.2, 21.3
+
+
+* Bibliography
+OR: Osborne and Rubinstein 1994; A course in game theory; MIT Press (available as free ebook on the author's [[http://books.osborne.economics.utoronto.ca/][website]])
+
+MSZ: Maschler, Salon and Zamir 2013; Game theory; Cambridge University Press (KU library [[http://dx.doi.org.ep.fjernadgang.kb.dk/10.1017/CBO9780511794216][link]])
+
+MWG: MasColell, Whinston and Green 1995; Microeconomic theory; Oxford University Press
+
+FT: Fudenberg and Tirole 1991; Game theory; MIT Press
+
+Aumann 1985: What is game theory trying to accomplish?; Frontiers of Economics; [[http://www.ma.huji.ac.il/~raumann/pdf/what%20is%20game%20theory.pdf][link]]
+
+Carlson and van Damme "Global Games and Equilibrium Selection", Econometrica, Vol. 61, No. 5 (Sep., 1993), pp. 989-1018;  [[http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2951491][link]]
+
+Morris and Shin “Global Games: Theory and Applications”, Econometric Society Monographs 35, 2003, 56-114 - Cambridge University Press; [[https://www.princeton.edu/~smorris/pdfs/paper_36_Global_Games.pdf][link]]
+
+Morris, Stephen, and Hyun Song Shin. "Unique equilibrium in a model of self-fulfilling currency attacks." American Economic Review, Vol. 88, No. 3 (1998): 587-597. [[http://www.jstor.org/stable/116850 ][link]]
+
+Amir, Rabah. "Supermodularity and complementarity in economics: an elementary survey", Southern Economic Journal, Vol. 71, No. 3 (2005): 636-660. [[http://www.jstor.org/stable/20062066 ][link]]
+
+Milgrom and Roberts “Rationalizability, Learning, and Equilibrium in Games with Strategic Complementarities”, Econometrica, Vol. 58, No. 6. (Nov., 1990), pp. 1255-1277; [[http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2938316][link]]
