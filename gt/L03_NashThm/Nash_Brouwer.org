@@ -11,6 +11,8 @@
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
 #+HTML_HEAD: <style type="text/css"><!--body {background-color : #F0F0F0; font-face: "Open Sans", Arial, Helvetica, sans-serif;} h1 {font-size:30px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top:-1px; margin-bottom:-1px; }--></style>
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
 
 We showed that the function $f=(g,h)$ where
 $$g(\alpha,\beta)=max\left\{0,\frac{\alpha+u_1(U,\beta)-u_1(D,\beta)}{1+|u_1(U,\beta)-u_1(D,\beta)|}\right\}$$
