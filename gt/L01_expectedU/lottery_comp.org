@@ -10,7 +10,7 @@
 #+INFOJS_OPT: view:nil toc:nil ltoc:nil mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
 
 * Using the independence axiom to deduce preferences
 This program can be used to deduce preferences over lotteries from preferences over other lotteries. This is done using the independence axiom directly. It can also generate simple exercises where you can try to solve this problem yourself by hand.
