@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title></title>
-<!-- 2015-08-09 Sun 12:13 -->
+<!-- 2015-08-19 Wed 15:07 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Christoph Schottmueller" />
@@ -143,7 +143,7 @@ for the JavaScript code in this tag.
 <header>     
 <div class="container">    
 <h1>Gametheory 2015</h1>        
-<h2>Material for the Game Theory course at the University of Copenhagen</h2>      </div>   
+<h2>Material for the GT course at the University of Copenhagen</h2>      </div>   
 </header>
  <div class="container">
       <section id="main_content">
@@ -207,15 +207,84 @@ The final is an oral exam (with 20 minutes closed book preparation time). You ca
 <li>Handout on <a href="https://schottmueller.github.io/gt/refinements.pdf">refinements</a> (kindly provided by Hans Keiding)
 </li>
 </ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">Comment on "extra" material</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+The extra material contains some Python code. If you want to find out what this code means, check this simple tutorial on the quantitative economics <a href="http://quant-econ.net/py/python_by_example.html">website</a>. If you want to run the code on your machine (this allows you to try other games than the ones I use as examples), you need to have Python (with the <a href="http://openopt.org">openopt</a> package) installed. You can check the quantitative economics <a href="http://quant-econ.net/py/getting_started.html">website</a> for a guide how to setup and use Python. Note that Python is by default installed on Linux systems (also on Mac?). I use Python 2.7 and the programs might not run in Python 3. To install the openopt package, try (after installing Python &#x2013; that is after installing Anaconda if you follow the guide) the following in your terminal (or "cmd" if you are running Windows):
+</p>
+<pre class="example">
+pip install openopt
+pip install SpaceFuncs
+pip install FuncDesigner
+pip install DerApproximator
+</pre>
+<p>
+If you are running linux, you might have to add "sudo" in front.
+</p>
+
+<p>
+If this does not work, check the installation guide on the  <a href="http://openopt.org">openopt</a> website. For more information on openopt usage, go to the "probs" section on the website and check the openopt examples for the problem you are interested in.
+</p>
+</div>
+
+<ul class="org-ul"><li><a id="sec-2-3-1" name="sec-2-3-1"></a>some disclaimers<br  /><div class="outline-text-4" id="text-2-3-1">
+<p>
+I cannot guarantee that the code in the extra material works flawlessly or produces correct results (though I test it a little bit). Even if it works, the code is very far from being efficient. That is, a proper programmer could write programs that do the job much better and faster. If you are interested in somewhat more professional programs to analyze games, you could check out <a href="http://www.gambit-project.org/gambit">gambit</a>. 
+</p>
+</div>
+</li>
+
+<li><a id="sec-2-3-2" name="sec-2-3-2"></a>FAQs regarding the "extra" material:<br  /><div class="outline-text-4" id="text-2-3-2">
+<ul class="org-ul">
+<li><i>Is the extra material relevant for the exam?</i> 
+  Only if it was used directly in the lecture. The code is absolutely irrelevant for the exam.
+</li>
+<li><i>Why should I care about the extra material?</i> You do not have to! But&#x2026; 
+<ul class="org-ul">
+<li>if you want to get some extra practice it might come in handy. You can make up your own exercises and use the programs to check for the correct solutions.
+</li>
+<li>some of the material gives you a slightly different angle on things we did in the lecture. This might help you to better understand the topic.
+</li>
+<li>playing around with numerical examples helps some people to get a better idea of the problem.
+</li>
+<li>being able to go through some basic code is a skill valued in the labor market.
+</li>
+</ul>
+</li>
+<li><i>Is it safe to install the software mentioned above?</i> All the software mentioned here is free and open source software. Python and the openopt suite are widely used in industry and science. Having said that: All code is potentially malicious and I cannot take any responsibility for what happens when you install or use the software. 
+</li>
+</ul>
 
 
 </div></section>
 </div>
+</li></ul>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
- <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
+<p>author:
+Christoph
+Schottmueller<br>license:
+Creative
+Commons
+Attribution
+ShareAlike
+4
+(author
+created
+content
+only)<br>style:
+github-dark
+(Apache
+License
+2)</p>
 </div>
 </body>
 </html>
