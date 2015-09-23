@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>On Nash's theorem and computation of Nash equilibria</title>
-<!-- 2015-08-09 Sun 12:08 -->
+<!-- 2015-09-23 Wed 16:08 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Christoph" />
@@ -186,7 +186,7 @@ for the JavaScript code in this tag.
 We showed that the function \(f=(g,h)\) where
 $$g(\alpha,\beta)=max\left\{0,\frac{\alpha+u_1(U,\beta)-u_1(D,\beta)}{1+|u_1(U,\beta)-u_1(D,\beta)|}\right\}$$
 $$h(\alpha,\beta)=max\left\{0,\frac{\beta+u_2(L,\alpha)-u_2(R,\alpha)}{1+|\beta+u_2(L,\alpha)-u_2(R,\alpha)|}\right\}$$
-has a fixed point using Brouwer's fixed point theorem. Since every fixed point of this function was an equiibrium of out 2x2 game, this proved equilibrium existence. To get a better idea how these \(g\) and \(h\) functions work, we are going to print and plot them here for a simple example: chicken 
+has a fixed point using Brouwer's fixed point theorem. Since every fixed point of this function was an equilibrium of out 2x2 game, this proved equilibrium existence. To get a better idea how these \(g\) and \(h\) functions work, we are going to print and plot them here for a simple example: chicken 
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
@@ -517,7 +517,7 @@ plt.savefig(<span style="color: #2aa198;">'matching_pennies.png'</span>)
 </div>
 
 <p>
-As you can see, there is some "cycling" going on: Instead of converging to the Nash equilibrium \((0.5,0.5)\), the strategies jump across the NE and repeat every few iterations. The important lesson from all this is the following: Nash's theorem proves that Nash equilibria exist (in finite games) but neither the theorem nor its proof gives us a way of how to compute the/a NE. More generally, fixed point theorems like Brouwer's theorem establish existence of a fixed point but do not hlep us to find the fixed point. Computation of Nash equilibria (in large but finite games) has been (and still is!) a topic in game theoretic research for a long time (see Herings, P. Jean-Jacques, and Ronald Peeters. "Homotopy methods to compute equilibria in game theory." <i>Economic Theory</i> 42.1 (2010): 119-156 for a survey of some of this literature).
+As you can see, there is some "cycling" going on: Instead of converging to the Nash equilibrium \((0.5,0.5)\), the strategies jump across the NE and repeat every few iterations. The important lesson from all this is the following: Nash's theorem proves that Nash equilibria exist (in finite games) but neither the theorem nor its proof gives us a way of how to compute the/a NE. More generally, fixed point theorems like Brouwer's theorem establish existence of a fixed point but do not help us to find the fixed point. Computation of Nash equilibria (in large but finite games) has been (and still is!) a topic in game theoretic research for a long time (see Herings, P. Jean-Jacques, and Ronald Peeters. "Homotopy methods to compute equilibria in game theory." <i>Economic Theory</i> 42.1 (2010): 119-156 for a survey of some of this literature).
 </p>
 </div>
 <div id="postamble" class="status">

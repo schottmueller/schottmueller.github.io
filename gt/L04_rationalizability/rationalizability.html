@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Rationalizability</title>
-<!-- 2015-08-22 Sat 16:20 -->
+<!-- 2015-09-23 Wed 16:05 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Christoph" />
@@ -258,7 +258,7 @@ Computers are better at iterations than humans; so let's feed this problem into 
 </div>
 
 <pre class="example">
-&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; +-----------+-------------+-------------+
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; +-----------+-------------+-------------+
 | iteration | lower bound | upper bound |
 +-----------+-------------+-------------+
 |     0     |     0.0     |     1.0     |
@@ -544,11 +544,11 @@ game table without non-rationalizable actions is
 <h2 id="sec-3"><span class="section-number-2">3</span> Iterative elimination of strictly dominated strategies for finite n-player games</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-We generalize the code above for \(n\geq 2\) players. Although it might be a bit counterintuitive for 2-player games, we will use a slightly different notation for the payoffs: They are now numpy arrays and for two player games we go column by column (instead of row by row). A \(n+1\) player game is then simply a numpy array where each element is an \(n\) player game (and corresponds to a fixed action of player \(n+1\)).
+We generalize the code above for \(n\geq 2\) players. Although it might be a bit counter-intuitive for 2-player games, we will use a slightly different notation for the payoffs: They are now numpy arrays and for two player games we go column by column (instead of row by row). A \(n+1\) player game is then simply a numpy array where each element is an \(n\) player game (and corresponds to a fixed action of player \(n+1\)).
 </p>
 
 <p>
-The example used here is the following where each player has a single rationlizable action.
+The example used here is the following where each player has a single rationalizable action.
 </p>
 <table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
 <caption class="t-above"><span class="table-number">Table 2:</span> P3 plays <b>0</b></caption>
@@ -653,7 +653,7 @@ The example used here is the following where each player has a single rationliza
 <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">3player game (3*3*2 action) in which only (0,1,0) is rationalizable</span>
 <span style="color: #268bd2;">payoffs</span> = np.array([[[[1.,0.,1.],[0.,3.,2.],[-1.,1,0.]],[[4.,1.,2.],[1.,1.,1.],[2.,0.,0.]],[[1.,-1.,1.],[4.,-1.,1.],[2.,2.,0.]]],[[[0.,0.,0.],[1.,3.,1.],[-1.,1,3.]],[[3.,1.,0.],[1.,1.,0.],[-2.,-0.,2.]],[[5.,-1.,0.],[1.,-1.,0.],[2.,2.,3.]]]])
 
-<span style="color: #586e75; font-style: italic;">###</span><span style="color: #586e75; font-style: italic;">TO DO: there is a problem with the solver if no_var==1. Probably easiest to make this an extra case where simply best responses are chosen.</span>
+
 
 
 <span style="color: #268bd2;">dim</span> = payoffs.shape
