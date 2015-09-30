@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Rationalizability</title>
-<!-- 2015-09-23 Wed 16:05 -->
+<!-- 2015-09-30 Wed 10:19 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="Christoph" />
@@ -191,25 +191,25 @@ Here we want to repeat the iterative elimination of strictly dominated actions i
 </p>
 
 <p>
-$$p(q_1,q_2)=1-q_1-q_2$$
+$$p(q_1,q_2)=\max(1-q_1-q_2,0)$$
 </p>
 
 <p>
-and marginal costs equal to zero. The action set of each player is \([0,1]\). This means that the best response functions are
-$$br_1(q_2)=\frac{1-q_2}{2}$$
-$$br_2(q_1)=\frac{1-q_1}{2}.$$
+and marginal costs equal to \(c\in(0,1)\). The action set of each player is \([0,1]\). This means that the best response functions are
+$$br_1(q_2)=\max\left(\frac{1-q_2-c}{2},0\right)$$
+$$br_2(q_1)=\max\left(\frac{1-q_1-c}{2},0\right).$$
 </p>
 
 <p>
 We will now eliminate in the first round all actions of player 1 that cannot be a best response for any belief P1 might have. If P1 believes that P2 uses the mixed strategy given by the probability distribution \(F(q_2)\), his expected profits are
-$$\pi(q_1)= \int_0^1q_1(1-q_1-q_2)\,dF(q_2).$$
+$$\pi(q_1)= \int_0^1q_1(\max(1-q_1-q_2,0)-c)\,dF(q_2).$$
 From the first order condition, we get the generalized best response
-$$q_1(F(q_2))=\frac{\int_0^11-q_2\;dF(q_2)}{2}.$$
-If \(F\) puts all probability mass on 1, this best response is 0. If \(F\) puts all probability mass on 0, the best response is \(1/2\). For all other distributions, the best response is between 0 and \(1/2\). Hence, we can eliminate all quantities greater than \(1/2\): There is no belief such that these quantities would be a best response. 
+$$q_1(F(q_2))=\max\left(\frac{\int_0^11-q_2-c\;dF(q_2)}{2},0\right).$$
+If \(F\) puts all probability mass on 1, this best response is 0. If \(F\) puts all probability mass on 0, the best response is \((1-c)/2\). For all other distributions, the best response is between 0 and \((1-c)/2\). Hence, we can eliminate all quantities greater than \((1-c)/2\): There is no belief such that these quantities would be a best response. 
 </p>
 
 <p>
-In the next iteration, we ask which actions can be best responses by P2 given that P1 uses only actions in \([0,1/2]\). Recall that \(br_2(0)=1/2\) and \(br_2(1/2)=1/4\). For any strategy \(F(q_1)\) with support in \([0,1/2]\), P2's best response in somewhere between \(1/4\) and \(1/2\) (verify!).
+In the next iteration, we ask which actions can be best responses by P2 given that P1 uses only actions in \([0,(1-c)/2]\). Recall that \(br_2(0)=(1-c)/2\) and \(br_2((1-c)/2)=(1-c)/4\). For any strategy \(F(q_1)\) with support in \([0,(1-c)/2]\), P2's best response in somewhere between \((1-c)/4\) and \((1-c)/2\) (verify!).
 </p>
 
 <p>
@@ -217,7 +217,7 @@ Now we can go back to P1&#x2026;
 </p>
 
 <p>
-Computers are better at iterations than humans; so let's feed this problem into the machine.
+Computers are better at iterations than humans; so let's feed this problem into the machine. For simplicity, we use \(c=0\) although this makes the example formally incorrect: For \(c=0\), any quantity \(q_i\geq0\) is a best response to \(q_j=1\) and therefore the best response function above and the elimination are incorrect. For this example, you should therefore think of \(c=0\) as the limit case where \(c=\epsilon>0\) and \(\epsilon\rightarrow0\). For any \(c>0\), the only best response to \(q_j=1\) is \(0\) and we are in the clear.
 </p>
 
 <div class="org-src-container">
@@ -258,7 +258,7 @@ Computers are better at iterations than humans; so let's feed this problem into 
 </div>
 
 <pre class="example">
-&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; +-----------+-------------+-------------+
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; +-----------+-------------+-------------+
 | iteration | lower bound | upper bound |
 +-----------+-------------+-------------+
 |     0     |     0.0     |     1.0     |
@@ -769,15 +769,15 @@ The example used here is the following where each player has a single rationaliz
 
 <span style="color: #859900;">for</span> k <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
     <span style="color: #268bd2;">undominated</span>[k] = [item <span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> undominated[k] <span style="color: #859900;">if</span> item!=-1]
-    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'undominated actions of player'</span>,k,<span style="color: #2aa198;">'are'</span>, undominated[k]
+    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'rationalizable actions of player'</span>,k,<span style="color: #2aa198;">'are'</span>, undominated[k]
 </pre>
 </div>
 
 <pre class="example">
 game table without non-rationalizable actions is [[[[ 4.  1.  2.]]]]
-undominated actions of player 0 are [0]
-undominated actions of player 1 are [1]
-undominated actions of player 2 are [0]
+rationalizable actions of player 0 are [0]
+rationalizable actions of player 1 are [1]
+rationalizable actions of player 2 are [0]
 </pre>
 </div>
 </div>
