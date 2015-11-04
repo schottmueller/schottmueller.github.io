@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>(Common) Knowledge</title>
+<!-- 2015-08-14 Fri 13:15 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Christoph Schottmueller" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">(Common) Knowledge</h1>
+<p>
+Let us assume that the state space is finite. Using the knowledge operator iteratively, we can then quickly find all states in which an event E is common knowledge: We first ask: in which states does player 1 know E? These are the states K<sub>1</sub>(E). In other states, E can obviously not be common knowledge. So we consentrate on K(E). If E was common knowledge in K(E), then player 2 has to know K<sub>1</sub>(E) in every state of K<sub>1</sub>(E). Hence, let's check K<sub>2</sub>(K<sub>1</sub>(E)). If K<sub>2</sub>(K<sub>1</sub>(E))=K<sub>1</sub>(E) (and assuming we have only two players), then E is common knowledge in every state in K<sub>1</sub>(E) and we are done. Otherwise, we can concentrate on states in K<sub>2</sub>(K<sub>1</sub>(E)): After all player 1 has to know E and player 2 has to know that player 1 knows E if E is common knowledge.
+</p>
+
+<p>
+Now we are back at player 1: If E is common knowledge in K<sub>2</sub>(K<sub>1</sub>(E)), then player 1 has to know K<sub>2</sub>(K<sub>1</sub>(E)) whenever the state is in K<sub>2</sub>(K<sub>1</sub>(E)). Hence, we check whether K<sub>1</sub>(K<sub>2</sub>(K<sub>1</sub>(E)))=K<sub>2</sub>(K<sub>1</sub>(E))&#x2026;
+</p>
+
+<p>
+We continue with this procedure until either we have found some set W = K<sub>i</sub>(&#x2026;K<sub>2</sub>(K<sub>1</sub>(E))) such that W= K<sub>1</sub>(W)=K<sub>2</sub>(W) or until K<sub>i</sub>(&#x2026;K<sub>2</sub>(K<sub>1</sub>(E)))={}. In the latter case, E is not common knowledge in any state.
+The code below does exactly this using the example from the lecture.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">class</span> <span style="color: #b58900;">infostructure</span>:
+
+    <span style="color: #859900;">def</span> <span style="color: #268bd2;">__init__</span>(<span style="color: #859900;">self</span>,partitions):
+        <span style="color: #2aa198;">"""read in partitions </span>
+<span style="color: #2aa198;">        'partitions' is a list where each element is the info partition of one player</span>
+<span style="color: #2aa198;">        an info partition is a list of sets where each set is one element of the partition"""</span>
+        <span style="color: #859900;">self</span>.parts = partitions
+        <span style="color: #859900;">self</span>.n = <span style="color: #859900;">len</span>(<span style="color: #859900;">self</span>.parts)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">number of players</span>
+
+    <span style="color: #859900;">def</span> <span style="color: #268bd2;">know</span>(<span style="color: #859900;">self</span>,event,i):
+        <span style="color: #2aa198;">"returns the set of states in which player i knows event"</span>
+        <span style="color: #268bd2;">out</span> = <span style="color: #859900;">set</span>()
+        <span style="color: #268bd2;">info_i</span> = <span style="color: #859900;">self</span>.parts[i]
+        <span style="color: #859900;">for</span> part <span style="color: #859900;">in</span> info_i:
+            <span style="color: #859900;">if</span> part.issubset(event):
+                <span style="color: #268bd2;">out</span> = out.union(part)
+        <span style="color: #859900;">return</span> out
+
+    <span style="color: #859900;">def</span> <span style="color: #268bd2;">common_know</span>(<span style="color: #859900;">self</span>,event):
+        <span style="color: #2aa198;">"returns the states in which event is common knowledge"</span>
+        <span style="color: #268bd2;">candidate</span> = event
+        <span style="color: #268bd2;">old_candidate</span> = <span style="color: #859900;">set</span>()
+        <span style="color: #859900;">while</span> old_candidate!=candidate <span style="color: #859900;">and</span> <span style="color: #859900;">len</span>(candidate)&gt;0:
+            <span style="color: #268bd2;">old_candidate</span> = candidate
+            <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(<span style="color: #859900;">self</span>.n):
+                <span style="color: #268bd2;">candidate</span> = <span style="color: #859900;">self</span>.know(candidate,i)
+        <span style="color: #859900;">return</span> candidate
+
+    <span style="color: #859900;">def</span> <span style="color: #268bd2;">common_know_in_w</span>(<span style="color: #859900;">self</span>,event,w):
+        <span style="color: #2aa198;">"checks whether event is common knowledge in state w; returns True/False"</span>
+        <span style="color: #859900;">if</span> w <span style="color: #859900;">in</span> <span style="color: #859900;">self</span>.common_know(event):
+            <span style="color: #859900;">return</span> <span style="color: #2aa198;">True</span>
+        <span style="color: #859900;">else</span>:
+            <span style="color: #859900;">return</span> <span style="color: #2aa198;">False</span>
+
+    <span style="color: #859900;">def</span> <span style="color: #268bd2;">self_evident</span>(<span style="color: #859900;">self</span>,event,players):
+        <span style="color: #2aa198;">"checks whether event is self evident among players in list 'players' "</span>
+        <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> players:
+            <span style="color: #859900;">for</span> part <span style="color: #859900;">in</span> <span style="color: #859900;">self</span>.parts[i]:
+                <span style="color: #859900;">if</span> <span style="color: #859900;">len</span>(event.intersection(part))&gt;0 <span style="color: #859900;">and</span> <span style="color: #859900;">not</span> part.issubset(event):
+                    <span style="color: #859900;">return</span> <span style="color: #2aa198;">False</span>
+        <span style="color: #859900;">return</span> <span style="color: #2aa198;">True</span>
+
+
+<span style="color: #268bd2;">partition1</span> = [{1,2},{3,4,5},{6}]
+<span style="color: #268bd2;">partition2</span> = [{1},{2,3,4},{5},{6}]
+<span style="color: #268bd2;">ex1</span> = infostructure([partition1,partition2])
+
+
+
+<span style="color: #268bd2;">F</span> = {1,2,3,4,5}
+<span style="color: #268bd2;">E</span> = {1,2,3,4}
+<span style="color: #859900;">return</span> <span style="color: #2aa198;">'F is common knowledge in states '</span>,<span style="color: #859900;">list</span>(ex1.common_know(F)), <span style="color: #2aa198;">'.  E is common knowledge in states '</span>, <span style="color: #859900;">list</span>(ex1.common_know(E)),<span style="color: #2aa198;">'.'</span>
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="left">F is common knowledge in states</td>
+<td class="left">(1 2 3 4 5)</td>
+<td class="left">.  E is common knowledge in states</td>
+<td class="left">nil</td>
+<td class="left">.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+ <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
+</div>
+</body>
+</html>
