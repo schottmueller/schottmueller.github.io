@@ -34,7 +34,7 @@ h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, se
 </p>
 <div class="tab180">
 <br/>
-I am assistant professor at the University of Copenhagen and extramural fellow at TILEC.
+I am assistant professor at the University of Copenhagen.
 <p>
 address: <br/>   
     <span class="tab"> Department of Economics </span> <br/>
@@ -64,6 +64,11 @@ OpenPGP:<br/>
 
 ** Publications
 
+Procurement with specialized firms (with Jan Boone) [[./papers/procurement_specialized_firms/procurement_specialized.pdf][wp]], /RAND Journal of Economics/ (accepted for publication)
+@@html: <br/>
+ <span class="tab">  <font size="2"> supplementary material: <a href="papers/procurement_specialized_firms/supplementary4.pdf">here</a> </font></span>@@
+
+
 Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[http://dx.doi.org/10.1111/ecoj.12242][doi]], forthcoming @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
 
 
@@ -89,10 +94,6 @@ Monopoly insurance with endogenous information (with Johan Lagerlöf) [[./papers
 Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/Insurance-binary-v2-5.pdf][paper]], /submitted/
 @@html: <br/>
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat-v2-2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
-
-Procurement with specialized firms (with Jan Boone) [[./papers/procurement_specialized_firms/procurement150613.pdf][paper]], /conditionally accepted RAND/
-@@html: <br/>
- <span class="tab">  <font size="2"> supplementary material: <a href="papers/procurement_specialized_firms/supplementary4.pdf">here</a> </font></span>@@
 
 Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
 
