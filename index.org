@@ -107,7 +107,7 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 * Teaching
 
 ** University of Copenhagen
-2014- : Mechanism design (MSc) [[http://www.econ.ku.dk/schottmueller/mechdes.htm][course website]] 
+2014- : Mechanism design (MSc) [[https://github.com/schottmueller/mechdes/blob/master/2016.org][course website]] 
 
 2012- : Game theory (MSc) [[https://schottmueller.github.io/gt/gt2015.html][course website]] 
 
@@ -121,7 +121,7 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 #+END_HTML
 * Links
 
-Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/1TzqiqlVijRw_hvQEthUFotZGuXbkI6R8mBteYRdHx6E][spring]], [[https://docs.google.com/spreadsheets/d/1TzqiqlVijRw_hvQEthUFotZGuXbkI6R8mBteYRdHx6E][fall]]
+Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/1S7qPdVl_BNG_PREUcDwR9LJI3AMJA9V7conwagvIvok/edit?usp=sharing][spring]], [[https://docs.google.com/spreadsheets/d/1TzqiqlVijRw_hvQEthUFotZGuXbkI6R8mBteYRdHx6E][fall]]
 
 
 Institutions I am/was affiliated with or visited in the past:
@@ -144,7 +144,7 @@ Coauthors:
 Members of my PhD committee:
 -  [[https://janboone.github.io/homepage/][Jan Boone]] (advisor)
 - [[http://www.tilburguniversity.edu/webwijs/show/?uid=c.argenton][Cedric Argenton]]
-- [[http://www.tilburguniversity.edu/webwijs/files/center/vdamme/][Eric van Damme]]
+- [[https://www.tilburguniversity.edu/webwijs/show/eric.vandamme.htm][Eric van Damme]]
 - [[http://researchers-sbe.unimaas.nl/jeanjacquesherings/][Jean-Jacques Herings]]
 - [[http://idei.fr/member.php?i=43][Bruno Jullien]]
 - [[http://www.fgv.br/professor/humberto/English/index.htm][Humberto Moreira]]
