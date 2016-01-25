@@ -1,0 +1,70 @@
+#+Author: Christoph Schottmüller
+#+Title: Thesis Guidelines
+
+* Finding a topic
+The most important part is that you are interested in your topic. After all you will spend a couple of months with it. You can draw on many sources in order to find a topic:
+- the news. Some economic or political problem might pop up that you find interesting. Magazines with somewhat longer articles (like the Economist or the New Yorker) could be especially helpful.
+- your student job. Your job might give you a lot of background and inside information on certain questions which gives you a head start when analyzing.
+- your hobbies. You are an avid stamp collector and want to write about some interesting features of the market for stamps? Why not?
+- books; and I do not necessarily mean textbooks. I had the idea for a paper of mine while reading the description of Bentham's panopticon in a book that had nothing to do with economics. When reading the description I realized that this was a strategic problem that would merit some game theoretic modeling.
+- academic papers. Analyzing a variation of a published paper is a good approach for a thesis. Survey articles as published in /Journal of Economic Literature, /Journal of Economic Perspectives/, Elsevier's /Handbook of .../ series and also the /New Palgrave Dictionary of Economics/ might give you a decent background on a topic in any case.
+- policy and legal documents. An economic analysis of certain proposals (or decisions in competition policy cases) can make an interesting thesis.
+- your course work. However, students tend to over-rely on this last channel. 
+
+** Most common thesis types (I supervise)
+The following list is not exhaustive but if you have something different in mind we should talk about it first.
+
+- you pick a topic, e.g. from the news, you find interesting and analyze it using a game-theoretical model (some computational or empirical parts are, of course, fine as well; however, I won't be much use in procuring the data for empirical analysis).
+- you start from a published model and change some assumption or introduce an additional variable (or use a different solution concept). Then solve the model and compare your solution to the one in the paper. What (additional) effects emerge? Are the results in the paper robust?
+-  you analyze a competition policy decision. This will usually be a decision by DG Comp, the General Court ( formerly known as Court of First Instance) or the European Court of Justice. You check whether the reasoning in the decision makes economic sense by modeling the reasoning using models from IO, game theory and contract theory. (Please, note that the definition of the relevant market takes usually a lot more space in these decisions than it should in your thesis.)
+- comparative literature survey. This is usually not the first choice because it is very difficult to do this properly. The idea is that you show why different results are obtained in different papers and how this depends on their assumptions. Hence, you try not to summarize one paper after another but to explain the logic underlying a whole literature.[fn:1] 
+
+** Is my topic (candidate) appropriate for a thesis?
+
+After identifying a potential topic you should ask yourself "Can I make this into a thesis?" Microeconomic modeling is to a large extent simply a way to tell a story about trade-offs. Consequently, you should ask yourself the following questions:
+- who are the players?
+- what is the story?
+   - what is their information?
+   - what are their actions?
+- what trade-offs do players face?
+- what strategic effects may result; how do players respond strategically to other players
+- is there a simple framework in which I can capture this story/trade-off/strategic effect?
+- is there the potential to learn something new?
+- what could be a possible result/conclusion of the thesis? (it will eventually be very different, but to formulate a possible result helps you to see what kind of things you might strive for and whether the topic is sufficiently rich for a thesis)
+- can you explain to your friends why this is a good thesis topic?
+
+* Writing a proposal
+
+When you have thought through the questions above, you write up a one page research proposal (summing up your thoughts/answers) and send this proposal to me. I will read it and then we meet to discuss the proposal (or I refer you to a colleague of mine if your proposal is completely out of my own field of expertise). We might conclude that the proposal should be changed a bit or we might immediately go ahead and make the thesis contract, talk about a rough schedule etc.
+
+* Supervision
+I do not have a fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
+- I want to see a proposal (~1 page); preferably before meeting for the first time. (If we meet before you have a proposal, I usually cannot tell you much more than is written in this document.) I will not sign a thesis contract if you do not have a proposal because I feel that it would be irresponsible to let you commit to something without having any idea of what to do.
+- We have a midterm review to take stock and to see how you are doing on time.
+
+I know it is very tempting to ask your supervisor all the time what to do next. However, keep in mind that a thesis is an /independent/ piece of work and the novelty of /your ideas/ is part of the evaluation.
+
+* Writing
+- Have a clear structure. 
+- Use a consistent citation style. Economists mainly use the /author (year)/ style.
+- Use the /proposition-proof/ style; i.e. state a result formally in a proposition (or lemma or theorem), explain it intuitively in the main text and add a formal proof (possibly in an appendix).
+- Include a literature section where you place your thesis in the related literature. Google Scholar is probably the easiest way to find related literature. The most relevant articles tend to be published in very good journals. A very subjective and certainly incomplete list of decent journals (in my field) is the following: American Economic Review, Econometrica, Review of Economic Studies, Journal of Political Economy, Quarterly Journal of Economics, Journal of Economic Theory, Theoretical Economics, RAND Journal of Economics, Games and Economic Behavior, Economic Journal, Journal of the European Economic Association, International Economic Review
+  - to be able to download academic papers without having to pay for it, you have to be either on campus or connect to the university via VPN
+- Have a conclusion.
+- You do yourself (and your readers!) a favor if you write in LaTeX (and use BibTeX).
+
+
+* Some general remarks
+- Keep in mind that a model is a conscious over-simplification of reality. If you want to analyze a certain problem, it is usually not helpful to try to stack everything you have heard about this problem in one model (and then make it dynamic in continuous time etc.). Such models tend to be intractable and therefore absolutely useless. Focus on some specific aspect/effect and try to get the smallest possible model in which you can see the effect. You can generalize later on if you like.
+- Your thesis can contain several small models if you want to explain several effects. There is no need to stack everything into one grand model, see above.
+- You should reserve a decent amount of time at the end for editing only. For a master thesis I would recommend no less than two weeks. Part of the evaluation of a thesis is that it is well written.
+- You have to write in English.
+
+* Useful sources for how to write/model
+- Hal Varian's "How to build an economic model in your spare time", [[http://people.ischool.berkeley.edu/~hal/Papers/how.pdf][link]]
+- The faculty's policy on MSc supervision, [[http://econ.ku.dk/schottmueller/teaching/supervision/Use_Your_Master_Thesis_Supervisor.pdf][link]]
+- My colleague Christian Groth has written down some excellent [[http://www.econ.ku.dk/okocg/Forside/Advice%20for%20writing%20a%20BA%20or%20MA%20thesis.htm][advice]] for finding a thesis topic and writing a thesis. He also gives more links on where to get even more advice on how to write.
+
+
+
+[fn:1] Switching to this format can be an option if you cannot manage to get anything sensible out of a model (thesis type: start from a published paper) but you have read the related papers so well that you have a clear idea of the literature. 

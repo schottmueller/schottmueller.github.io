@@ -113,6 +113,8 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 2013: Health insurance (MSc Public Health) [[./files/health_insurance/outline.pdf][outline]]
 
+My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
+
 #+BEGIN_HTML
 </div>
 </section>
