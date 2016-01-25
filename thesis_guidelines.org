@@ -22,10 +22,10 @@ The following list is not exhaustive but if you have something different in mind
 ** Is my topic (candidate) appropriate for a thesis?
 
 After identifying a potential topic you should ask yourself "Can I make this into a thesis?" Microeconomic modeling is to a large extent simply a way to tell a story about trade-offs. Consequently, you should ask yourself the following questions:
-- who are the players?
 - what is the story?
-   - what is their information?
-   - what are their actions?
+- who are the players?
+  - what is their information?
+  - what are their actions?
 - what trade-offs do players face?
 - what strategic effects may result; how do players respond strategically to other players
 - is there a simple framework in which I can capture this story/trade-off/strategic effect?
