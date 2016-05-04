@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2016-05-04 Wed 14:05 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lecture Plan "Game Theory" 2016</title>
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Christoph Schottmueller" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Lecture Plan "Game Theory" 2016</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgheadline5">Lecture 1: Intro expected utility theorem</a></li>
+<li><a href="#orgheadline10">Lecture 2: Strategic games and equilibrium</a></li>
+<li><a href="#orgheadline14">Lecture 3: NE</a></li>
+<li><a href="#orgheadline18">Lecture 4: Rationalizability and dominance</a></li>
+<li><a href="#orgheadline21">Lecture 5: Correlated equilibrium</a></li>
+<li><a href="#orgheadline27">Lecture 6: Supermodular games</a></li>
+<li><a href="#orgheadline31">Lecture 7: Knowledge I</a></li>
+<li><a href="#orgheadline36">Lecture 8: Knowledge II</a></li>
+<li><a href="#orgheadline38">Lecture 9: Midterm Assignment</a></li>
+<li><a href="#orgheadline40">Lecture 10: Global Games I</a></li>
+<li><a href="#orgheadline42">Lecture 11: Global Games II</a></li>
+<li><a href="#orgheadline46">Lecture 12: Social Choice I</a></li>
+<li><a href="#orgheadline50">Lecture 13: Social Choice II</a></li>
+<li><a href="#orgheadline51">Bibliography</a></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgheadline5" class="outline-2">
+<h2 id="orgheadline5">Lecture 1: Intro expected utility theorem</h2>
+<div class="outline-text-2" id="text-orgheadline5">
+</div><ul class="org-ul"><li><a id="orgheadline1"></a>Introduction<br  /></li>
+<li><a id="orgheadline2"></a>What is GT?<br  /></li>
+<li><a id="orgheadline3"></a>expected utility theorem<br  /></li>
+<li><a id="orgheadline4"></a>reading:  MSZ 2.1-2.5 or MWG 6.A-6.B, (supplementary reading: Aumann 1985)<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10">Lecture 2: Strategic games and equilibrium</h2>
+<div class="outline-text-2" id="text-orgheadline10">
+</div><ul class="org-ul"><li><a id="orgheadline6"></a>Strategic games<br  /></li>
+<li><a id="orgheadline7"></a>Nash equilibrium<br  /></li>
+<li><a id="orgheadline8"></a>Mixed strategies<br  /></li>
+<li><a id="orgheadline9"></a>reading:  OR 2.1-2.3, 3.1-3.2 or MSZ 4.1,4.3,4.4,4.8,4.9, 5.1-5.2<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14">Lecture 3: NE</h2>
+<div class="outline-text-2" id="text-orgheadline14">
+</div><ul class="org-ul"><li><a id="orgheadline11"></a>Fixed point theorems<br  /></li>
+<li><a id="orgheadline12"></a>Nash existence theorem<br  /></li>
+<li><a id="orgheadline13"></a>reading: MSZ 5.3, (supplementary reading: OR 2.4; a proof of Brouwer's fixed point theorem can be found in MSZ 23.1 but reading this proof is by no means necessary)<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline18" class="outline-2">
+<h2 id="orgheadline18">Lecture 4: Rationalizability and dominance</h2>
+<div class="outline-text-2" id="text-orgheadline18">
+</div><ul class="org-ul"><li><a id="orgheadline15"></a>Rationalizability and iterated elimination of dominated strategies<br  /></li>
+<li><a id="orgheadline16"></a>(Global game example)<br  /></li>
+<li><a id="orgheadline17"></a>reading: OR 4 or MSZ 4.5, 4.7, 4.11,<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline21" class="outline-2">
+<h2 id="orgheadline21">Lecture 5: Correlated equilibrium</h2>
+<div class="outline-text-2" id="text-orgheadline21">
+</div><ul class="org-ul"><li><a id="orgheadline19"></a>Correlated equilibrium<br  /></li>
+<li><a id="orgheadline20"></a>reading: OR 3.3 or MSZ 8<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline27" class="outline-2">
+<h2 id="orgheadline27">Lecture 6: Supermodular games</h2>
+<div class="outline-text-2" id="text-orgheadline27">
+</div><ul class="org-ul"><li><a id="orgheadline22"></a>Amir paper, Milgrom and Roberts paper<br  /></li>
+<li><a id="orgheadline23"></a>Perfect equilibrium<br  /></li>
+<li><a id="orgheadline24"></a>reading: lecture notes by Hans Keiding, (MSZ 7.3.1)<br  /></li>
+<li><a id="orgheadline25"></a>Behavior strategies<br  /></li>
+<li><a id="orgheadline26"></a>Perfect equilibrium<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline31" class="outline-2">
+<h2 id="orgheadline31">Lecture 7: Knowledge I</h2>
+<div class="outline-text-2" id="text-orgheadline31">
+</div><ul class="org-ul"><li><a id="orgheadline28"></a>Hat game<br  /></li>
+<li><a id="orgheadline29"></a>Aumann model<br  /></li>
+<li><a id="orgheadline30"></a>reading: OR 5.1-5.2 or MSZ 9.1<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline36" class="outline-2">
+<h2 id="orgheadline36">Lecture 8: Knowledge II</h2>
+<div class="outline-text-2" id="text-orgheadline36">
+</div><ul class="org-ul"><li><a id="orgheadline32"></a>No agree to disagree<br  /></li>
+<li><a id="orgheadline33"></a>(Common) knowledge and solution concepts<br  /></li>
+<li><a id="orgheadline34"></a>Electronic mail game<br  /></li>
+<li><a id="orgheadline35"></a>reading: OR 5.3-5.5 or MSZ 9.2<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline38" class="outline-2">
+<h2 id="orgheadline38">Lecture 9: Midterm Assignment</h2>
+<div class="outline-text-2" id="text-orgheadline38">
+</div><ul class="org-ul"><li><a id="orgheadline37"></a>discussing solutions to midterm assignment<br  /></li></ul>
+</div>
+
+<div id="outline-container-orgheadline40" class="outline-2">
+<h2 id="orgheadline40">Lecture 10: Global Games I</h2>
+<div class="outline-text-2" id="text-orgheadline40">
+</div><ul class="org-ul"><li><a id="orgheadline39"></a>Carlson and van Damme (p. 989-993)<br  /></li></ul>
+</div>
+<div id="outline-container-orgheadline42" class="outline-2">
+<h2 id="orgheadline42">Lecture 11: Global Games II</h2>
+<div class="outline-text-2" id="text-orgheadline42">
+</div><ul class="org-ul"><li><a id="orgheadline41"></a>Morris and Shin (1998)<br  /></li></ul>
+</div>
+
+<div id="outline-container-orgheadline46" class="outline-2">
+<h2 id="orgheadline46">Lecture 12: Social Choice I</h2>
+<div class="outline-text-2" id="text-orgheadline46">
+</div><ul class="org-ul"><li><a id="orgheadline43"></a>Social welfare functions<br  /></li>
+<li><a id="orgheadline44"></a>Arrow's impossibility theorem<br  /></li>
+<li><a id="orgheadline45"></a>reading: MSZ 21.1<br  /></li></ul>
+</div>
+
+<div id="outline-container-orgheadline50" class="outline-2">
+<h2 id="orgheadline50">Lecture 13: Social Choice II</h2>
+<div class="outline-text-2" id="text-orgheadline50">
+</div><ul class="org-ul"><li><a id="orgheadline47"></a>Social choice functions<br  /></li>
+<li><a id="orgheadline48"></a>Gibbard-Satterthwaite theorem<br  /></li>
+<li><a id="orgheadline49"></a>reading: MSZ 21.2, 21.3<br  /></li></ul>
+</div>
+
+
+<div id="outline-container-orgheadline51" class="outline-2">
+<h2 id="orgheadline51">Bibliography</h2>
+<div class="outline-text-2" id="text-orgheadline51">
+<p>
+OR: Osborne and Rubinstein 1994; A course in game theory; MIT Press (available as free ebook on the author's <a href="http://books.osborne.economics.utoronto.ca/">website</a>)
+</p>
+
+<p>
+MSZ: Maschler, Salon and Zamir 2013; Game theory; Cambridge University Press (KU library <a href="http://dx.doi.org.ep.fjernadgang.kb.dk/10.1017/CBO9780511794216">link</a>)
+</p>
+
+<p>
+MWG: MasColell, Whinston and Green 1995; Microeconomic theory; Oxford University Press
+</p>
+
+<p>
+FT: Fudenberg and Tirole 1991; Game theory; MIT Press
+</p>
+
+<p>
+Aumann 1985: What is game theory trying to accomplish?; Frontiers of Economics; <a href="http://www.ma.huji.ac.il/~raumann/pdf/what%20is%20game%20theory.pdf">link</a>
+</p>
+
+<p>
+Gilboa, Itzhak, et al. "Economic models as analogies." The Economic Journal 124.578 (2014): pp.513-533. <a href="http://onlinelibrary.wiley.com/doi/10.1111/ecoj.12128/full">link</a>
+</p>
+
+<p>
+Carlson and van Damme "Global Games and Equilibrium Selection", Econometrica, Vol. 61, No. 5 (Sep., 1993), pp. 989-1018;  <a href="http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2951491">link</a>
+</p>
+
+<p>
+Morris and Shin "Global Games: Theory and Applications", Econometric Society Monographs 35, 2003, 56-114 - Cambridge University Press; <a href="https://www.princeton.edu/~smorris/pdfs/paper_36_Global_Games.pdf">link</a>
+</p>
+
+<p>
+Morris, Stephen, and Hyun Song Shin. "Unique equilibrium in a model of self-fulfilling currency attacks." American Economic Review, Vol. 88, No. 3 (1998): 587-597. <a href="http://www.jstor.org/stable/116850%20">link</a>
+</p>
+
+<p>
+Amir, Rabah. "Supermodularity and complementarity in economics: an elementary survey", Southern Economic Journal, Vol. 71, No. 3 (2005): 636-660. <a href="http://www.jstor.org/stable/20062066%20">link</a>
+</p>
+
+<p>
+Milgrom and Roberts “Rationalizability, Learning, and Equilibrium in Games with Strategic Complementarities”, Econometrica, Vol. 58, No. 6. (Nov., 1990), pp. 1255-1277; <a href="http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2938316">link</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+ <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
+</div>
+</body>
+</html>
