@@ -85,18 +85,18 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 ** Working Papers
 
 Too good to be truthful: Why competent advisers are fired [[./papers/dyn advise reputation/reputation.pdf][paper]] [[./papers/dyn advise reputation/presentation_reputation.pdf][slides]]
-@@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="papers/dyn advise reputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
+@@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://nbviewer.jupyter.org/urls/schottmueller.github.io/papers/dyn%20advise%20reputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
 
 How Jeremy Bentham would defend against coordinated attacks (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/presentation60.pdf][slides]]
 
-Health provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective_contracting_may_2015.pdf][paper]] [[./papers/selective_contracting/presentationEHEW.pdf][slides]], /submitted/
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentationEHEW.pdf][slides]]
 
-Monopoly insurance with endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Insurance-continuum-v2-2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /r&r/  
-@@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/insurance-continuum-sup-matv3-2c.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
+Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /r&r/  
+@@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
 
-Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/Insurance-binary-v2-5.pdf][paper]], /r&r/
+Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /r&r/
 @@html: <br/>
- <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat-v2-2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
+ <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
 
 Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
 
@@ -112,9 +112,9 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 ** University of Copenhagen
 2014- : Mechanism design (MSc) [[https://github.com/schottmueller/mechdes/blob/master/2016.org][course website]] 
 
-2012- : Game theory (MSc) [[https://schottmueller.github.io/gt/gt2015.html][course website]] 
+2012- : Game theory (MSc) [[https://schottmueller.github.io/gt/gt2016.html][course website]] 
 
-2013: Health insurance (MSc Public Health) [[./files/health_insurance/outline.pdf][outline]]
+2013: Health insurance (MSc Public Health) [[./files/outline.pdf][outline]]
 
 My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
 
@@ -126,7 +126,7 @@ My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc).
 #+END_HTML
 * Links
 
-Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/1S7qPdVl_BNG_PREUcDwR9LJI3AMJA9V7conwagvIvok/edit?usp=sharing][spring]], [[https://docs.google.com/spreadsheets/d/1TzqiqlVijRw_hvQEthUFotZGuXbkI6R8mBteYRdHx6E][fall]]
+Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/1S7qPdVl_BNG_PREUcDwR9LJI3AMJA9V7conwagvIvok/edit?usp=sharing][spring]], [[https://docs.google.com/spreadsheets/d/1Br5iljSzsxXUHxd_ES1SEGDxHEcDNw3nf3QYCSW7y9k/edit?usp=sharing][fall]]
 
 
 Institutions I am/was affiliated with or visited in the past:
@@ -141,18 +141,18 @@ Coauthors:
 - [[https://janboone.github.io/homepage/][Jan Boone]]
 - [[http://olejann.net/][Ole Jann]]
 - [[http://www.johanlagerlof.com/][Johan Lagerlöf]]
-- [[http://prufer.net/][Jens Prüfer]]
+# - [[http://prufer.net/][Jens Prüfer]]
 
 
 
 
-Members of my PhD committee:
--  [[https://janboone.github.io/homepage/][Jan Boone]] (advisor)
-- [[http://www.tilburguniversity.edu/webwijs/show/?uid=c.argenton][Cedric Argenton]]
-- [[https://www.tilburguniversity.edu/webwijs/show/eric.vandamme.htm][Eric van Damme]]
-- [[http://researchers-sbe.unimaas.nl/jeanjacquesherings/][Jean-Jacques Herings]]
-- [[http://idei.fr/member.php?i=43][Bruno Jullien]]
-- [[http://www.fgv.br/professor/humberto/English/index.htm][Humberto Moreira]]
+# Members of my PhD committee:
+# - [[https://janboone.github.io/homepage/][Jan Boone]] (advisor)
+# - [[http://www.tilburguniversity.edu/webwijs/show/?uid=c.argenton][Cedric Argenton]]
+# - [[https://www.tilburguniversity.edu/webwijs/show/eric.vandamme.htm][Eric van Damme]]
+# - [[http://researchers-sbe.unimaas.nl/jeanjacquesherings/][Jean-Jacques Herings]]
+# - [[http://idei.fr/member.php?i=43][Bruno Jullien]]
+# - [[http://www.fgv.br/professor/humberto/English/index.htm][Humberto Moreira]]
 
 
 
@@ -161,7 +161,8 @@ Software and IT:
 - How to use OpenPGP [[http://lifehacker.com/180878/how-to-encrypt-your-email][with Thunderbird]] or using [[http://www.mailvelope.com/][webmail]] (like gmail etc.).
 - For graphs, I use the [[http://www.ctan.org/tex-archive/graphics/pgf/][tikz]] package. Jacques Crémer has written an excellent [[http://cremeronline.com/LaTeX/minimaltikz.pdf][mini-introduction]] to tikz. [[http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/][qtikz]] is a nice little software that makes graph creation with tikz even simpler by providing some WYSIWYG feeling.
 - For writing games, the packages provided by [[http://www.economics.utoronto.ca/osborne/latex/][Martin Osborne]] are helpful.
-- I use [[https://www.python.org/][python]] ([[https://www.numpy.org/][numpy]] and [[https://www.scipy.org/][scipy]]) for solving examples numerically. I find the [[http://openopt.org][openopt]] package rather useful. 
+- I use [[http://www.julialang.org][julia]] to solve examples numerically. (In the past, I also used [[https://www.python.org/][python]].)
+
 
 #+BEGIN_HTML
 </div>
