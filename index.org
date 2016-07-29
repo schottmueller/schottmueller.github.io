@@ -64,12 +64,11 @@ OpenPGP:<br/>
 
 ** Publications
 
-Procurement with specialized firms (with Jan Boone) [[./papers/procurement_specialized_firms/procurement_specialized.pdf][wp]], /RAND Journal of Economics/ (accepted for publication)
+Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[http://dx.doi.org/10.1111/ecoj.12242][doi]], forthcoming @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
+
+Procurement with specialized firms (with Jan Boone) [[./papers/procurement_specialized_firms/procurement_specialized.pdf][wp]], /RAND Journal of Economics/ [[https://dx.doi.org/10.1111/1756-2171.12143][doi]], Vol. 47, Fall 2016, pp. 661-687 
 @@html: <br/>
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/procurement_specialized_firms/supplementary4.pdf">here</a> </font></span>@@
-
-
-Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[http://dx.doi.org/10.1111/ecoj.12242][doi]], forthcoming @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
 
 
 Adverse selection without single crossing: monotone solutions,  [[./papers/adv_sel_no_single_crossing/revision3c2.pdf][preprint]] including webappendix, /Journal of Economic Theory/ [[http://dx.doi.org/10.1016/j.jet.2015.04.002][doi]], Vol. 158, July 2015, pp. 127-164
