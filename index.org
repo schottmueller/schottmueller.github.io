@@ -88,7 +88,7 @@ Too good to be truthful: Why competent advisers are fired [[./papers/dyn advise 
 
 How Jeremy Bentham would defend against coordinated attacks (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/presentation60.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
 
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentationEHEW.pdf][slides]]
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]]
 
 Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /r&r/  
 @@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
