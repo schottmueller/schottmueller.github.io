@@ -62,7 +62,27 @@ OpenPGP:<br/>
 /Fields of interest:/ microeconomic theory (contract theory, mechanism design, game theory), health economics
 
 
+** Working Papers
+
+Too good to be truthful: Why competent advisers are fired [[./papers/dyn advise reputation/reputation.pdf][paper]] [[./papers/dyn advise reputation/presentation_reputation.pdf][slides]] [[./papers/dyn advise reputation/presentation_reputation25.pdf][slides25]]
+@@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://nbviewer.jupyter.org/urls/schottmueller.github.io/papers/dyn%20advise%20reputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
+
+How Jeremy Bentham would defend against coordinated attacks (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/presentation60.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
+
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]]
+
+Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
+
+
 ** Publications
+
+Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /International Economic Review/, accepted for publication  
+@@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
+
+Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/, accepted for publication
+@@html: <br/>
+ <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
+
 
 Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[http://dx.doi.org/10.1111/ecoj.12242][doi]], forthcoming @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
 
@@ -80,24 +100,6 @@ Correlated equilibria in homogeneous good Bertrand competition (with Ole Jann), 
 
 Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_doctors/revision2b.pdf][preprint]], [[./papers/cost_incentives_doctors/cost_incentives_for_doctors.html][Q & A]], /European Economic Review/ [[http://dx.doi.org/10.1016/j.euroecorev.2013.03.001][doi]], Vol. 61, July 2013, pp. 43-58 
 
-
-** Working Papers
-
-Too good to be truthful: Why competent advisers are fired [[./papers/dyn advise reputation/reputation.pdf][paper]] [[./papers/dyn advise reputation/presentation_reputation.pdf][slides]] [[./papers/dyn advise reputation/presentation_reputation25.pdf][slides25]]
-@@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://nbviewer.jupyter.org/urls/schottmueller.github.io/papers/dyn%20advise%20reputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
-
-How Jeremy Bentham would defend against coordinated attacks (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/presentation60.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
-
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentationEHEW.pdf][slides]]
-
-Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /r&r/  
-@@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
-
-Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /r&r/
-@@html: <br/>
- <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
-
-Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
 
 #+BEGIN_HTML
 </div>
