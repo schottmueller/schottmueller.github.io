@@ -85,7 +85,7 @@
 \author{Christoph Schottmüller}
 \institute{University of Copenhagen}
 \title{Game Theory\\ Lecture 1:\\ Decision making under uncertainty and expected utility theorem\footnote{This presentation is licensed under a \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-ShareAlike 4.0 International License.}}}
-\date{September 2, 2015}
+\date{}
 
 \newcommand{\fr}{\frame[allowframebreaks]}
 \newcommand{\ft}{\frametitle}
@@ -126,7 +126,7 @@ contract theory, mechanism design, game theory, industrial organization, health 
 
 \frame[allowframebreaks]{\ft{Course}
 \begin{itemize}
-\item course website:\\ \url{https://schottmueller.github.io/gt/gt2015.html}
+\item course website:\\ \url{https://schottmueller.github.io/gt/gt2016.html}
 
 \framebreak
 
@@ -192,7 +192,7 @@ is quite helpful
    \item corporate finance theory
    \item \dots
   \end{itemize}
-\item lecture schedule: \url{https://schottmueller.github.io/gt/lectureplan2015.html}%\href{run:/home/christoph/SpiderOak Hive/game theory/lectureplan2014.html}{course plan}
+\item lecture schedule: \url{https://schottmueller.github.io/gt/lectureplan2016.html}%\href{run:/home/christoph/SpiderOak Hive/game theory/lectureplan2014.html}{course plan}
 \end{itemize}
 }
 
@@ -208,6 +208,10 @@ is quite helpful
   \item Fudenberg and Tirole ``Game Theory''
   \item Mas-Colell, Whinston, Greene ``Microeconomic Theory''
   \end{itemize}
+  \item 2 handouts (notation, maths)
+    \begin{itemize}
+    \item read before next lecture
+    \end{itemize}
   \item (parts of) a few papers (links on course website)
   \end{itemize}
 }
@@ -271,7 +275,7 @@ D   &3,0   & 1,1
 \begin{itemize}
 \item  What do the numbers in the game table actually mean?
 \item What if the other player plays $C$ and $D$ with 50\% probability? How to evaluate that?
- \item can we model a rational decision maker as utility maximizer?
+ \item can we model a rational decision maker as expected utility maximizer?
 \end{itemize}
 
 \framebreak
@@ -288,7 +292,11 @@ D   &3,0   & 1,1
 
 \framebreak
 
-  \item we start from preferences (rationality seems to imply that you know what you want)
+  \item we start from ``preferences'' (rationality seems to imply that you know what you want)
+    \begin{itemize}
+    \item preferences are a representation of (hypothetical) choice (which is the true primitive)
+    \item preferences do not denote ``happiness'' or anything like this (unless you assume that agents always choose what makes them ``most happy'')
+    \end{itemize}
   \item the decision maker has a \emph{complete and transitive} preference relation $\succeq$  on the set of all simple lotteries
   \end{itemize}
 \end{itemize}
@@ -346,7 +354,7 @@ $$L\succeq L' \quad\text{ if and only if }\quad \alpha L+(1-\alpha) L''\succeq \
   \item 0 \$
   \end{enumerate}
 An individual prefers the lottery $L_1=(0.1,0.8,0.1)$ to the lottery $L_1'=(0,1,0)$.\\
-If the independence axiom is satisfied (as well as transitivity and monotonicity), can we say which of the following lotteries the individual prefers?\\
+If the independence axiom is satisfied (as well as transitivity and completeness), can we say which of the following lotteries the individual prefers?\\
 $L_2=(0.55,0.4,0.05)\qquad L_2'=(0.5,0.5,0)$
 \par
 % Answer: $L_1\succ L_1'$ hence $0.5 L_1+0.5 L_3\succ 0.5 L_1'+0.5 L_3$; now take $L_3=(1,0,0)$, then the last expression says $L_2\succ L_2'$.
@@ -493,7 +501,7 @@ Back to motivation:
 \begin{itemize}
 \item  What do these numbers in the game table actually mean?
 \item What if the other player plays $C$ and $D$ with 50\% probability? How to evaluate that?
-\item can we model a rational decision maker as utility maximizer?
+\item can we model a rational decision maker as expected utility maximizer?
 \end{itemize}
   \begin{table}[h]
 \centering
@@ -521,7 +529,7 @@ D   &3,0   & 1,1
   \item Why are von Neumann - Morgenstern utility functions important for game theory?
   \end{itemize}
 reading: MWG p. 167--178 or (alternatively) MSZ p. 9--23\\
-* reading: Aumann ``What is Game Theory trying to accomplish?'' (link on website), MWG p. 178--182
+* reading: Gilboa, Itzhak, et al. ``Economic models as analogies.'' (link on website), MWG p. 178--182
 }
 
 \frame[allowframebreaks]{\ft{Exercises}
@@ -536,14 +544,25 @@ What is the probability that the outcome ``1'' occurs in the compound lottery $(
   \item 0 \$
   \end{enumerate}
 An individual prefers the lottery $L_1=(0.1,0.8,0.1)$ to the lottery $L_1'=(0,1,0)$.\\
-If the independence axiom is satisfied (as well as transitivity and monotonicity), which of the following lotteries does the individual prefer?\\
+If the independence axiom is satisfied (as well as transitivity and completeness), which of the following lotteries does the individual prefer?\\
 $L_2=(0.35,0.6,0.05)\qquad L_2'=(0.3,0.7,0)$
-\item Prove the strict preference part of the lemma on slide 17.
+\item Prove the strict preference part of the lemma on slide 19.
   \end{enumerate}
 }
 
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -567,7 +586,7 @@ Computing in this way, we get that the reduced lottery is $(5/24,5/24,7/48,7/48,
   \item 0 \$
   \end{enumerate}
 An individual prefers the lottery $L_1=(0.1,0.8,0.1)$ to the lottery $L_1'=(0,1,0)$.\\
-If the independence axiom is satisfied (as well as transitivity and monotonicity), can we say which of the following lotteries the individual prefers?\\
+If the independence axiom is satisfied (as well as transitivity and completeness), can we say which of the following lotteries the individual prefers?\\
 $L_2=(0.35,0.6,0.05)\qquad L_2'=(0.3,0.7,0)$
 \par
 % Answer: $L_1\succ L_1'$ hence $0.5 L_1+0.5 L_3\succ 0.5 L_1'+0.5 L_3$; now take $L_3=(0.6,0.4,0)$, then the last expression says $L_2\succ L_2'$.
