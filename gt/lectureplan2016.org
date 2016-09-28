@@ -110,6 +110,8 @@ Aumann 1985: What is game theory trying to accomplish?; Frontiers of Economics; 
 
 Gilboa, Itzhak, et al. "Economic models as analogies." The Economic Journal 124.578 (2014): pp.513-533. [[http://onlinelibrary.wiley.com/doi/10.1111/ecoj.12128/full][link]]
 
+Jann, Ole, and Christoph Schottmüller. "Correlated equilibria in homogeneous good Bertrand competition." Journal of Mathematical Economics 57 (2015): 31-37. [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][link]]
+
 Carlson and van Damme "Global Games and Equilibrium Selection", Econometrica, Vol. 61, No. 5 (Sep., 1993), pp. 989-1018;  [[http://www.jstor.org.ep.fjernadgang.kb.dk/stable/2951491][link]]
 
 Morris and Shin "Global Games: Theory and Applications", Econometric Society Monographs 35, 2003, 56-114 - Cambridge University Press; [[https://www.princeton.edu/~smorris/pdfs/paper_36_Global_Games.pdf][link]]
