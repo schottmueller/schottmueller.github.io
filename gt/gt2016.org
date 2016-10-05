@@ -44,6 +44,7 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 ** Handouts
 - [[./math_gt.pdf][Math]] for Game Theory
 - [[./gt_notation.pdf][Notation]] and preliminaries
+- [[./refinements.pdf][Refinements]] in normal form games (by Hans Keiding)
 
 ** Lectures
 - L01: [[./L01_expectedU/lecture01_expected_utility.pdf][slides]], [[./L01_expectedU/lottery_comp.html][extra]]
