@@ -31,8 +31,7 @@ Lectures: Wednesday 12.00-15.00 in CSS 25-01-53
 If you have not taken Micro C (or forgotten most of it...), you should (re-)read chapters 1.1-1.3.A, 2.1 and 3.1, 3.2 in Robert Gibbons' Game Theory book before the course starts.
 
 ** Midterm
-The midterm is a take home exam. You have to pass the midterm in order to be admitted to the final exam. The midterm should be done in groups of up to three people.  You have the weeks 42 and 43 (last two weeks of October) to work on the midterm. The midterm exercises will be posted here.
-# [[./midterm.pdf][Midterm]]
+The midterm is a take home exam. You have to pass the midterm in order to be admitted to the final exam. The midterm should be done in groups of up to three people.  You have the weeks 42 and 43 (last two weeks of October) to work on the midterm. The midterm exercises are here: [[./midterm.pdf][Midterm]]
 
 # Here is a [[./passed_midterm_15_web.xls][list]] with students that are admitted to the final exam. Please, check whether you are on it and contact me if you are not (though you think you should).
 
@@ -55,9 +54,12 @@ The final is an oral exam (with 20 minutes closed book preparation time).
 - L05:  [[./L07_refinements/perfect.pdf][slides]], [[./L07_refinements/perfect.html][extra]] 
 - L06: [[./L07_refinements/extensive_refinements.pdf][slides]]
 - L07: [[./L06_supermodular/supermodular.pdf][slides]], [[./L06_supermodular/iasus.html][extra]]
-# - L08: discussing the midterm, handout [[./solution_midterm_ex2.pdf][ex 2]]
-# - L10/11: [[./L10_11_knowledge/knowledge.pdf][slides]], [[./L10_11_knowledge/knowledge.html][extra]]
-# - L12: [[./L12_global/global_games.pdf][slides]], [[./L12_global/global_iter.html][extra]]
+- L08: discussing the midterm 
+# , handout [[./solution_midterm_ex2.pdf][ex 2]]
+- L09/10: [[./L10_11_knowledge/knowledge.pdf][slides]], [[./L10_11_knowledge/knowledge.html][extra]]
+- L11: [[./L12_global/global_games.pdf][slides]], [[./L12_global/global_iter.html][extra]]
+- L12: [[./hardEvidence/hardEvidence.pdf][slides]]
+- L13: [[./L14_social_choice/sc.pdf][slides]]
 
 
 ** Comment on extra material
