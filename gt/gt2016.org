@@ -30,6 +30,9 @@ Lectures: Wednesday 12.00-15.00 in CSS 25-01-53
 
 If you have not taken Micro C (or forgotten most of it...), you should (re-)read chapters 1.1-1.3.A, 2.1 and 3.1, 3.2 in Robert Gibbons' Game Theory book before the course starts.
 
+** Internal Evaluation
+[[./InternalEval2016GT.pdf][Here]] are the results of the internal evaluation.
+
 ** Midterm
 The midterm is a take home exam. You have to pass the midterm in order to be admitted to the final exam. The midterm should be done in groups of up to three people.  You have the weeks 42 and 43 (last two weeks of October) to work on the midterm. The midterm exercises are here: [[./midterm.pdf][Midterm]]
 
