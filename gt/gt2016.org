@@ -36,7 +36,9 @@ If you have not taken Micro C (or forgotten most of it...), you should (re-)read
 ** Midterm
 The midterm is a take home exam. You have to pass the midterm in order to be admitted to the final exam. The midterm should be done in groups of up to three people.  You have the weeks 42 and 43 (last two weeks of October) to work on the midterm. The midterm exercises are here: [[./midterm.pdf][Midterm]]
 
-# Here is a [[./passed_midterm_15_web.xls][list]] with students that are admitted to the final exam. Please, check whether you are on it and contact me if you are not (though you think you should).
+ Here is a [[./Holdliste Game Theory web.xlsx][list]] with students that are admitted to the final exam. Please, check whether you are on it and contact me if you are not (though you think you should).
+
+[[./solution_midterm_ex2.pdf][Here]] is a (rather convoluted) solution for exercise 2b that uses the iterative elimination of strictly dominated strategies.
 
 ** Final Exam
 The final is an oral exam (with 20 minutes closed book preparation time). 
