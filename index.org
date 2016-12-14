@@ -62,6 +62,8 @@ OpenPGP:<br/>
 
 ** Working Papers
 
+Competing with big data (with Jens Prüfer) (available upon request)
+
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]]
 
 Too good to be truthful: Why competent advisers are fired [[./papers/dyn advise reputation/reputation.pdf][paper]] [[./papers/dyn advise reputation/presentation_reputation.pdf][slides]] [[./papers/dyn advise reputation/presentation_reputation25.pdf][slides25]]
@@ -111,7 +113,7 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 * Teaching
 
 ** University of Copenhagen
-2014- : Mechanism design (MSc) [[https://github.com/schottmueller/mechdes/blob/master/2016.org][course website]] 
+2014- : Mechanism design (MSc) [[https://github.com/MechDes/2017/blob/master/index.org][course website]] 
 
 2012- : Game theory (MSc) [[https://schottmueller.github.io/gt/gt2016.html][course website]] 
 
@@ -142,7 +144,7 @@ Coauthors:
 - [[https://janboone.github.io/homepage/][Jan Boone]]
 - [[http://olejann.net/][Ole Jann]]
 - [[http://www.johanlagerlof.com/][Johan Lagerlöf]]
-# - [[http://prufer.net/][Jens Prüfer]]
+- [[http://prufer.net/][Jens Prüfer]]
 
 
 
