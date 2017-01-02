@@ -64,8 +64,6 @@ OpenPGP:<br/>
 
 Competing with big data (with Jens Prüfer) (available upon request)
 
-An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]]
-
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/tilburg.pdf][slides]]
 
 Too good to be truthful: Why competent advisers are fired [[./papers/dyn advise reputation/reputation.pdf][paper]] [[./papers/dyn advise reputation/presentation_reputation.pdf][slides]] [[./papers/dyn advise reputation/presentation_reputation25.pdf][slides25]]
