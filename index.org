@@ -62,7 +62,7 @@ OpenPGP:<br/>
 
 ** Working Papers
 
-Competing with big data (with Jens Prüfer) (available upon request)
+Competing with big data (with Jens Prüfer) (available upon request) [[./papers/tipping/TippingNumeric.zip][numerics]]
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/tilburg.pdf][slides]]
 
@@ -177,6 +177,8 @@ Software and IT:
 * Miscellaneous
 ** Code
 I have written some python code to solve school choice matching problems as well as some simple programs to solve finite strategic form games of complete information. Both can be found on [[https://github.com/schottmueller/gametheory][github]]. Neither is computationally fast as both were only made for teaching purposes. Check the .org files as they contain lots of explanations.
+
+For some of my papers, I used [[https://julialang.org][julia]] for numerical analysis.
 
 ** Presentations
 - Economics of Privacy [[./misc/slides3.odp][slides]]
