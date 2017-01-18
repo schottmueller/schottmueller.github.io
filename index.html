@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-01-03 Tue 09:01 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-01-18 Wed 09:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Christoph Schottmüller</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Christoph Schottmüller" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christoph Schottmüller" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,6 +176,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <script type="text/javascript">
@@ -144,61 +229,71 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Christoph Schottmüller</h1>
-<head>
-<meta name="description" content="Personal website of Christoph Schottmüller">
-<meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Copenhagen, Tilburg, Economics, University">
-<meta content="en-gb" http-equiv="Content-Language">
-<style type="text/css">
-<!--
+<div class="HTML">
+<p>
+&lt;head&gt;
+&lt;meta name="description" content="Personal website of Christoph Schottmüller"&gt;
+&lt;meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Copenhagen, Tilburg, Economics, University"&gt;
+&lt;meta content="en-gb" http-equiv="Content-Language"&gt;
+&lt;style type="text/css"&gt;
+&lt;!&#x2013;
 .tab { margin-left: 20px; }
 .tab160 { margin-left: 160px; }
 .tab180 { margin-left: 180px; }
 body {background-color : #F0F0F0; font-face: "Open Sans", Arial, Helvetica, sans-serif;}
 h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top:-5px; margin-bottom:-10px; }
--->
-</style>
-</head>
-
-
-<span style="float: right;">
-[<a href="#research">research</a>] [<a href="#teaching">teaching</a>] [<a href="#links">links</a>] 
-</span>
-<hr style="clear:both"/>
-<section id="contact">
-<p style="float: left;">
-<img src="./profile.png" alt="Profile Picture"  width="156px" style="border:5px double #777777">
+&#x2013;&gt;
+&lt;/style&gt;
+&lt;/head&gt;
 </p>
-<div class="tab180">
-<br/>
-I am assistant professor at the University of Copenhagen.
-<p>
-address: <br/>   
-    <span class="tab"> Department of Economics </span> <br/>
-    <span class="tab"> University of Copenhagen </span> <br/>
-    <span class="tab"> &Oslash;ster Farimagsgade 5, building 26 </span> <br/>
-    <span class="tab"> DK-1353 Copenhagen K </span> 
-</p>
-office: 26.1.16 <br/>
-phone: +45 35 32 30 87<br/>
-email: [first name] [dot] schottmueller [at] econ [dot] ku [dot] dk  <br/>
-OpenPGP:<br/>
-   <span class="tab">fingerprint: 334F EC88 1845 975B 8C43 AF9B AAF0 4B91 85F0 9B43</span> <br/>
-<span class="tab">public key <a href="files/Christoph_Schottmueller_0x85F09B43_pub.asc">here</a></span> <br/>
-<br/>
-<b> <a href="cv.pdf">CV</a> </b>
+
 </div>
-</section>
-<hr style="clear:both"/>
-<section id="research">
+
+
+<div class="HTML">
+<p>
+&lt;span style="float: right;"&gt;
+[&lt;a href="#research"&gt;research&lt;/a&gt;] [&lt;a href="#teaching"&gt;teaching&lt;/a&gt;] [&lt;a href="#links"&gt;links&lt;/a&gt;] 
+&lt;/span&gt;
+&lt;hr style="clear:both"/&gt;
+&lt;section id="contact"&gt;
+&lt;p style="float: left;"&gt;
+&lt;img src="./profile.png" alt="Profile Picture"  width="156px" style="border:5px double #777777"&gt;
+&lt;/p&gt;
+&lt;div class="tab180"&gt;
+&lt;br/&gt;
+I am assistant professor at the University of Copenhagen.
+&lt;p&gt;
+address: &lt;br/&gt;   
+    &lt;span class="tab"&gt; Department of Economics &lt;/span&gt; &lt;br/&gt;
+    &lt;span class="tab"&gt; University of Copenhagen &lt;/span&gt; &lt;br/&gt;
+    &lt;span class="tab"&gt; &amp;Oslash;ster Farimagsgade 5, building 26 &lt;/span&gt; &lt;br/&gt;
+    &lt;span class="tab"&gt; DK-1353 Copenhagen K &lt;/span&gt; 
+&lt;/p&gt;
+office: 26.1.16 &lt;br/&gt;
+phone: +45 35 32 30 87&lt;br/&gt;
+email: [first name] [dot] schottmueller [at] econ [dot] ku [dot] dk  &lt;br/&gt;
+OpenPGP:&lt;br/&gt;
+   &lt;span class="tab"&gt;fingerprint: 334F EC88 1845 975B 8C43 AF9B AAF0 4B91 85F0 9B43&lt;/span&gt; &lt;br/&gt;
+&lt;span class="tab"&gt;public key &lt;a href="files/Christoph<sub>Schottmueller</sub><sub>0x85F09B43</sub><sub>pub.asc</sub>"&gt;here&lt;/a&gt;&lt;/span&gt; &lt;br/&gt;
+&lt;br/&gt;
+&lt;b&gt; &lt;a href="cv.pdf"&gt;CV&lt;/a&gt; &lt;/b&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr style="clear:both"/&gt;
+&lt;section id="research"&gt;
+</p>
+
+</div>
 
 
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3">Research</h2>
-<div class="outline-text-2" id="text-orgheadline3">
-</div><div id="outline-container-orgheadline1" class="outline-3">
-<h3 id="orgheadline1">Working Papers</h3>
-<div class="outline-text-3" id="text-orgheadline1">
+<div id="outline-container-org3445c2f" class="outline-2">
+<h2 id="org3445c2f">Research</h2>
+<div class="outline-text-2" id="text-org3445c2f">
+</div><div id="outline-container-org5ad4824" class="outline-3">
+<h3 id="org5ad4824">Working Papers</h3>
+<div class="outline-text-3" id="text-org5ad4824">
 <p>
 Competing with big data (with Jens Prüfer) (available upon request) <a href="./papers/tipping/TippingNumeric.zip">numerics</a>
 </p>
@@ -227,23 +322,23 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) <a href="./pa
 </div>
 
 
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2">Publications</h3>
-<div class="outline-text-3" id="text-orgheadline2">
+<div id="outline-container-orgd3afac1" class="outline-3">
+<h3 id="orgd3afac1">Publications</h3>
+<div class="outline-text-3" id="text-orgd3afac1">
 <p>
 Monopoly insurance and endogenous information (with Johan Lagerlöf) <a href="./papers/endogenous_info/Continuum-Round2-v2.pdf"">paper</a> <a href="./papers/endogenous_info/EEA.pdf">slides</a>, <i>International Economic Review</i>, accepted for publication  
  <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> 
 </p>
 
 <p>
-Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) <a href="./papers/endogenous_info/insurance-binary.pdf">paper</a>, <i>Scandinavian Journal of Economics</i>, accepted for publication
+Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) <a href="./papers/endogenous_info/insurance-binary.pdf">paper</a>,<a href="https://dx.doi.org/10.1111/sjoe.12231">doi</a> <i>Scandinavian Journal of Economics</i>, accepted for publication
  <br/>
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>
 </p>
 
 
 <p>
-Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), <a href="./papers/health_insurance_no_sc/health_no_sc_2013.pdf">wp</a> <a href="./papers/health_insurance_no_sc/health_ins_no_sc_web.html"> Q &amp; A</a>, <i>Economic Journal</i> <a href="http://dx.doi.org/10.1111/ecoj.12242">doi</a>, forthcoming  <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>
+Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), <a href="./papers/health_insurance_no_sc/health_no_sc_2013.pdf">wp</a> <a href="./papers/health_insurance_no_sc/health_ins_no_sc_web.html"> Q &amp; A</a>, <i>Economic Journal</i> <a href="https://dx.doi.org/10.1111/ecoj.12242">doi</a>, forthcoming  <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>
 </p>
 
 <p>
@@ -269,20 +364,25 @@ Cost incentives for doctors: A double-edged sword, <a href="./papers/cost_incent
 </p>
 
 
+<div class="HTML">
+<p>
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr style="clear:both"/&gt;
+&lt;section id="teaching"&gt;
+</p>
+
 </div>
-</section>
-<hr style="clear:both"/>
-<section id="teaching">
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5">Teaching</h2>
-<div class="outline-text-2" id="text-orgheadline5">
-</div><div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4">University of Copenhagen</h3>
-<div class="outline-text-3" id="text-orgheadline4">
+<div id="outline-container-org1d5e190" class="outline-2">
+<h2 id="org1d5e190">Teaching</h2>
+<div class="outline-text-2" id="text-org1d5e190">
+</div><div id="outline-container-org098f7c9" class="outline-3">
+<h3 id="org098f7c9">University of Copenhagen</h3>
+<div class="outline-text-3" id="text-org098f7c9">
 <p>
 2014- : Mechanism design (MSc) <a href="https://github.com/MechDes/2017/blob/master/index.org">course website</a> 
 </p>
@@ -299,16 +399,21 @@ Cost incentives for doctors: A double-edged sword, <a href="./papers/cost_incent
 My <a href="./thesis_guidelines.html">guidelines</a> for thesis supervision (Ba and MSc). Please, read before contacting me.
 </p>
 
+<div class="HTML">
+<p>
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr style="clear:both"/&gt;
+&lt;section id="links"&gt;
+</p>
+
 </div>
-</section>
-<hr style="clear:both"/>
-<section id="links">
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6">Links</h2>
-<div class="outline-text-2" id="text-orgheadline6">
+<div id="outline-container-orgf620eeb" class="outline-2">
+<h2 id="orgf620eeb">Links</h2>
+<div class="outline-text-2" id="text-orgf620eeb">
 <p>
 Schedule for the micro seminar: <a href="https://docs.google.com/spreadsheets/d/1S7qPdVl_BNG_PREUcDwR9LJI3AMJA9V7conwagvIvok/edit?usp=sharing">spring</a>, <a href="https://docs.google.com/spreadsheets/d/1Br5iljSzsxXUHxd_ES1SEGDxHEcDNw3nf3QYCSW7y9k/edit?usp=sharing">fall</a>
 </p>
@@ -346,36 +451,41 @@ Software and IT:
 <li>How to use OpenPGP <a href="http://lifehacker.com/180878/how-to-encrypt-your-email">with Thunderbird</a> or using <a href="http://www.mailvelope.com/">webmail</a> (like gmail etc.).</li>
 <li>For graphs, I use the <a href="http://www.ctan.org/tex-archive/graphics/pgf/">tikz</a> package. Jacques Crémer has written an excellent <a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">mini-introduction</a> to tikz. <a href="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/">qtikz</a> is a nice little software that makes graph creation with tikz even simpler by providing some WYSIWYG feeling.</li>
 <li>For writing games, the packages provided by <a href="http://www.economics.utoronto.ca/osborne/latex/">Martin Osborne</a> are helpful.</li>
-<li>I use <a href="http://www.julialang.org/">julia</a> to solve examples numerically. (In the past, I also used <a href="https://www.python.org/">python</a>.)</li>
+<li>I use <a href="http://www.julialang.org">julia</a> to solve examples numerically. (In the past, I also used <a href="https://www.python.org/">python</a>.)</li>
 </ul>
 
 
+<div class="HTML">
+<p>
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;hr style="clear:both"/&gt;
+&lt;section id="misc"&gt;
+</p>
+
 </div>
-</section>
-<hr style="clear:both"/>
-<section id="misc">
 </div>
 </div>
 
-<div id="outline-container-orgheadline9" class="outline-2">
-<h2 id="orgheadline9">Miscellaneous</h2>
-<div class="outline-text-2" id="text-orgheadline9">
-</div><div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7">Code</h3>
-<div class="outline-text-3" id="text-orgheadline7">
+<div id="outline-container-orgecb99e5" class="outline-2">
+<h2 id="orgecb99e5">Miscellaneous</h2>
+<div class="outline-text-2" id="text-orgecb99e5">
+</div><div id="outline-container-org07d9268" class="outline-3">
+<h3 id="org07d9268">Code</h3>
+<div class="outline-text-3" id="text-org07d9268">
 <p>
 I have written some python code to solve school choice matching problems as well as some simple programs to solve finite strategic form games of complete information. Both can be found on <a href="https://github.com/schottmueller/gametheory">github</a>. Neither is computationally fast as both were only made for teaching purposes. Check the .org files as they contain lots of explanations.
 </p>
 
 <p>
-For some of my papers, I used <a href="https://julialang.org/">julia</a> for numerical analysis.
+For some of my papers, I used <a href="https://julialang.org">julia</a> for numerical analysis.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8">Presentations</h3>
-<div class="outline-text-3" id="text-orgheadline8">
+<div id="outline-container-orgd65a662" class="outline-3">
+<h3 id="orgd65a662">Presentations</h3>
+<div class="outline-text-3" id="text-orgd65a662">
 <ul class="org-ul">
 <li>Economics of Privacy <a href="./misc/slides3.odp">slides</a></li>
 <li>Hart "A theory of firm scope" QJE 2010 <a href="./misc/IO_reading_group_Hart.pdf">slides</a></li>

@@ -81,12 +81,12 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /International Economic Review/, accepted for publication  
 @@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
 
-Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/, accepted for publication
+Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]],[[https://dx.doi.org/10.1111/sjoe.12231][doi]] /Scandinavian Journal of Economics/, accepted for publication
 @@html: <br/>
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
 
 
-Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[http://dx.doi.org/10.1111/ecoj.12242][doi]], forthcoming @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
+Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[https://dx.doi.org/10.1111/ecoj.12242][doi]], forthcoming @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
 
 Procurement with specialized firms (with Jan Boone) [[./papers/procurement_specialized_firms/procurement_specialized.pdf][wp]], /RAND Journal of Economics/ [[https://dx.doi.org/10.1111/1756-2171.12143][doi]], Vol. 47, Fall 2016, pp. 661-687 
 @@html: <br/>
