@@ -5,7 +5,7 @@
 #+OPTIONS: html-postamble:nil
 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <head>
 <meta name="description" content="Personal website of Christoph Schottmüller">
 <meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Copenhagen, Tilburg, Economics, University">
@@ -20,10 +20,10 @@ h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, se
 -->
 </style>
 </head>
-#+END_HTML
+#+END_EXPORT
 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 <span style="float: right;">
 [<a href="#research">research</a>] [<a href="#teaching">teaching</a>] [<a href="#links">links</a>] 
 </span>
@@ -54,7 +54,7 @@ OpenPGP:<br/>
 </section>
 <hr style="clear:both"/>
 <section id="research">
-#+END_HTML
+#+END_EXPORT
 
 
 
@@ -103,12 +103,12 @@ Correlated equilibria in homogeneous good Bertrand competition (with Ole Jann), 
 Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_doctors/revision2b.pdf][preprint]], [[./papers/cost_incentives_doctors/cost_incentives_for_doctors.html][Q & A]], /European Economic Review/ [[http://dx.doi.org/10.1016/j.euroecorev.2013.03.001][doi]], Vol. 61, July 2013, pp. 43-58 
 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 </div>
 </section>
 <hr style="clear:both"/>
 <section id="teaching">
-#+END_HTML
+#+END_EXPORT
 
 * Teaching
 
@@ -121,12 +121,12 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 </div>
 </section>
 <hr style="clear:both"/>
 <section id="links">
-#+END_HTML
+#+END_EXPORT
 * Links
 
 Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/1S7qPdVl_BNG_PREUcDwR9LJI3AMJA9V7conwagvIvok/edit?usp=sharing][spring]], [[https://docs.google.com/spreadsheets/d/1Br5iljSzsxXUHxd_ES1SEGDxHEcDNw3nf3QYCSW7y9k/edit?usp=sharing][fall]]
@@ -167,12 +167,12 @@ Software and IT:
 - I use [[http://www.julialang.org][julia]] to solve examples numerically. (In the past, I also used [[https://www.python.org/][python]].)
 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT html
 </div>
 </section>
 <hr style="clear:both"/>
 <section id="misc">
-#+END_HTML
+#+END_EXPORT
 
 * Miscellaneous
 ** Code
