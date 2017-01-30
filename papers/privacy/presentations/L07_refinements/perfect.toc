@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {2}{Perfect equilibrium in strategic form games}{3}{0}{1}

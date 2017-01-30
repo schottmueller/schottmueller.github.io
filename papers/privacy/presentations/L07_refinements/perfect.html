@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Perfect equilibrium in strategic form games</title>
+<!-- 2015-08-14 Fri 09:20 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Christoph Schottmueller" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Perfect equilibrium in strategic form games</h1>
+<p>
+We will use the third definition of perfect equilibrium that we used in the lecture.
+</p>
+
+
+
+<div class="definition">
+<p>
+<b>Definition:</b> <i>&alpha; is the limit of a sequence (&alpha;(&epsilon; ))<sub>&epsilon; &rarr; 0</sub> of completely mixed strategies such that \(\alpha\) is a best response to &alpha;(&epsilon;) for &epsilon;  small enough.</i>
+</p>
+
+</div>
+
+<p>
+Let us start with a Nash equilibrium &alpha;. Say we could for each player i find a completely mixed strategy &beta;<sub>i</sub> such that &alpha;<sub>i</sub> is a best response to (1-&epsilon;)&alpha;<sub>-i</sub>+&epsilon;&beta;<sub>-i</sub> for &epsilon;&gt;0 small enough. In this case, &alpha; has to be a perfect equilibrium: Since &alpha; is a Nash equilibrium &alpha;<sub>i</sub> is a best response to &alpha;<sub>-i</sub>. But then &alpha;<sub>i</sub> will also be a best response to (1-&epsilon;')&alpha;<sub>-i</sub>+&epsilon;'&beta;<sub>-i</sub> for &epsilon;'&lt;&epsilon; and the definition above gives the result.
+</p>
+
+<p>
+All we have to do to verify that a given equilibrium is perfect is therefore to find a suitable &epsilon; and &beta;. Below is a little program that tries exactly this. We use the simplest possible example.
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+<caption class="t-above"><span class="table-number">Table 1:</span> Example</caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">L</th>
+<th scope="col" class="left">R</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">U</td>
+<td class="left">1,1</td>
+<td class="left">0,0</td>
+</tr>
+
+<tr>
+<td class="left">D</td>
+<td class="left">0,0</td>
+<td class="left">0,0</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">from</span> operator <span style="color: #859900;">import</span> add, mul, sub
+<span style="color: #859900;">from</span> openopt <span style="color: #859900;">import</span> SNLE, GLP
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">simple 2x2 example</span>
+<span style="color: #268bd2;">game</span> = [[(1,1),(0,0)],[(0,0),(0,0)]]
+<span style="color: #268bd2;">alpha</span> = [(0.,1.),(0.,1.)]
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">adding a strictly dominated action to 2x2 example changes outcome</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">game = [[(1,1),(0,0),(-2,-1)],[(0,0),(0,0),(-2,0)],[(-1,-2),(0,-2),(-2,-2)]]</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">alpha = [(0.,1.,0.),(0.,1.,0.)]</span>
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">3 player example: no perfect eq despite no weakly dominated strat</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">game = [[[(1,1,1),(1,1,1)],[(1,0,1),(0,0,1)]], [[(1,0,0),(0,1,0)],[(0,1,2),(1,0,0)]]]</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">alpha = [(0.,1.),(1.,0.),(1.,0.)]</span>
+
+<span style="color: #268bd2;">n</span> = <span style="color: #859900;">len</span>(alpha) <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">number of players</span>
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">if called with args (game,strat,1.0,n-1) help returns a list of lists</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">where each inner list corresponds to an action profile</span>
+<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">and contains the expected utility contribution of this action profile</span>
+<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">for each player given that the players use strategies "strat"</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">help</span>(subgame,strat,prob,j):
+    <span style="color: #268bd2;">x</span> = []
+    <span style="color: #859900;">if</span> <span style="color: #859900;">type</span>(subgame)==<span style="color: #859900;">tuple</span>: <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">in this case prob is the prob of the action profile corresponding to the tuple subgame</span>
+        <span style="color: #268bd2;">temp</span> = [item*prob <span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> subgame]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">makes a list of EU contributions from this action profile</span>
+        <span style="color: #859900;">return</span> temp
+    <span style="color: #859900;">else</span>:
+        <span style="color: #268bd2;">i</span> = 0
+        <span style="color: #859900;">while</span> i &lt; <span style="color: #859900;">len</span>(subgame):<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">go through all actions of a player and weight every action according to player j's mixed strategy</span>
+            <span style="color: #268bd2;">y</span> = <span style="color: #859900;">help</span>(subgame[i], strat,prob*strat[j][i],j-1)
+            <span style="color: #859900;">if</span> <span style="color: #859900;">type</span>(y[0])==<span style="color: #859900;">list</span>:
+                <span style="color: #268bd2;">x</span> = x + y
+            <span style="color: #859900;">else</span>:
+                x.append(y)
+            <span style="color: #268bd2;">i</span> = i+1
+    <span style="color: #859900;">return</span> x
+
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">given a mixed strategy for every player, EU returns the expected utiliy of all players</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">EU</span>(strat):
+    <span style="color: #268bd2;">temp</span> = [0.]*n
+    <span style="color: #268bd2;">payoffs</span> = <span style="color: #859900;">help</span>(game,strat,1.0,n-1)
+    <span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> payoffs:
+        <span style="color: #268bd2;">temp</span> = <span style="color: #859900;">map</span>(add,temp,item)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">elementwise addition</span>
+    <span style="color: #859900;">return</span> temp
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">given a mixed strategy profile, returns best response utilities of all players</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">brU</span>(strat):
+    <span style="color: #268bd2;">out</span> = []
+    <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
+        <span style="color: #268bd2;">xmini</span> = strat[:i]
+        <span style="color: #268bd2;">xplusi</span> = strat[i+1:]
+        <span style="color: #268bd2;">ui</span> = -1000.<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this initialization assumes that all payoffs are above -1000</span>
+        <span style="color: #859900;">for</span> act <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(<span style="color: #859900;">len</span>(alpha[i])):<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">calculates EU for each action of Pi to get br utility</span>
+            <span style="color: #268bd2;">ui</span> = <span style="color: #859900;">max</span>(ui,EU(xmini + [<span style="color: #859900;">tuple</span>(act*[0.]+[1.]+[0.]*(<span style="color: #859900;">len</span>(alpha[i])-1-act))] + xplusi)[i] )
+        out.append(ui)
+    <span style="color: #859900;">return</span> out
+
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">gives EU of every player if he plays alpha_i and others play as in strat</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">alphaU</span>(strat):
+    <span style="color: #268bd2;">out</span> = []
+    <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
+        <span style="color: #268bd2;">xmini</span> = strat[:i]
+        <span style="color: #268bd2;">xplusi</span> = strat[i+1:]
+        <span style="color: #268bd2;">ui</span> = EU(xmini + [alpha[i]] + xplusi)[i] 
+        out.append(ui)
+    <span style="color: #859900;">return</span> out
+
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">m is total number of actions (of all players)</span>
+<span style="color: #268bd2;">m</span> = 0
+<span style="color: #268bd2;">mvec</span>=[]
+<span style="color: #268bd2;">aggm</span> = []
+<span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> alpha:
+    <span style="color: #268bd2;">length</span> = <span style="color: #859900;">len</span>(item)
+    aggm.append(m)
+    <span style="color: #268bd2;">m</span> = m + length
+    mvec.append(length)
+aggm.append(m)    
+
+
+<span style="color: #268bd2;">lb</span> = [0.005]*m <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">lower bound above zero as beta has to be totally mixed</span>
+<span style="color: #268bd2;">ub</span> = [0.995]*m
+<span style="color: #268bd2;">Aeq</span> = []
+<span style="color: #268bd2;">beq</span> = []
+<span style="color: #268bd2;">x0</span>=[]
+<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
+    Aeq.append([0.]*aggm[i]+[1.]*mvec[i]+[0.]*(m-aggm[i+1]))
+    beq.append(1.)
+    <span style="color: #268bd2;">x0</span> = x0 + mvec[i]*[1./mvec[i]]
+
+
+<span style="color: #268bd2;">e</span> = [0.01]*m <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">fix epsilon to be 0.01</span>
+<span style="color: #268bd2;">mine</span> = [0.99]*m <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">1-epsilon</span>
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">makes one long array out of the many tuples in alpha</span>
+<span style="color: #268bd2;">alphalist</span> = []
+<span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> alpha:
+    <span style="color: #859900;">for</span> subitem <span style="color: #859900;">in</span> item:
+        alphalist.append(subitem)
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">for a strategy profile beta given as flat list, this returns brU-alphaU </span>
+<span style="color: #586e75; font-style: italic;"># </span><span style="color: #586e75; font-style: italic;">if alpha is best response for each plyer this is list of 0s, otherwise &gt;0</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">obj</span>(beta):
+    <span style="color: #268bd2;">mix</span> = <span style="color: #859900;">map</span>(add,<span style="color: #859900;">map</span>(mul,mine,alphalist),<span style="color: #859900;">map</span>(mul,e,beta))
+    <span style="color: #268bd2;">mixstrat</span>=[]
+    <span style="color: #859900;">for</span> player <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">formats the long lists as strategy profiles</span>
+        <span style="color: #268bd2;">mixi</span> = <span style="color: #859900;">tuple</span>(mix[aggm[i]:aggm[i+1]])
+        mixstrat.append(mixi)
+    <span style="color: #268bd2;">out</span> = <span style="color: #859900;">map</span>(sub,brU(mixstrat),alphaU(mixstrat))
+    <span style="color: #859900;">return</span> out
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">try to find a beta where obj=0</span>
+<span style="color: #268bd2;">p</span> = SNLE(obj,x0, lb=lb,ub=ub,Aeq=Aeq,beq=beq,ftol=1e-8)
+<span style="color: #268bd2;">r</span> = p.solve(<span style="color: #2aa198;">'nssolve'</span>)
+
+
+<span style="color: #859900;">if</span> r.stopcase==1:
+    <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">format solution as list of mixed strategies</span>
+    <span style="color: #268bd2;">out</span> = []
+    <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
+        <span style="color: #268bd2;">strat_i</span> = [<span style="color: #859900;">round</span>(item,3) <span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> r.xf[aggm[i]:aggm[i+1]]]
+        out.append(<span style="color: #859900;">tuple</span>(strat_i))
+    <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">print solution</span>
+    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'alpha='</span>,alpha,<span style="color: #2aa198;">' is perfect equilibrium. beta equals'</span>,out
+<span style="color: #859900;">else</span>:
+    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'alpha='</span>,alpha, <span style="color: #2aa198;">' might not be a perfect equilibrium'</span>
+</pre>
+</div>
+
+<pre class="example">
+------------------------- OpenOpt 0.5621 -------------------------
+problem: unnamed   type: SNLE
+solver: nssolve
+  iter  objFunVal  log10(maxResidual)  
+    0  5.000e-03            -100.00 
+   10  6.253e-05             -15.26 
+   20  5.000e-05             -15.26 
+   30  4.999e-05              -6.25 
+   40  4.999e-05              -6.25 
+   50  4.999e-05              -6.25 
+   60  4.999e-05              -6.25 
+   70  4.999e-05              -6.25 
+   73  4.999e-05              -6.25 
+istop: -100.014
+Solver:   Time Elapsed = 0.31 	CPU Time Elapsed = 0.31
+NO FEASIBLE SOLUTION has been obtained (MaxResidual = 5.65685e-07, objFunc = 4.9994343e-05)
+alpha= [(0.0, 1.0), (0.0, 1.0)]  might not be a perfect equilibrium
+</pre>
+
+<p>
+There are two caveats to this numerical solution:
+</p>
+<ul class="org-ul">
+<li><i>If no solution is obtained the equilibrium might still be perfect.</i> The program fixes &epsilon; to be 0.01 and restricts &beta; such that the probability on each actions is at least 0.005. In theory, there could be a completely mixed &beta; that works but puts probability of less than 0.005 on some action. Of course, we can try smaller lower bounds for &beta; but you should keep in mind that there is a lower bound for numerical precision (which admittedly is much lower than 0.005) and that you have to adjust the tolerance ftol in the equation solver if you lower bound is substantially lower.
+</li>
+<li><i>If a solution is obtained, it might still not be a prefect equilibrium.</i> Suppose &alpha; was not a best response but there is another strategy that yields 1<sup>-40</sup> more. The numerical equation solver would judge that 1<sup>-40</sup> is zero and view &alpha; as a best response. For this reason, the solver above is not suitable if the payoffs in your game differ by very small amounts. For example, write in the example game above (1<sup>-40</sup>,1<sup>-40</sup>) as payoff for (U,L) (instead of (1,1)). The solver will then think that (D,R) is a perfect equilibrium although it is not.
+</li>
+</ul>
+</div>
+<div id="postamble" class="status">
+ <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
+</div>
+</body>
+</html>

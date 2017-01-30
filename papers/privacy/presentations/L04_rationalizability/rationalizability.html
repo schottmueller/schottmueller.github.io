@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Rationalizability</title>
+<!-- 2015-09-30 Wed 10:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Christoph" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Rationalizability</h1>
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Iterative elimination of strictly dominated strategies in Cournot</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Here we want to repeat the iterative elimination of strictly dominated actions in the Cournot game. We will use a simple two firm Cournot game with inverse demand
+</p>
+
+<p>
+$$p(q_1,q_2)=\max(1-q_1-q_2,0)$$
+</p>
+
+<p>
+and marginal costs equal to \(c\in(0,1)\). The action set of each player is \([0,1]\). This means that the best response functions are
+$$br_1(q_2)=\max\left(\frac{1-q_2-c}{2},0\right)$$
+$$br_2(q_1)=\max\left(\frac{1-q_1-c}{2},0\right).$$
+</p>
+
+<p>
+We will now eliminate in the first round all actions of player 1 that cannot be a best response for any belief P1 might have. If P1 believes that P2 uses the mixed strategy given by the probability distribution \(F(q_2)\), his expected profits are
+$$\pi(q_1)= \int_0^1q_1(\max(1-q_1-q_2,0)-c)\,dF(q_2).$$
+From the first order condition, we get the generalized best response
+$$q_1(F(q_2))=\max\left(\frac{\int_0^11-q_2-c\;dF(q_2)}{2},0\right).$$
+If \(F\) puts all probability mass on 1, this best response is 0. If \(F\) puts all probability mass on 0, the best response is \((1-c)/2\). For all other distributions, the best response is between 0 and \((1-c)/2\). Hence, we can eliminate all quantities greater than \((1-c)/2\): There is no belief such that these quantities would be a best response. 
+</p>
+
+<p>
+In the next iteration, we ask which actions can be best responses by P2 given that P1 uses only actions in \([0,(1-c)/2]\). Recall that \(br_2(0)=(1-c)/2\) and \(br_2((1-c)/2)=(1-c)/4\). For any strategy \(F(q_1)\) with support in \([0,(1-c)/2]\), P2's best response in somewhere between \((1-c)/4\) and \((1-c)/2\) (verify!).
+</p>
+
+<p>
+Now we can go back to P1&#x2026;
+</p>
+
+<p>
+Computers are better at iterations than humans; so let's feed this problem into the machine. For simplicity, we use \(c=0\) although this makes the example formally incorrect: For \(c=0\), any quantity \(q_i\geq0\) is a best response to \(q_j=1\) and therefore the best response function above and the elimination are incorrect. For this example, you should therefore think of \(c=0\) as the limit case where \(c=\epsilon>0\) and \(\epsilon\rightarrow0\). For any \(c>0\), the only best response to \(q_j=1\) is \(0\) and we are in the clear.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #859900;">import</span> numpy <span style="color: #859900;">as</span> np
+<span style="color: #859900;">from</span> matplotlib <span style="color: #859900;">import</span> pyplot <span style="color: #859900;">as</span> plt
+<span style="color: #859900;">from</span> matplotlib <span style="color: #859900;">import</span> animation
+<span style="color: #859900;">from</span> prettytable <span style="color: #859900;">import</span> PrettyTable
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">best response function</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">br</span>(q):
+    <span style="color: #859900;">return</span> (1-q)/2.
+
+<span style="color: #268bd2;">br_vec</span> = np.vectorize(br)
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">inverse of best response function</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">br_inv</span>(q):
+    <span style="color: #859900;">return</span> 1-2*q
+
+<span style="color: #268bd2;">br_inv_vec</span> = np.vectorize(br_inv)
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">calculate the range of best response if the other plays qj Qj</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">starting from Qj=[0,1], iterate this i times</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">iterative_br</span>(i):
+    <span style="color: #268bd2;">lower</span>,<span style="color: #268bd2;">upper</span> = 0.,1.
+    <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">xrange</span>(i):
+        <span style="color: #268bd2;">lower</span>,<span style="color: #268bd2;">upper</span> = br(upper),br(lower)
+    <span style="color: #859900;">return</span> lower, upper
+
+<span style="color: #268bd2;">t</span> = PrettyTable([<span style="color: #2aa198;">'iteration'</span>,<span style="color: #2aa198;">'lower bound'</span>,<span style="color: #2aa198;">'upper bound'</span>])
+
+<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(0,11,1):
+    <span style="color: #268bd2;">dummy</span> = iterative_br(i)
+    t.add_row([i,<span style="color: #859900;">round</span>(dummy[0],3),<span style="color: #859900;">round</span>(dummy[1],3)])
+
+<span style="color: #859900;">print</span> t
+</pre>
+</div>
+
+<pre class="example">
+&gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... ... ... ... ... &gt;&gt;&gt; &gt;&gt;&gt; &gt;&gt;&gt; ... ... ... &gt;&gt;&gt; +-----------+-------------+-------------+
+| iteration | lower bound | upper bound |
++-----------+-------------+-------------+
+|     0     |     0.0     |     1.0     |
+|     1     |     0.0     |     0.5     |
+|     2     |     0.25    |     0.5     |
+|     3     |     0.25    |    0.375    |
+|     4     |    0.313    |    0.375    |
+|     5     |    0.313    |    0.344    |
+|     6     |    0.328    |    0.344    |
+|     7     |    0.328    |    0.336    |
+|     8     |    0.332    |    0.336    |
+|     9     |    0.332    |    0.334    |
+|     10    |    0.333    |    0.334    |
++-----------+-------------+-------------+
+</pre>
+
+<p>
+As you see, we get pretty quickly pretty close to the Nash equilibrium and indeed in the limit only the Nash equilibrium \((1/3,1/3)\) remains. That is, the Nash equilibrium action is the only rationalizable action of the simple Cournot game! The following visualizes this.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #268bd2;">fig</span> = plt.figure()
+<span style="color: #268bd2;">ax</span> = plt.axes(xlim=(0,1), ylim=(0,1))
+plt.ylabel(<span style="color: #2aa198;">'$q_1$'</span>)
+plt.xlabel(<span style="color: #2aa198;">'$q_2$'</span>)
+line1, = ax.plot([],[],<span style="color: #2aa198;">'b'</span>,linewidth=1.5)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">not yet eliminated q1 on best response function</span>
+line2, = ax.plot([],[],<span style="color: #2aa198;">'r'</span>,linewidth=1.5)
+ratio1, = ax.plot([],[],<span style="color: #2aa198;">'b'</span>,linewidth=3)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">marks not yet eliminated q1 on axis</span>
+ratio2, = ax.plot([],[],<span style="color: #2aa198;">'r'</span>,linewidth=3)
+br1,   = ax.plot([],[],<span style="color: #2aa198;">'b:'</span>,linewidth=1.5)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">best response function of P1</span>
+br2,   = ax.plot([],[],<span style="color: #2aa198;">'r:'</span>,linewidth=1.5)
+plt.legend([br1,br2,ratio1,ratio2],[<span style="color: #2aa198;">'$br_1(q_2)$'</span>,<span style="color: #2aa198;">'$br_2(q_1)$'</span>,<span style="color: #2aa198;">'not yet eliminated $q_1$'</span>,<span style="color: #2aa198;">'not yet eliminated $q_1$'</span>])
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">basic plot that is held fixed through out all iterations</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">init</span>():
+    line1.set_data([],[])
+    line2.set_data([],[])
+    ratio1.set_data([],[])
+    ratio2.set_data([],[])
+    <span style="color: #268bd2;">x</span> = np.linspace(0,1,50)
+    <span style="color: #268bd2;">br_curve</span> = br_vec(x)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">np.ndarray(br_vec(x))</span>
+    br1.set_data(x,br_curve)
+    br2.set_data(br_curve,x)
+    <span style="color: #859900;">return</span> line1,line2,br1,br2,ratio1,ratio2
+
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">animate</span>(i):
+    <span style="color: #859900;">if</span> i % 2 != 0:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">true if i is odd</span>
+        <span style="color: #268bd2;">temp</span> = iterative_br(i)
+        <span style="color: #268bd2;">y1</span> = np.linspace(temp[0],temp[1],50)
+        <span style="color: #268bd2;">x1</span> = br_inv_vec(y1)
+        <span style="color: #268bd2;">temp</span> = iterative_br(i-1)
+        <span style="color: #268bd2;">x2</span> = np.linspace(temp[0],temp[1],50)
+        <span style="color: #268bd2;">y2</span> = br_inv_vec(x2)
+    <span style="color: #859900;">else</span>:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">if i is even</span>
+        <span style="color: #268bd2;">temp</span> = iterative_br(i)
+        <span style="color: #268bd2;">x2</span> = np.linspace(temp[0],temp[1],50)
+        <span style="color: #268bd2;">y2</span> = br_inv_vec(x2)
+        <span style="color: #268bd2;">temp</span> = iterative_br(i-1)
+        <span style="color: #268bd2;">y1</span> = np.linspace(temp[0],temp[1],50)
+        <span style="color: #268bd2;">x1</span> = br_inv_vec(y1)
+    <span style="color: #268bd2;">helpratio</span> = np.zeros(50)+0.002
+    line1.set_data(x1,y1)
+    ratio1.set_data(helpratio,y1)
+    line2.set_data(x2,y2)
+    ratio2.set_data(x2,helpratio)
+    <span style="color: #859900;">return</span> line1,line2,ratio1,ratio2
+
+<span style="color: #268bd2;">anim</span> = animation.FuncAnimation(fig,animate,init_func=init,frames=10,repeat=<span style="color: #2aa198;">False</span>,interval = 1000,blit=<span style="color: #2aa198;">True</span>)
+
+anim.save(<span style="color: #2aa198;">'Cournot_iterative.mp4'</span>,fps=1,extra_args=[<span style="color: #2aa198;">'-vcodec'</span>,<span style="color: #2aa198;">'libx264'</span>])
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">plt.show()</span>
+<span style="color: #859900;">return</span> <span style="color: #2aa198;">'Cournot_iterative.mp4'</span>
+</pre>
+</div>
+
+<p>
+<a href="./Cournot_iterative.mp4">./Cournot_iterative.mp4</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Calculating the set of rationalizable actions in finite, two-player games</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Here we want to write a small program that calculates the set of rationalizable actions in a finite two player game. We use the following two results mentioned in the lecture:
+</p>
+
+<ul class="org-ul">
+<li>the set of rationalizable actions is the set of actions surviving iterative deletion of strictly dominated actions
+</li>
+<li>an action is strictly dominated if and only if it is a never-best-response.
+</li>
+</ul>
+
+<p>
+We will therefore iteratively delete strictly dominated actions. We determine that an action is strictly dominated by establishing that it is a never-best-response. That is, \(a\) is strictly dominate if there is no  belief with support in the remaining actions of the other player such that \(a\) is a best response given this belief. If we denote the set of actions of player \(-i\) that are not deleted (yet) as \(\tilde A_{-i}\), then \(a\) is strictly dominate if there is no belief \(\mu\) on \(\tilde A_{-i}\) solving the following system of inequalities
+</p>
+
+<p>
+$$\sum_{a_{-i}\in \tilde A_{-i}} u_i(a_i,a_{-i}) \mu(a_{-i})\geq  \sum_{a_{-i}\in \tilde A_{-i}} u_i(a_i',a_{-i}) \mu(a_{-i}) \qquad \text{ for all }a_i'\in \tilde A_i.$$
+</p>
+
+<p>
+This system is equivalent to 
+</p>
+
+<p>
+$$\sum_{a_{-i}\in \tilde A_{-i}} (u_i(a_i,a_{-i})-u_i(a_i',a_{-i})) \mu(a_{-i})\leq 0  \qquad \text{ for all }a_i'\in \tilde A_i.$$
+</p>
+
+<p>
+This is a simple system of linear inequalities and linear program solvers are able to check whether it has a solution or not. So we will start with the first action of P1 and ask a linear program solver whether these inequalities have a solution \(\mu\). If not, we remove this action from the game. After that we do the same with the second action of P1 and so on. When we have gone through all actions of P1, we move on to P2. If either for P1 or for P2 an action was removed, we start again, i.e. we go back to P1 and start with his first remaining action (this is the next "iteration" in "iterative deletion of strictly dominated actions"). Then P2&#x2026; We stop when in one iteration neither an action of P1 nor an action of P2 was removed.
+</p>
+
+<p>
+I use the following example game in the code below:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+<caption class="t-above"><span class="table-number">Table 1:</span> Example game</caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">L</th>
+<th scope="col" class="left">C</th>
+<th scope="col" class="left">R</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">U</td>
+<td class="left">0,0</td>
+<td class="left">3,1</td>
+<td class="left">5,-1</td>
+</tr>
+
+<tr>
+<td class="left">M</td>
+<td class="left">1,3</td>
+<td class="left">1,1</td>
+<td class="left">1,-1</td>
+</tr>
+
+<tr>
+<td class="left">B</td>
+<td class="left">-1,1</td>
+<td class="left">-2,0</td>
+<td class="left">2,2</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #2aa198;">"""" We give a game table (called "payoffs"; see below) to this program. </span>
+<span style="color: #2aa198;">It then returns the same game but with all non-rationalizable actions removed."""</span>
+<span style="color: #859900;">from</span> prettytable <span style="color: #859900;">import</span> PrettyTable
+<span style="color: #859900;">from</span> openopt <span style="color: #859900;">import</span> LP
+<span style="color: #859900;">from</span> operator <span style="color: #859900;">import</span> *
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">these are the payoffs from the game table; each row in the game table is a list of payoff tuples; </span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">the game table is then a list of these rows</span>
+<span style="color: #268bd2;">payoffs</span> = [[(0.,0.),(3.,1.),(5.,-1.)],[(1.,3.),(1.,1.),(1.,-1.)],[(-1.,1.),(-2.,0.),(2.,2.)]]
+
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">constructs payoffs of only player 1 from the payoffs in "game"</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">payoff1_builder</span>(game):
+    <span style="color: #268bd2;">payoff1</span> = []
+    <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> game:
+        <span style="color: #268bd2;">temp</span> = []
+        <span style="color: #859900;">for</span> j <span style="color: #859900;">in</span> i:
+            temp.append(j[0])
+        payoff1.append(temp)
+    <span style="color: #859900;">return</span> payoff1
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">constructs payoffs of only player 1 from the payoffs in "game"</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">payoff2_builder</span>(game):
+    <span style="color: #268bd2;">payoff2</span> = []
+    <span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> payoffs:
+        <span style="color: #268bd2;">temp</span> = []
+        <span style="color: #859900;">for</span> j <span style="color: #859900;">in</span> i:
+            temp.append(j[1])
+        payoff2.append(temp)
+    <span style="color: #859900;">return</span> payoff2
+
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this function gets a game and removes all rows from the game that correspond to dominated actions of P1; </span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">the game without these rows is returned</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">delete_dom_act_P1</span>(game):
+    <span style="color: #268bd2;">payoff1</span> = payoff1_builder(game)
+    <span style="color: #268bd2;">temp_payoff1</span> = payoff1
+    <span style="color: #268bd2;">temp_game</span> = game
+    <span style="color: #268bd2;">f</span> = [0.]*<span style="color: #859900;">len</span>(payoff1[0])<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">dummy objective used below</span>
+    <span style="color: #268bd2;">lb</span> = [0.]*<span style="color: #859900;">len</span>(payoff1[0])
+    <span style="color: #268bd2;">ub</span> = [1.]*<span style="color: #859900;">len</span>(payoff1[0])
+    <span style="color: #268bd2;">Aeq</span> = [[1.]*<span style="color: #859900;">len</span>(payoff1[0])]
+    <span style="color: #268bd2;">beq</span> = (1.,)
+    <span style="color: #268bd2;">j</span> = 0
+    <span style="color: #859900;">while</span> j&lt;<span style="color: #859900;">len</span>(payoff1):
+        <span style="color: #268bd2;">action</span> = payoff1[j]
+        <span style="color: #268bd2;">A</span> = []
+        <span style="color: #268bd2;">b</span> = []
+        <span style="color: #859900;">for</span> other_action <span style="color: #859900;">in</span> payoff1:
+            A.append(<span style="color: #859900;">map</span>(sub, other_action, action))<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">elementwise difference</span>
+            b.append(0.)
+        <span style="color: #268bd2;">p</span> = LP(f, A=A,b=b,lb=lb,ub=ub,Aeq=Aeq,beq=beq)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">we use the artificial minimization problem under the constraint that action gives a weakly higher payoff than any other action; if no feasible solution is obtained than action is dominated</span>
+        <span style="color: #268bd2;">p.iprint</span> = -1
+        <span style="color: #268bd2;">r</span> = p.minimize(<span style="color: #2aa198;">'pclp'</span>)
+        <span style="color: #859900;">if</span> r.stopcase!=1:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">if no feasible solution was obtained then action is dominated...</span>
+            temp_game.remove(game[j])<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">...and therefore the row corresponding to this action is removed</span>
+        <span style="color: #268bd2;">j</span>+=1
+    <span style="color: #859900;">return</span> temp_game
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this function takes a game and reverses the roles of the players, </span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">i.e. the returned game is the same as the given one but now P1 is column player and P2 is row player</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">interchange_players</span>(game):
+    <span style="color: #268bd2;">changed_payoff</span> = []
+    <span style="color: #859900;">for</span> row <span style="color: #859900;">in</span> game:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this loop switches every payoff tuple in the game matrix</span>
+        <span style="color: #268bd2;">changed_row</span> = []
+        <span style="color: #859900;">for</span> payoff_pair <span style="color: #859900;">in</span> row:
+            <span style="color: #268bd2;">n</span>,<span style="color: #268bd2;">m</span> = payoff_pair
+            changed_row.append((m,n))
+        changed_payoff.append(changed_row)
+    <span style="color: #268bd2;">players_interchanged</span> = [<span style="color: #859900;">list</span>(x) <span style="color: #859900;">for</span> x <span style="color: #859900;">in</span> <span style="color: #859900;">zip</span>(*changed_payoff)]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">transposes the payoff matrix such that P2's actions are in rows instead of columns; </span>
+    <span style="color: #859900;">return</span> players_interchanged
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">deletes dominated actions of P2 in game; </span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">we do this by interchanging the roles of P1 and P2 and feeding this "switched game" </span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">into the function that deletes dominated actions for P1</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">delete_dom_act_P2</span>(game):
+    <span style="color: #268bd2;">switched_game</span> = interchange_players(game)
+    <span style="color: #268bd2;">switched_game_without_dom_act</span> = delete_dom_act_P1(switched_game)
+    <span style="color: #268bd2;">switched_back_game</span> = interchange_players(switched_game_without_dom_act)
+    <span style="color: #859900;">return</span> switched_back_game
+
+
+<span style="color: #268bd2;">flag</span> = 0<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will be zero as long as not all dominated actions are removed yet</span>
+
+<span style="color: #859900;">while</span> flag==0:
+    <span style="color: #268bd2;">temp1</span> = delete_dom_act_P1(payoffs)
+    <span style="color: #268bd2;">temp2</span> = delete_dom_act_P2(temp1)
+    <span style="color: #859900;">if</span> temp2 == payoffs:
+        <span style="color: #268bd2;">flag</span> = 1
+    <span style="color: #859900;">else</span>:
+        <span style="color: #268bd2;">payoffs</span> = temp2
+
+<span style="color: #859900;">print</span> <span style="color: #2aa198;">'game table without non-rationalizable actions is'</span>
+<span style="color: #268bd2;">t</span> = PrettyTable(payoffs[0])
+<span style="color: #268bd2;">j</span> = 1
+<span style="color: #859900;">while</span> j&lt;<span style="color: #859900;">len</span>(payoffs):
+    t.add_row(payoffs[j])
+    <span style="color: #268bd2;">j</span>+=1
+
+<span style="color: #859900;">print</span> t
+</pre>
+</div>
+
+<pre class="example">
+game table without non-rationalizable actions is
++------------+------------+
+| (0.0, 0.0) | (3.0, 1.0) |
++------------+------------+
+| (1.0, 3.0) | (1.0, 1.0) |
++------------+------------+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Iterative elimination of strictly dominated strategies for finite n-player games</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+We generalize the code above for \(n\geq 2\) players. Although it might be a bit counter-intuitive for 2-player games, we will use a slightly different notation for the payoffs: They are now numpy arrays and for two player games we go column by column (instead of row by row). A \(n+1\) player game is then simply a numpy array where each element is an \(n\) player game (and corresponds to a fixed action of player \(n+1\)).
+</p>
+
+<p>
+The example used here is the following where each player has a single rationalizable action.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+<caption class="t-above"><span class="table-number">Table 2:</span> P3 plays <b>0</b></caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">0</th>
+<th scope="col" class="left">1</th>
+<th scope="col" class="left">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left"><b>0</b></td>
+<td class="left">1,0,1</td>
+<td class="left">4,1,2</td>
+<td class="left">1,-1,1</td>
+</tr>
+
+<tr>
+<td class="left"><b>1</b></td>
+<td class="left">0,3,2</td>
+<td class="left">1,1,1</td>
+<td class="left">4,-1,1</td>
+</tr>
+
+<tr>
+<td class="left"><b>2</b></td>
+<td class="left">-1,1,0</td>
+<td class="left">2,0,0</td>
+<td class="left">2,2,0</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" align="center">
+<caption class="t-above"><span class="table-number">Table 3:</span> P3 plays <b>1</b></caption>
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">&#xa0;</th>
+<th scope="col" class="left">0</th>
+<th scope="col" class="left">1</th>
+<th scope="col" class="left">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left"><b>0</b></td>
+<td class="left">0,0,0</td>
+<td class="left">3,1,0</td>
+<td class="left">5,-1,0</td>
+</tr>
+
+<tr>
+<td class="left"><b>1</b></td>
+<td class="left">1,3,1</td>
+<td class="left">1,1,0</td>
+<td class="left">1,-1,0</td>
+</tr>
+
+<tr>
+<td class="left"><b>2</b></td>
+<td class="left">-1,1,3</td>
+<td class="left">-2,0,2</td>
+<td class="left">2,2,3</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #2aa198;">"""" We give a game table (called "payoffs"; see below) to this program. </span>
+<span style="color: #2aa198;">It then returns the same game but with all non-rationalizable actions removed."""</span>
+
+<span style="color: #859900;">from</span> openopt <span style="color: #859900;">import</span> LP
+<span style="color: #859900;">import</span> numpy <span style="color: #859900;">as</span> np
+<span style="color: #859900;">from</span> operator <span style="color: #859900;">import</span> *
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">2player game from above</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">payoffs = np.array([[[0.,0.],[1.,3.],[-1.,1]],[[3.,1.],[1.,1.],[-2.,-0.]],[[5.,-1.],[1.,-1.],[2.,2.]]])</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">payoffs = np.array([[[0.,0.],[1.,3.]],[[1.,1.],[2.,1.]]])</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">3player game (3*3*2 action) in which only (0,1,0) is rationalizable</span>
+<span style="color: #268bd2;">payoffs</span> = np.array([[[[1.,0.,1.],[0.,3.,2.],[-1.,1,0.]],[[4.,1.,2.],[1.,1.,1.],[2.,0.,0.]],[[1.,-1.,1.],[4.,-1.,1.],[2.,2.,0.]]],[[[0.,0.,0.],[1.,3.,1.],[-1.,1,3.]],[[3.,1.,0.],[1.,1.,0.],[-2.,-0.,2.]],[[5.,-1.,0.],[1.,-1.,0.],[2.,2.,3.]]]])
+
+
+
+
+<span style="color: #268bd2;">dim</span> = payoffs.shape
+
+<span style="color: #268bd2;">n</span> = payoffs.ndim-1<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">number of players</span>
+<span style="color: #268bd2;">no_a</span> = [] <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will contain number of actions available for each player</span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">as the first number is number of actions of last player etc., we eventually turn the list around</span>
+<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> dim[:-1]:
+    no_a.append(i)
+<span style="color: #268bd2;">no_a</span> = no_a[::-1]
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">constructs payoffs of only player i when playing ai from the payoffs in "game", returns a "flat" vector</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">payoffi_builder</span>(game,ai,i):
+    <span style="color: #268bd2;">j</span> = n-1<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">the next few lines define a list of slice object to extract i's payoffs when he plays ai from the payoff matrix; </span>
+      <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">recall that the first index denotes the action of the last player in payoffs!</span>
+    <span style="color: #268bd2;">obj</span> = ()
+    <span style="color: #859900;">while</span> j&gt;i:
+        <span style="color: #268bd2;">obj</span> = obj + (<span style="color: #859900;">slice</span>(0,<span style="color: #2aa198;">None</span>,1),)
+        <span style="color: #268bd2;">j</span> = j-1
+    <span style="color: #268bd2;">obj</span> = obj + (<span style="color: #859900;">slice</span>(ai,ai+1,2),)
+    <span style="color: #268bd2;">j</span> = j-1
+    <span style="color: #859900;">while</span> j&gt;=0:
+        <span style="color: #268bd2;">obj</span> = obj + (<span style="color: #859900;">slice</span>(0,<span style="color: #2aa198;">None</span> ,1),)
+        <span style="color: #268bd2;">j</span> = j-1
+    <span style="color: #268bd2;">obj</span> = obj + (<span style="color: #859900;">slice</span>(i,i+1,2),)
+    <span style="color: #268bd2;">payoffi</span> = game[obj]
+    <span style="color: #859900;">return</span> payoffi.flatten()
+
+
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this function gets a game and removes all actions from the game that correspond to dominated actions of Pi; </span>
+<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">the game without these actions is returned</span>
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">delete_dom_act_Pi</span>(game,i):
+    <span style="color: #268bd2;">no_a_game</span> = <span style="color: #859900;">list</span>(game.shape) <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will contain number of actions available for each player</span>
+    no_a_game.pop()<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">removes last element of list which simply was n: the number of payoffs in each action profile</span>
+    <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">as the first number is number of actions of last player etc., we turn the list around</span>
+    <span style="color: #268bd2;">no_a_game</span> = no_a_game[::-1]
+    <span style="color: #268bd2;">no_a_i</span> = no_a_game.pop(i)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">remove the number of actions of player i from no_a_game and put it in no_a_i</span>
+    <span style="color: #859900;">if</span> no_a_i==1:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">if a single action remains it cannot be dominated</span>
+        <span style="color: #859900;">return</span> game
+    <span style="color: #268bd2;">var_no</span> = np.prod(no_a_game)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">size of the support of mu</span>
+    <span style="color: #859900;">if</span> var_no == 1:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">special case: the support of mu has a single elment</span>
+        <span style="color: #859900;">return</span> del_dom_a_Pi_point_belief(game, i,no_a_i)
+    <span style="color: #268bd2;">temp_game</span> = game
+    <span style="color: #268bd2;">f</span> = [0.]*var_no   <span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">dummy objective used below</span>
+    <span style="color: #268bd2;">lb</span> = [0.]*var_no
+    <span style="color: #268bd2;">ub</span> = [1.]*var_no
+    <span style="color: #268bd2;">Aeq</span> = [[1.]*var_no]
+    <span style="color: #268bd2;">beq</span> = (1.,)
+    <span style="color: #268bd2;">j</span> = 0
+    <span style="color: #859900;">while</span> j&lt;no_a_i:
+        <span style="color: #268bd2;">u_action</span> = payoffi_builder(game,j,i)
+        <span style="color: #268bd2;">A</span> = []
+        <span style="color: #268bd2;">b</span> = []
+        <span style="color: #268bd2;">k</span> = 0
+        <span style="color: #859900;">while</span> k&lt;no_a_i:
+            <span style="color: #268bd2;">u_other_action</span> = payoffi_builder(game,k,i)
+            A.append(u_other_action - u_action)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">elementwise difference</span>
+            b.append(0.)
+            <span style="color: #268bd2;">k</span>+=1
+        <span style="color: #268bd2;">p</span> = LP(f, A=A,b=b,lb=lb,ub=ub,Aeq=Aeq,beq=beq)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">we use the artificial minimization problem under the constraint that action gives a weakly higher payoff than any other action; if no feasible solution is obtained than action is dominated</span>
+        <span style="color: #268bd2;">p.iprint</span> = -1
+        <span style="color: #268bd2;">r</span> = p.minimize(<span style="color: #2aa198;">'pclp'</span>)
+        <span style="color: #859900;">if</span> r.stopcase!=1:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">if no feasible solution was obtained then action is dominated...</span>
+            <span style="color: #268bd2;">temp_game</span> = np.delete(temp_game,j,n-i-1)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">...and therefore action j is removed; recall that players are "in the wrong order"</span>
+            <span style="color: #268bd2;">count</span> = 0
+            <span style="color: #268bd2;">z</span> = -1
+            <span style="color: #859900;">while</span> count&lt;=j:
+                <span style="color: #268bd2;">z</span>+=1
+                <span style="color: #859900;">if</span> undominated[i][z]!=-1 :
+                    <span style="color: #268bd2;">count</span>+=1 
+            undominated[i][z] = -1
+        <span style="color: #268bd2;">j</span>+=1
+    <span style="color: #859900;">return</span> temp_game
+
+
+<span style="color: #859900;">def</span> <span style="color: #268bd2;">del_dom_a_Pi_point_belief</span>(game, i,no_i_a):
+    <span style="color: #268bd2;">to_delete</span> = []
+    <span style="color: #268bd2;">U</span>=[]
+    <span style="color: #859900;">for</span> action <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(no_i_a):
+        U.append(payoffi_builder(game,action,i))
+    <span style="color: #268bd2;">Umax</span> = <span style="color: #859900;">max</span>(U)
+    <span style="color: #859900;">for</span> action <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(no_i_a):
+        <span style="color: #859900;">if</span> U[action]!=Umax:
+            to_delete.append(action)
+            <span style="color: #268bd2;">count</span> = 0
+            <span style="color: #268bd2;">z</span> = -1
+            <span style="color: #859900;">while</span> count&lt;=action:
+                <span style="color: #268bd2;">z</span>+=1
+                <span style="color: #859900;">if</span> undominated[i][z]!=-1 :
+                    <span style="color: #268bd2;">count</span>+=1 
+            undominated[i][z] = -1
+    <span style="color: #859900;">for</span> action <span style="color: #859900;">in</span> to_delete[::-1]:
+        <span style="color: #268bd2;">game</span> = np.delete(game,action,n-i-1)
+    <span style="color: #859900;">return</span> game
+
+
+<span style="color: #268bd2;">flag</span> = 0<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will be zero as long as not all dominated actions are removed yet</span>
+
+<span style="color: #586e75; font-style: italic;">##</span><span style="color: #586e75; font-style: italic;">will contain undominated actions</span>
+<span style="color: #268bd2;">undominated</span> = [<span style="color: #859900;">range</span>(item) <span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> no_a]
+
+<span style="color: #268bd2;">temp1</span> = payoffs
+<span style="color: #859900;">while</span> flag==0:
+    <span style="color: #268bd2;">temp2</span> = temp1
+    <span style="color: #859900;">for</span> k <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
+        <span style="color: #268bd2;">temp1</span> = delete_dom_act_Pi(temp1,k)
+    <span style="color: #859900;">if</span> temp2.shape == temp1.shape:
+        <span style="color: #268bd2;">flag</span> = 1
+
+
+<span style="color: #859900;">print</span> <span style="color: #2aa198;">'game table without non-rationalizable actions is'</span>, temp1
+
+
+<span style="color: #859900;">for</span> k <span style="color: #859900;">in</span> <span style="color: #859900;">range</span>(n):
+    <span style="color: #268bd2;">undominated</span>[k] = [item <span style="color: #859900;">for</span> item <span style="color: #859900;">in</span> undominated[k] <span style="color: #859900;">if</span> item!=-1]
+    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'rationalizable actions of player'</span>,k,<span style="color: #2aa198;">'are'</span>, undominated[k]
+</pre>
+</div>
+
+<pre class="example">
+game table without non-rationalizable actions is [[[[ 4.  1.  2.]]]]
+rationalizable actions of player 0 are [0]
+rationalizable actions of player 1 are [1]
+rationalizable actions of player 2 are [0]
+</pre>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+ <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
+</div>
+</body>
+</html>

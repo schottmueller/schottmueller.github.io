@@ -1,0 +1,224 @@
+#+TITLE:    Game Theory: Global Games
+#+AUTHOR:    Christoph Schottmüller
+#+EMAIL:     christoph@worknotebook.home
+#+DATE:       
+#+DESCRIPTION:
+#+KEYWORDS:
+
+
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger,allowframebreaks]
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,sgamevar}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+
+
+
+* Global Games: Stag Hunt
+** Stag Hunt
+*** Example 						     :B_exampleblock:
+    :PROPERTIES:
+    :BEAMER_env: exampleblock
+    :END:
+     \begin{figure}[h]
+       \centering
+      \begin{game}{2}{2}
+             \>  H2 \> S2\\
+        H1   \> 3,3 \> 3,0\\
+       S1   \> 0,3 \> 4,4
+      \end{game}
+     \caption{Stag hunt}
+   \end{figure}
+
+- two pure NE (+ 1 mixed NE) $\Rightarrow$ which should we predict as outcome of the game?
+
+** Two approaches
+- payoff dominance
+- risk dominance
+   - multiply the deviation losses of both players in a given equilibrium and select the equilibrium where the product is highest ($here: (3-0)^2>(4-3)^2$)
+   - intuitively: which equilibrium is supported by a larger set of beliefs? i.e. if the other player mixes $(1/2,1/2)$, what do you choose?
+
+** Global Games: Carlsson and van Damme (1993)
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks,label=
+:END:
+
+ \begin{figure}[h]
+  \centering
+  \begin{game}{2}{2}
+  \> H2 \> S2\\
+  H1   \>$x,x$\>$x,0$\\
+  S1 \>$0,x$\>$4,4$
+ \end{game}
+ \end{figure}
+
+- state of the world $x\in[-1,5]$ is unknown to players
+- assume each state is equally likely ($x$ distributed uniformly on $[-1,5]$) 
+- both players observe a private signal $x_i\in[x-\varepsilon ,x+\varepsilon ]$ for some $\varepsilon >0$
+- assume the two $x_i$ are independently drawn from a uniform distribution on $[x-\varepsilon ,x+\varepsilon ]$
+- interpretation: players are not exactly sure which game they play
+
+\framebreak
+
+assume $\varepsilon=0.1$
+- you get a signal $x_1=-0.5$
+   - what do you believe about the state of the world?
+   - what do you believe about the other player's signal?
+   - which action should you take?
+
+- you get signal $x_1<0$
+   - \dots
+
+- you get a signal $x_1=0$
+   - \dots
+
+- what is the biggest $x_1$ for which you play $S1$ for sure?
+
+\framebreak
+- you get signal $x_1>4$
+   - what do you believe about the state of the world?
+   - what do you believe about the other player's signal?
+   - which action should you take?
+ 
+- what is the smallest $x_1$ for which you play $H1$ for sure?
+
+\framebreak
+
+- result does not depend on $\varepsilon =0.1$ but is true for any $\varepsilon >0$ that is not too big 
+- if $\varepsilon \rightarrow 0$, we get a unique prediction for any stag hunt game
+- Carlsson and van Damme show that the global game approach selects the risk dominant equilibrium in $2\times2$ games with two strict equilibria
+- result does not depend on uniform distributions
+
+** Intermezzo: Cutoff Strategies
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks,label=
+:END:
+
+- A strategy in the global game is a function that associates an action with each signal
+$$s_i(x_i): \;[-1,5]\rightarrow\{Hi,Si\}$$
+- we define a /cutoff strategy/ with cutoff $\bar s$ as
+$$ s_i(x_i)=\begin{cases}
+Hi & \text{ if }x_i\geq \bar s_i\\
+Si & \text{ if }x_i<\bar s_i
+\end{cases}$$
+
+\framebreak
+
+if $i$ plays a cutoff strategy with cutoff $\bar s_i\in(-\varepsilon,4+\varepsilon)$ which cutoff strategy is a best response of $j$ (i.e. what is the best response cutoff $\bar s_j$)?
+- if $j$ gets the signal $x_j=\bar s_j$, he should be indifferent between Hj and Sj
+- can $j$ be indifferent if $\bar s_i\leq \bar s_j-2\varepsilon$? 
+- can $j$ be indifferent if $\bar s_i\geq \bar s_j+2\varepsilon$?
+- after observing $x_j$, what does $j$ believe about the distribution of $x_i$?
+# triangle distribution
+- can $\bar s_j=\bar s_i$ be a best response? what would $j$ think about the probability that $i$ plays Si when receiving signal $x_j=\bar s_j$ in this case?
+# equal probability on Hi and Si, therefore only a best response if \bar s_i=2
+- if $\bar s_i<2$, (i) should $\bar s_j$ be above or below $\bar s_i$ to make $j$ indifferent? (ii) could $\bar s_j>2$ make $j$ indifferent?
+# above: otherwise probability of Si is bigger than 0.5 and then $j$ strictly prefers to play Sj (which then gives an expected payoff higher than 2)
+# no: then the cutoff type thinks that states above 2 are likely and i is likely to play Hi; hence Hj is strictly better than Sj
+** Global Games and iterative elimination of strictly dominated strategies
+- back to the global game: which strategies are strictly dominated?
+# all strategies that play Hi when $x_i<-\epsilon$ or Si when $x_i>4+\epsilon$
+- given that the other player does not play strictly dominated strategies, which of my strategies are strictly dominated?
+- iterative elimination of dominated strategies
+# graph as in Morris/Shin
+*** Result							    :B_block:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+Iterative elimination of strictly dominated strategies leads to a unique prediction in the global game.
+
+
+** Global Games and Knowledge 
+- if $i$ receives signal $x_i$, what does he know about
+   - state of the world
+   - which states $j$ considers possible
+   - which states $j$ thinks $i$ considers possible
+   - \dots
+# far away states (where dominant action) are relevant
+- global games capture -- in a tractable way -- the idea that 
+   - payoffs are not common knowledge
+   - beliefs are not common knowledge
+
+
+
+* An investment example
+** An investment example
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks,label=
+:END:
+- Coordination problems as above are relevant in many settings
+- 2 investors
+- investors decide (simultaneously) whether to invest in a project or not ($A_i=\{I,N\}$)
+- investing carries a cost of 1
+- the project succeeds only if both invest
+- a successfull project generates revenue of 4 which is equally split
+- not investing in the project gives a payoff of $r$
+\begin{figure}[h]
+       \centering
+      \begin{game}{2}{2}
+             \>  I \> N\\
+       I  \> $1,1$ \> $-1,r$\\
+       N   \> $r,-1$ \> $r,r$
+      \end{game}
+     \caption{Investment game}
+   \end{figure}
+
+- for which values of $r$ does an investor have a dominant strategy?
+- say, both investors have the prior that $r$ is distributed uniformly on $[-2,2]$ and receive a private signal $x_i$ which is uniformly distributed on $[r-0.1,r+0.1]$
+- what is the belief of $i$ after observing $x_i$ concerning 
+   - the state $r$
+   - the signal of the other investor?
+- for which values of $x_i$ is $I$ strictly dominated by $N$?
+- given that the other investor does not use dominated strategies, why is $I$ strictly dominated by $N$ for values of $x_i$ slightly below 1?
+- What is the equilibrium (in cutoff strategies)?
+
+
+* Revision questions and exercises
+** Review questions
+- What is the Stag Hunt game and what is the basic problem described by this game?
+- What is the main game theoretic challenge in the Stag Hunt?
+- What is a global game? 
+- What does a player know in a global game? What is common knowledge?
+- How does the global game approach select an equilibrium?
+- Why is it surprising that the global game approach selects a unique equilibrium?
+- reading: Carlsson and van Damme, ECTA 93, p. 989-993; *Morris and Shin, 2000, p. 1-15; *Morris and Shin, 1998
+
+** Exercises
+:PROPERTIES:
+:BEAMER_opt: allowframebreaks,label=
+:END:
+
+- Compare equilibrium selection by the global game approach with equilibrium refinement by perfect equilibrium. 
+# perturbation: actions vs. payoffs; objective: select 1 equilibrium vs. ruling out unreasonable equilibria; solution concept in perturbed game: rationalizability (uniqueness!) vs. Nash equilibrium
+- This exercise is about a model of speculating against a fixed exchange rate: Two players have to decide whether they want to speculate against the peg or not. If both players speculate against, the central bank is unable to defend the peg and the speculators make a profit of $x$. If only one player speculates against the peg, the central bank will successfully defend the peg and the speculating player receives $x-1$. This gives payoffs as below
+\begin{figure}[h]
+       \centering
+      \begin{game}{2}{2}
+             \>  S \> N\\
+        S  \> $x,x$ \> $x-1,0$\\
+       N   \> $0,x-1$ \> $0,0$
+      \end{game}
+     \caption{Speculating against a currency peg}
+   \end{figure}
+Each player does not know $x$ but receives a signal $x_i$ which is uniformly distributed on $[x-0.1,x+0.1]$ (the two signals are independent).
+   - For which values of $x$ is S a dominant action?
+   - For which values of $x$ is N a dominant action?
+   - Suppose player 1 observes $x_1=0.9$. What does he believe about the distribution of $x$ (assume that players had a uniform prior on $[-1,2]$ about the true state $x$ before observing $x_i$)? What does he believe about the distribution of $x_2$?
+# uni on [0.8,1]; triangular on [0.7,1.1] which implies that the height of the triangle is 5 and the slope of the sides is 25
+   - Suppose player 1 believes that player 2 plays $S$ whenever $x_2\geq 1$. What should player 1 do when observing signal $x_1=0.9$?
+# prob(x_2>1)=7/8, hence E[u^S]\geq 0.9-7/8>0=u^N
+   - Suppose player 1 believes that player 2 plays S whenever $x_2\geq \bar x_2$ (and let $\bar x_2\geq 1/2$). For which values of $x_1$ should player 1 definitely play S himself? *What is 1's best response?
+# if x_1\geq \bar x_2, then prob(2 plays S)\geq 1/2 and S is best response; if x_1<\bar x_2-2*0.1 then P2 plays N for sure and N is best response; otherwise prob(x_2>\bar x_2=12.5*(x_1+2*0.1-\bar x_2)^2 and u^S>u^N iff x_1>1-12.5*(x_1+2*0.1-\bar x_2)^2; this gives the best response cutoff \bar x_1 = \bar x_2+(\sqrt{61-50\bar x_2}-6)/25
+   - Can you find a symmetric Nash equilibrium in this game? (recall that a strategy is a function assigning an action to each signal)
+# cut off for both equal to 1/2
+   - *Show that only cutoff strategies are optimal and that the equilibrium of the previous subquestion is the unique Nash equilibrium. Show that this NE is the unique strategy surviving iterative elimination of strictly dominated strategies. (hint: check the Morris/Shin paper for a solution)
+# rationalizability: first round: S when x>1, given this play S if x>

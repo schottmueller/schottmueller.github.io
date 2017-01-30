@@ -1,0 +1,597 @@
+\documentclass[slidestop,serif,compress]{beamer}    %slidestop=title in up-left corner (with "slidescentered" centered); compress=navigation bars as small as possible
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ugm]{mathdesign} %use Garamond font
+
+%gets rid of bottom navigation bars and puts slide numbers right bottom
+\setbeamertemplate{footline}[frame number]{}
+
+%alternative footer: name, institute, page number
+%\setbeamertemplate{footline}
+%{%
+%  \leavevmode%
+%  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+%    \usebeamerfont{author in head/foot}\insertshortauthor
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+%    \usebeamerfont{title in head/foot}\insertshortinstitute \hfill \insertframenumber \,/\,\inserttotalframenumber
+%  \end{beamercolorbox}}%
+%  \vskip0pt%
+%}
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+%%complete themes (not recommended)
+%%\usetheme{Madrid}             %"Berkeley":lhs navigation bar; 1st alternative: "Madrid" without a navigation bar but with a footer including name (institution), title, date page numbering (but then \institute{Univ. ...}); 2nd alternative: defaults without all the extras; 3rd alternative "Dresden": two bottom lines)
+%%"Dresden is possibly easy to adapt to UvT colors
+%instead of using a complete theme inner and outer themes can be specified in isolation
+%inner theme:
+\useinnertheme{rounded} %actually not necessary but nice for theorem boxes etc. but enumerate listings look a bit stupid! Alternative: default = just comment it out
+%outer themes:
+%\useoutertheme[subsection=false,footline=authorinstitutetitlepage]{miniframes} %other options for footer see beamer user guide p. 153
+
+
+%%complete color themes: (ok but inner outer styles below are better)
+%%\usecolortheme{albatross}    % background is colored (in blue) in albatross; the option [overlystylish] installs a background canva which is definitely too stylish for an economics department
+%%\usecolortheme{seagull}   %for greyscale (black and white)
+%%default is not bad!!!
+
+%alternative to complete color schemes one can define an inner and outer color scheme
+%inner color themes
+%\usecolortheme{orchid} %deep color in box(theorem etc.) background fits with outer color scheme "whale"
+\usecolortheme{rose} % less aggressive slight grey shading background (in boxes/theorems etc.) fits nicely with outer color scheme \usecolortheme{seahorse}
+%outer color theme
+\usecolortheme{dolphin}   %alternative to seahorse: "whale" but only if inner scheme is "orchid"
+%
+%\usefonttheme{structurebold}       %titles, headlines, foodlines and sidebars are bold
+
+\usepackage{amsmath, eurosym, textcomp, graphicx, amsthm, amssymb, hyperref,tikz,xcolor,sgame}
+
+%\usepackage{comment}
+%\newcommand{\com}{\comment}
+%\newcommand{\ecom}{\endcomment}
+
+\setlength {\parindent}{0cm}
+\newcommand {\bi}{\begin{itemize}}
+\newcommand {\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\del}{\partial}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+
+\renewcommand{\Re}{\mathbb{R}}
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+%\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+%\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{observation}{Observation}
+%\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+\newtheorem{exercise}{Exercise}
+%\newtheorem{definition}{Definition}
+
+%\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\author{Christoph Schottmüller}
+\institute{University of Copenhagen}
+\title{Game Theory\\ Lecture 2: Strategic form games and NE\footnote{Licensed under Creative Commons Attribution ShareAlike 4.0 International License}}
+\date{}
+
+\newcommand{\fr}{\frame[allowframebreaks]}
+\newcommand{\ft}{\frametitle}
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumberappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberappendix}}
+}
+
+\begin{document}
+
+\begin{frame}   % Cover slide
+\titlepage
+\end{frame}
+
+\section[Outline]{}
+\frame{\ft{Outline}\tableofcontents}
+
+
+\section{Strategic games}
+\fr{\ft{An example }
+ \begin{table}[h]
+\hspace*{\fill}
+%\begin{tabular}{r|c|c}
+ \begin{game}{2}{2}[Player 1][Player 2]
+    & C     &D \\ % \hline
+C   &$2,2$   & $0,3$   \\
+D   &$3,0$   & $1,1$
+\end{game}
+%\end{tabular}
+\hspace*{\fill}
+\caption{prisoners dilemma}
+\end{table}
+
+\begin{itemize}
+\item  What do the numbers in the game table actually mean?
+\item What if the other player plays $C$ and $D$ with 50\% probability? How to evaluate that?
+\item Dominant strategy?
+\item Nash equilibrium?
+\end{itemize}
+}
+
+
+
+\subsection{Notation}
+\fr{\ft{Notation}
+\begin{itemize}
+\item finite set $N$ of players; usually we call the  players ``player 1'',``player 2'', ``player 3'' or simply ``P1'', ``P2'' etc.
+\item set of actions $A_i$ from which each player $i$ has to choose;\\
+if all $A_i$ are finite, we say the game is finite 
+\item we call $a=(a_i)_{i\in N}$ with $a_i\in A_i$ an \emph{action profile} (and sometimes an \emph{outcome}), i.e. each player takes one of his actions;\\
+sometimes it is convenient to denote an action profile by $(a_i,a_{-i})$
+\item $A=\times_{i\in N}A_i$ the set of all action profiles/outcomes
+\item each player $i$ has a preference $\succeq_i$ over the outcomes in $A$;\\
+ we will normally assume that this preference relation can be represented by v.N-M. expected utility function $u_i:A\ra \Re$;\\
+we refer to values of $u_i$ as \emph{payoffs}
+  \begin{itemize}
+  \item sometimes the utility function will also depend on a random variable $\omega\in\Omega$, then $u_i:A\times\Omega\ra\Re$
+  \end{itemize}
+\item a strategic game can be denoted by $\langle N,(A_i),(u_i)\rangle$
+\end{itemize}
+
+
+A convenient way to write 2-player strategic games is a table.\\
+Normally, ``player 1'' (P1) is the row player and ``player 2'' (P2) is the column player.
+ \begin{table}[h]
+\centering
+%\begin{tabular}{r|c|c}
+ \begin{game}{2}{2}
+    & L     &R \\ % \hline
+T   &$w_1,w_2$   & $x_1,x_2$   \\
+B   &$y_1,y_2$   & $z_1,z_2$
+\end{game}
+%\end{tabular}
+\caption{2-player game written in table}
+\end{table}
+
+\begin{itemize}
+\item What is $w_1$ in our game notation?
+\item What are the action sets?
+\item Give an example of an action profile.
+\end{itemize}
+
+%DO THIS ON BLACKBOARD WHILE DISCUSSING NOTATION
+% \begin{ex}
+%    \begin{table}[h]
+% \centering
+% \begin{tabular}{l|l|l}
+%        & C & D\\ \hline
+% C   &2,2   & 0,3   \\
+% D   &3,0   & 1,1  
+% \end{tabular}
+% \caption{prisoner's dilemma}
+% \label{tab:pris_dil2}
+% \end{table}
+% \begin{itemize}
+% \item $N=\{P1,P2\}$
+% \item $A_1=A_2=\{C,D\}$
+% \item a possible action profile would be $(C,D)$ where P1 plays $C$ and $P2$ plays $D$
+% \item $A=\{(C,C),(C,D),(D,C),(D,D)\}$
+% \item utilities are as in the table, e.g. $u_1(C,D)=0$ and $u_2(C,D)=3$
+% \end{itemize}
+% \end{ex}
+\begin{ex}[Cournot competition]
+  \begin{itemize}
+  \item 3 firms 
+  \item each firm chooses a quantity $q_i$, $i=1,2,3$, it wants to put on the market
+  \item the market price will be $p=max\{1-q_1-q_2-q_3,0\}$
+  \item assume each firm's costs are zero
+  \item each firm maximizes its expected profits
+  \end{itemize}
+Questions:
+\begin{itemize}
+\item What is the set of players $N$?
+\item What is the action set $A_i$?
+\item Give an example of an action profile.
+\item What are the player's utility functions $u_i$?
+\end{itemize}
+\end{ex}
+}
+
+\frame{\ft{Interpretation of a game}
+Interpretation of a strategic game:
+\begin{enumerate}
+\item one shot game
+  \begin{itemize}
+  \item one time event
+  \item each player knows game 
+  \item rationality is common knowledge
+  \item actions are chosen simultaneously and independently
+  \item  a player can base his expectation of other player's play only on primitives of the game  
+\end{itemize}
+ 
+\item repeated play without strategic link
+  \begin{itemize}
+  \item game is played repeatedly but with different opponents
+  \item  no intertemporal strategic link between games
+  \item players can have expectations how rational players play based on past plays
+  \end{itemize}
+\end{enumerate}
+}
+
+\subsection{Nash equilibrium}
+\subsubsection{NE in pure strategies}
+\fr{\ft{Nash equilibrium}
+Steady state concept:
+\begin{itemize}
+\item each player has correct expectation about other players' behavior
+\item each player maximizes his utility given his expectation of other players' behavior (rational)
+\end{itemize}
+
+\begin{definition}[Nash equilibrium]
+  A Nash equilibrium of a strategic game $\langle N,(A_i),(u_i)\rangle$ is an action profile $a^*\in A$ such that for every player $i\in N$
+$$u_i(a_{-i}^*,a_i^*)\geq u_i(a_{-i}^*,a_i)\qquad \text{for all }a_i\in A_i.$$
+\end{definition}
+%no profitable deviation
+
+\begin{definition}[best response]
+  The correspondence $B_i$  defined by
+$$B_i(a_{-i})=\{a_i\in A_i: u_i(a_{-i},a_i)\geq u_i(a_{-i},a_i') \text{ for all }a_i'\in A_i\}$$
+is player $i$'s \emph{best response}.
+\end{definition}
+
+\begin{ex}
+   \begin{table}[h]
+\centering
+%\begin{tabular}{r|c|c}
+ \begin{game}{2}{3}
+    & L    &M         &R \\ % \hline
+U   &0,1  &2,1  &1,0   \\
+D   &1,1  &2,2  &0,0
+\end{game}
+%\end{tabular}
+%\caption{2-player game written in table}
+\end{table}
+\begin{itemize}
+\item What is P2's best response to $U$, i.e. $B_2(U)$?
+\item What is $B_2(D)$? 
+\end{itemize}
+\end{ex}
+
+\begin{itemize}
+\item Note: Sometimes it will be convenient to write $B_i$ as a function of $a$ instead of $a_{-i}$. 
+\item A Nash equilibrium is an action profile $a^*$ for which $a_i^*\in B_i(a_{-i}^*)$ for all $i\in N$.
+\item Define $B(a)=B_1(a)\times B_2(a)\times \dots \times B_n(a)$. A NE is now an $a^*$ such that $a^*\in B(a^*)$.
+\item method to compute NE: Calculate all best responses and construct the set valued function $B(a)$; search for fixed points of $B(a)$.
+\end{itemize}
+
+\begin{exercise}
+  Determine best responses and Nash equilibria of the following game:
+\begin{table}[h]
+\centering
+%\begin{tabular}{l|l|l}
+ \begin{game}{2}{2}
+       & Go 2 & Stop 2\\ %\hline
+Go 1   &-1,-1 & 4,1   \\
+Stop 1 &1,4   &3,3
+\end{game}   
+%\end{tabular}
+\caption{Chicken}\label{tab:chicken}
+\end{table}
+\end{exercise}
+}
+
+\subsubsection{Why Nash equilibrium?}
+\frame{\ft{Why is Nash equilibrium reasonable?}
+\begin{itemize}
+\item self-enforcing recommendation, % i.e. someone knowing how the recommendation is made cannot beat the recommendation (non-paternalistic prediction)
+\item steady state interpretation of game% : game is played repeatedly against different people. What are steady state like strategies? Nash:  no incentive to change; (version with population of player $i$ people, then: what is a stable distribution of action $a_i$ guys in the distribution?)
+\item pre-play negotiations: if players make non-binding agreements before play, which agreements will actually be honored? NE!
+\item (evolutionary stable strategy)
+\end{itemize}
+}
+
+% \subsubsection{evolutionary stable strategies}
+
+% \fr{\ft{Evolutionary stable strategies}
+%   \begin{itemize}
+%   \item based on Darwin's idea of the ``survival of the fittest''
+%   \item we use a very simple model to illustrate what survival of the fittest could mean
+%   \item for us: \emph{fittest} means having the most offsprings
+%   \item every creature is either \emph{violent} (V) or \emph{peaceful} (P)
+%   \item number of offsprings depends on your and the other creatures' type
+%     \begin{itemize}
+%     \item if you are P and the share of P in the population is $\alpha$, you have $\alpha 4+(1-\alpha)1$ offsprings
+%     \item if you are V and the share of P in the population is $\alpha$, you have $\alpha 3+(1-\alpha)2$ offsprings
+%     \end{itemize}
+%    we can summarize this in a table 
+% \end{itemize}
+% \begin{table}[h]
+% \centering
+%  \begin{game}{2}{2}
+%        & P & V\\ %\hline
+% P  &4,4& 1,3   \\
+% V &3,1  &2,2
+% \end{game}   
+% \end{table}
+% \begin{itemize}
+%  \item What kind of population (i.e. which proportion of Ps and Vs) is stable in the following sense:
+%    \begin{itemize}
+%    \item there is a small fraction $\varepsilon $ of mutants (these are offsprings who do not share the type of their parents but could have any type)
+%    \item a population is stable if no matter which type the mutants have, the population returns in the long run to the share of Vs and Ps it had in the beginning (for $\varepsilon >0$ small enough)
+%    \item the latter will happen if the mutants have less offsprings than the non-mutants
+%    \end{itemize}
+% \item Is a population with 100\% Ps stable?
+%   \begin{itemize}
+%   \item What is the expected number of offsprings of a mutant of type V? What is the expected number of offsprings of a non-mutant?
+%   \end{itemize}
+% \item Is a population with 100\% Vs stable?
+%   \end{itemize}
+% \framebreak
+% \begin{itemize}
+% \item Let's be a bit more general
+%   \begin{itemize}
+%   \item the set of types is $A$
+%   \item the number of offsprings of a type $a\in A$ in a population where everyone else is of type $b\in A$ is $u(a,b)$
+%   \item say the population consists entirely of type $a$ but now there is an $\varepsilon $ share of mutants of type $b$
+%     \begin{itemize}
+%     \item What is the expected number of offsprings of mutant?
+%     \item  What is the expected number of offsprings of non-mutant?
+%     \end{itemize}
+%   \item $a\in A$ is an \emph{evolutionary stable strategy}  if for all $b\in A $ there is a $\varepsilon ^*$ such that for all $\varepsilon \in(0,\varepsilon ^*)$:
+% $$(1-\varepsilon ) u(a,a)+\varepsilon u(a,b)\geq (1-\varepsilon )u(b,a)+\varepsilon u(b,b)$$
+%   \end{itemize}
+% \end{itemize}
+% \framebreak
+% Define the utility functions $u_1$ and $u_2$ as $u_1(a,b)=u(a,b)$ and let $u_2(a,b)=u(b,a)$.
+% \begin{prop}
+%   Let $a$ be an evolutionary stable strategy. Then $(a,a)$ is a Nash equilibrium in the game $\langle\{1,2\},(A, A),(u_1,u_2)\rangle $.
+% \end{prop}
+% \textbf{Proof. }
+
+% \framebreak
+% \begin{itemize}
+% \item note that the converse of the proposition is not true
+% \end{itemize}
+% \begin{ex}
+%   \begin{table}[h]
+% \centering
+%  \begin{game}{2}{2}
+%        & P & V\\ %\hline
+% P  &4,4& 2,2   \\
+% V &2,2 &2,2
+% \end{game}   
+% \end{table}
+% \begin{itemize}
+% \item $(V,V)$ is a NE of the game above
+% \item $V$ is not evolutionary stable:
+%   \begin{itemize}
+%   \item What is the expected number of offsprings of a P mutation?
+%   \item What is the expected number of offsprings of a V type if there is an $\varepsilon $  of P mutants?
+%   \end{itemize}
+% \end{itemize}
+% \end{ex}
+
+% \framebreak
+
+% In conclusion:
+% \begin{itemize}
+% \item any evolutionary stable strategy is a Nash equilibrium 
+% \item there can be Nash equilibria that are not evolutionary stable
+% \item we say: evolutionary stable strategies are a \emph{refinement} of Nash equilibrium
+% \end{itemize}
+%  }
+
+
+\section{Mixed Strategies}
+\label{sec:mixed-strategies}
+
+\fr{\ft{Mixed Strategies}
+\begin{ex}[ mixed strategy equilibrium: matching pennies]\label{ex:mp}
+ \begin{table}[h]
+\centering
+ \begin{game}{2}{2}
+%\begin{tabular}{l|l|l}
+    & H    & T\\% \hline
+H   &1,0 & 0,1   \\
+T   &0,1   &1,0   
+%\end{tabular}
+\end{game}
+\caption{Matching Penies}
+\label{tab:matchpen}
+\end{table}
+\begin{itemize}
+\item game has no pure strategy equilibrium
+\item how would you play this game?
+\end{itemize}
+\end{ex}
+
+\framebreak
+
+\begin{itemize}
+\item sometimes it is best to randomize
+\item extend out strategy space: a strategy of player $i$ is a probability distribution over the elements of $A_i$
+\item denote by $\Delta (A_i)$ the set of probability distributions over $A_i$
+\item a member of $\Delta (A_i)$ is a mixed strategy of player $i$
+\item take $\delta\in \Delta (A_i)$ and let $A_i$ be finite
+  \begin{itemize}
+  \item $\delta(a_i)$ is the probability that
+    $\delta$ assigns to $a_i$
+  \item set of $a_i\in A_i$ such that $\delta(a_i)> 0$ is the \emph{support} of $\delta$
+  \end{itemize}
+\item $a_i\in A_i$ is a \emph{pure strategy,} i.e. a mixed strategy that puts all probability weight on $a_i$
+\item for finite games: under a profile $(\alpha_j)_{j\in N}$ of mixed strategies the probability of the action profile $a=(a_j)_{j\in N}$ is $\Pi_{j\in N} \alpha_j(a_j)$
+\item player $i$'s preferences are represented by the expected utility function $U_i:\times_{j\in N}\Delta(A_j)\ra \Re$ which assigns to $(\alpha_j)_{j\in N}$ the value 
+$$U_i(\alpha)=\sum_{a\in A}\left(\Pi_{j\in N}\alpha_j (a_j)\right) u_i(a).$$
+\vspace*{1cm}
+\item give an example for a mixed strategy of P1 in matching pennies
+\item give an example for a pure strategy of P1 in matching pennies
+\item what is $\Delta(A_1)$ in the matching pennies example?
+\end{itemize}
+
+\framebreak
+
+\begin{ex}
+  \begin{itemize}
+  \item 3 player game
+  \item give an example of a mixed strategy of P1
+  \item what is P1's expected payoff with this mixed strategy if P2 plays L and P3 plays B?
+  \item what is P1's expected payoff with this mixed strategy if
+    \begin{itemize}
+    \item P2 plays L with probability 2/3 and R with probability 1/3
+    \item P3 plays A and B with probability 1/2?
+    \end{itemize}
+  \end{itemize}
+
+  \begin{table}[h]
+    \centering
+    \begin{game}{2}{2}[$A$]
+      % \begin{tabular}{l|l|l}
+         &L & R \\% \hline
+     H   &1,0,1 & 0,1,0   \\
+     T   &0,1,1   &1,0,0 
+      % \end{tabular}
+    \end{game}
+\hspace*{0.5cm}
+ \begin{game}{2}{2}[$B$]
+      % \begin{tabular}{l|l|l}
+         &L & R \\% \hline
+     H   &1,0,0 & 0,1,1   \\
+     T   &0,1,0   &1,0,1 
+      % \end{tabular}
+    \end{game}
+  \end{table}
+\end{ex}
+
+
+\framebreak
+
+\begin{definition}
+  The \emph{mixed extension} of the strategic game $\langle N,(A_i),(u_i)\rangle$ is the strategic game $\langle N,(\Delta(A_i)),(U_i)\rangle$.
+\end{definition}
+
+\begin{definition}
+  A \emph{mixed strategy Nash equilibrium} of a strategic game $G$ is a Nash equilibrium in the mixed extension of $G$.
+\end{definition}
+\begin{itemize}
+\item any suggestions for a mixed strategy equilibrium in matching pennies?
+\end{itemize}
+
+\framebreak
+\begin{lemma}\label{lem:weight_only_on_pure_br}
+  $\alpha^*\in \times_{i\in N}\Delta(A_i)$ is a mixed strategy Nash equilibrium of $\langle N,(A_i),(u_i)\rangle$ if and only if for every player $i$, every pure strategy in the support of $\alpha_i^*$ is a best response to $\alpha_{-i}^*$. Hence, any action played with positive probability in a mixed strategy NE yields the same payoff.
+\end{lemma}
+\textbf{Proof.}% If there was an action $a_i$ in the support of $\alpha_i^*$ that is not a best response, then player $i$ can increase $U_i$ by shifting probability mass to a best response action (because $U_i$ is linear in $\alpha_i$!).\\
+% Conversely, suppose there was a mixed strategy $\alpha_i'$ yielding a higher $U_i$ than $\alpha_i^*$. Because of the linearity of $U_i$, this implies that $\alpha'_i$ has to have an action in its support giving a higher payoff to player $i$ than some action in the support of $\alpha^*_i$. This contradicts the assumption that only best response actions were in the support of $\alpha^*_i$.
+
+\framebreak
+\begin{ex}[ mixed strategy equilibrium: chicken]\label{ex:chicken}
+ \begin{table}[h]
+\centering
+ \begin{game}{2}{2}
+%\begin{tabular}{l|l|l}
+       & Go 2 & Stop 2\\% \hline
+Go 1   &-1,-1 & 4,1   \\
+Stop 1 &1,4   &3,3   
+%\end{tabular}
+\end{game}
+\caption{Chicken}
+\label{tab:chicken2}
+\end{table}
+This game has two NE in pure and one in completely mixed strategies. Find all three!
+% There are two pure strategy equilibria (Go1,Stop2) and (Stop1,Go2). Let's check for an completely mixed equilibrium. By lemma \ref{lem:weight_only_on_pure_br}, each player has to be indiffrent between actions. Say player 2 plays Go with probability p. Then 1 is indifferent if
+% $$(-1)p+4 (1-p)=1 p+(1-p) 3 \qquad \Leftrightarrow \qquad p=1/3.$$
+% Same for player 2. Hence, $s_1=s_2=(1/3,2/3)$ is equilibrium. Note that the Nash equilibrium is inefficient.
+\end{ex}
+}
+
+\fr{\ft{Interpretation of mixed strategies}
+\begin{itemize}
+\item  deliberate randomization (e.g. Poker)\\
+problem: motivation for randomization seems to be out-guessing/avoiding other player which seems to be deliberate and not random (psychological)
+\item stochastic steady state\\
+ frequencies that are necessary to keep system steady % interpretation of large groups of individuals and one plays randomly one of them: mixed strat is about composition of these groups to yield stability
+\item non-modelled aspects. The action of a player depends on things that are not modelled % (I play L if I woke up before my alarm clock rang and R otherwise; but you don't observe this i.e. it appears random)
+  \\
+ Problem: model incomplete?! or deliberate behavior depends on factors that have nothing to do with payoff % one's randomization device might change ``its probabilities'' (I wake up earlier in summer than in winter), then one has to keep changing the device to keep right mix
+\item Players play pure strategies but opponents do not know which; mixed strategy is belief of other players not actual randomization $\Ra$  equilibrium is a steady state of players' beliefs about others' actions\\ 
+Problem: all opponenets have same belief! predictive power of equilibrium appears smaller % (equilibrium is then about beliefs and does not say much about actions, ok it says that it should be some arbitrary best response action)
+\item  nice mathematical tool that guarantees equilibrium existence in finite games\\
+Problem: some interpretation and connection to strategic behavior would be nice
+\item small uncertainty about other players payoff (purification)
+\end{itemize}
+}
+
+
+\frame{\ft{Review Questions}
+  \begin{itemize}
+  \item What is a strategic form game? Which elements constitute a strategic form game?
+ \item What is the difference between an action and an action profile?
+  \item What are the two (main) interpretations of a strategic form game?
+  \item Write down the formal definition of a Nash equilbrium and of a best response!
+  \item Why is Nash equilibrium an interesting concept?
+  \item What are mixed strategies and how can we denote them? What is the mixed extension of a game?
+  \item How can we interpret mixed strategies?
+  \end{itemize}
+reading: OR 2.1-2.3, 3.1-3.2 or MSZ 4.1,4.3,4.4,4.8,4.9, 5.1-5.2
+}
+
+\frame[allowframebreaks]{\ft{Exercises}
+  \begin{enumerate}
+  \item This exercise is about a simple the Bertrand game: There are two firms trying to sell the same good to one consumer. The two firms offer a price and the consumer will buy the good at the lower of the two prices if the price is below  his valuation 1. The firms have zero costs. Write this formally as a game, i.e. define a set of players, set of actions, utility functions. Find a Nash equilibrium of this game and check that it satisfies the conditions in the definition of Nash equilibrium.
+\item Assume now that in the Bertrand game above prices have to be quoted in whole cents. Suppose that firm 1 is playing a mixed strategy putting weight $\alpha>0$ on $p_1$ and weight $1-\alpha>0$ on $p_2$. Assume $0.01<p_1<p_2<1$. What is firm 2's best response? 
+\item Determine a mixed strategy equilibrium (and two pure strategy equilibria) in the following game:
+
+\begin{game}{2}{3}
+%\begin{tabular}{l|l|l}
+    & L    & M   &R\\% \hline
+U   &5,7 & 2,1   &8 ,5\\
+D   &0,1  &5,3   &1 ,0
+%\end{tabular}
+\end{game}
+  \end{enumerate}
+}
+
+% \appendix
+% \backupbegin
+% %backup slides which will not be counted for total slide number
+
+% \backupend
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to show items one by one it is easiest to insert a "\pause" command before the \item command
+
+hyperlinks: \hyperlink{targetname}{\beamergotobutton{Text in button}} }
+    to define a target insert the option [label=targetname] after the \frame command: \frame[label=targetname]{\ft{title}...}
+    alternative the command \hypertarget{targetname}{} can be used
+    To go back there exists a \beamerreturnbutton{text in button}

@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {2}{Rationalizability}{3}{0}{1}
+\beamer@sectionintoc {3}{Iterative elimination of strictly dominated actions}{10}{0}{2}

@@ -1,0 +1,278 @@
+#+TITLE:    Finding mixed Nash equilibria in finite strategic games of complete information
+#+AUTHOR:    Christoph
+#+EMAIL:    
+#+DATE:      2015-07-31 Fri
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:nil mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+* Using a numerical approach based on solving an equation system
+
+In a mixed equilibrium, each player uses only best responses with positive probability.  Denote the mixed strategy of player $i$ by the vector $x_i$ (which contains for each action the probability with which it is played). Denoting the expected utility for player $i$ when playing a best response as $EU_i^{br}$ (this will of course depend on $x_{-i}$ which we omit for brevity), we can write the vector 
+$$\Delta_i(x_{-i})=(EU_i(a_1)-EU_i^{br},EU_i(a_2)-EU_i^{br}\dots EU_i(a_n)-EU_i^{br})$$ 
+as the vector containing for each action of player $i$ the difference of the expected utility when taking this action and when taking the best response. Clearly, at least one entry in this vector is zero (each entry corresponding to a best response) and all other entries are negative. Therefore, we can describe an equilibrium by the following equations
+$$\Delta_i(x_{-i})x_i=0\qquad \text{for all players } i$$
+together with the feasibility constraints 
+$$\mathbf{0}\leq x_i\leq \mathbf{1}\qquad \text{ and }\qquad x_i\mathbf{1}=1.$$
+This is a simple system of equations with constraints and we can use a standard solver to get a solution, i.e. an equilibrium.
+
+We use the example game:
+
+#+CAPTION: Example
+#+ATTR_HTML: :border 2 :rules all :frame border :align center
+|   | L   | R   |
+|---+-----+-----|
+| U | 0,0 | 3,1 |
+| D | 1,3 | 1,1 |
+
+** 2 player games
+
+First, we have a program for 2 player games (which is slightly easier to read). Below we will then have a second program for n-player games.
+
+#+BEGIN_SRC python :exports both :results output
+  from openopt import SNLE
+  from numpy import dot
+  import time
+  start_time = time.time()
+  
+  #these are the payoffs from the game table; 
+  #each row in the game table is a list of payoff tuples; 
+  #the game table is then a list of these rows
+  payoffs = [[(0,0),(3,1)],[(1,3),(1,1)]]
+
+  n = len(payoffs)#this is the number of actions of P1
+  m = len(payoffs[0])#this is the number of actions of P2
+  #next we extract the payoffs of only player 1 from the payoffs above
+  payoff1 = []
+  for i in payoffs:
+      temp = []
+      for j in i:
+          temp.append(j[0])
+      payoff1.append(temp)
+
+  #now we extract the payoffs for P2
+  payoff2 = []
+  for i in payoffs:
+      temp = []
+      for j in i:
+          temp.append(j[1])
+      payoff2.append(temp)
+
+  #expected utility of P1 when using action a1 while P2 uses the mixed strategy strat2
+  def EU1(a1,strat2):
+      return dot(payoff1[a1],strat2)#dot gives the vector "dot-product" of two arrays
+  #expected utility of P2 when using action a2 while P1 uses the mixed strategy strat1
+  def EU2(a2,strat1):
+      temp = 0
+      i = 0
+      while i<n:
+          temp = temp + payoff2[i][a2]*strat1[i]
+          i += 1
+      return temp
+
+  #This function takes a vecor x which contains both a mixed strategy of P1 (in the first n elements) 
+  #and also a mixed strategy of P2 (in the following m elements). 
+  #The output of the function is the Delta described above but again it returns the Delta for both players.
+  def Delta(x):
+      x1 = x[:n]#P1's mixed strategy
+      x2 = x[n:]#P2's mixed strategy
+      EU1max = 0.0#will containt the best response EU of P1
+      EU1list = []#will become Delta_1(x2)
+      i = 0
+      while i<n:#loop through all actions of P1
+          temp = EU1(i,x2)
+          EU1max = max(temp,EU1max)
+          EU1list.append(temp)
+          i+=1
+      EU1list = [z - EU1max for z in EU1list]#now EU1list is the Delta_1(x2) described above
+      i = 0
+      EU2list = []
+      EU2max = 0.0
+      while i<m:
+          temp = EU2(i,x1)
+          EU2max = max(temp,EU2max)
+          EU2list.append(temp)
+          i+=1
+      EU2list = [y - EU2max for y in EU2list]
+      EUlist = EU1list + EU2list
+      return EUlist
+
+  #multiplies the vectors x and Delta(x); this product has to be 0 in equilibrium
+  def product(x):
+      return dot(x,Delta(x))
+
+  lb = [0.0]*(n+m)#lower bound to ensure that all probabilities are above 0
+  ub = [1.0]*(n+m)#upper bound ensures that all probs are below 1
+  Aeq = [[1.0]*n+[0.0]*m,[0.0]*n+[1.0]*m]#constraints that ensure that both the  mixed strategy of P1 and P2 sum to 1
+  beq = [1.0,1.0]
+  x0 = [1.0/n]*n+[1.0/m]*m#arbitrary starting value for the algorithm 
+
+  p = SNLE(product,x0,lb=lb,ub=ub,Aeq=Aeq,beq=beq)
+  p.iprint = -1
+  r = p.solve('nssolve')
+
+  if r.stopcase==1:
+      print 'equilibrium: P1 plays',r.xf[:n],' and P2 plays',r.xf[n:]
+  else:
+      print 'Error: solver cannot find an equilibrium'
+
+  print("--- %s seconds ---" % (time.time() - start_time))
+#+END_SRC
+
+Note that the program above will give you only one equilibrium and not all equilibria. In principle, this could be changed by either trying many different starting values or by using a "global" equation solver that can find all solutions. 
+
+** n player games
+
+Note that we use a slightly different notation for the payoff matrix in this setup which allows us to stay organized with more than 2 players.
+
+#+BEGIN_SRC python :exports both :results output
+  """ Finds a Nash equilibrium of a finite strategic form game of complete information.
+  A strategy of player i is represented as an array where the number of elements equals
+  the number of actions of this player; each element is the probability
+  of the corresponding action. 
+  A strategy profile is an array of strategies. """
+
+  from openopt import SNLE
+  import numpy as np
+  import time
+  start_time = time.time()
+
+  #these are the payoffs from the game table; 
+  #each column in the game table is a list of payoff tuples; 
+  #the game table is then a list of these columns
+  payoffs = np.array([[[0,0],[1,3]],[[3,1],[1,1]]])
+  #for games with 3 or more players:
+  ## 3 players: an array with two player games as its components,
+  ##the first one corresponds to the first action of P3 etc.
+  ## n players: an array of 'n-1 player games', the k-th corresponds to the k-th action of player n
+  ##example for 3 players with P1 having 3 actions, P2 and P3 having 2 actions
+  #payoffs = np.array([[[[0,0,0],[1,3,0],[1,1,1]],[[3,1,0],[1,1,0],[1,1,1]]],[[[0,0,0],[1,3,0],[1,1,1]],[[3,1,0],[1,1,0],[1,1,1]]]] ) 
+
+  dim = payoffs.shape
+
+  n = payoffs.ndim-1#number of players
+  no_a = [] #will contain number of actions available for each player
+  #as the first number is number of actions of last player etc., we eventually turn the list around
+  for i in dim[:-1]:
+      no_a.append(i)
+  no_a = no_a[::-1]
+      
+  #gets numpy array of likelihoods of action profiles (from players 0..i-1) and strategy of player i, 
+  #returns likelihoods of action profiles for players up to i
+  def help(probmatrix, strati):
+      new = np.array([probmatrix*prob for prob in strati])
+      return new
+
+  #returns the expected payoff of player i from playing ai if others play mixed strategies stratmini
+  def EUi(stratmini,ai,i):
+      j = n-1#the next few lines define a list of slice object to extract i's payoffs when he plays ai from the payoff matrix; 
+      #recall that the first index denotes the action of the last player in payoffs!
+      obj = ()
+      while j>i:
+          obj = obj + (slice(0,None,1),)
+          j = j-1
+      obj = obj + (slice(ai,ai+1,1),)
+      j = j-1
+      while j>=0:
+          obj = obj + (slice(0,None ,1),)
+          j = j-1
+      obj = obj + (slice(i,i+1,1),)
+      payoffi = payoffs[obj]
+      temp = np.array([1.])#constructs probability matrix, giving probabilities of action profiles of other players
+      for stratj in stratmini:
+          temp = help(temp,stratj)
+      return np.dot(temp.flatten(),payoffi.flatten())
+      
+
+  #This function takes a mixed strategy profile as argument.
+  #The output is the Delta described above but it returns the Delta for all players as a flat(!)  numpy array.
+  def Delta(strat):
+      i = 0
+      out = []
+      while i < n:
+          stratmini = strat[0:i] + strat[i+1:len(strat)]
+          uimax = -1000.0#assumes that all payoffs are above -1000.0
+          uilist = []
+          for action in range (no_a[i]):
+              uact = EUi(stratmini,action,i)
+              uilist.append(uact)
+              uimax = max(uimax,uact)
+          deltai = [item - uimax for item in uilist]
+          out.append(deltai)
+          i+=1
+      return np.array([item for sublist in out for item in sublist])
+
+
+  no_a_np = np.array(no_a)
+  total_no_a = no_a_np.sum()
+
+  lb = [0.0]*total_no_a#lower bound to ensure that all probabilities are above 0
+  ub = [1.0]*total_no_a#upper bound ensures that all probs are below 1
+
+  Aeq = []#constraints that ensure that both the  mixed strategies fo each player sum to 1
+  beq = [1.]*n#dito
+  x0 = []
+  actagg = [0]
+
+  for i in range(n):
+      no_a_i = no_a[i]
+      Aeq.append([0.]*actagg[i] + [1.]*no_a_i + [0.]*(total_no_a-actagg[i]-no_a_i))
+      x0 = x0 + [1.0/no_a_i]*no_a_i
+      actagg.append(actagg[i]+no_a_i)
+
+  #multiplies the vectors strat and Delta(strat); this product has to be 0 in equilibrium
+  def product(x):
+      strat = []
+      for i in range(n):
+          strat.append(x[actagg[i]:actagg[i+1]])
+      return np.dot(x,Delta(strat))
+
+  p = SNLE(product,x0,lb=lb,ub=ub,Aeq=Aeq,beq=beq)
+  p.iprint = -1
+  r = p.solve('nssolve')
+
+  if r.stopcase==1:
+      print 'there is an equilibrium in which '
+      for i in range(n):
+          out = [round(item,3) for item in r.xf[actagg[i]:actagg[i+1]]]
+          print 'player',i,'uses the mixed strategy',out
+  else:
+      print 'Error: solver cannot find an equilibrium'
+
+  print("--- %s seconds ---" % (time.time() - start_time))
+#+END_SRC
+
+#+RESULTS:
+: there is an equilibrium in which 
+: player 0 uses the mixed strategy [0.667, 0.333]
+: player 1 uses the mixed strategy [0.667, 0.333]
+: --- 0.127621173859 seconds ---
+
+# things that could speed up the program:
+# ***** TODO provide derivatives of the product function to the solver
+# ***** TODO use Cython/numba etc. to write the "help" function
+
+
+  # given mixed strategies, gives a matrix with same dimension as payoffs
+  # where each entry is the probability of the corresponding action profile
+  # under the given mixed strategy profile.
+  # strat is a np.array with P0's mixed strat first.
+  # output contains a for each action profile an array of length n 
+  # where all elements are the same to ensure compatibility with payoffs
+  # def probmatrix(strat):
+  #    temp = np.array([1.]*n)
+  #    for strati in strat:
+  #        temp = help(temp,strati)
+  #    return temp
+
+
+  # gives the expected payoff of all player from each action profile given mixed strategy profile strat
+  # def EUcontrib(strat):
+  #    probs = probmatrix(strat)
+  #    return probs*payoffs

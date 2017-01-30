@@ -1,0 +1,364 @@
+\documentclass[slidestop,serif,compress]{beamer}    %slidestop=title in up-left corner (with "slidescentered" centered); compress=navigation bars as small as possible
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ugm]{mathdesign} %use Garamond font
+
+%gets rid of bottom navigation bars and puts slide numbers right bottom
+\setbeamertemplate{footline}[frame number]{}
+
+%alternative footer: name, institute, page number
+%\setbeamertemplate{footline}
+%{%
+%  \leavevmode%
+%  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+%    \usebeamerfont{author in head/foot}\insertshortauthor
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+%    \usebeamerfont{title in head/foot}\insertshortinstitute \hfill \insertframenumber \,/\,\inserttotalframenumber
+%  \end{beamercolorbox}}%
+%  \vskip0pt%
+%}
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+%%complete themes (not recommended)
+%%\usetheme{Madrid}             %"Berkeley":lhs navigation bar; 1st alternative: "Madrid" without a navigation bar but with a footer including name (institution), title, date page numbering (but then \institute{Univ. ...}); 2nd alternative: defaults without all the extras; 3rd alternative "Dresden": two bottom lines)
+%%"Dresden is possibly easy to adapt to UvT colors
+%instead of using a complete theme inner and outer themes can be specified in isolation
+%inner theme:
+\useinnertheme{rounded} %actually not necessary but nice for theorem boxes etc. but enumerate listings look a bit stupid! Alternative: default = just comment it out
+%outer themes:
+%\useoutertheme[subsection=false,footline=authorinstitutetitlepage]{miniframes} %other options for footer see beamer user guide p. 153
+
+
+%%complete color themes: (ok but inner outer styles below are better)
+%%\usecolortheme{albatross}    % background is colored (in blue) in albatross; the option [overlystylish] installs a background canva which is definitely too stylish for an economics department
+%%\usecolortheme{seagull}   %for greyscale (black and white)
+%%default is not bad!!!
+
+%alternative to complete color schemes one can define an inner and outer color scheme
+%inner color themes
+%\usecolortheme{orchid} %deep color in box(theorem etc.) background fits with outer color scheme "whale"
+\usecolortheme{rose} % less aggressive slight grey shading background (in boxes/theorems etc.) fits nicely with outer color scheme \usecolortheme{seahorse}
+%outer color theme
+\usecolortheme{dolphin}   %alternative to seahorse: "whale" but only if inner scheme is "orchid"
+%
+%\usefonttheme{structurebold}       %titles, headlines, foodlines and sidebars are bold
+
+\usepackage{amsmath, eurosym, textcomp, graphicx, amsthm, amssymb, hyperref,tikz,xcolor,sgamevar}
+
+\setlength {\parindent}{0cm}
+\newcommand {\bi}{\begin{itemize}}
+\newcommand {\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\del}{\partial}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+
+\renewcommand{\Re}{\mathbb{R}}
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+%\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+%\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{observation}{Observation}
+%\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+\newtheorem{exercise}{Exercise}
+%\newtheorem{definition}{Definition}
+
+%\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\author{Christoph Schottmüller}
+\institute{University of Copenhagen}
+\title{Game Theory\\ Nash Theorem\footnote{License: CC Attribution Share Alike 4.0}}
+\date{}
+
+\newcommand{\fr}{\frame[allowframebreaks]}
+\newcommand{\ft}{\frametitle}
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumberappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberappendix}}
+}
+
+\begin{document}
+
+\begin{frame}   % Cover slide
+\titlepage
+\end{frame}
+
+\section[Outline]{}
+\frame{\ft{Outline}\tableofcontents}
+
+\section{Existence of Nash equilibria}
+\fr{\ft{Existence of Nash equilibrium}
+
+  \begin{itemize}
+  \item not all games have a Nash equilibrium
+  \end{itemize}
+
+  \begin{ex}
+    \begin{itemize}
+    \item 2 players ($N=\{P1,P2\}$)
+    \item each player says a number ($A_i=\Re$)
+    \item player that says the higher number wins \\(e.g. winner has payoff 1 while loser has payoff 0, if both say the same number each has payoff 1/2)
+    \end{itemize}
+  \end{ex}
+
+
+
+\framebreak
+
+Why are we interested in existence?
+\begin{itemize}
+\item worthwhile to search for an equilibrium
+\item steady state interpretation of equilibrium, existence of NE says that the process might become stable
+\item  sometimes possible to do comparative statics without computing the NE (only sensible if NE exists)
+\end{itemize}
+}
+
+\section{Maths: Fixed point theorems}
+
+\fr{\ft{Fixed point theory}
+  \begin{definition}[fixed point]
+    Let $f$ be a real function, i.e. $f:\,A\rightarrow\Re$ where $A\subseteq \Re$. A point $a\in A$ is a \emph{fixed point} of $f$ if $f(a)=a$.
+  \end{definition}
+
+ \begin{itemize}
+  \item Does $f(x)=1$ have a fixed point? What about $f(x)=x+1$? What about $f(x)=x^2$?
+  \item fixed point theory gives general conditions under which functions have fixed points
+  \item fixed points for functions from $f:\;A\rightarrow \Re^n$ where $A\subseteq \Re^n$ are defined analogously
+  \end{itemize}
+
+\framebreak
+
+  \begin{theorem}[Brouwer's fixed point theorem, 1-dimensional]
+    Let $f:[0,1]\rightarrow[0,1]$ be a continuous function. Then $f$ has a fixed point.
+  \end{theorem}
+
+\framebreak
+
+%Why is Brouwer's theorem interesting for game theorists?
+\begin{ex}[2 player Cournot]
+  \begin{itemize}
+  \item two firms each choose a quantity $q_i$ 
+  \item both firms have costs $c(q_i)=c q_i$ for some $c>0$
+  \item inverse demand is $P(q_1+q_2)$ where we assume that $P$ is two times continuously differentiable with $P'<0$ and $P''\leq 0$
+  \item assume that $P(1)<c$\\ $\Rightarrow$ a firm will never offer a quantity greater than 1
+  \item  firm 1 chooses a quantity from $[0,1]$ to maximize profits
+   $$\max_{q_1} (P(q_1+q_2)-c)q_1$$
+ we get the first order condition
+  $$P'(q_1+q_2)q_1+P(q_1+q_2)-c=0$$
+  \end{itemize}
+\end{ex}
+
+\begin{ex}[2 player Cournot continued]
+  \begin{itemize}
+  \item the second order condition holds by assumption
+$$P''(q_1+q_2)q_1+2P'(q_1+q_2)<0$$
+\item the first order condition defines a best response function
+  $q_1(q_2)$
+\item the best response function is continuous because $P$ and $P'$
+  are continuous by assumption
+\item Brouwer: best response function has a fixed point!
+\item game is symmetric $\Rightarrow$ fixed point is an
+  equilibrium $\Rightarrow$ equilibrium exists
+\item We showed this without being able to actually calculate the equilibrium!!!
+\end{itemize}
+\end{ex}
+\framebreak
+
+\begin{theorem}[Brouwer fixed point theorem]
+  Let $S$ be a convex and compact set in $\Re^n$ and let $f:S\rightarrow S$ be a continuous function. Then there exists an $s^*\in S$ such that $f(s^*)=s^*$.
+\end{theorem}
+}
+
+
+
+
+
+\section{Nash theorem}
+
+\frame{\ft{Nash theorem}
+\begin{theorem}[Nash theorem]
+  A strategic game $\langle N, (A_i),(u_i)\rangle$ with
+  \begin{itemize}
+  \item a finite number of players 
+   \item a finite number of actions for each player
+  \end{itemize}
+has a Nash equilibrium in mixed strategies.
+\end{theorem}
+\begin{itemize}
+\item proof uses Brouwer's fixed point theorem
+\item to simplify notation, we prove the theorem for $2\times 2$ games
+\end{itemize}
+}
+
+\fr{\ft{Proof of Nash theorem for $2\times2$ games}
+  \begin{itemize}
+  \item $2\times 2$ game:
+    \begin{figure}[h]
+      \centering
+      \begin{game}{2}{2}
+        \>L\>R\\
+U    \>a,b\>c,d\\
+D   \>e,f\>g,h
+      \end{game}
+    \end{figure}
+  \item mixed strategy of P1: probability $\alpha\in[0,1]$  of playing U 
+ \item mixed strategy of P2: probability $\beta\in[0,1]$  of playing L  
+ \item idea of proof:
+   \begin{itemize}
+   \item define a function $f(\alpha,\beta)$ such that
+     \begin{itemize}
+     \item $f$ is continuous
+     % \item if $(\alpha^*,\beta^*)$ is a Nash equilibrium, then $f(\alpha^*,\beta^*)=(\alpha^*,\beta^*)$
+     \item if $f(\alpha^*,\beta^*)=(\alpha^*,\beta^*)$, then $(\alpha^*,\beta^*)$ is a Nash equilibrium of the game
+     \end{itemize}
+   \item use Brouwer's theorem to establish that $f$ has a fixed point
+   \end{itemize}
+  \end{itemize}
+
+\framebreak
+\begin{itemize}
+\item $u_1(U,\beta)=\beta a+(1-\beta) c$ is the expected utility of P1 when playing U and P2 uses the mixed strategy $\beta$
+\item $u_1(U,\beta)$ is linear and therefore continuous in $\beta$
+\item define 
+$$g(\alpha,\beta)=max\left\{0,\frac{\alpha+u_1(U,\beta)-u_1(D,\beta)}{1+\left|u_1(U,\beta)-u_1(D,\beta)\right|}\right\} $$
+
+\begin{itemize}
+\item $g(\alpha,\beta)$ is higher than $\alpha$ if U is the best response to $\beta$ and
+  lower than $\alpha$ if D is best response 
+\item $g$ is continuous because $u_1$ is continuous in $\beta$
+\end{itemize}
+
+\item define
+$$h(\alpha,\beta)=max\left\{0,\frac{\beta+u_2(L,\alpha)-u_2(R,\alpha)}{1+\left|u_2(L,\alpha)-u_2(R,\alpha)\right|}\right\} $$
+\begin{itemize}
+\item $h(\alpha,\beta)$ is higher than $\beta$ if L is best response  to $\alpha$
+  and lower than $\beta$ if R is best response
+\item $h$ is
+  continuous because $u_2$ is continuous in $\alpha$
+\end{itemize}
+
+\item let $f$ be
+$$f(\alpha,\beta)=(g(\alpha,\beta),h(\alpha,\beta))$$
+\end{itemize}
+
+\begin{itemize}
+\item if $f(\alpha^*,\beta^*)=(\alpha^*,\beta^*)$ then
+  \begin{itemize}
+  \item $g(\alpha^*,\beta^*)=\alpha^*$ $\Rightarrow$ $\alpha^*$ is best response to $\beta^*$
+  \item $h(\alpha^*,\beta^*)=\beta^*$ $\Rightarrow$ $\beta^*$ is best response to $\alpha^*$
+  \item $(\alpha^*,\beta^*)$ is Nash equilibrium
+  \end{itemize}
+every fixed point of $f$ is Nash equilibrium
+\item  $f$ is continuous because $g$ and $h$ are continuous
+\item Brouwer: $f$ has a fixed point
+\end{itemize}
+}
+
+\fr{\ft{Existence revisited}
+ \begin{ex}[revisited]
+    \begin{itemize}
+    \item 2 players ($N=\{P1,P2\}$)
+    \item each player says a number ($A_i=\Re$)
+    \item player that says the higher number wins \\(e.g. winner has payoff 1 while loser has payoff 0, if both say the same number each has payoff 1/2)
+    \end{itemize}
+  \end{ex}
+
+  \begin{itemize}
+  \item why does the Nash theorem not apply?
+  \end{itemize}
+
+Note that the propositions give sufficient conditions for NE, i.e. NE can exist even if the conditions are not satisfied:
+
+\begin{ex}[war of attrition 1, OR ex. 18.4]
+  \begin{itemize}
+  \item 2 players dispute an object
+  \item time is a continuous variable starting at 0 and running indefinitely
+  \item actions: chose a time $a_i$ when to concede object
+   \item player $i$ attaches value $v_i$ to object and loses one payoff unit for every time unit (until one of the players concedes)
+  \end{itemize}
+action space is not finite
+
+% \begin{itemize}
+% \item a action in this game is a concession time $a_i$
+% \item can both players wait forever? No, then better to concede immediately
+% \item can there be a NE where both players concede at the same time? No: better to wait $\varepsilon $ longer!
+% \item can the loser have a strictly positive concession time? No: better to concede immediately
+% \item when is  $a_i=0$ optimal? Only if $a_j\geq a_i$!
+% \item equilibria: $a_i=0$ and $a_j\geq v_i$
+% \end{itemize}
+\end{ex}
+
+
+}
+
+
+\frame{\ft{Review Questions}
+  \begin{itemize}
+  \item Why are we interested in the question ``Does a Nash equilibrium exist?''?
+  \item What is a ``fixed point''?
+  \item Explain Brouwers fixed point theorem (1-dimensional case)!
+  \item What does Nash's theorem state?
+  \end{itemize}
+reading: MSZ 5.3, (supplementary *reading: OR 2.4)
+}
+
+\fr{\ft{Exercises}
+  \begin{enumerate}
+  \item We look at a 2 player game in which $A_1=A_2=[0,1]$. Assume that P1 has a best response function that is strictly increasing and continuous. For all subquestions draw the best response functions in an $a_1,\, a_2$ diagram.
+    \begin{enumerate}
+    \item First, assume that P2 also has a best response function that is continuous. Does this guarantee the existence of a Nash equilibrium?
+    \item Second, assume that P2 also has a best response function that is increasing (though not necessarily continuous).  Does this guarantee the existence of a Nash equilibrium?
+   \item Third, assume that P2 has a best response function that is discontinuous at one point only. Does this guarantee the existence of a Nash equilibrium?
+    \end{enumerate}
+  \item *Use the Brouwer fixed point theorem to prove that a pure strategy Nash equilibrium exists in the following strategic game:
+\begin{itemize}
+\item $N=\{P1,P2\}$
+\item $A_1=A_2=[0,1]$
+\item $u_1(a_1,a_2)$ is differentiable and strictly concave in $a_1$. The partial derivative $\frac{\partial u_1}{\partial a_1}(a_1,a_2)$ is continuous in both variables.
+\item $u_2(a_1,a_2)$ is differentiable and strictly concave in $a_2$.  The partial derivative $\frac{\partial u_2}{\partial a_2}(a_1,a_2)$ is continuous in both variables.
+\end{itemize}
+\emph{Hint: This exercise is an extension of the Cournot example we did in the lecture. The argument is similar.}
+  \end{enumerate}
+}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to show items one by one it is easiest to insert a "\pause" command before the \item command
+
+hyperlinks: \hyperlink{targetname}{\beamergotobutton{Text in button}} }
+    to define a target insert the option [label=targetname] after the \frame command: \frame[label=targetname]{\ft{title}...}
+    alternative the command \hypertarget{targetname}{} can be used
+    To go back there exists a \beamerreturnbutton{text in button}

@@ -1,0 +1,511 @@
+\documentclass[slidestop,serif,compress]{beamer}    %slidestop=title in up-left corner (with "slidescentered" centered); compress=navigation bars as small as possible
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[ugm]{mathdesign} %use Garamond font
+
+%gets rid of bottom navigation bars and puts slide numbers right bottom
+\setbeamertemplate{footline}[frame number]{}
+
+%alternative footer: name, institute, page number
+%\setbeamertemplate{footline}
+%{%
+%  \leavevmode%
+%  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+%    \usebeamerfont{author in head/foot}\insertshortauthor
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+%    \usebeamerfont{title in head/foot}\insertshortinstitute \hfill \insertframenumber \,/\,\inserttotalframenumber
+%  \end{beamercolorbox}}%
+%  \vskip0pt%
+%}
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+%%complete themes (not recommended)
+%%\usetheme{Madrid}             %"Berkeley":lhs navigation bar; 1st alternative: "Madrid" without a navigation bar but with a footer including name (institution), title, date page numbering (but then \institute{Univ. ...}); 2nd alternative: defaults without all the extras; 3rd alternative "Dresden": two bottom lines)
+%%"Dresden is possibly easy to adapt to UvT colors
+%instead of using a complete theme inner and outer themes can be specified in isolation
+%inner theme:
+\useinnertheme{rounded} %actually not necessary but nice for theorem boxes etc. but enumerate listings look a bit stupid! Alternative: default = just comment it out
+%outer themes:
+%\useoutertheme[subsection=false,footline=authorinstitutetitlepage]{miniframes} %other options for footer see beamer user guide p. 153
+
+
+%%complete color themes: (ok but inner outer styles below are better)
+%%\usecolortheme{albatross}    % background is colored (in blue) in albatross; the option [overlystylish] installs a background canva which is definitely too stylish for an economics department
+%%\usecolortheme{seagull}   %for greyscale (black and white)
+%%default is not bad!!!
+
+%alternative to complete color schemes one can define an inner and outer color scheme
+%inner color themes
+%\usecolortheme{orchid} %deep color in box(theorem etc.) background fits with outer color scheme "whale"
+\usecolortheme{rose} % less aggressive slight grey shading background (in boxes/theorems etc.) fits nicely with outer color scheme \usecolortheme{seahorse}
+%outer color theme
+\usecolortheme{dolphin}   %alternative to seahorse: "whale" but only if inner scheme is "orchid"
+%
+%\usefonttheme{structurebold}       %titles, headlines, foodlines and sidebars are bold
+
+\usepackage{amsmath, eurosym, textcomp, graphicx, amsthm, amssymb, hyperref,tikz,xcolor,sgame}
+
+\usepackage{comment}
+\newcommand{\com}{\comment}
+\newcommand{\ecom}{\endcomment}
+
+\setlength {\parindent}{0cm}
+\newcommand {\bi}{\begin{itemize}}
+\newcommand {\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\del}{\partial}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+
+\renewcommand{\Re}{\mathbb{R}}
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+%\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+%\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{observation}{Observation}
+%\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+\newtheorem{exercise}{Exercise}
+%\newtheorem{definition}{Definition}
+
+%\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\author{Christoph Schottmüller}
+\institute{University of Copenhagen}
+\title{Game Theory\\ Social Choice}
+\date{}
+
+\newcommand{\fr}{\frame[allowframebreaks]}
+\newcommand{\ft}{\frametitle}
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumberappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberappendix}}
+}
+
+\begin{document}
+
+\begin{frame}   % Cover slide
+\titlepage
+\end{frame}
+
+
+\fr{\ft{Social Choice: Introduction}
+  \begin{itemize}
+  \item so far: each player makes his own decision and some outcome is obtained
+  \item now: a society has to aggregate the preferences of its members \\(later: a society has to choose one of $m$ alternatives)
+  \end{itemize}
+
+  \begin{ex}
+    There are three possible forms of exam: open book (ob), closed book (cb) and take home (th). Students in a class have the following preferences over the exam form:
+    \begin{table}[h]
+      \centering
+      \begin{tabular}[h]{c|c c c}
+        No. students & most preferred & middle & least preferred\\ \hline
+ 9 & ob & cb & th\\
+8 & cb & th & ob\\
+7  &th  &cb & ob
+      \end{tabular}
+    \end{table}
+What aggregate preference would reflect the students tastes? Which exam form does the class prefer most?
+  \end{ex}
+
+  \begin{ex}
+    There are three candidates, called $a,\,b$ and $c$, in an election. The citizens have the following preferences over the candidates:
+  \begin{table}[h]
+      \centering
+      \begin{tabular}[h]{c|c c c}
+        No. voters & most preferred & middle & least preferred\\ \hline
+ 36 & a & b & c\\
+41 & b & c & a\\
+12   &c  & a &b \\
+11   &a & c &b
+      \end{tabular}
+    \end{table}
+What is society's preference over candidates? \\
+Which candidate is most preferred?
+  \end{ex}
+
+\framebreak
+
+\begin{itemize}
+\item For decisions over 2 alternatives, we have majority voting as an easy and appealing mechanism.
+\item How can we generalize majority voting to more than 2 alternatives?
+\end{itemize}
+
+\framebreak
+
+\begin{definition}
+  Alternative $a$ is a \emph{Condorcet winner} if for any alternative $b$ a majority of individuals prefer $a$ over $b$.
+\end{definition}
+\begin{itemize}
+\item Is there a Condorcet winner in our examples?
+\item In the exam example, is the Condorcet winner the exam form ranked highest by most students?
+\end{itemize}
+
+\framebreak
+
+Challenge the incumbent in the voting example:
+\begin{itemize}
+\item take the voting example and say we use the following procedure:
+  \begin{itemize}
+  \item $a$ is the incumbent
+  \item in a vote $b$ vs. $c$, the challenger is determined
+  \item the challenger competes then with the incumbent 
+  \end{itemize}
+\item what is the outcome?
+\item what is the outcome if $b$ decided not to participate and therefore $c$ is automatically the challenger?
+\end{itemize}
+
+\framebreak
+
+Counting method in the voting example:
+\begin{itemize}
+\item say being ranked first gives 2 points, being ranked second gives 1 point and being ranked third 0 points
+\item candidates are then ranked according to points
+\item how is the ranking? %b:118, a:108, c:76
+\item how would the ranking be if $c$ decided not to participate?
+\end{itemize}
+
+}
+
+\fr{\ft{Social choice: Model}
+\begin{itemize}
+  \item there is a finite set of  alternatives $A$
+  \item each individual $i\in N=\{1,2,\dots,n\}$ has some preferences $P_i$ over $A$
+    \begin{itemize}
+    \item preferences are complete (you can compare each pair of alternatives)
+    \item transitive: for $a,b,c\in A$, if $a\succeq_i b$ and $b\succeq_i c$ then $a\succeq_i c$
+    \item for simplicity, we assume that all preferences are strict (i.e. no one is indifferent between any two alternatives):\\ for any two distinct alternatives $a,b\in A$, either $a\succeq_i b$ or $b\succeq_i a$ but not both
+    \item the set of all complete and transitive preferences over $A$ is denoted by $P^*(A)$
+   \item the set of all strict, complete and transitive preferences over $A$ is denoted by $P(A)$
+    \end{itemize}
+  \end{itemize}
+}
+
+\fr{\ft{Social choice: Social welfare function}
+
+\begin{definition}[social welfare function]
+  A \emph{social welfare function} is a function $F$ that maps each profile of preferences $P^N=(P_i)_{i\in N}\in (P(A))^N$ into a preference $P_s\in P^*(A)$ (we write $P_s=F(P^N)$).
+\end{definition}
+
+\framebreak
+
+\begin{ex}
+  Say, there are only two alternatives, $A=\{a,b\}$. The social welfare function $F$ associated with majority voting is defined by
+  \begin{itemize}
+  \item if $|\{i\in N: \;a\succ_i b\}|>|\{i\in N: \;b\succ_i a\}|$ then $a\succ_{F(P^N)} b$
+\item if $|\{i\in N: \;a\succ_i b\}|<|\{i\in N: \;b\succ_i a\}|$ then $b\succ_{F(P^N)} a$
+\item if $|\{i\in N: \;a\succ_i b\}|=|\{i\in N: \;b\succ_i a\}|$ then $a\approx_{F(P^N)} b$
+  \end{itemize}
+\end{ex}
+
+\framebreak
+
+Properties of social welfare functions:
+\begin{itemize}
+\item A social welfare function $F$ is \textbf{dictatorial} if there exists an individual $i\in N$ such that $F(P^N)=P_i$ for every $P^N\in P^*$.
+\item A social welfare function satisfies \textbf{unanimity} if the following holds:\\ For any $a,b\in A$, if $P^N$ is such that $a\succ_i b$ for all $i\in N$, then $a\succ_{F(P^N)} b$.
+
+\framebreak
+
+\item A social welfare $F$ function satisfies \textbf{independence of irrelevant alternatives (IIA)} if for every $a,b\in A$ and for any two preference profiles $P^N$ and $Q^N$ the following holds: \\
+If for each individual the preferences over $a$ and $b$ are the same under $P^N$ and $Q^N$, then the social preference $F$ over $a$ and $b$ is the same under $P^N$ and $Q^N$.\\
+Mathematically:
+\begin{equation*}
+  a\succ_{P_i} b\qquad\Leftrightarrow\qquad a\succ_{Q_i}b \quad\text{ for all }i\in N
+\end{equation*}
+implies that 
+\begin{equation*}
+  a\succeq_{F(P^N)}b \qquad \Leftrightarrow\qquad a\succeq_{F(Q^N)}b.
+\end{equation*}
+\end{itemize}
+
+\begin{ex}
+  Remember the count method:
+  \begin{itemize}
+  \item Does it satisfy unanimity?
+  \item Why is IIA violated by the count method? 
+  \end{itemize}
+\end{ex}
+
+\framebreak
+
+  \begin{itemize}
+  \item It seems natural that a ``good'' social welfare function should be
+    \begin{itemize}
+    \item non-dictatorial
+    \item satisfy unanimity
+    \item satisfy IIA.
+    \end{itemize}
+  \item Is there such a social welfare function?
+  \end{itemize}
+}
+
+\fr{\ft{Arrow's impossibility theorem}
+\begin{theorem}[Arrow's impossibility theorem]
+  If $|A|\geq 3$, there is no social welfare function that satisfies all three properties non-dictatorship, unanimity and IIA.
+\end{theorem}
+
+\textbf{Proof. }skipped
+% (quite lengthy, we do it for $A=\{a,b,c\}$ and $N=\{1,2\}$)
+
+% \begin{itemize}
+% \item let $F$ satisfy all three properties and let 1 not be a dictator
+% \item we show that then 2 must be a dictator
+% \item say 1 is not a dictator; then for some alternative and preference profile $F$ does not coincide with $P_1$, say:
+%   \begin{eqnarray*}
+%     \text{if}\quad a\succ_1 b\;\text{ and }\;b\succ_2 a\quad \text{ then }\quad b\succ_F a
+%   \end{eqnarray*}
+% \item we proceed in 4 steps to show that 2 is a dictator
+%   \begin{enumerate}
+%   \item $b\succ_F a$ whenever $b\succ_2 a$ \dots\\ \vspace*{1cm}
+%   \item $b\succ_F c$ whenever $b\succ_2 c$:\\
+% consider the preference profile
+% \begin{align*}
+%   &a\succ_1  c\succ_1 b\\
+%   &b\succ_2 a\succ_2 c
+% \end{align*}
+% then $b\succ_F a$ by 1.\dots \\ \vspace*{2cm}
+
+% \item $a\succ_F c$ whenever $a\succ_2 c$:\\
+% consider
+% \begin{align*}
+%   &c\succ_1  a\succ_1 b\\
+%   &a\succ_2 b\succ_2 c
+% \end{align*}
+% then $b\succ_F c$ by step 2 and $a\succ_F b$ by unanimity.\dots\\ \vspace*{2cm}
+% \item the remaining three statements
+%   \begin{itemize}
+%   \item $a\succ_F b$ whenever $a\succ_2 b$
+%   \item $c\succ_F b$ whenever $c\succ_2 b$
+%   \item $c\succ_F a$ whenever $c\succ_2 a$
+%   \end{itemize}
+%  follow from steps similarly to the ones above:
+%  \begin{itemize}
+%  \item Note that we used only the statement ``$b\succ_F a$ whenever
+%    $b\succ_2 a$'' (from step 1) to prove the statements in step 2 and
+%    3. 
+
+% \item As the names of the alternatives do not matter, we can now use
+%    the statement $a\succ_F c$ whenever $a\succ_2 c$ (from step 3) to
+%    similarly proove $a\succ_F b$ whenever $a\succ_2 b$ analogously to
+%    step 2. (similarly for the remaining statements)
+%  \end{itemize}
+
+%   \end{enumerate}
+% \end{itemize}
+% \qed
+}
+
+ % \fr{\ft{Social choice function}
+ %   \begin{itemize}
+ %   \item often we do not need a whole ranking of all alternatives but only have to choose one of them
+ % \end{itemize}
+ %     \begin{definition}
+ %       A \emph{social choice function} $G$ assigns one alternative to each
+ %       preference profile, i.e. $G:({P}(A))^N\rightarrow A$.
+ %     \end{definition}
+
+ %     \begin{ex}
+ %       Say $A=\{a,b\}$. Majority rule is a SCF if $n$ is odd.
+ %     \end{ex}
+
+%     \begin{ex}
+%       Take a social welfare function $F$ and let $G$ be the function associating the most preferred alternative of $F$ with any given $P^N$. Then $G$ is a SCF.
+%     \end{ex}
+
+     % \begin{itemize}
+     % \item we can define similar properties for social choice functions as before
+     % \end{itemize}
+     % \begin{definition}
+     %   A social choice function $G$ is \emph{dictatorial} if there is an individual $i$ such that for every strict preference profile $P^N$, $G(P^N)$ is the most preferred alternative of $i$.
+     % \end{definition}
+
+% \framebreak
+     % \begin{itemize}
+     % \item a SCF is monotonic if the selected alternative remains the selected alternative if it is more liked by all people
+  %    \end{itemize}
+ %     \begin{definition}
+ %       A social choice function $G$ is \emph{monotonic} if for every pair of strict preference profiles $P^N$ and $Q^N$ satisfying 
+ % $$a\succ_{P_i}c \quad\Rightarrow\quad a\succ_{Q_i}c,\quad \forall c\neq a,\;\forall i\in N,$$
+ % if $G(P^N)=a$ then $G(Q^N)=a$.
+ %     \end{definition}
+
+% \framebreak
+
+ % \begin{itemize}
+ % \item unanimity means that a SCF picks the alternative most preferred by everyone if such an alterantive exists
+ % \end{itemize}
+
+ % \begin{definition}
+ %   A social choice function $G$ satisfies \emph{unanimity} if for $a\in A$ and a strict preference profile $P^N$ are such that $a\succ_{P_i}b$ for all $i\in N$ and for all $b\neq a$, then $G(P^N)=a$.
+ % \end{definition}
+
+% \begin{ex}
+%   Say $A=\{a,b,c\}$ and $n\geq 2$. We use the following point counting SCF:
+%   \begin{itemize}
+%   \item an alternative gets two points from $i$ if it is most preferred by $i$ and 1 point if it is second most preferred
+%   \item sum the points for each alternative over all inidividuals
+%   \item the alternative with the highest number of points wins; ties are broken according to $a\succ b\succ c$.
+%   \end{itemize}
+% Which properties does the SCF satisfy?
+% % non-dictatorial and unanimity are obvious; not monotonic: P: $a\succ_1 b\succ_1 c$ , $c\succ_2 b\succ_2 a$ chooses $a$. Q: $P_1$ as before and  $b\succ_2 c\succ_2 a$ chooses $b$
+% \end{ex}
+
+% \framebreak
+
+% \begin{theorem}
+%   If $|A|\geq 3$, all social choice functions satisfying unanimity and monotonicity are dictatorial.
+% \end{theorem}
+
+
+
+% \framebreak
+
+% \begin{itemize}
+% \item what now?
+% \item one big assumption that can be relaxed:
+%    \begin{itemize}
+%    \item assumption: all preferences are possible
+%    \item if preferences take a special form (e.g. ``single peaked'' preferences on a one-dimensional domain), more positive results obtain
+%   \item realistic?
+%    \end{itemize}
+% \end{itemize}
+
+% \begin{ex}
+%   Say $A$ is a closed subset of $\Re$ and $n$ is odd. Assume that preferences of each individual can be represented by a single peaked utility function:
+%   \begin{itemize}
+%   \item every individual has a most preferred alterantive $a_i\in A$
+%   \item if $b>a_i$ and $c>a_i$ then $i$ prefers $b$ over $c$ iff $b<c$
+%   \item if $b<a_i$ and $c<a_i$ then $i$ prefers $b$ over $c$ iff $b>c$
+%   \end{itemize}
+% Let $G$ be the SCF that chooses the median $a_i$:
+% \begin{itemize}
+% \item order people according to their most preferred
+%   alternative and choose the most preferred alternative of the (n+1)/2
+%   person
+% \end{itemize}
+% Which properties does $G$ satisfy?
+% % satisfies monotonicity: if $i$'s $a_i$ was above $G(P^N)$ under $P_i$ then $i's$ $a_i$ under $Q_i$ will still be above $G(P^N)$. same for below; hence median is same under Q^N and P^N
+% \end{ex}
+
+% }
+
+\fr{\ft{Social choice functions}
+  \begin{itemize}
+  \item sometimes it is enough to choose one alternative (instead of giving whole welfare ranking) $\rightarrow$ \emph{social choice function}
+\item unfortunately, this does not resolve Arrow's impossibility theorem 
+  \end{itemize}
+}
+
+\fr{\ft{Non-manipulabitliy}
+\begin{itemize}
+ \item often we do not know people's preferences
+   \begin{itemize}
+   \item individual's preferences are private information
+   \item when asked individuals can lie about their preferences
+   \item this makes things even worse: (Gibbard-Satterthwaite Theorem)\\
+\emph{If the social choice function is such that individuals cannot game the system and if the social choice function respects unanimity and all preferences are possible, then (for $|A|\geq 3$) the social choice function is dictatorial.}
+  \item more about this in ``Mechanism Design''
+   \end{itemize}
+  \end{itemize}
+  \begin{ex}[continued]
+    Use point counting SCF and $A=\{a,b,c\}$. Show that for some preferences one player can ``game the system'' by misreporting one's preferences.
+% $b\succ_1 c\succ_1 a$ $c\succ_2 b \succ_2 a$ then $b$ is selected. If 2 reports $c\succ_2 a \succ_2 b$ then $c$ wins which is preferred by 2
+  \end{ex}
+\framebreak
+  \begin{ex}[continued]
+    If we restrict preferences, the result does not necessarily hold. Show that with single-peaked preferences, truthful reporting is a weakly dominant strategy in the \emph{median voter} social choice mechanism (i.e. each voter states his most preferred alternative and the most preferred alternative of the median voter is socially chosen). Conlude that the result stated above does not hold on single peaked preference domains.
+  \end{ex}
+}
+
+\frame{\ft{Exam}
+  \begin{itemize}
+  \item be there in time
+  \item have your student ID ready
+  \item closed book (no notes, books, PC, mobile phone etc.)
+  \item all electronic equipment must be switched off during exam and preparation time (violation of this policy will result in a \emph{failing grade} as well as a cheating investigation!)
+  \item you choose one of many question cards (without seeing the questions on the card when choosing)
+    \begin{itemize}
+    \item preparation time: $\sim$ 15-20 minutes
+    \item exam: 15-20 minutes
+    \end{itemize}
+  \item give clear and concise answers
+  \item go through \emph{all} questions on the card
+  \item if you have no clue about one of the questions, it is usually best to tell this directly
+  \item you do \emph{not} have to learn the proofs we did by heart! 
+  \end{itemize}
+}
+
+% \frame{\vspace*{2cm}
+%   \begin{center} \Large{Questions}
+%   \end{center}
+% }
+
+
+\frame{\ft{Review Questions}
+  \begin{itemize}
+  \item What is the main problem with majority voting? 
+  \item What is a Condorcet winner? What is the problem with the Condorcet mechanism?
+  \item What is a social welfare function and which desirable propeties could a SWF have?
+  \item State Arrow's impossibility theorem.
+  \item What is a social choice function and how does Arrow's impossibility theorem generalize to SCFs?
+  \end{itemize}
+reading: MSZ 21.1, 21.3, 21.4\\ *reading: MSZ 21.2
+}
+
+\frame{\ft{Exercises}
+  \begin{enumerate}
+  \item MSZ 21.7
+  \item Let $A=\{(0,0),(1,0),(0,1),(1,1)\}$, i.e. there are two related policy decisions which can be taken or not. Assume $n$ is odd. Each individual finds the first decision more important; that is, if $(x,y)\succ_i (w,z)$ and $x\neq w$, then $(x,s)\succ_i (w,t)$ for any $s\in\{0,1\}$ and $t\in\{0,1\}$. Furthermore, each individual is consistent in the following sense:  $(0,y)\succ_i (0,z)$ if and only if $(1,y)\succ_i (1,z)$. Can you find a social welfare function that is non-dictatorial, satisfies IIA and unanimity? If yes, why does this not contradict Arrow's theorem? \\(if you want to keep things simple, assume $n=3$.)
+% count the number of people that prefer 1 over 0 in the first component, i.e. the people who prefer (1,x) over (0,x). Call the alternative with the higher number of supporters m. Do the same for the second component: # who prefer (x,0) over (x,1); call the second component with more supporters k, then (m,k)\succ (m,l)\succ (n,k)\succ (n,l) is the SWF
+  \end{enumerate}
+}
+
+% \appendix
+% \backupbegin
+% %backup slides which will not be counted for total slide number
+
+% \backupend
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+to show items one by one it is easiest to insert a "\pause" command before the \item command
+
+hyperlinks: \hyperlink{targetname}{\beamergotobutton{Text in button}} }
+    to define a target insert the option [label=targetname] after the \frame command: \frame[label=targetname]{\ft{title}...}
+    alternative the command \hypertarget{targetname}{} can be used
+    To go back there exists a \beamerreturnbutton{text in button}

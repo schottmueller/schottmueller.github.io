@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {2}{Strategic games}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Notation}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{Nash equilibrium}{9}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{1}{NE in pure strategies}{9}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{2}{Why Nash equilibrium?}{13}{0}{1}
+\beamer@sectionintoc {3}{Mixed Strategies}{14}{0}{2}

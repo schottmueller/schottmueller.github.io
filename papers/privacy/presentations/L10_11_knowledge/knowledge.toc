@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {english}
+\beamer@sectionintoc {2}{(Common) Knowledge}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{The hat game}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Aumann's model of knowledge}{7}{0}{1}
+\beamer@subsectionintoc {2}{3}{Common knowledge}{10}{0}{1}
+\beamer@subsectionintoc {2}{4}{Agree to disagree?}{15}{0}{1}
+\beamer@subsectionintoc {2}{5}{Knowledge and solution concepts}{21}{0}{1}
+\beamer@subsectionintoc {2}{6}{Rubinstein's electronic mail game}{26}{0}{1}

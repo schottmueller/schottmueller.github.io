@@ -1,0 +1,82 @@
+#+TITLE:    (Common) Knowledge
+#+AUTHOR:    Christoph Schottmueller
+#+EMAIL:    
+#+DATE:     
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t 
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc 
+#+INFOJS_OPT: view:nil toc:nil ltoc:nil mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+Let us assume that the state space is finite. Using the knowledge operator iteratively, we can then quickly find all states in which an event E is common knowledge: We first ask: in which states does player 1 know E? These are the states K_1(E). In other states, E can obviously not be common knowledge. So we consentrate on K(E). If E was common knowledge in K(E), then player 2 has to know K_1(E) in every state of K_1(E). Hence, let's check K_2(K_1(E)). If K_2(K_1(E))=K_1(E) (and assuming we have only two players), then E is common knowledge in every state in K_1(E) and we are done. Otherwise, we can concentrate on states in K_2(K_1(E)): After all player 1 has to know E and player 2 has to know that player 1 knows E if E is common knowledge.
+
+Now we are back at player 1: If E is common knowledge in K_2(K_1(E)), then player 1 has to know K_2(K_1(E)) whenever the state is in K_2(K_1(E)). Hence, we check whether K_1(K_2(K_1(E)))=K_2(K_1(E))...
+
+We continue with this procedure until either we have found some set W = K_i(...K_2(K_1(E))) such that W= K_1(W)=K_2(W) or until K_i(...K_2(K_1(E)))={}. In the latter case, E is not common knowledge in any state.
+The code below does exactly this using the example from the lecture.
+
+#+BEGIN_SRC python  :exports both :returns output
+
+  class infostructure:
+
+      def __init__(self,partitions):
+          """read in partitions 
+          'partitions' is a list where each element is the info partition of one player
+          an info partition is a list of sets where each set is one element of the partition"""
+          self.parts = partitions
+          self.n = len(self.parts)#number of players
+
+      def know(self,event,i):
+          "returns the set of states in which player i knows event"
+          out = set()
+          info_i = self.parts[i]
+          for part in info_i:
+              if part.issubset(event):
+                  out = out.union(part)
+          return out
+
+      def common_know(self,event):
+          "returns the states in which event is common knowledge"
+          candidate = event
+          old_candidate = set()
+          while old_candidate!=candidate and len(candidate)>0:
+              old_candidate = candidate
+              for i in range(self.n):
+                  candidate = self.know(candidate,i)
+          return candidate
+
+      def common_know_in_w(self,event,w):
+          "checks whether event is common knowledge in state w; returns True/False"
+          if w in self.common_know(event):
+              return True
+          else:
+              return False
+
+      def self_evident(self,event,players):
+          "checks whether event is self evident among players in list 'players' "
+          for i in players:
+              for part in self.parts[i]:
+                  if len(event.intersection(part))>0 and not part.issubset(event):
+                      return False
+          return True
+                          
+
+  partition1 = [{1,2},{3,4,5},{6}]
+  partition2 = [{1},{2,3,4},{5},{6}]
+  ex1 = infostructure([partition1,partition2])
+
+
+
+  F = {1,2,3,4,5}
+  E = {1,2,3,4}
+  return 'F is common knowledge in states ',list(ex1.common_know(F)), '.  E is common knowledge in states ', list(ex1.common_know(E)),'.'
+
+#+END_SRC
+
+#+RESULTS:
+| F is common knowledge in states | (1 2 3 4 5) | .  E is common knowledge in states | nil |
+

@@ -1,0 +1,630 @@
+\documentclass[compress]{beamer}    %slidestop=title in up-left corner (with "slidescentered" centered); compress=navigation bars as small as possible
+
+\usepackage[ugm]{mathdesign} %use Garamond font
+
+%gets rid of bottom navigation bars and puts slide numbers right bottom
+\setbeamertemplate{footline}[frame number]{}
+
+%alternative footer: name, institute, page number
+%\setbeamertemplate{footline}
+%{%
+%  \leavevmode%
+%  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+%    \usebeamerfont{author in head/foot}\insertshortauthor
+%  \end{beamercolorbox}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+%    \usebeamerfont{title in head/foot}\insertshortinstitute \hfill \insertframenumber \,/\,\inserttotalframenumber
+%  \end{beamercolorbox}}%
+%  \vskip0pt%
+%}
+
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+
+%%complete themes (not recommended)
+%%\usetheme{Madrid}             %"Berkeley":lhs navigation bar; 1st alternative: "Madrid" without a navigation bar but with a footer including name (institution), title, date page numbering (but then \institute{Univ. ...}); 2nd alternative: defaults without all the extras; 3rd alternative "Dresden": two bottom lines)
+%%"Dresden is possibly easy to adapt to UvT colors
+%instead of using a complete theme inner and outer themes can be specified in isolation
+%inner theme:
+\useinnertheme{rounded} %actually not necessary but nice for theorem boxes etc. but enumerate listings look a bit stupid! Alternative: default = just comment it out
+%outer themes:
+%\useoutertheme[subsection=false,footline=authorinstitutetitlepage]{miniframes} %other options for footer see beamer user guide p. 153
+
+
+%%complete color themes: (ok but inner outer styles below are better)
+%%\usecolortheme{albatross}    % background is colored (in blue) in albatross; the option [overlystylish] installs a background canva which is definitely too stylish for an economics department
+%%\usecolortheme{seagull}   %for greyscale (black and white)
+%%default is not bad!!!
+
+%alternative to complete color schemes one can define an inner and outer color scheme
+%inner color themes
+%\usecolortheme{orchid} %deep color in box(theorem etc.) background fits with outer color scheme "whale"
+\usecolortheme{rose} % less aggressive slight grey shading background (in boxes/theorems etc.) fits nicely with outer color scheme \usecolortheme{seahorse}
+%outer color theme
+\usecolortheme{dolphin}   %alternative to seahorse: "whale" but only if inner scheme is "orchid"
+%
+%\usefonttheme{structurebold}       %titles, headlines, foodlines and sidebars are bold
+
+\usepackage{amsmath, eurosym, textcomp, graphicx, amsthm, amssymb,amsfonts, natbib, url, xcolor, tikz, subfig}
+
+\usepackage[english]{babel} %English language if Koma script classes are used (Bibliography instead of Inhaltsverzeichnis..)
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc} %Encoding 
+\usepackage{ae,aecompl}%avoids the problem of faint or hardly printable output
+
+
+\usepackage{sgamevar} %Osborne's packages to draw games
+\usepackage{hyperref}
+%\usepackage[all]{hypcap}
+
+
+% \usepackage{comment}
+% \newcommand{\com}{\comment}
+% \newcommand{\ecom}{\endcomment}
+
+%\usepackage{ngerman}
+\setlength {\parindent}{0cm}
+\newcommand {\bi}{\begin{itemize}}
+\newcommand {\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Lra}{\Leftrightarrow}
+\newcommand{\del}{\partial}
+\newcommand{\bea}{\begin{eqnarray*}}
+\newcommand{\eea}{\end{eqnarray*}}
+\newcommand{\less}{<}
+\newcommand{\great}{>}
+\newcommand{\vbar}{|}
+\renewcommand{\Re}{\mathbb{R}}
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}
+%\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+%\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{observation}{Observation}
+%\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+\newtheorem{exercise}{Exercise}
+%\newtheorem{definition}{Definition}
+
+%\setlength{\parskip}{1.5ex plus 0.5ex minus 0.5ex}
+\author{Christoph Schottm\"uller}
+\institute{University of Copenhagen}
+\title{Game Theory\\ Refinements: Perfect equilibrium}
+\date{}
+
+\newcommand{\fr}{\frame[allowframebreaks]}
+\newcommand{\ft}{\frametitle}
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumberappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberappendix}}
+}
+
+\begin{document}
+\maketitle
+\section[Outline]{}
+\frame{\ft{Outline}\tableofcontents}
+
+
+\section{Perfect equilibrium in strategic form games}
+
+\fr{\ft{Refinements}
+\begin{itemize}
+\item multiplicity of  NE 
+\item some NE ``feel a bit unreasonable''
+\item ``refinement'': introduce some criterium that some NE satisfy and others do not
+\item most useful in extensive form games $\Ra$ we will return to refinement later
+\end{itemize}
+
+
+\begin{ex}[]\label{ex:unreason_ne}
+   \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c}
+ \begin{game}{2}{2}
+      \> L    \>  R\\% \hline
+T   \>1,1    \> 0,0  \\
+B   \>0,0    \>0,0  
+\end{game}
+%\end{tabular}
+\caption{$(B,R)$ is NE; intuitive outcome?}\label{tab:ne_in_weak_dom_strat}
+\end{table}
+% The game in table \ref{tab:ne_in_weak_dom_strat} has two NE: $(T,L)$ and $(B,R)$. Somehow the $(B,R)$ equilibrium does not really feel right. For example, both players use a weakly dominated action in this equilibrium. A first refinement could be that we require equilibria do not use dominated actions (or at least one player uses an undominated action).
+\end{ex}
+}
+
+
+\fr{\ft{Perfect equilibrium}
+  \begin{itemize}
+  \item problem with equilibrium $(B,R)$: other player might
+    make a mistake
+\item say, with some small probability $\eta$ a player ``trembles''
+ \item then strictly better for player 1 (2) to choose $T$ ($L$).
+
+\framebreak
+
+\item formally:
+  \begin{itemize}
+  \item $G=\langle N,(A_i),(u_i)\rangle$ 
+   \item $m_i$: number of actions of player $i$
+   \item ``tremble'': vector $\eta\in
+    \Re^{m_1+\dots+m_n}_{++}$ where $\eta_i^k$ is probability that
+    action $a_i^k\in A_i$ is chosen accidentally by player $i$
+\end{itemize}
+\begin{itemize}
+\item define $G'(\eta)$ as game $G$ but with strategy space such that
+$$S_i(\eta)=\{\alpha_i\in \Delta A_i: \alpha_i^k\geq \eta_i^k\}$$
+i.e. actions have to be \textbf{completely mixed} and
+  put minimum probability $\eta_i^k$ on action $a_i^k$
+\item a mixed NE exists in $G'(\eta)$ \\(proof similar to the Nash theorem)
+\end{itemize}
+\end{itemize}
+\begin{definition}[perfect equilibrium]
+  A Nash equilibrium in $G$ is (trembling hand) perfect if
+\begin{itemize}
+\item  there is a sequence $(\eta_t)_{t=1}^{\infty}$ of trembles converging to zero
+\item  and a sequence of Nash equilibria $\alpha(\eta_t)$ in $G'(\eta_t)$ for each $t$,
+\end{itemize}
+ such that the sequence $(\alpha(\eta_t))_{t=1}^{\infty}$ converges to the Nash equilibrium in $G$.
+\end{definition}
+
+
+
+\framebreak
+
+\begin{itemize}
+\item previous example:
+   \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c}
+ \begin{game}{2}{2}
+      \> L    \>  R\\% \hline
+T   \>1,1    \> 0,0  \\
+B   \>0,0    \>0,0  
+\end{game}
+%\end{tabular}
+%\caption{Is $(B,R)$ an intuitive NE?}\label{tab:ne_in_weak_dom_strat}
+\end{table}
+  \begin{itemize}
+  \item unique equilibrium of any $G'(\eta)$ is $(T,L)$
+  \item only $(T,L)$ is perfect equilibrium
+  \end{itemize}
+\end{itemize}
+
+\framebreak
+
+\begin{theorem}
+  Every finite strategic game has a perfect equilibrium.
+\end{theorem}
+\textbf{Proof. } (sketch)% Take an arbitrary sequence of trembles converging to the zero vector. As argued above, Nash equilibria exist in all $G'(\eta_t)$. Note that all the mixed strategy vectors $\alpha(\eta_t)$ are taken from a compact set. Hence, the sequence of Nash equilibria has a convergent subsequence. Its limit is a Nash equilibrium in the original game $G$ (this is shown as in the proof of the Nash theorem). Therefore, this limit is a perfect equilibrium.
+\qed
+
+\framebreak
+
+\begin{ex}
+  \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c}
+ \begin{game}{2}{2}
+      \> L    \>  R\\% \hline
+T   \>1,1    \> 0,0  \\
+B   \>1,0    \>2,1  
+\end{game}
+%\end{tabular}
+%\caption{Is $(B,R)$ an intuitive NE?}\label{tab:ne_in_weak_dom_strat}
+\end{table}
+\begin{itemize}
+\item Show that (T,L) is not a perfect equilibrium and (B,R) is a perfect equilibrium
+\end{itemize}
+\end{ex}
+
+\framebreak
+
+\begin{definition}[$\varepsilon $-perfect equilibrium]
+  A mixed strategy profile $\alpha^\varepsilon $ is an \emph{$\varepsilon $-perfect equilibrium} if it is completely mixed and $U_i(\alpha_{-i}^\varepsilon ,a_i)\great U_i(\alpha_{-i}^\varepsilon ,a_i')$ for any $a_i,a_i'\in A_i$ implies $\alpha_i^\varepsilon (a_i')\leq \varepsilon $.
+\end{definition}
+
+\begin{itemize}
+\item in short: completely mixed but only best responses are played with more than $\varepsilon $ probability
+\end{itemize}
+
+\framebreak
+
+\begin{theorem}\label{thm:def_perf_eq}
+  Let $\alpha$ be a mixed strategy profile in $G$. The following statements are equivalent
+  \begin{enumerate}
+  \item $\alpha$ is a perfect equilibrium
+  \item $\alpha$ is a limit of $\varepsilon $-perfect equilibria for $\varepsilon $ going to zero
+  \item $\alpha$ is the limit of a sequence $(\alpha(\varepsilon ))_{\varepsilon \ra 0}$ of completely mixed strategies such that $\alpha$ is a best response to $\alpha(\varepsilon )$ for $\varepsilon $ small enough.
+  \end{enumerate}
+\end{theorem}
+\textbf{Proof. }
+\begin{itemize}
+\item (1) implies (2):
+  \begin{itemize}
+  \item If $\alpha$ is a perfect NE, there is a sequence
+    $\alpha(\eta_t)$ of NE in $G'(\eta_t)$ 
+    converging to $\alpha$. 
+  \item\dots%  For each $\eta_t$, let $\varepsilon
+  %   (\eta_t)=max_{k\in\{1,\dots,m_i\}, i\in N}(\eta_t)_i^k$.
+  % \item  $\alpha(\eta_t)$ is completely mixed
+  % \item As $\alpha(\eta_t)$ is a NE
+  %   in $G'(\eta_t)$, any action $a_i^k$ that is not a best response
+  %   will be played only with probabiltiy $(\eta_t)_i^k\leq \varepsilon
+  %   (\eta_t)$
+  % \item $\alpha(\eta_t)$ is an $\epsilon(\eta_t)$ equilibrium
+  \end{itemize}
+\item  (2) implies (3):
+  \begin{itemize}
+  \item let $a_i^k$ be played with positive probability under
+    $\alpha$
+  \item \dots % Since $\alpha$ is a limit of $\varepsilon $-perfect
+  %   equilibria, $a_i^k$ has to be played with probability higher than
+  %   $\varepsilon $ for $\varepsilon$ small enough
+  % \item Hence, $a_i^k$ is a
+  %   best response to $\alpha(\varepsilon)$ for $\varepsilon$ small
+  %   enough.
+  \end{itemize}
+\item   (3) implies (1):
+  \begin{itemize}
+  \item ``Cut off''--if necessary--the first few elements of the
+    sequence of $\alpha(\varepsilon )$ such that for the remaining
+    sequence $\alpha$ is a best reply to all $\alpha(\varepsilon
+    )$. 
+  \item $\eta_i^k(\varepsilon )=\alpha(\varepsilon )_i^k$ if $\alpha$ assigns zero probability to $a_i^k$
+\item $\eta_i^k(\varepsilon )=min_l \alpha(\varepsilon )_i^l$ otherwise
+% For actions $a_i^k$ that are played with zero probabiltiy
+    % under $\alpha$, take $\eta_i^k=\alpha(\varepsilon )_i^k$. For
+    % actions $a_i^k$ played with positive probability take a small
+    % positive number, e.g. $\eta_i^k=min_l \alpha(\varepsilon
+    % )_i^l$. 
+  \item \dots % As $\varepsilon \ra 0$, so does the newly defined
+  %   $\eta$.
+  % \item note that actions that are not best replies are played only with probabiltiy $\eta_i^k$
+  % \item $\alpha$ is a best response by each player in $G'(\eta)$ and therefore is an eqilibrium
+  \end{itemize}
+\end{itemize}
+\qed
+
+\framebreak
+
+Some comments:
+\begin{itemize}
+\item the definition says: ``there is a sequence''; requiring that for \emph{any sequence}  of trembles converging to zero there is a sequence of equilibria leads to \emph{strict perfect equilibria}.  However, those do often not exist:
+  \begin{ex}
+     \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c|c}
+ \begin{game}{2}{3}
+    \> L   \>M  \>  R\\% \hline
+T   \>1,1  \>1,0\>0,0  \\
+B   \>1,1  \>0,0\>1,0
+\end{game}
+%\end{tabular}
+\caption{no strict perfect equilibrium}
+\label{tab:no_strict_perf_eq}
+\end{table}
+\begin{itemize}
+\item $L$ is a strictly dominant strategy
+\item  Check that $(T,L)$ and $(B,L)$ are both perfect equilibria but not strictly perfect 
+  % \begin{itemize}
+  % \item first take sequence where $\eta_2^M\great \eta_2^R$ $\Ra$ $T$ will be the unique best response in $G'(\eta)$ $\Ra$ $T$ will be played with certainty and $B$ with zero probability in limit
+  %  \item   second take sequence where $\eta_2^M\less \eta_2^R$ $\Ra$ $B$ is the unique best response in $G'(\eta)$ $\Ra$ $B$ is played with probabiltiy 1 in limit
+  % \end{itemize}
+\end{itemize}
+  \end{ex}
+
+\item like most refinements perfection is sensitive to the formulation of the game:
+  \begin{ex}\label{ex:perf_eq_sensitive}
+        \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c|c}
+ \begin{game}{3}{3}
+      \> L   \>C   \>  R\\% \hline
+T   \>1,1    \>0,0\>-1,-2  \\
+M   \>0,0    \>0,0  \>0,-2\\
+B   \> -2,-1 \>-2,0\>-2,-2
+\end{game}
+%\end{tabular}
+\caption{sensitive to additional irrelevant actions}
+\label{tab:sensitive_perf_eq}
+\end{table}
+\vspace*{-0.5cm}
+\begin{itemize}
+\item same game as first example plus strictly dominated actions B and R
+\item Check that (M,C) is also perfect equilibrium in this game
+ %  \begin{itemize}
+%   \item 
+% Take $\eta_t^R=1/t$ and $\eta_t^L=1/(2t)$ 
+% \item M is unique b.r. in every $G'(\eta)$.
+% \item also in limit $M$ is played with probability 1
+% \item take $\eta_t^B=1/t$ and $\eta_t^T=1/(2t)$
+% \item   M is unique b.r. in all $G'$
+% \item also in limit M is played with probability 1
+% \end{itemize}
+\item (of course,  (T,L) remains a perfect equilibrium as well)
+\end{itemize}
+  \end{ex}
+\end{itemize}
+
+%   \begin{lemma}
+%     In finite two player games, perfect equilibrium is the same as Nash equilibrium in not weakly dominated actions.
+%   \end{lemma}
+% Proof: skipped
+% \textbf{Proof. }\\
+% We use (without proof):\\
+% \textbf{Lemma: }If a mixed strategy $\alpha_i'$ of player $i$ is not weakly dominated, then it is a best response to some \emph{completely mixed}  strategy $\alpha_{-i}'$.\qed
+% \\
+% \begin{itemize}
+% \item let $\alpha_{-i}(\varepsilon)=(1-\varepsilon)\alpha_{-i}^*+\varepsilon
+%   \alpha_{-i}'$
+% \item use third definition of perfect equilibrium (see theorem before)
+% \end{itemize}
+%  % to see the first point: take a NE in not weakly dominated strategies $\alpha^*$ and now let $\alpha_{-i}(\varepsilon)=(1-\varepsilon)\alpha_{-i}^*+\varepsilon \alpha_{-i}'$ (where $\alpha'$ is as in the last bullet point) ; then $\alpha_i^*$ is a best response to $\alpha_{-i}(\varepsilon)$ which is completely mixed and converges to the NE as $\varepsilon\ra 0$. According to the third definition in \ref{thm:def_perf_eq} we get that $\alpha^*$ is a perfect equilibrium. (other direction is straightforward)
+% \qed
+
+\framebreak
+
+\begin{itemize}
+\item three player game: perfect equilibrium eliminates more than just equilibria in weekly dominated actions
+ \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c|c}
+ \begin{game}{2}{2}[][][A]
+      \> L   \>R  \\% \hline
+T   \>1,1,1    \>1,0,1 \\
+D   \> 1,1,1 \>0,0,1
+\end{game}
+%\end{tabular}
+\qquad
+ \begin{game}{2}{2}[][][B]
+      \> L   \>R  \\% \hline
+T   \>1,0,0    \>0,1,2 \\
+D   \> 0,1,0 \>1,0,0
+\end{game}
+\caption{a NE that is not perfect despite not being in weakly dominated strategies}
+\label{tab:ne_not_perf_undom}
+\end{table}
+\begin{itemize}
+\item (D,L,A) is a NE and none of the actions is weakly
+  dominated
+\item  not perfect: for small enough trembles of
+  P2 and P3 T will always be better than D for P1; % \par
+% (hidden reason: the profile where D is better than T (i.e. R and B) will only be
+%   reached with probability $\varepsilon^2$ which is negligible for small $\varepsilon$)
+\end{itemize}
+
+\end{itemize}
+
+\framebreak
+A Nash equilibrium in completely mixed strategies is also a perfect equilibrium.\\Why? \begin{example}
+\begin{table}
+ \begin{game}{2}{2}
+      \> H   \>T   \\% \hline
+H   \>1,-1    \>-1,1  \\
+T   \>-1,1    \>1,-1
+\end{game}
+\caption{Matching Pennies}
+\end{table}
+\end{example}
+
+}
+
+\frame{\ft{Review Questions}
+  \begin{itemize}
+  \item What is the idea behind refinements? (why might we need them?)
+  \item What is the idea behind perfect equilibrium?
+  \item How is perfect equilibrium defined? 
+  \item What problems does perfect equilibrium have?
+  \end{itemize}
+reading: lecture notes by Hans Keiding p. 1-6; MSZ p. 262-267 (or OR 12.5.1)\\
+*reading: lecture notes by Hans Keiding p. 7- 
+}
+
+\frame{\ft{Exercises}
+  \begin{enumerate}
+  \item     Show in the game below that (T,L) is not a perfect equilibrium and
+    (B,R) is a perfect equilibrium.
+    \begin{table}[h]
+    \centering
+      \begin{game}{3}{2}
+        \>L\>R\\
+        T \>2,1 \> 1,1\\
+        M \>1,2 \> 0,2\\
+        B \>0,0 \> 3,1
+      \end{game}
+    \end{table}
+  \item Show that (D,L,A) is a Nash equilibrium but not a perfect
+    equilibrium in the following 3 player game:
+ \begin{table}[h]
+\centering
+%\begin{tabular}{l|c|c|c}
+ \begin{game}{2}{2}[][][A]
+      \> L   \>R  \\% \hline
+        T   \>1,0,0    \>1,0,1 \\
+        D \> 1,1,1 \>0,1,1
+\end{game}
+%\end{tabular}
+\qquad
+ \begin{game}{2}{2}[][][B]
+      \> L   \>R  \\% \hline
+        T   \>0,1,1    \>0,0,0 \\
+        D \> 1,0,0 \>1,1,0
+\end{game}
+\end{table}
+    % Player 2 strictly prefers L only if both other players tremble
+    % but strictly prefers R if only P3 trembles. Hence, R is his
+    % utility maximizing action if the trembles are small enough.
+\item ${}^*$Show that no player uses a weakly dominated strategy in any perfect equilibrium.
+  \end{enumerate}
+}
+
+% \section{proper equilibrium}
+
+% \fr{\ft{Proper equilibrium}
+% \begin{itemize}
+% \item perfect equilibrum: players make some mistakes
+% \item proper equilibrium: bigger mistakes are less likely
+% \end{itemize}
+
+% \begin{ex}
+% \begin{table}[h]
+% \centering
+% %\begin{tabular}{l|c|c|c}
+%  \begin{game}{3}{3}
+%       \> L   \>C   \>  R\\% \hline
+% T   \>1,1    \>0,0\>-1,-2  \\
+% M   \>0,0    \>0,0  \>0,-2\\
+% B   \> -2,-1 \>-2,0\>-2,-2
+% \end{game}
+% %\end{tabular}
+% % \caption{sensitive to additional irrelevant actions}
+% % \label{tab:sensitive_perf_eq}
+% \end{table} 
+% \begin{itemize}
+% \item to show that (B,C) is perfect equilibrium, we used bigger trembles on R than on L
+% \item R seems to be bigger mistake $\Ra$ reasonable?
+% \end{itemize}
+% \end{ex}
+
+
+% \begin{definition}[$\varepsilon $-proper equilibrium] 
+% $\alpha(\varepsilon )$ is an $\varepsilon
+%   $-proper equilibrium for $\varepsilon \great 0$ if it is completely
+%   mixed and
+% $$u_i(\alpha(\varepsilon )_{-i},k)\less u_i(\alpha(\varepsilon )_{-i},l)\quad \Ra \quad \alpha(\varepsilon)_i^k \leq \varepsilon \alpha(\varepsilon )_i^l$$
+% where $k, l\in A_i$.
+% \end{definition}
+
+% \begin{itemize}
+% \item if $l$ is better than $k$, then the probability of $k$ being played is at most $\varepsilon $ times the probability of $l$ being played
+% \item note: if $a_1$ is better than $a_2$ which in turn is better than $a_3$, then $a_2$ is at most $\varepsilon $ as likely as $a_1$ and $a_3$ is at most $\varepsilon^2$ as likely as $a_1$
+% \end{itemize}
+
+
+% % \begin{lemma}
+% %   A $\varepsilon $-proper equilibrium exists for $0<\varepsilon <1$.
+% % \end{lemma}
+% % \textbf{Proof. }
+% % notation:
+% % \begin{itemize}
+% % \item $m=max_i(\# A_i)$
+% % \item strategy space we consider:
+% % $$ S_i=\left\{\alpha_i\in\Delta A_i: \alpha_i(a_k)\geq \frac{\varepsilon^m}{m} \text{ for all }a_i \in A_i  \right\}$$
+% % \item constrained response of player $i$
+% %   \begin{multline*}
+% %     r_i(\alpha_{-i})=\{\alpha_i\in S_i: \text{ if }u_i(\alpha_{-i},k)\less
+% %     u_i(\alpha_{-i},l)\\
+% %  \text{ then }\alpha_i(k)\leq \varepsilon \alpha_i(l)
+% %     \text{ for all }k,l\in A_i \}
+% %   \end{multline*}
+% % \end{itemize}
+% % We want to use Kakutani's fixed point theorem on $r=r_1\times \dots \times r_n$.
+% % Convex- and compact-valuedness and closed graph property are shown as in proof of the Nash theorem.\\
+% % To show: $r_i$ is non-empty for all $\alpha_{-i}$ \dots
+% % . Nonemptiness is shown by constructing a member: Take $\rho(a_i,s)$ as the number of actions $b_i$ in $A_i$ such that $u_i(s_{-i},a_i)\less u_i(s_{-i},b_i)$. Then the following strategy belongs to $r_i$ 
+%  % $$\hat{s}_i(a_i)= \frac{\varepsilon ^{\rho(a_i,s)}}{\sum_{a_i'\in A_i}\varepsilon^{\rho(a_i',s)}}\geq \frac{\varepsilon^m}{m}.$$
+% %\qed
+
+% \framebreak
+
+% \begin{definition}[Proper equilibrium]
+%   $\alpha$ is a \emph{proper equilibrium} if it is the limit of a
+%   sequence $\alpha(\varepsilon )_{\varepsilon \ra0}$ of $\varepsilon
+%   $-proper equilibrium.
+% \end{definition}
+
+
+% % \begin{theorem}
+% % In every finite strategic form game a proper equilibrium exists.
+% % \end{theorem}
+
+% % \textbf{Proof. }skipped
+% % Then we can take a sequence of $\varepsilon $-proper equilibria where $\varepsilon $ tends to zero. We can take a convergent subsequence of those equilibria. The limit of this subsequence is a proper equilibrium.
+% %\qed
+
+% \begin{ex}
+% \begin{table}[h]
+% \centering
+% %\begin{tabular}{l|c|c|c}
+%  \begin{game}{3}{3}
+%       \> L   \>C   \>  R\\% \hline
+% T   \>1,1    \> 0,0\>-1,-2  \\
+% M   \>0,0    \>0,0  \>0,-2\\
+% B   \> -2,-1 \>-2,0\>-2,-2
+% \end{game}
+% %\end{tabular}
+% % \caption{sensitive to additional irrelevant actions}
+% % \label{tab:sensitive_perf_eq}
+% \end{table} 
+
+%   \begin{itemize}
+%   \item we showed that (M,C) is perfect eq
+%   \item  (M,C) is not proper eq:
+%     \begin{itemize}
+%     \item tremble on R can only be $\varepsilon$ as big as the tremble on $L$% , since L is a
+%       % better response than R.
+%    \item but then T is a better response than M in any perturbed game%  and will therefore be played for sure in
+%       % the limit. Hence,
+%    \item   only (T,L) is a proper equilibrium
+%     \end{itemize}
+
+%   \end{itemize}
+% \end{ex}
+
+% \framebreak
+
+
+
+% \begin{ex}
+% \begin{itemize}
+% \item  proper equilibrium can unfortunately also be sensitive to adding
+%   strictly dominated actions
+%    \begin{table}[h]
+% \centering
+% %\begin{tabular}{l|c|c}
+% %\multicolumn{3}{c}{A}\\
+%  \begin{game}{2}{2}[][][A]
+%       \> L   \>R   \\ %\hline
+% T   \>1,1,1    \> 0,0,1  \\
+% D   \>0,0,1    \>0,0,1
+% \end{game}
+% %\end{tabular}
+% \quad
+% %\begin{tabular}{l|c|c}
+% %\multicolumn{3}{c}{A}\\
+%  \begin{game}{2}{2}[][][B]
+%       \> L   \>  R\\ %\hline
+% T   \>0,0,0    \> 0,0,0  \\
+% D   \>0,0,0    \>  1,1,0  
+% \end{game}
+% %\end{tabular}
+% % \caption{sensitive to adding strictly dominated actions}
+% % \label{tab:sensitive_prop_eq}
+% \end{table}
+% \item B is strictly dominated for player 3
+% \item in the game without action B only (T,L,x) is a proper equilibrium
+% \item Show that  (D,R,A) is also a proper equilibrium in the game with B 
+% % Just think of a
+% %   tremble where each player plays his action from (B,R,A) with prob
+% %   $1-\varepsilon $ and the other action with prob $\varepsilon $. Then
+% %   player 1 and 2 are indifferent between their two actions for each
+% %   $\varepsilon $. The limit is the equilibrium (B,R,A).
+% \end{itemize}
+% \end{ex}
+% }
+
+
+
+\end{document}

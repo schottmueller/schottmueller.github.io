@@ -1,0 +1,4 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {2}{Existence of Nash equilibria}{3}{0}{1}
+\beamer@sectionintoc {3}{Maths: Fixed point theorems}{5}{0}{2}
+\beamer@sectionintoc {4}{Nash theorem}{10}{0}{3}

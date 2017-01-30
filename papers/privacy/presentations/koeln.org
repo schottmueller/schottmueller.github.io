@@ -1,0 +1,340 @@
+#+TITLE:  An informational theory of privacy
+#+AUTHOR:    Ole Jann* and Christoph Schottmüller** \linebreak \vspace*{0.3cm}\linebreak\scriptsize{*Nuffield College, Oxford\linebreak **University of Copenhagen}
+#+EMAIL:     christoph@worknotebook.home
+#+DATE:     
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath,amsthm,amssymb,mathtools,tikz,multirow}\usepackage{ae,aecompl}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+#+latex_header: \newcommand{\backupbegin}{\newcounter{framenumberappendix}   \setcounter{framenumberappendix}{\value{framenumber}}}
+#+latex_header: \newcommand{\backupend}{ \addtocounter{framenumberappendix}{-\value{framenumber}}  \addtocounter{framenumber}{\value{framenumberappendix}}}
+
+
+* Introduction
+
+** Privacy is a hot topic
+
+# Privacy in news and life: 
+- government surveillance 
+- business surveillance
+   - e-business: data as side product of any transaction 
+   - loyalty cards 
+- voluntary provision of personal data (facebook, twitter, mobile phone)
+- micro targeting in election campaigns
+
+\pause
+
+\vspace*{0.5cm}
+\begin{center}
+What is at stake? trade-offs? mechanisms?
+\end{center}
+
+
+** What is privacy (in this paper)?
+
+- ability to take actions without being observed, and having interactions with others confined to the intended recipients
+- (many other definitions)
+- privacy $\subset$ asymmetric information
+
+\pause
+
+\vspace*{0.3cm}
+\begin{center}
+\begin{large}
+Is there an economic rationale for privacy?
+\end{large}
+\end{center}
+
+
+** Economics of privacy: Chicago school (Stigler 80, Posner 81)
+- privacy = asymmetric information
+- asymmetric information = inefficiency (Akerlof, Mirrlees etc.)
+
+$\Rightarrow$ privacy = inefficiency 
+
+** Popular debate: "Nothing to hide"
+
+- reiterated by Google, facebook, NSA etc.
+   - If you have nothing to hide, you do not need privacy.
+   - If you have something to hide, you should not do it.
+
+# - (similar to Chicago school)
+
+
+** This paper
+
+- our model:
+   - information is not perfect (correlation: statistical discrimination as in Phelps 72, Arrow 73)
+   - privacy affects behavior
+- main result: privacy can be efficient even when considering /informational effects only/ 
+- other results:
+   - lack of privacy changes behavior in one direction ("chilling effects")
+   - effectiveness of privacy intrusion is easily overstated
+   - privacy is redistributive 
+# (affects different people differently)
+   - mandating privacy might be necessary to avoid unraveling
+
+
+
+* Model
+
+** A simple story
+- Alice thinks drugs should be legalized and wants to write on her facebook profile about that.
+- She is also looking for a job.
+- Employers do not want to hire drug users.
+- positive correlation between stand on legalization ($\theta_i$) and drug use ($\tau_i$)
+- two cases: The employer can see what Alice does online, or not.
+
+
+
+** Model I
+- $n$ individuals
+- individual $i$ has type $(\theta_i,\tau_i)$
+   - $\theta_i\sim \mathcal{N}(0,1)$
+   - $\tau_i$ positively correlated with $\theta_i$ \linebreak (formally: distribution of \tau_i at \theta_i' fosd distribution at \theta_i''<\theta')
+
+\begin{center}
+\includegraphics[scale=0.6]{scatter}
+\end{center}
+
+** Model II
+
+1. information aggregation stage
+   - $i$ observes $(\theta_i,\tau_i)$
+   - $i$ chooses $p_i\in\{0,1\}$
+   - policy $p\in\{0,1\}$ is implemented with probability $q(m/n)$ where $m/n$ is fraction of individuals choosing $p_i=1$ 
+   - $q'>0$ and $q$ point symmetric around 0.5
+   - payoff for $i$: $p\theta_i$
+2. interaction stage
+   - opposing player (OP) chooses action A (aggressive) or M (mild) against $i$
+   - payoff OP: A gives $\tau_i$, M gives 0
+   - payoff $i$: A gives $-\delta(\tau_i)$, M gives 0 
+   -  $\delta$ weakly increasing
+
+no privacy: OP knows $p_i$
+
+privacy: OP has only prior
+
+* Results
+
+** Results: Chilling effect
+- individuals use cutoff strategies: $p_i=1$ iff $\theta_i\geq t(\tau_i)$
+
+*** Proposition (Chilling effect)                                   :B_block:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+With privacy $t^p(\tau_i)=0$. \linebreak Without privacy $t^{np}(\tau_i)\geq0$ and $t^{np}(\tau_i)$ is increasing.
+
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+- without privacy individuals with $\theta_i\in [0,t(\tau_i))$ change their behavior ("are chilled")
+- without privacy OP plays M against $p_i=0$ and A against $p_i=1$ \linebreak (if privacy affects OP behavior and pure strategy equilibrium)
+
+** Equilibrium without privacy 
+\begin{center}
+\includegraphics[scale=0.95]{graphchilling.pdf}
+\end{center}
+
+** Welfare results
+*** Lemma (Consumer surplus) 					    :B_block:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+Expected consumer surplus in the information aggregation stage is maximal at the privacy cutoff $t^p(\tau_i)=0$.
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+\pause
+
+- welfare includes OP payoff (OP might loose from privacy)
+
+*** Welfare							  :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+Let $\delta'>0$.
+
+For $n$ sufficiently large, expected consumer surplus is higher under privacy and OP payoff is the same under privacy and no privacy.
+
+Let the disutility of A be $-r\delta(\tau_i)$. For $r$ sufficiently high, consumer surplus is higher under privacy and OP payoff is the same under privacy and no privacy.
+
+** Privacy is redistributive
+- individuals with $\theta_i<0$ loose from privacy
+- individuals that are chilled $\theta_i\in[0, t^{np}(\tau_i)$ gain a bit from privacy
+- individuals with $\theta_i>t^{np}(\tau_i)$ gain double from privacy (decision, OP interaction)
+
+
+** Surveillance performs worse than expected
+- seems as eliminating privacy could give OP huge benefit
+- but: behavior change (chilling) might reduce correlation between $p_i$ and $\tau_i$
+- technical assumption (TA): $\mathbb{E}[\tau_i|\theta_i=0]\geq 0$ \linebreak (if OP knew $\theta_i$ and $\theta_i\geq0$, A would be best response)
+
+*** Lemma							    :B_block:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+Assume TA. \linebreak OP's payoff without privacy is lower if individuals use $t^{np}$ than if they used $t^p=0$.
+
+** Surveillance performs worse than expected
+\begin{center}
+\includegraphics[scale=0.4]{example1}
+\end{center}
+
+** More stuff in the paper I
+- Extension: privacy as opt in
+   - individuals can choose whether to keep $p_i$ private or not
+   - multiple equilibria
+   - privacy is not a robust equilibrium: unraveling
+- Extension: endogenous information aggregation mechanism $q$
+   - $q$ is chosen to maximize consumer surplus taking (no) privacy into account
+- Extension: defensive action
+   - Alice can hire a lawyer to help her with the employer
+   - $i$ can take costly defensive action that reduces the disutility of A and lowers the payoff of OP (regardless of his action)
+   - equilibria where OP is strictly better off with privacy
+** More stuff in the paper II
+
+Alternative setups for stage 1:
+- private decision
+   - stage 1: no information aggregation, i.e. no externalities from $p_j$ on $i$
+   - additional result: privacy is welfare optimal if correlation between $\theta_i$ and $\tau_i$ is not too high
+- state matching
+   - stage 1: payoff of each $i$ is $p\theta$ where $\theta$ is an unknown state and each $i$ has a noisy signal $\theta_i$ 
+   - same results but privacy makes every $i$ better off as chilling inhibits efficient information aggregation 
+* Applications
+** Discussion: When is privacy bad?
+- biased information aggregation $q$
+  - chilling can counteract bias
+- externalities: 
+  - insider trading
+  - video surveillance to deter vandalism might prevent other crimes 
+
+** Application: Chilling effects in election polls
+- secret ballot: election is private and influences decision
+- poll: less private (interviewer), less influential \linebreak \rightarrow chilling effects
+- Bischoping and Schuman (1992) 
+ 
+** Application: Credit scoring
+repayment probability ($\tau_{i}$) is not directly observable
+- Consider two characteristics ($\theta_{i}$) that are predictive of $\tau_{i}$: education and music taste 
+-  Low education and a preference for rap music predict low repayment probability.
+- There is a chilling effect in both cases, but in the first we might consider it desirable!?
+- Should the bank be allowed to use data on music taste? (``Equal Credit Opportunity Act'' outlaws ``redlining'' in the US)
+- blacklist vs. whitelist
+
+** Application: Working in committees
+- committee is debating two policies (e.g. raise interest rates or not)
+- debate and vote can either be in secret or in public
+- correlation between policy preference $\theta_{i}$ and competence $\tau_{i}$
+- members worry about being perceived as incompetent; advocate less radical positions
+- Fed is forced to publish minutes of FOMC meetings since 1993; \linebreak increase in conformity and a decrease of disagreement with the chairman (Meade and Stasavage 2008)
+- Thomas Hoenig, President of the Kansas City Fed: ``The tape has had some chilling effect on our discussions. I see a lot more people reading their statements.''
+
+
+* Conclusion
+** Conclusion
+- we give a simple model to understand privacy from the perspective of information economics
+   - no privacy leads to chilling effects
+   - privacy can be welfare optimal 
+   - privacy is redistributive (similar to freedom of speech, Friedman 72)
+- the model leads to interesting policy questions
+   - blacklist vs. whitelist
+   - how open should government be?
+   - mandate vs. option of privacy
+   - which kind of data should be accessible by who? 
+- we identify crucial elements to address these questions (correlation, behavior change, threat potential)
+
+
+\backupbegin
+
+** Literature
+- Chicago school (Stigler 80, Posner 81)
+- statistical discrimination (Phelps 72, Arrow 73)
+- Hirshleifer effect (Hirshleifer 71)
+- intrinsic motivation + image concerns and privacy (Daughety and Reinganum 2010, Ali and Benabou /working paper/)
+- equilibrium effects of privacy (Cummings et al. /working paper/)
+- many papers in specific IO settings 
+   - dynamic pricing if purchase history is known/unknown 
+       - sophisticated vs. naive consumers
+   - differentiated good competition with known/unknown location
+- survey: Acquisti et al. JEL 2015
+
+* Presentation
+
+** Christoph Schottmüller
+
+\begin{center}
+\includegraphics[scale=0.35]{map2}
+\end{center}
+
+** Research
+- past:
+  - contract theory: principal agent problems, (health) insurance
+  - IO: procurement, pricing
+
+- ongoing/future:
+  - privacy and surveillance
+  - dynamic advice and reputation
+  - IO of data driven markets (e.g. internet search)
+  - political polarization and echo chambers
+  - information design
+- methods: theory + ...
+
+** Teaching
+
+- past/ongoing:
+  - courses:
+    - game theory
+    - mechanism design
+    - health insurance (MSc Public Health)
+  - [[./gt2016.html][how]]?
+
+\pause
+
+- possibilities for future: 
+  - standard microeconomics courses
+  - auction theory
+  - economics of the internet 
+  - (topics in) information economics
+  - (topics in) industrial organization (and incentive regulation)
+
+** Cologne and Christoph
+- overlapping research interests 
+  - design questions
+  - (applied) game theory
+  - (applied) contract theory
+  - digital markets
+  - incentive regulation and IO
+  - (applied) mechanism design
+
+- complementarities in teaching
+- institutional fit:
+  - Faculty division: Microeconomics, Institutions and Markets
+  - Key research profile area: Design and Behavior
+  - CSEB 
+    - Design and Behavior 
+
+** From a project description
+"Many markets are plagued by moral hazard and adverse selection problems, and so require trust in order to function effectively. In this project, we study how advice and reputation promote trust [...] We start with the observation that traders with limited information often rely on expert advice. E.g., many retail investors seek financial advice, which however may be compromised by a conflict of interest with the advisor."\par 
+(CSEB, Design and Behavior, Engineering Trust in Markets: Advice and Reputation)
+
+\backupend

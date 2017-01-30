@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {2}{Administrative things}{3}{0}{1}
+\beamer@sectionintoc {3}{ What is GT?}{10}{0}{2}
+\beamer@sectionintoc {4}{Decision making under uncertainty}{12}{0}{3}
+\beamer@sectionintoc {5}{Review and Exercises}{29}{0}{4}
