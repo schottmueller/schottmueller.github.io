@@ -62,7 +62,7 @@ OpenPGP:<br/>
 
 ** Working Papers
 
-Competing with big data (with Jens Prüfer) (available upon request) [[./papers/tipping/TippingNumeric.zip][numerics]]
+Competing with big data (with Jens Prüfer) [[[./papers/tipping/Competing with Big Data.pdf][paper]]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/tilburg.pdf][slides]]
 
@@ -86,7 +86,7 @@ Facilitating consumer learning in insurance markets: What are the welfare effect
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
 
 
-Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[https://dx.doi.org/10.1111/ecoj.12242][doi]], Vol 127 (599), February 2017, pp. 85-104 
+Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[https://dx.doi.org/10.1111/ecoj.12242][doi]], Vol. 127 (599), February 2017, pp. 85-104 
 @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
 
 Procurement with specialized firms (with Jan Boone) [[./papers/procurement_specialized_firms/procurement_specialized.pdf][wp]], /RAND Journal of Economics/ [[https://dx.doi.org/10.1111/1756-2171.12143][doi]], Vol. 47, Fall 2016, pp. 661-687 
