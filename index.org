@@ -62,7 +62,7 @@ OpenPGP:<br/>
 
 ** Working Papers
 
-Competing with big data (with Jens Prüfer) [[[./papers/tipping/Competing with Big Data.pdf][paper]]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
+Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/privacy.pdf][slides]]
 
