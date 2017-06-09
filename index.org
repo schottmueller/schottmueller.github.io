@@ -115,7 +115,7 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 ** University of Copenhagen
 2014- : Mechanism design (MSc) [[https://github.com/MechDes/2017/blob/master/index.org][course website]] 
 
-2012- : Game theory (MSc) [[https://schottmueller.github.io/gt/gt2016.html][course website]] 
+2012- : Game theory (MSc) [[https://github.com/KUGameTheory/gt2017/blob/master/index.org][course website]] 
 
 2013: Health insurance (MSc Public Health) [[./files/outline.pdf][outline]]
 

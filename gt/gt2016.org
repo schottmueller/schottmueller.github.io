@@ -40,8 +40,6 @@ The midterm is a take home exam. You have to pass the midterm in order to be adm
 
  Here is a [[./Holdliste Game Theory web.xlsx][list]] with students that are admitted to the final exam. Please, check whether you are on it and contact me if you are not (though you think you should).
 
-[[./solution_midterm_ex2.pdf][Here]] is a (rather convoluted) solution for exercise 2b that uses the iterative elimination of strictly dominated strategies.
-
 ** Final Exam
 The final is an oral exam (with 20 minutes closed book preparation time). 
 
