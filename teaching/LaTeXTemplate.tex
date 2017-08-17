@@ -60,7 +60,7 @@
 
 % You  have to fill in the right information below
 
-\title{Your Title}
+\title{Your Title\thanks{If necessary, you can -- at this very point -- thank someone for his great comments to earlier versions of the paper.}}
 \author{Your Name}
 \date{\today} %you can use something like \date{August 17, 2017} to get a date that is not today's date
 
@@ -74,15 +74,29 @@
 %"\maketitle" inserts title, author and date into the document
 \maketitle
 
+%abstract
+\begin{abstract}
+  This is the abstract. An abstract is a short summary that tells a potential reader to quickly what you are doing allowing him to judge whether to read your paper. (abstract length is $\approx$ 100 words for a normal length paper) 
+\end{abstract}
+
+
 \section{Introduction}\label{sec:intro}
 
-Here goes your introduction. This document can be used as a template (in this case you want to delete all my text from here to the \verb|\bibliographystyle{chicago}| comand) but I will also give some examples of how to cite and reference, and how to use mathematics in \LaTeX. Ideally, you should look at the .pdf and the .tex file at the same time to see what the code generates. 
+This document can be used as a template (in this case you want to delete all my text from here to the \verb|\bibliographystyle{chicago}| command -- you can keep the section headings if you like). In the following, I will give some examples of how to cite and reference, and how to use mathematics in \LaTeX.\footnote{Ideally, you should look at the .pdf and the .tex file at the same time to see what the code generates.} I assume that you have read the ``Getting started'' part of the \LaTeX\ wikibook, see \url{https://en.wikibooks.org/wiki/LaTeX}.
 
 \subsection{Literature Review}\label{sec:literature}
 
-The literature review goes here. Let me give some examples how to cite in \LaTeX\ using BibTeX: The ``Chicago view'' of privacy is based on \cite{stigler1980introduction} and \cite{posner1981economics}. A page in a book  is cited as \citet[p. 34]{solove2010privacy}. Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide).
+The literature review goes here. Let me give some examples how to cite in \LaTeX\ using BibTeX: The ``Chicago view'' of privacy is based on \cite{stigler1980introduction} and \cite{posner1981economics}. A page in a book  is cited as \citet[p. 34]{solove2010privacy}. Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide; \url{https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM}).
 
 The advantage of BibTeX is twofold: First, you spell the author names and the publication years correctly. Second, the reference list is automatically generated and formatted nicely.
+
+Do not forget to run BibTeX (unless you like question marks instead of citations all over your document). To get the full output:
+
+\begin{enumerate}
+\item run \LaTeX
+\item run BibTeX
+\item run \LaTeX\ twice.\footnote{You do not have to run BibTeX again afterwards unless you insert a new citation.}
+\end{enumerate}
 
 \section{Model}\label{sec:model}
 
@@ -99,26 +113,40 @@ You reference the definition as ``definition \ref{def:fp}'' (that is \verb|defin
 \section{Results}\label{sec:results}
 
 
-A mathematical result, like a proposition, is written in a similar environment as a definition.
+A mathematical result, like a proposition or a lemma, is written in a similar environment as a definition.
 
 \begin{proposition}\label{prop:fp01}
   Let $f: \,[0,1]\rightarrow[0,1]$ be an increasing function. Then, $f$ has a fixed point.
 \end{proposition}
 
-\section{Your Extension}\label{sec:ext}
+\section{Extension}\label{sec:ext}
 
-You can include a graphic with the command \verb|\includegraphics{filename}| (recommended file formats are png, eps or pdf). Usually it is a good idea to place the graphic in a figure environment as here:
+This section gives examples of specialized uses that are probably unimportant if you try \LaTeX\ for the first time.
+
+You can include a graphic with the command \verb|\includegraphics{filename}| if the graphic is in the same folder as your .tex document (recommended file formats are png, eps or pdf). Usually it is a good idea to place the graphic in a ``figure environment'' as here.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.6]{Vprime}
+  \includegraphics[scale=0.6]{Vprime} %"scale" adjusts the size of the graphic, here to 60% of the size in the original file; note that Vprime.png has to be in the same folder as this .tex document
   \caption{A nice figure}
   \label{fig:zigzag}
 \end{figure}
 
-We can reference the figure as figure \ref{fig:zigzag} using its label.
+We can reference the figure as figure \ref{fig:zigzag} using its label. Note that \LaTeX\ will place the figure at the top of the next page if there is not enough space on the current page (while moving the text that seemingly follows the figure in the .tex file to fill up the remaining space).
 
-Sometimes you need to have a nicely formatted table. See \url{https://en.wikibooks.org/wiki/LaTeX/Tables} for this.
+Sometimes you need to have a nicely formatted table. I will give only a simple example and you can check \url{https://en.wikibooks.org/wiki/LaTeX/Tables} if you need something more complicated. The table itself is created in a ``tabular environement''. In order to give the table a caption and to be able to reference it, the tabular environment is put into a ``table environment''.
+
+\begin{table}[h]\centering
+\begin{tabular}{l | r c} % "l" stands for left aligned column, "r" and "c" give right aligned and centered columns; "|" creates a visible vertical line
+  top left    & top center    & top right \\ \hline % "&" separates cells, "\\" ends a line, "\hline" puts a visible horizontal line in the table
+  mid left    & mid center    & mid right \\
+  bottom left & bottom center & bottom right
+\end{tabular}
+\caption{A simple table}
+\label{tab:ourTable}
+\end{table}
+
+If you need to create nice looking graphs, something like figure \ref{fig:zigzag} for example, you can produce these inside your \LaTeX\ document using a package called ``tikz'' (do not forget to add \verb|\usepackage{tikz}| to the preamble if you want to try). Jacques Cr\'emer wrote an excellent introduction to tikz; see \url{http://cremeronline.com/LaTeX/minimaltikz.pdf}.
 
 \section{Conclusion}
 
