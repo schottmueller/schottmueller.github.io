@@ -117,9 +117,13 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 2012- : Game theory (MSc) [[https://github.com/KUGameTheory/gt2017/blob/master/index.org][course website]] 
 
+2017: Seminar Economics of Privacy [[https://github.com/schottmueller/seminarprivacy/blob/master/index.org][course website]]
+
 2013: Health insurance (MSc Public Health) [[./files/outline.pdf][outline]]
 
 My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
+
+I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]], [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output).
 
 #+BEGIN_EXPORT html
 </div>
