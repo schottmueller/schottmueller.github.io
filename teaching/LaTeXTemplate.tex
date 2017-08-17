@@ -7,6 +7,7 @@
 %font encoding (no need to pay attention to this)
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{textcomp}
 
 %packages for mathematical symbols and environments
 \usepackage{amsmath,amssymb,amsthm}
@@ -123,6 +124,9 @@ A mathematical result, like a proposition or a lemma, is written in a similar en
 
 This section gives examples of specialized uses that are probably unimportant if you try \LaTeX\ for the first time.
 
+\subsection{Importing graphics }
+\label{sec:importing-graphics}
+
 You can include a graphic with the command \verb|\includegraphics{filename}| if the graphic is in the same folder as your .tex document (recommended file formats are png, eps or pdf). Usually it is a good idea to place the graphic in a ``figure environment'' as here.
 
 \begin{figure}[h]
@@ -133,6 +137,9 @@ You can include a graphic with the command \verb|\includegraphics{filename}| if 
 \end{figure}
 
 We can reference the figure as figure \ref{fig:zigzag} using its label. Note that \LaTeX\ will place the figure at the top of the next page if there is not enough space on the current page (while moving the text that seemingly follows the figure in the .tex file to fill up the remaining space).
+
+\subsection{Tables}
+\label{sec:tables}
 
 Sometimes you need to have a nicely formatted table. I will give only a simple example and you can check \url{https://en.wikibooks.org/wiki/LaTeX/Tables} if you need something more complicated. The table itself is created in a ``tabular environement''. In order to give the table a caption and to be able to reference it, the tabular environment is put into a ``table environment''.
 
@@ -146,7 +153,54 @@ Sometimes you need to have a nicely formatted table. I will give only a simple e
 \label{tab:ourTable}
 \end{table}
 
+\subsection{Generating graphics}
+\label{sec:generating-graphics}
+
 If you need to create nice looking graphs, something like figure \ref{fig:zigzag} for example, you can produce these inside your \LaTeX\ document using a package called ``tikz'' (do not forget to add \verb|\usepackage{tikz}| to the preamble if you want to try). Jacques Cr\'emer wrote an excellent introduction to tikz; see \url{http://cremeronline.com/LaTeX/minimaltikz.pdf}.
+
+\subsection{More maths}
+\label{sec:more-maths}
+
+Putting two equations nicely formatted one below the other.
+
+\begin{eqnarray}\label{eq:aplus}
+  \alpha^+_h &=&\frac{\alpha p}{(1-\alpha)/2+\alpha p}\\
+\alpha^-_h &=&\frac{\alpha (1-p)}{(1-\alpha)/2+\alpha(1-p)}. \label{eq:aminus}
+\end{eqnarray}
+
+Sometimes an equation is too long to be displayed on a single line.
+
+\begin{multline}\label{eq:longEq}
+ \frac{\alpha p}{(1-\alpha)/2+\alpha p}-\frac{3}{4}\left(\frac{\beta+\gamma}{\rho}+\theta e^\eta\right)^3 + (\frac{\beta+\gamma}{\rho}+\theta e^\eta)^3\\
+ =\sqrt{x}+\mathbb{E}_\theta \left[\log(\theta )*\sigma^2 \right]+\frac{3+1}{x}+\frac{\alpha -\frac{2+p}{5}}{(1-\alpha)/2+\alpha(1-p)}. 
+\end{multline}
+
+The previous equation also illustrates when to use normal paranthesis like ``(\dots)'' and when you need the command ``\verb|\left(|\dots\verb|\right)|'' (the latter adjusts the size of the paranthesis).
+
+If you do not reference and equation later one, there is no point in having it numbered.
+
+\begin{eqnarray}\nonumber
+  \alpha^+_h &=&\frac{\alpha p}{(1-\alpha)/2+\alpha p}\\
+\alpha^-_h &=&\frac{\alpha (1-p)}{(1-\alpha)/2+\alpha(1-p)} \label{eq:aminus}
+\end{eqnarray}
+
+and for a single equation 
+
+\begin{equation*}
+  \alpha^+_h =\frac{\alpha p}{(1-\alpha)/2+\alpha p}.
+\end{equation*}
+
+The following symbols are occasionally used: $\sim$, $\equiv$, $\approx$, $\Rightarrow$, $\Leftrightarrow$, $\succeq$, $\preceq$, $\succ$, $\prec$, $\nearrow$
+
+\subsection{Special characters}
+\label{sec:special-characters}
+
+In case there are problems with typing special characters directly, here is how you can generate them directly:
+
+\noindent S\o rensen, \ae, \aa, \O ster, \AA, \AE \\M\"uller, \"o,  \"a, \"Ofter, \"U, \"A\\
+\'e, \`e , \^{o}, \c{c}, \k{a}\\
+45\textdegree
+
 
 \section{Conclusion}
 
