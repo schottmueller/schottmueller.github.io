@@ -123,7 +123,7 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
 
-I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]], [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output).
+I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
 
 #+BEGIN_EXPORT html
 </div>
