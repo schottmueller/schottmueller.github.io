@@ -64,7 +64,7 @@ OpenPGP:<br/>
 
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
-An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/privacy.pdf][slides]]
+An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]]
 
 Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/presentation_reputation.pdf][slides]] [[./papers/dynAdvReputation/presentation_reputation25.pdf][slides25]]
 @@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://github.com/schottmueller/schottmueller.github.io/blob/master/papers/dynAdvReputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
