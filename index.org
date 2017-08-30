@@ -134,7 +134,7 @@ I created a template for students who want to get started with LaTeX. Read the "
 #+END_EXPORT
 * Links
 
-Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/1Br5iljSzsxXUHxd_ES1SEGDxHEcDNw3nf3QYCSW7y9k/edit?usp=sharing][link]]
+Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/16pmL77EARtsqaj0LTeOfFja3t0F4bkih7FiIGTGQzVA/edit#gid=1337332929][link]]
 
 
 Institutions I am/was affiliated with or visited in the past:
