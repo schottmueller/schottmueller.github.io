@@ -72,7 +72,7 @@ Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReput
 
 How Jeremy Bentham would defend against self-fulfilling attacks (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/hamburg.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
 
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]]
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]], /R&R IER/
 
 Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
 
