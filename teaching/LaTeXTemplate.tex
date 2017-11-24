@@ -1,5 +1,5 @@
 % a line starting with "%" is a comment;
-%that is, everything following "%" onthe saem line has no impact on the generated .pdf
+%that is, everything following "%" onthe same line has no impact on the generated .pdf
 
 %%%%%%%% License for this document: GPL 3 %%%%%%%%%%%%%
 
@@ -64,7 +64,7 @@
 % You  have to fill in the right information below
 
 \title{Your Title\thanks{If necessary, you can -- at this very point -- thank someone for his great comments to earlier versions of the paper.}}
-\author{Your Name}
+\author{Your Name\thanks{In many papers you will see here the affiliation of the authors.}}
 \date{\today} %you can use something like \date{August 17, 2017} to get a date that is not today's date
 
 
@@ -79,19 +79,19 @@
 
 %abstract
 \begin{abstract}
-  This is the abstract. An abstract is a short summary that tells a potential reader to quickly what you are doing allowing him to judge whether to read your paper. (abstract length is $\approx$ 100 words for a normal length paper) 
+  This is the abstract. An abstract is a short summary that tells a potential reader quickly what you are doing allowing him to judge whether to read your paper or not. (abstract length is $\approx$ 100 words for a normal length paper) 
 \end{abstract}
 
-
+%start of the first section; the label is used to reference the section later on
 \section{Introduction}\label{sec:intro}
 
-This document can be used as a template (in this case you want to delete all my text from here to the \verb|\bibliographystyle{chicago}| command -- you can keep some section headings if you like). In the following, I will give some examples of how to cite and reference, and how to use mathematics in \LaTeX.\footnote{Ideally, you should look at the .pdf and the .tex file at the same time to see what the code generates.} I assume that you have read the ``Getting started'' part of the \LaTeX\ wikibook, see \url{https://en.wikibooks.org/wiki/LaTeX}.
+This document can be used as a template (in this case you want to delete all my text from here to the \verb|\bibliographystyle{chicago}| command. In the following, I will give some examples of how to cite and reference, and how to use mathematics in \LaTeX.\footnote{Ideally, you should look at the .pdf and the .tex file at the same time to see what the code generates.} I assume that you have read the ``Getting started'' part of the \LaTeX\ wikibook, see \url{https://en.wikibooks.org/wiki/LaTeX}.
 
 \subsection{Literature Review}\label{sec:literature}
 
-Let me give some examples how to cite in \LaTeX\ using BibTeX: The ``Chicago view'' of privacy is based on \cite{stigler1980introduction} and \cite{posner1981economics}. A page in a book  is cited as \citet[p. 34]{solove2010privacy}.
+Some examples of citations in \LaTeX\ using BibTeX: The ``Chicago view'' of privacy is based on \cite{stigler1980introduction} and \cite{posner1981economics}. A page in a book  is cited as \citet[p. 34]{solove2010privacy}.
 
-Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide; \url{https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM}). To tell \LaTeX\ that there is a .bib file, you need to use the \verb|\bibliography{name .bib file}| command at the point where you want to have the reference list; see the end of this document. The layout of the reference list is determined by the \verb|\bibliographystyle{}| command; in this document I use the style ``chicago''.
+All the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR with occasional minor editing (and otherwise you do it by hand following Martin Osborne's guide; \url{https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM}). To tell \LaTeX\ that there is a .bib file, you need to use the \verb|\bibliography{name .bib file}| command at the point where you want to have the reference list; see the end of this document. The layout of the reference list is determined by the \verb|\bibliographystyle{}| command; in this document I use the style ``chicago''.
 
 The advantage of BibTeX is twofold: First, you spell the author names and the publication years correctly. Second, the reference list is automatically generated and formatted nicely.
 
@@ -186,13 +186,13 @@ Putting two equations nicely formatted one below the other.
 Sometimes an equation is too long to be displayed on a single line.
 
 \begin{multline}\label{eq:longEq}
- \frac{\alpha p}{(1-\alpha)/2+\alpha p}-\frac{3}{4}\left(\frac{\beta+\gamma}{\rho}+\theta e^\eta\right)^3 + (\frac{\beta+\gamma}{\rho}+\theta e^\eta)^3\\
+\frac{3}{4}\left(\frac{\beta+\gamma}{\rho}+\theta e^\eta\right)^3 + (\frac{\beta+\gamma}{\rho}+\theta e^\eta)^3\\
  =\sqrt{x}+\mathbb{E}_\theta \left[\log(\theta )*\sigma^2 \right]+\frac{3+1}{x}+\frac{\alpha -\frac{2+p}{5}}{(1-\alpha)/2+\alpha(1-p)}. 
 \end{multline}
 
-The previous equation also illustrates when to use normal paranthesis like ``(\dots)'' and when you need the command ``\verb|\left(|\dots\verb|\right)|'' (the latter adjusts the size of the paranthesis).
+The first line of the previous equation also illustrates when to use normal paranthesis like ``(\dots)'' and when you need the command ``\verb|\left(|\dots\verb|\right)|'' (the latter adjusts the size of the paranthesis).
 
-If you do not reference and equation later on, there is no point in having it numbered.
+If you do not reference an equation later on, there is no point in having it numbered.
 
 \begin{eqnarray}\nonumber
   \alpha^+_h &=&\frac{\alpha p}{(1-\alpha)/2+\alpha p}\\
@@ -205,16 +205,21 @@ and for a single equation
   \alpha^+_h =\frac{\alpha p}{(1-\alpha)/2+\alpha p}.
 \end{equation*}
 
-The following symbols are occasionally used: $\sim$, $\equiv$, $\approx$, $\Rightarrow$, $\Leftrightarrow$, $\succeq$, $\preceq$, $\succ$, $\prec$, $\nearrow$, $\Re$, $\mathbb{R}$, $\in$, $\emptyset$
+\subsubsection{Occasionally used symbols}
+$\sim$, $\equiv$, $\approx$, \\
+$\Rightarrow$, $\Leftrightarrow$, $\nearrow$,\\
+$\succeq$, $\preceq$, $\succ$, $\prec$,\\
+$\Re$, $\mathbb{R}$, $\mathbb{N}$, $\in$, $\emptyset$, $\{\}$\\
+$\hat{\alpha}_i$, $\bar{\alpha}^2$, $\underline{\alpha}$
 
 \subsection{Special characters and symbols}
 \label{sec:special-characters}
 
-In case there are problems with typing special characters directly, here is how you can generate them directly:
+In case there are problems with typing special characters, here is how you can generate them directly:
 
 \noindent S\o rensen, \ae, \aa, \O ster, \AA, \AE \\M\"uller, \"o,  \"a, \"Ofter, \"U, \"A\\
 \'e, \`e , \^{o}, \c{c}, \k{a}\\
-45\textdegree, \$, \&
+45\textdegree, \$, \&, \#
 
 
 \section{Conclusion}
@@ -227,11 +232,11 @@ All scientific writing should be done in \LaTeX.
 \section*{Appendix}
 \noindent\textbf{Proof of proposition \ref{prop:fp01}:} Let 
 \begin{equation} \label{eq:A}
-A=\{x:\;x\geq f(x)\}.
+A=\{x:\;x\leq f(x)\}.
 \end{equation}
-Note that $0\in A$ and therefore $A\neq\emptyset$. Let $x^*=\sup A$. Then $f(x^*)\geq x^*$ by the definition of $A$, see equation (\ref{eq:A}), and because $f$ is increasing.
+Note that $0\in A$ and therefore $A\neq\emptyset$. Let $x^*=\sup A$. Then $f(x^*)\geq x^*$ by the definition of $A$, see equation (\ref{eq:A}), and because $f$ is increasing. If $x^*=1$, then $f(1)=1$ and we are done. Hence, assume $x^*<1$ for the remainder.
 
-Also $f(x^*)\leq x^*$: if not, i.e. $f(x^*)>x^*$, then $x^*+\varepsilon  > f(x^*+\varepsilon )$ for some $\varepsilon \in(x^*,f(x^*) ]\cap [0,1]$ because $f$ is increasing which contradicts the definition of $x^*$. Hence, $x^*=f(x^*)$.\qed
+Also $f(x^*)\leq x^*$: if not, i.e. $f(x^*)>x^*$, then $x^*+\varepsilon  < f(x^*+\varepsilon )$ for some $\varepsilon \in(x^*,f(x^*) ]\cap [0,1]$ because $f$ is increasing which contradicts the definition of $x^*$. Hence, $x^*=f(x^*)$.\qed
 
 \newpage
 
