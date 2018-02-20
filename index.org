@@ -8,7 +8,7 @@
 #+BEGIN_EXPORT html
 <head>
 <meta name="description" content="Personal website of Christoph Schottmüller">
-<meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Copenhagen, Tilburg, Economics, University">
+<meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University">
 <meta content="en-gb" http-equiv="Content-Language">
 <style type="text/css">
 <!--
@@ -34,7 +34,7 @@ h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, se
 </p>
 <div class="tab180">
 <br/>
-I am associate professor at the University of Copenhagen.
+I am associate professor at the University of Copenhagen. From April 2018 onward I will be professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
 <p>
 address: <br/>   
     <span class="tab"> Department of Economics </span> <br/>
