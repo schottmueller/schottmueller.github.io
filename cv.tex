@@ -1,0 +1,336 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[a4paper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+
+\usepackage{ae,aecompl}
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+%\usepackage[sc]{mathpazo}
+%\usepackage[urw-garamond]{mathdesign}
+
+% Set your name here
+\def\name{Christoph Schottm\"uller}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {Christoph Schottmueller, professor, microeconomic theory,cv},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%%if letter take these measures
+% \geometry{
+%   body={6.5in, 9.0in},
+%   left=1.0in,
+%   top=1.0in
+% }
+
+\geometry{
+  %body={6.5in, 10.0in},
+  left=0.9in,
+  right=0.9in,
+  top=0.9in,
+  bottom=0.9in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+ \sectionfont{\rmfamily\mdseries\Large}
+ \subsectionfont{\rmfamily\mdseries\itshape\large}
+%%alternative
+%\sectionfont{\scshape\mdseries\Large}
+%\subsectionfont{\scshape\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+%{\huge \scshape \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  Lehrstuhl Mikro\"okonomik \\
+  \href{https://www.wiso.uni-koeln.de/en/en}{University of Cologne} \\
+  Albertus-Magnus-Platz\\
+  50923 K\"oln\\Germany
+\end{minipage}
+%%%%%%%%%\hspace*{-1cm} % necessary if website address is so long that it won't fit otherwise
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll} 
+   Office: & SSC 4.207\\
+    Phone: & (+49) 221 470-6068 \\
+    %Fax: & (+45) 35 32 35 32 \\
+    Email: & {\tt{c.schottmueller@uni-koeln.de}}\\
+    OpenPGP key ID: &  85F0 9B43\\
+%%%%%%%\href{mailto:christoph.schottmuller@econ.ku.dk}{\tt christoph.schottmuller@econ.ku.dk} \\
+    Website: & \href{www.schottmueller.me}{\tt https://schottmueller.github.io/}
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Employment}
+
+\begin{itemize}
+\item Professor (W3), University of Cologne, 2018--
+  \item Associate Professor, Department of Economics, University of Copenhagen, 2017--2018
+\item Assistant Professor, Department of Economics, University of Copenhagen, 2012--2017
+\end{itemize}
+
+\section*{Affiliations}
+\begin{itemize}
+\item Tilburg Law and Economics Center (Tilec), extramural fellow, 2012--
+\item Tilburg Law and Economics Center (Tilec), junior member, 2008--2012
+\item Center of Health Economics and Policy Copenhagen, researcher, 2014--2018
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+   \item PhD Economics (with distinction), Tilburg University, 2012
+
+   \item visiting PhD student, Toulouse School of Economics, 08/2010--01/2011
+
+   \item Diplomvolkswirt (integrated BSc and MSc Economics), University of Mannheim, 2008
+\end{itemize}
+
+
+\section*{Publications}
+
+%\subsection*{Journal Articles}
+%
+\begin{itemize}
+
+
+\item Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerl\"of), accepted for publication in the \emph{Scandinavian Journal of Economics}
+  
+\item Monopoly insurance and endogenous information (with Johan Lagerl\"of), accepted for publication in the \emph{International Economic Review}, Vol. 59, February 2018, pp. 233--255
+
+\item Health insurance without single crossing: Why healthy
+people have high coverage (with Jan Boone), \textit{Economic Journal}, Vol. 127(599), February 2017, pp. 85--104
+
+\item Procurement with specialized firms (with Jan Boone), \textit{RAND Journal of Economics,} Vol. 47, Fall 2016, pp. 661--687
+
+\item Adverse selection without single crossing: monotone solutions, \textit{Journal of Economic Theory,} Vol. 158, July 2015, pp. 127--164
+
+\item Correlated equilibria in homogenous good Bertrand competition (with Ole Jann), \textit{Journal of Mathematical Economics,}  Vol. 57, March 2015, pp. 31--37
+
+\item Cost incentives for doctors: A double-edged sword, \textit{European Economic Review,} Vol. 61, July 2013, pp. 43--58
+
+\end{itemize}
+
+
+
+
+\section*{Working Papers}
+
+\begin{itemize}
+\item Competing with big date (with Jens Pr\"ufer)
+  
+\item An informational theory of privacy (with Ole Jann)
+  
+\item Too good to be truthful: Why competent advisers are fired 
+
+\item Why are vulnerable regimes stable? Defending against coordinated attacksthrough unpredicatbility (with Ole Jann)
+
+\item Health provider networks, quality and costs (with Jan Boone) 
+
+\item Stochastic mechanisms and quasilinear preferences (with Jan Boone); inactive
+
+\end{itemize}
+
+% \section*{Work in Progress}
+
+% \begin{itemize}
+% \item Dynamic search engine competition (with Jens Pr\"ufer)
+% \item The LME warehousing regime - is there a need for reform? (with Benno B\"uhler)
+% \end{itemize}
+
+\section*{Teaching} 
+
+\subsection*{University of Cologne}
+\begin{itemize}
+\item Advanced Microeconomics II (research track), 2018
+  \item Seminar Competition Policy (BSc), 2018
+\end{itemize}
+
+\subsection*{University of Copenhagen}
+
+Successfully completed the course ``Teaching and Learning in Higher Education'' (workload: 200h), 2014
+
+\begin{itemize}
+  \item Advanced Industrial Organization, 2018
+\item Mechanism design (MSc), 2014--2017
+\item Health insurance (MSc Public Health), 2013
+\item Game theory (MSc), 2012--2017 (with an additional topics module for PhD students in 2014)
+\end{itemize}
+
+% \subsection*{Tilburg University}
+
+% \begin{itemize}
+% \item Microeconomics 1 (BSc), 2011, teaching assistant
+% \item Microeconomics 4: Information economics (BSc),
+%   2011, teaching assistant
+% \item Competitiveness of the European Union (MSc), 2008
+%   and 2009, teaching assistant
+% \item Culture, society and economics (BA liberal arts), 2008 and 2009, teaching assistant
+% \end{itemize}
+
+% \subsection*{University of Mannheim}
+
+% \begin{itemize}
+% \item Mathematics for freshmen (BSc), 2004, 2005 and 2007
+% \end{itemize}
+
+
+\section*{Supervision}
+\begin{itemize}
+\item \item BSc thesis: several on various topics
+\item MSc thesis: more than 10 on various topics
+\item member of PhD committees: Sebastian Dengler (Tilburg University, 2017), Xu Lang (Tilburg University, 2016)
+\end{itemize}
+
+
+\section*{Presentations}
+
+\begin{itemize}
+  \item scheduled: University of Konstanz
+\item 2017: TILEC-GovReg Workshop on ``Economic Governance of Data-driven Markets'', Meeting of the European Economic Association Lisbon, ZEW Conference on Information and Communication Technologies Mannheim, University of Hamburg, 8th Berlin IO day, University of Bergen, Universität zu Köln, Konkurrence\o konomisk Forum (Copenhagen)  
+\item 2016: Lund University, SING Odense, Games Maastricht, Meeting of the European Economic Association Geneva, Econometric Society European Meeting Geneva, Hausdorff Center of Mathematics Bonn, Tilburg University
+\item 2015: Humboldt University Berlin, Royal Economic Society Conference Manchester, Tilec, CPB, 16th European Health Economics Workshop Toulouse, Meeting of the European Economic Association Mannheim 
+\item 2014: Meeting of the European Economic Association Toulouse, Tilec 
+\item 2013: University of Edinburgh, EARIE \'{E}vora 
+\item 2012: Adelaide University, Monash University, UT Sydney, Lund
+  University, University of Copenhagen, Aalto University,
+  University of  Southern Denmark
+\item  2011: European Winter Meeting of the Econometric Society in Tel
+  Aviv, EARIE Stockholm, Summer school "Market Failure and Market
+  Design" Louvain-la-Neuve, Spring Meeting of Young Economists
+  Groningen, ENTER Jamboree
+  Tilburg
+\item  2010: Brown Bag Seminar Toulouse School of Economics, Brazilian
+  Workshop of the Game Theory Society S\~{a}o Paulo, NAKE Workshop
+  Utrecht, CLEEN Workshop Amsterdam
+\end{itemize}
+
+% \section*{Honors and Grants}
+% \begin{itemize}
+% \item 
+% \item Participant European Winter Meeting of the Econometric Society, 2011\\
+% \hspace*{1cm} -- One of 16 selected European job market
+% candidates
+% \item Center exchange grant (5000 \euro), 2010
+% \item Travel grant Brazilian Workshop of the Game Theory Society
+% (1800 \euro),
+% 2010
+% \item Scholarship Konrad Adenauer Foundation (merit-based), 2005--2008
+% \end{itemize}
+
+% \section*{Experience}
+
+% \begin{itemize}
+% \item Student representative in the economic theory professor search
+%   committee (University
+%   of Mannheim), 2008
+% \item  Student representative in the microeconomics professor search
+%   committee (University of
+%   Mannheim), 2008
+% \item  Research assistant at the \textit{Center for European Economic
+%     Research} (ZEW), 2005--2006
+% \end{itemize}
+
+\section*{Professional Activities}
+\begin{itemize}
+\item Coordinator microeconomics seminar at the University of Copenhagen, 2013--
+\item Co-organizer microeconomic theory reading group (2015)
+  \item Program Committee: Tilec-GovReg Workshop ``Economic Governance of Data Driven Markets'' 2017
+\item Referee for RAND Journal of Economics, Journal of Mathematical Economics, Journal of the European Economic Association, International Economic Review, Economic Journal, Journal of Public Economics, Journal of Health Economics, Economica
+\end{itemize}
+
+% \section*{References}
+
+% \hspace*{1.5em}\begin{tabular}{l l l l}
+%   Jan Boone & Tilburg University & j.boone@uvt.nl & +31-13-466-2399 \\
+%   Eric van Damme & Tilburg University & eric.vandamme@uvt.nl & +31-13-466-3045 \\
+%   Bruno Jullien & Toulouse School of Economics & bruno.jullien@tse-fr.eu & +33-5-6112-8561 \\
+%   Cedric Argenton & Tilburg University & c.argenton@uvt.nl & +31-13-466-3216
+% \end{tabular}
+
+% \section*{References}
+% \begin{itemize}
+% \item Jan Boone, Tilburg University, \texttt{j.boone@uvt.nl}, +31 13 466 2399
+% \item Eric van Damme, Tilburg University, \texttt{eric.vanDamme@uvt.nl}, +31 13 466 3045
+% \item Johan Lagerl\"of, University of Copenhagen, \texttt{johan.lagerlof@econ.ku.dk}, 	+45 35 32 30 13
+% \item C\'edric Argenton, Tilburg University, \texttt{c.argenton@uvt.nl}, +31 13 466 3216
+% \end{itemize}
+
+\section*{Personal}
+
+\begin{itemize}
+%\item Year of birth: 1985 % alternatively "Born on May 10, 1985"
+\item Citizenship: German
+\item Languages: English, German, Dutch (intermediate)
+\end{itemize}
+
+
+% Footer
+\null\vfill %puts the date at the bottom of the page; use "\bigskip" instead if you want to have it just a bit below the last line
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}

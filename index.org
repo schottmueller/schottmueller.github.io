@@ -1,13 +1,13 @@
-#+TITLE: Christoph Schottmüller
+
 #+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc 
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+OPTIONS: html-postamble:nil
 
 
-#+BEGIN_EXPORT html
+#+BEGIN_EXPORT html 
 <head>
-<meta name="description" content="Personal website of Christoph Schottmüller">
+<meta name="description" content="Personal website of Christoph Schottmueller">
 <meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University">
 <meta content="en-gb" http-equiv="Content-Language">
 <style type="text/css">
@@ -34,17 +34,17 @@ h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, se
 </p>
 <div class="tab180">
 <br/>
-I am associate professor at the University of Copenhagen. From April 2018 onward I will be professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
+<b>Christoph Schottmüller</b> is professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
 <p>
 address: <br/>   
-    <span class="tab"> Department of Economics </span> <br/>
-    <span class="tab"> University of Copenhagen </span> <br/>
-    <span class="tab"> &Oslash;ster Farimagsgade 5, building 26 </span> <br/>
-    <span class="tab"> DK-1353 Copenhagen K </span> 
+    <span class="tab"> Lehrstuhl Mikroökonomik </span> <br/>
+    <span class="tab"> University of Cologne </span> <br/>
+    <span class="tab"> Albertus-Magnus-Platz </span> <br/>
+    <span class="tab">  50923 Köln </span> 
 </p>
 office: 26.1.16 <br/>
 phone: +45 35 32 30 87<br/>
-email: [first name] [dot] schottmueller [at] econ [dot] ku [dot] dk  <br/>
+email: c [dot] schottmueller [at] uni-koeln [dot] de  <br/>
 OpenPGP:<br/>
    <span class="tab">fingerprint: 334F EC88 1845 975B 8C43 AF9B AAF0 4B91 85F0 9B43</span> <br/>
 <span class="tab">public key <a href="files/Christoph_Schottmueller_0x85F09B43_pub.asc">here</a></span> <br/>
