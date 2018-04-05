@@ -37,9 +37,8 @@ h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, se
 <b>Christoph Schottmüller</b> is professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
 <p>
 address: <br/>   
-    <span class="tab"> Lehrstuhl Mikroökonomik </span> <br/>
     <span class="tab"> University of Cologne </span> <br/>
-    <span class="tab"> Albertus-Magnus-Platz </span> <br/>
+    <span class="tab"> Universitätsstr. 22a, SSC </span> <br/>
     <span class="tab">  50923 Köln </span> 
 </p>
 office: CSS 4.207 <br/>
