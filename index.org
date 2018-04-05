@@ -116,7 +116,7 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 * Teaching
 
 ** University of Cologne
-2018: Advanced Microeconomics II (research track)
+2018: Advanced Microeconomics II (research track), [[https://github.com/schottmueller/advMicro/blob/master/home.org][course website]]
 
 2018: Seminar Competition Policy
 
