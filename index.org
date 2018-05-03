@@ -1,11 +1,11 @@
-
+#+TITLE: Christoph Schottmüller
 #+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc 
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+OPTIONS: html-postamble:nil
 
 
-#+BEGIN_EXPORT html 
+@@html: 
 <head>
 <meta name="description" content="Personal website of Christoph Schottmueller">
 <meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University">
@@ -15,33 +15,35 @@
 .tab { margin-left: 20px; }
 .tab160 { margin-left: 160px; }
 .tab180 { margin-left: 180px; }
+.tab240 { margin-left: 240px; }
 body {background-color : #F0F0F0; font-face: "Open Sans", Arial, Helvetica, sans-serif;}
 h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top:-5px; margin-bottom:-10px; }
 -->
 </style>
 </head>
-#+END_EXPORT
+@@
 
 
-#+BEGIN_EXPORT html
+@@html:
 <span style="float: right;">
 [<a href="#research">research</a>] [<a href="#teaching">teaching</a>] [<a href="#links">links</a>] 
 </span>
 <hr style="clear:both"/>
 <section id="contact">
 <p style="float: left;">
-<img src="./profile.png" alt="Profile Picture"  width="156px" style="border:5px double #777777">
+<img src="./profile2.png" alt="Profile Picture"  height="290px" style="border:5px double #777777">
 </p>
-<div class="tab180">
+<div class="tab240">
 <br/>
 <b>Christoph Schottmüller</b> is professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
 <p>
 address: <br/>   
     <span class="tab"> University of Cologne </span> <br/>
-    <span class="tab"> Universitätsstr. 22a, SSC </span> <br/>
+   <span class="tab"> Lehrstuhl Mikroökonomik (Prof. Schottmüller), SSC </span> <br/>
+    <span class="tab"> Albertus Magnus Platz </span> <br/>
     <span class="tab">  50923 Köln </span> 
 </p>
-office: CSS 4.207 <br/>
+office: SSC 4.207 <br/>
 phone: +49 221 470 6068<br/>
 email: c [dot] schottmueller [at] uni-koeln [dot] de  <br/>
 OpenPGP:<br/>
@@ -53,7 +55,7 @@ OpenPGP:<br/>
 </section>
 <hr style="clear:both"/>
 <section id="research">
-#+END_EXPORT
+@@
 
 
 
@@ -79,7 +81,7 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 ** Publications
 
-Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/ [[https://dx.doi.org/10.1111/sjoe.12231][doi]], accepted for publication
+Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/ [[https://dx.doi.org/10.1111/sjoe.12231][doi]], Vol. 120 (2), April 2018, pp. 465-502
 @@html: <br/>
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
 
@@ -105,12 +107,12 @@ Correlated equilibria in homogeneous good Bertrand competition (with Ole Jann), 
 Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_doctors/revision2b.pdf][preprint]], [[./papers/cost_incentives_doctors/cost_incentives_for_doctors.html][Q & A]], /European Economic Review/ [[http://dx.doi.org/10.1016/j.euroecorev.2013.03.001][doi]], Vol. 61, July 2013, pp. 43-58 
 
 
-#+BEGIN_EXPORT html
+@@html:
 </div>
 </section>
 <hr style="clear:both"/>
 <section id="teaching">
-#+END_EXPORT
+@@
 
 * Teaching
 
@@ -130,24 +132,27 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 2013: Health insurance (MSc Public Health) [[./files/outline.pdf][outline]]
 
+** Material for students
+
 My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
 
 I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
 
 I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]].
 
-#+BEGIN_EXPORT html
+@@html:
 </div>
 </section>
 <hr style="clear:both"/>
 <section id="links">
-#+END_EXPORT
+@@
 * Links
 
 Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/16pmL77EARtsqaj0LTeOfFja3t0F4bkih7FiIGTGQzVA/edit#gid=1337332929][link]]
 
 
 Institutions I am/was affiliated with or visited in the past:
+- [[https://www.wiso.uni-koeln.de/][University of Cologne]]
 - [[http://www.econ.ku.dk/english/][Department of Economics, University of Copenhagen]]
 - [[http://www.tilburguniversity.edu/about-tilburg-university/schools/economics-and-management/organisation/departments/economics/][Department of Economics, Tilburg University]]
 - [[http://www.tilburguniversity.edu/research/institutes-and-research-groups/tilec/][TILEC]] (Tilburg Law and Economics Center)
@@ -181,13 +186,12 @@ Software and IT:
 - For writing games, the packages provided by [[http://www.economics.utoronto.ca/osborne/latex/][Martin Osborne]] are helpful.
 - I use [[http://www.julialang.org][julia]] to solve examples numerically. (In the past, I also used [[https://www.python.org/][python]].)
 
-
-#+BEGIN_EXPORT html
+@@html:
 </div>
 </section>
 <hr style="clear:both"/>
 <section id="misc">
-#+END_EXPORT
+@@
 
 * Miscellaneous
 ** Code
