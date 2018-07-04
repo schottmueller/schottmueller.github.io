@@ -62,19 +62,20 @@ OpenPGP:<br/>
 * Research
 
 ** Working Papers
+Sincerity through Similarity: Why Echo Chambers are Useful (with Ole Jann), /coming soon/
 
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
-An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]]
+An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], /R&R/
 
-Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]], /R&R JET/
+Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]], /R&R/
 # [[./papers/dynAdvReputation/presentation_reputation.pdf][slides]] [[./papers/dynAdvReputation/presentation_reputation25.pdf][slides25]]
 # @@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://github.com/schottmueller/schottmueller.github.io/blob/master/papers/dynAdvReputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
 
 Why are vulnerable regimes stable? Defending against coordinated attacks through unpredictability (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/hamburg.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
 @@html: <br/><span class "tab"> <font size ="2">Former title: "How Jeremy Bentham would defend against self-fulfilling attacks"</font> </span>@@
 
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]], /R&R IER/
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]], /R&R/
 
 Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
 
@@ -134,7 +135,7 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 ** Material for students
 
-My [[./thesis_guidelines.html][guidelines]] for thesis supervision (Ba and MSc). Please, read before contacting me.
+My [[./thesis_guidelines.html][guidelines]] for thesis supervision (MSc). Please, read before contacting me.
 
 I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
 
@@ -148,16 +149,11 @@ I created some jupyter notebooks that explain how you can make professionally lo
 @@
 * Links
 
-Schedule for the micro seminar: [[https://docs.google.com/spreadsheets/d/16pmL77EARtsqaj0LTeOfFja3t0F4bkih7FiIGTGQzVA/edit#gid=1337332929][link]]
-
-
-Institutions I am/was affiliated with or visited in the past:
+Institutions I am/was affiliated with:
 - [[https://www.wiso.uni-koeln.de/][University of Cologne]]
 - [[http://www.econ.ku.dk/english/][Department of Economics, University of Copenhagen]]
 - [[http://www.tilburguniversity.edu/about-tilburg-university/schools/economics-and-management/organisation/departments/economics/][Department of Economics, Tilburg University]]
 - [[http://www.tilburguniversity.edu/research/institutes-and-research-groups/tilec/][TILEC]] (Tilburg Law and Economics Center)
-- [[http://www.tse-fr.eu/][Toulouse School of Economics]]
-- [[http://www2.vwl.uni-mannheim.de/10.1.html][Department of Economics, Mannheim University]]
 
 
 Coauthors:
@@ -165,19 +161,6 @@ Coauthors:
 - [[http://olejann.net/][Ole Jann]]
 - [[http://www.johanlagerlof.com/][Johan Lagerlöf]]
 - [[http://prufer.net/][Jens Prüfer]]
-
-
-
-
-# Members of my PhD committee:
-# - [[https://janboone.github.io/homepage/][Jan Boone]] (advisor)
-# - [[http://www.tilburguniversity.edu/webwijs/show/?uid=c.argenton][Cedric Argenton]]
-# - [[https://www.tilburguniversity.edu/webwijs/show/eric.vandamme.htm][Eric van Damme]]
-# - [[http://researchers-sbe.unimaas.nl/jeanjacquesherings/][Jean-Jacques Herings]]
-# - [[http://idei.fr/member.php?i=43][Bruno Jullien]]
-# - [[http://www.fgv.br/professor/humberto/English/index.htm][Humberto Moreira]]
-
-
 
 
 Software and IT:
@@ -205,3 +188,13 @@ For some of my papers, I used [[https://julialang.org][julia]] for numerical ana
 - Segal/Whinston "Robust Predictions for Bilateral Contracting with Externalities" [[./misc/segal_whinston_robust_presentation.pdf][slides]]
 
 
+@@html:
+</div>
+</section>
+<hr style="clear:both"/>
+<section id="disc">
+@@
+* Disclaimer
+/Links/: Christoph Schottmüller disassociates himself from the content of any of the linked websites. 
+
+/Data collection and privacy/: Christoph Schottmüller does not collect any user data. This website is, however, powered by [[https://www.github.com][Github]]. Github may collect, store, analyze, use and sell visitor data and track visitors using own or third party tools. I refer the user to the Github [[https://help.github.com/terms][terms of service]] and the Github [[https://github.com/site/privacy][privacy statement]] for details.
