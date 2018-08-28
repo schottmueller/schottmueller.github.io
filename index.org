@@ -62,7 +62,7 @@ OpenPGP:<br/>
 * Research
 
 ** Working Papers
-Sincerity through Similarity: Why Echo Chambers are Useful (with Ole Jann), /coming soon/
+Sincerity through Similarity: Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambers.pdf][paper]] [[./papers/echoChamber/supMatEchoChambers.pdf][supplementary material]]
 
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
@@ -139,7 +139,7 @@ My [[./thesis_guidelines.html][guidelines]] for thesis supervision (MSc). Please
 
 I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
 
-I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]].
+I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]]. If you want to learn programming in julia from scratch, you may want to check out this [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][tutorial]].
 
 @@html:
 </div>
