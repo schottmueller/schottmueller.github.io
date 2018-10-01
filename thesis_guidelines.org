@@ -2,7 +2,7 @@
 #+Title: Thesis Guidelines
 
 * Finding a topic
-The most important part is that you are interested in your topic. After all you will spend a couple of months with it. You can draw on many sources in order to find a topic:
+The most important part is that you are interested in your topic. After all you will spend quite some with it. You can draw on many sources in order to find a topic:
 - the news. Some economic or political problem might pop up that you find interesting. Magazines with somewhat longer articles (like the Economist or the New Yorker) could be especially helpful.
 - your student job. Your job might give you a lot of background and inside information on certain questions which gives you a head start when analyzing.
 - your hobbies. You are an avid stamp collector and want to write about some interesting features of the market for stamps? Why not?
@@ -13,7 +13,7 @@ The most important part is that you are interested in your topic. After all you 
 
 You also might keep in mind what you want to do after your studies. Your thesis can be an entry ticket into a certain kind of career/sector, e.g. future employers might be more inclined to interview you if they can see that you wrote a thesis on a topic that is relevant to them.
 
-** Most common thesis types (I supervise)
+** Most common thesis types (supervised at the chair for microeconomics)
 The following list is not exhaustive but if you have something different in mind we should talk about it first.
 
 - you pick a topic, e.g. from the news, you find interesting and analyze it using a game-theoretical model (some computational or empirical parts are, of course, fine as well; however, I won't be much use in procuring the data for empirical analysis).
@@ -37,14 +37,14 @@ After identifying a potential topic you should ask yourself "Can I make this int
 
 * Writing a proposal
 
-When you have thought through the questions above, you write up a one page research proposal (summing up your thoughts/answers) and send this proposal to me. It should contain your main question, answers to (some of) the questions above (1.2), and some first ideas regarding the methods with which you want to tackle the problem. I will read it and then we meet to discuss the proposal (or I refer you to a colleague of mine if your proposal is completely out of my own field of expertise). We might conclude that the proposal should be changed a bit or we might immediately go ahead and make the thesis contract, talk about a rough schedule etc.
+When you have thought through the questions above, you write up a research proposal of one or two pages (summing up your thoughts/answers) and send this proposal to the responsible person at my chair. It should contain your main question, answers to (some of) the questions above (1.2), and some first ideas regarding the methods with which you want to tackle the problem. We will read it and then we meet to discuss the proposal (or refer you to a colleague of mine who is better suitable to supervise your project). We might conclude that the proposal should be changed a bit or we might immediately go ahead and do the paper work, talk about a rough schedule etc.
 
 * Supervision
-I do not have a fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
-- I want to see a proposal (~1 page); preferably before meeting for the first time. (If we meet before you have a proposal, I usually cannot tell you much more than is written in this document.) I will not sign a thesis contract if you do not have a clear proposal because I feel that it would be irresponsible to let you commit to something without having any idea of what to do.
+We do not have a fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
+- We want to see a proposal (~1-2 pages); preferably before meeting for the first time. (If we meet before you have a proposal, I usually cannot tell you much more than is written in this document.) 
 - We have a midterm review to take stock and to see how you are doing on time.
 
-I know it is very tempting to ask your supervisor all the time what to do next. However, keep in mind that a thesis is an /independent/ piece of work and the novelty of /your ideas/ is part of the evaluation.
+It is very tempting to ask your supervisor all the time what to do next. However, keep in mind that a thesis is an /independent/ piece of work and the novelty of /your ideas/ is part of the evaluation.
 
 * Writing
 - Have a clear structure. 
@@ -62,12 +62,11 @@ I know it is very tempting to ask your supervisor all the time what to do next. 
 - Keep in mind that a model is a conscious over-simplification of reality. If you want to analyze a certain problem, it is usually not helpful to try to stack everything you have heard about this problem in one model (and then make it dynamic in continuous time etc.). Such models tend to be intractable and therefore absolutely useless. Focus on some specific aspect/effect and try to get the smallest possible model in which you can see the effect. You can generalize later on if you like (and time permits).
 - Your thesis can contain several small models if you want to explain several effects. There is no need to stack everything into one grand model, see above.
 - You should reserve a decent amount of time at the end for editing only. For a master thesis I would recommend no less than two weeks. Part of the evaluation of a thesis is whether it is well written.
-- You have to write in English.
+- You should write in English.
 
 * Useful sources for how to write/model
 - Hal Varian's "How to build an economic model in your spare time", [[http://people.ischool.berkeley.edu/~hal/Papers/how.pdf][link]]
-- The faculty's policy on MSc supervision, [[http://econ.ku.dk/schottmueller/teaching/supervision/Use_Your_Master_Thesis_Supervisor.pdf][link]]
-- My colleague Christian Groth has written down some excellent [[http://www.econ.ku.dk/okocg/Forside/Advice%20for%20writing%20a%20BA%20or%20MA%20thesis.htm][advice]] for finding a thesis topic and writing a thesis. He also gives more links on where to get even more advice on how to write.
+
 
 
 
