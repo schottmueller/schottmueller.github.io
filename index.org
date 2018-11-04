@@ -68,7 +68,7 @@ Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Bi
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], /R&R/
 
-Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]], /R&R/
+Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], /R&R/
 # [[./papers/dynAdvReputation/presentation_reputation.pdf][slides]] [[./papers/dynAdvReputation/presentation_reputation25.pdf][slides25]]
 # @@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://github.com/schottmueller/schottmueller.github.io/blob/master/papers/dynAdvReputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
 
@@ -118,6 +118,8 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 * Teaching
 
 ** University of Cologne
+2018: Imperfect Information in Health Care Markets, [[https://github.com/schottmueller/infohealthecon/blob/master/plan.org][course website]]
+
 2018: Advanced Microeconomics II (research track), [[https://github.com/schottmueller/advMicro/blob/master/home.org][course website]]
 
 2018: Seminar Competition Policy
