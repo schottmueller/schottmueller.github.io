@@ -63,6 +63,7 @@ OpenPGP:<br/>
 
 ** Working Papers
 Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambers.pdf][paper]] [[./papers/echoChamber/supMatEchoChambers.pdf][supplementary material]]
+@@html: <br/> <span class="tab"> <font size="2"> covered on <a href="https://marginalrevolution.com/marginalrevolution/2018/11/maybe-echo-chambers-evolving-efficient.html">Marginal Revolution</a> and <a href="https://stumblingandmumbling.typepad.com/stumbling_and_mumbling/2018/10/echo-chambers-a-defence.html"> Stumbling and Mumbling</a>  </font> </span> @@
 
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
