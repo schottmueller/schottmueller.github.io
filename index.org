@@ -81,7 +81,7 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 ** Publications
 
-An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], accepted for puublication in the /Economic Journal/
+An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], accepted for publication in the /Economic Journal/
 
 Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/ [[https://dx.doi.org/10.1111/sjoe.12231][doi]], Vol. 120 (2), April 2018, pp. 465-502
 @@html: <br/>
