@@ -67,8 +67,6 @@ Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambe
 
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
-An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], /R&R/
-
 Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], /R&R/
 # [[./papers/dynAdvReputation/presentation_reputation.pdf][slides]] [[./papers/dynAdvReputation/presentation_reputation25.pdf][slides25]]
 # @@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://github.com/schottmueller/schottmueller.github.io/blob/master/papers/dynAdvReputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
@@ -82,6 +80,8 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 
 ** Publications
+
+An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], accepted for puublication in the /Economic Journal/
 
 Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/ [[https://dx.doi.org/10.1111/sjoe.12231][doi]], Vol. 120 (2), April 2018, pp. 465-502
 @@html: <br/>
