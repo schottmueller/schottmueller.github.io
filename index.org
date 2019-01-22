@@ -78,7 +78,7 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 
 ** Publications
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]],  accepted for publication in the /International Economic Review/
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]],  accepted for publication in the /International Economic Review/, [[https://doi.org/10.1111/iere.12383][doi]]
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], accepted for publication in the /Economic Journal/
 
@@ -137,11 +137,11 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 ** Material for students
 
-My [[./thesis_guidelines.html][guidelines]] for thesis supervision (MSc). Please, read before contacting me.
+My [[./thesis_guidelines.html][guidelines]] for thesis supervision (MSc). Please, read before contacting my chair.
 
 I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
 
-I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]]. If you want to learn programming in julia from scratch, you may want to check out this [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][tutorial]].
+I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]]. If you want to learn programming in julia from scratch, you may want to check out this [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][tutorial]]. (For, more examples where Julia is used to solve problems in (macro)economics, see [[https://lectures.quantecon.org/jl/][here]].)
 
 @@html:
 </div>
