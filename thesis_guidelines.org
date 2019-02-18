@@ -58,12 +58,12 @@ It is very tempting to ask your supervisor all the time what to do next. However
 * Writing
 - Have a clear structure. 
 - It is a good idea to state one (or several) research question(s) at the beginning, answer this/these question(s) in the analysis and summarize the answers in the conclusion. (Note that you do not have to know all these questions when you start working on the thesis, some things will pop up while working.)
-- Make sure to use some tool(s) that is (are) taught in a Master course you took. This way you avoid writing a thesis that is not at the Master level.
+- Make sure to use some tool(s) that is (are) taught in an elective course you took. This way you avoid writing a thesis that is not at the appropriate level.
 - Use a consistent citation style. Economists mainly use the /author (year)/ style.
 - Use the /proposition-proof/ style; i.e. state a result formally in a proposition (or lemma or theorem), explain it intuitively in the main text and add a formal proof (possibly in an appendix).
 - Include a literature section where you place your thesis in the related literature. Google Scholar is probably the easiest way to find related literature. The most relevant articles tend to be published in very good journals. A very subjective and certainly incomplete list of decent journals (for microeconomics papers) is the following: American Economic Review, Econometrica, Review of Economic Studies, Journal of Political Economy, Quarterly Journal of Economics, Journal of Economic Theory, Theoretical Economics, RAND Journal of Economics, Games and Economic Behavior, Economic Journal, Journal of the European Economic Association, International Economic Review.
-  - To be able to download academic papers without having to pay for it yourself, you have to be either on campus or connect to the university via VPN
-  - The economics library offers courses in literature search and scientific working methods. Please contact the library staff if you feel that you need help in these areas.
+  - To be able to download academic papers without having to pay for it yourself, you have to be either on campus or connect to the university via VPN.
+  - The [[https://www.vwlbibliothek.uni-koeln.de/][economics library]] offers courses in literature search and scientific working methods. Please contact the library staff if you feel that you need help in these areas.
 
 - In terms of style, structure etc., it may be a good idea to mimick papers published in the journals above.
 - You do yourself and your readers a favor if you write in LaTeX (and use BibTeX). The LaTeX [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] will be a great ressource in this case. Some LaTeX template with explanations can be found on my [[https://schottmueller.github.io/#teaching][website]].
