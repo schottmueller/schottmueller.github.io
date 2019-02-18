@@ -11,7 +11,7 @@ The most important part is that you are interested in your topic. After all you 
 - your student job. Your job might give you a lot of background and inside information on certain questions which gives you a head start when analyzing.
 - your hobbies. You are an avid stamp collector and want to write about some interesting features of the market for stamps? Why not?
 - books; and I do not necessarily mean textbooks. I had the idea for a paper of mine while reading the description of Bentham's panopticon in a book that had nothing to do with economics. When reading the description I realized that this was a strategic problem that would merit some game theoretic modeling.
-- academic papers. Analyzing a variation of a published paper is a good approach for a thesis. Survey articles as published in [[https://www.aeaweb.org/journals/jel][Journal of Economic Literature]], [[https://www.aeaweb.org/journals/jep][Journal of Economic Perspectives]], Elsevier's [[https://www.sciencedirect.com/science/handbooks/sub/economics/all][Handbook of Economics]] series and also the [[http://www.dictionaryofeconomics.com][New Palgrave Dictionary of Economics]] might give you a decent background on a topic in any case.
+- academic papers. Analyzing a variation of a published paper is a good approach for a thesis. Survey articles as published in [[https://www.aeaweb.org/journals/jel][Journal of Economic Literature]], [[https://www.aeaweb.org/journals/jep][Journal of Economic Perspectives]], Elsevier's [[https://www.sciencedirect.com/science/handbooks/sub/economics/all][Handbook of Economics]] series and also the [[http://www.dictionaryofeconomics.com][New Palgrave Dictionary of Economics]] might give you a decent background on a topic you are considering.
 - policy and legal documents. An economic analysis of certain proposals (or decisions in competition policy cases) can make an interesting thesis.
 - your course work. However, students tend to over-rely on this last channel. 
 
@@ -20,9 +20,13 @@ You also might keep in mind what you want to do after your studies. Your thesis 
 ** Most common thesis types (supervised at the chair for microeconomics)
 The following list is not exhaustive but if you have something different in mind we should talk about it first.
 
-- you pick a topic, e.g. from the news, you find interesting and analyze it using a game-theoretical model (some computational or empirical parts are, of course, fine as well; however, I won't be much use in procuring the data for empirical analysis).
-- you start from a published model and change some assumption or introduce an additional variable (or use a different solution concept). Then solve the model and compare your solution to the one in the paper. What (additional) effects emerge? Are the results in the paper robust?
--  you analyze a competition policy decision. This will usually be a decision by DG Comp, the General Court ( formerly known as Court of First Instance) or the European Court of Justice. You check whether the reasoning in the decision makes economic sense by modeling the reasoning using models from IO, game theory and contract theory. (Please, note that the definition of the relevant market takes usually a lot more space in these decisions than it should in your thesis.)
+- You pick a topic, e.g. from the news, you find interesting and analyze it using a game-theoretical model (some computational or empirical parts are, of course, fine as well; however, we can usually not procure the data for empirical analysis).
+- You start from a published paper, describe the results and add a small original contribution of your own that you compare with the paper. Your contribution could be
+  - changing some assumption or introduce an additional variable (or use a different solution concept),
+  - a variation of the model (often it is useful to first simplify the model in some dimension by making some additional assumptions before extending it in another dimension),
+  - a numerical solution/simulation that illustrates aspects of the model in the paper which have not been or cannot be shown analytically and possibly extend the results or model of the paper for the specific functional form or parameter values you chose,
+  - writing down and solving a game-theoretic model addressing points made only verbally in the assigned paper.
+-  You analyze a competition policy decision. This will usually be a decision by DG Comp, the General Court ( formerly known as Court of First Instance) or the European Court of Justice. You check whether the reasoning in the decision makes economic sense by modeling the reasoning using models from IO, game theory and contract theory. (Please, note that the definition of the relevant market takes usually a lot more space in these decisions than it should in your thesis.)
 - comparative literature survey. This is usually not the first choice because it is very difficult to do this properly. The idea is that you show why different results are obtained in different papers and how this depends on their assumptions. Hence, you try not to summarize one paper after another but to explain the logic underlying a whole literature.[fn:1] 
 
 ** Is my topic (candidate) appropriate for a thesis?
@@ -32,7 +36,7 @@ After identifying a potential topic you should ask yourself "Can I make this int
 - who are the players?
   - what is their information?
   - what are their actions?
-- what trade-offs do players face?
+- *what trade-offs do players face?*
 - what strategic effects may result; how do players respond strategically to other players
 - is there a simple framework in which I can capture this story/trade-off/strategic effect?
 - is there the potential to learn something new?
@@ -41,8 +45,7 @@ After identifying a potential topic you should ask yourself "Can I make this int
 
 * Writing a proposal
 
-
-When you have thought through the questions above, you write up a research proposal of one or two pages (summing up your thoughts/answers) and send this proposal to the responsible person at my chair (Marius Gramb). It should contain your main question, answers to (some of) the questions above (1.2), and some first ideas regarding the methods with which you want to tackle the problem. We will read it and then we meet to discuss the proposal (or refer you to a colleague of mine who is better suitable to supervise your project). We might conclude that the proposal should be changed a bit or we might immediately go ahead and do the paper work, talk about a rough schedule etc.
+When you have thought through the questions above, you write up a research proposal of one or two pages (summing up your thoughts/answers and particularly addressing the questions mentioned in the section "Is my topic (candidate) appropriate for a thesis?") and send this proposal to the responsible person at my chair (currently Marius Gramb). It should contain your main question, answers to (some of) the questions above (1.2), and some first ideas regarding the methods with which you want to tackle the problem. We will read it and then we meet to discuss the proposal (or refer you to a colleague of mine who is better suitable to supervise your project). We might conclude that the proposal should be changed a bit or we might immediately go ahead and do the paper work, talk about a rough schedule etc.
 
 * Supervision
 We do not have a fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
@@ -58,11 +61,12 @@ It is very tempting to ask your supervisor all the time what to do next. However
 - Make sure to use some tool(s) that is (are) taught in a Master course you took. This way you avoid writing a thesis that is not at the Master level.
 - Use a consistent citation style. Economists mainly use the /author (year)/ style.
 - Use the /proposition-proof/ style; i.e. state a result formally in a proposition (or lemma or theorem), explain it intuitively in the main text and add a formal proof (possibly in an appendix).
-- Include a literature section where you place your thesis in the related literature. Google Scholar is probably the easiest way to find related literature. The most relevant articles tend to be published in very good journals. A very subjective and certainly incomplete list of decent journals (for microeconomics papers) is the following: American Economic Review, Econometrica, Review of Economic Studies, Journal of Political Economy, Quarterly Journal of Economics, Journal of Economic Theory, Theoretical Economics, RAND Journal of Economics, Games and Economic Behavior, Economic Journal, Journal of the European Economic Association, International Economic Review
-  - to be able to download academic papers without having to pay for it yourself, you have to be either on campus or connect to the university via VPN
+- Include a literature section where you place your thesis in the related literature. Google Scholar is probably the easiest way to find related literature. The most relevant articles tend to be published in very good journals. A very subjective and certainly incomplete list of decent journals (for microeconomics papers) is the following: American Economic Review, Econometrica, Review of Economic Studies, Journal of Political Economy, Quarterly Journal of Economics, Journal of Economic Theory, Theoretical Economics, RAND Journal of Economics, Games and Economic Behavior, Economic Journal, Journal of the European Economic Association, International Economic Review.
+  - To be able to download academic papers without having to pay for it yourself, you have to be either on campus or connect to the university via VPN
+  - The economics library offers courses in literature search and scientific working methods. Please contact the library staff if you feel that you need help in these areas.
 
-- In terms of style, structure etc., it is a good idea to mimick papers published in the journals above.
-- You do yourself and your readers a favor if you write in LaTeX (and use BibTeX). The LaTeX [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] will be a great ressource in this case.
+- In terms of style, structure etc., it may be a good idea to mimick papers published in the journals above.
+- You do yourself and your readers a favor if you write in LaTeX (and use BibTeX). The LaTeX [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] will be a great ressource in this case. Some LaTeX template with explanations can be found on my [[https://schottmueller.github.io/#teaching][website]].
 
 
 * Some general remarks
