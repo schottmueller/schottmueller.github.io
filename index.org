@@ -141,7 +141,7 @@ Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_do
 
 ** Material for students
 
-My [[./thesis_guidelines.html][guidelines]] for thesis supervision (MSc). Please, read before contacting my chair.
+My [[./thesis_guidelines.html][guidelines]] for thesis supervision (MSc). Please, read before contacting my chair. Some [[./files/writingSeminar.pdf][guidelines]] on how to write a literature based seminar paper may also be helpful when writing a Master thesis.
 
 I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
 
