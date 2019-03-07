@@ -1,4 +1,4 @@
-#+TITLE: Christoph Schottmüller
+
 #+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc 
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
