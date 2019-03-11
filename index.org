@@ -69,10 +69,6 @@ Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambe
 
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
-Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], /R&R/
-# [[./papers/dynAdvReputation/presentation_reputation.pdf][slides]] [[./papers/dynAdvReputation/presentation_reputation25.pdf][slides25]]
-# @@html: <br/> <span class="tab"> <font size="2"> webappendix: <a href="https://github.com/schottmueller/schottmueller.github.io/blob/master/papers/dynAdvReputation/reputation_web1.ipynb">here</a> as <a href="https://jupyter.org">jupyter</a> notebook </font> </span> @@
-
 Why are vulnerable regimes stable? Defending against coordinated attacks through unpredictability (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/hamburg.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
 @@html: <br/><span class "tab"> <font size ="2">Former title: "How Jeremy Bentham would defend against self-fulfilling attacks"</font> </span>@@
 
@@ -80,6 +76,8 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 
 ** Publications
+Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], accepted for publication in the /Journal of Economic Theory/
+
 Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]],  accepted for publication in the /International Economic Review/, [[https://doi.org/10.1111/iere.12383][doi]]
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], accepted for publication in the /Economic Journal/
