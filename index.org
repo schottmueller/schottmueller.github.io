@@ -44,7 +44,6 @@ address: <br/>
     <span class="tab">  50923 Köln </span> 
 </p>
 office: SSC 4.207 <br/>
-phone: +49 221 470 6068<br/>
 email: c [dot] schottmueller [at] uni-koeln [dot] de  <br/>
 OpenPGP:<br/>
    <span class="tab">fingerprint: 4440 CA9B D857 D953 FCE7 DAB1 C647 DAB1 8A74 E0AD</span> <br/>
