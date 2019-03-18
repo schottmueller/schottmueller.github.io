@@ -1,4 +1,4 @@
-
+#+Title:  
 #+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc 
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
@@ -44,7 +44,13 @@ address: <br/>
     <span class="tab">  50923 Köln </span> 
 </p>
 office: SSC 4.207 <br/>
-email: c [dot] schottmueller [at] uni-koeln [dot] de  <br/>
+<SCRIPT LANGUAGE="Javascript">
+  document.write('email: ' + '<A HREF="mai' + 'lto' + String.fromCharCode(58) + 'c.schottmueller');
+  document.write(String.fromCharCode(64) + 'uni-koe' + 'ln.de">c.schottmueller' + String.fromCharCode(64));
+  document.write('uni-koel' + 'n.de</A>');
+</SCRIPT> <!-- to protect against crawlers -->
+<NOSCRIPT>email: <code>c [dot] schottmueller [at] uni-koeln</code> <code>[dot]</code> <code>de</code>  </NOSCRIPT>
+<br/> 
 OpenPGP:<br/>
    <span class="tab">fingerprint: 4440 CA9B D857 D953 FCE7 DAB1 C647 DAB1 8A74 E0AD</span> <br/>
    <span class="tab">public key <a href="files/c.schottmuellerATuni-koeln.de0xC647DAB18A74E0ADpub.asc">here</a></span> <br/>
