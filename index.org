@@ -82,7 +82,7 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 
 ** Publications
-Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], accepted for publication in the /Journal of Economic Theory/
+Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], accepted for publication in the /Journal of Economic Theory/, [[https://doi.org/10.1016/j.jet.2019.03.006][doi]]
 
 Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]],  accepted for publication in the /International Economic Review/, [[https://doi.org/10.1111/iere.12383][doi]]
 
