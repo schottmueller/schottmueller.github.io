@@ -82,11 +82,11 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/st
 
 
 ** Publications
-Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], accepted for publication in the /Journal of Economic Theory/, [[https://doi.org/10.1016/j.jet.2019.03.006][doi]]
-
 Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) [[./papers/selective_contracting/selective-contracting.pdf][paper]] [[./papers/selective_contracting/presentation.pdf][slides]],  accepted for publication in the /International Economic Review/, [[https://doi.org/10.1111/iere.12383][doi]]
 
 An informational theory of privacy (with Ole Jann) [[./papers/privacy/privacy.pdf][paper]] [[./papers/privacy/supplementary_privacy.pdf][supplementary material]] [[./papers/privacy/presentations/EEA17.pdf][slides]], accepted for publication in the /Economic Journal/
+
+Too good to be truthful: Why competent advisers are fired [[./papers/dynAdvReputation/reputation.pdf][paper]] [[./papers/dynAdvReputation/supMatReputation.pdf][supplementary material]], /Journal of Economic Theory/  [[https://doi.org/10.1016/j.jet.2019.03.006][doi]], Vol. 181, May 2019, pp. 333--360
 
 Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/ [[https://dx.doi.org/10.1111/sjoe.12231][doi]], Vol. 120 (2), April 2018, pp. 465-502
 @@html: <br/>
