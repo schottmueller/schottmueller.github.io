@@ -5,6 +5,8 @@
 #+latex_header: \usepackage[tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
 #+latex_header: \usepackage{setspace}\onehalfspacing
 
+/You should have successfully completed one of the *seminar* courses offered by the chair/ if you want to write a thesis at the Chair of Microeconomics.
+
 * Finding a topic
 The most important part is that you are interested in your topic. After all you will spend quite some with it. You can draw on many sources in order to find a topic:
 - the news. Some economic or political problem might pop up that you find interesting. Magazines with somewhat longer articles (like the Economist or the New Yorker) could be especially helpful.

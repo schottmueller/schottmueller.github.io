@@ -92,7 +92,6 @@ Facilitating consumer learning in insurance markets: What are the welfare effect
 @@html: <br/>
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
 
-
 Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /International Economic Review/ [[https://dx.doi.org/10.1111/iere.12268][doi]], Vol. 59, February 2018, pp. 233-255 
 @@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
 
