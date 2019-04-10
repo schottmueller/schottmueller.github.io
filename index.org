@@ -67,7 +67,7 @@ OpenPGP:<br/>
 
 * Research
 ** Work in progress
-Welfare optimal information structures in bilateral trade [[./papers/msinfo/MSinfo.pdf][draft]]
+Welfare optimal information structures in bilateral trade [[./papers/msinfo/MSinfo.pdf][draft]], [[./papers/msinfo/MSOptWebsite.jl][code]]
 
 ** Working Papers
 Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambers.pdf][paper]] [[./papers/echoChamber/supMatEchoChambers.pdf][supplementary material]]
