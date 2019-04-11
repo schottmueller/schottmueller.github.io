@@ -67,7 +67,8 @@ OpenPGP:<br/>
 
 * Research
 ** Work in progress
-Welfare optimal information structures in bilateral trade [[./papers/msInfo/MSinfo.pdf][draft]], [[./papers/msInfo/MSOptWebsite.jl][code]]
+Welfare optimal information structures in bilateral trade, [[./papers/msInfo/MSinfo.pdf][draft]]
+@@html: <br/><span class="tab"> <font size="2"> <a href="./papers/msInfo/binary.jl">code</a> for binary type space, <a href="./papers/msInfo/MSOptWebsite.jl">code</a> for uniform type distribution</font> </span>@@
 
 ** Working Papers
 Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambers.pdf][paper]] [[./papers/echoChamber/supMatEchoChambers.pdf][supplementary material]]
@@ -76,7 +77,7 @@ Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambe
 Competing with big data (with Jens Prüfer) [[./papers/tipping/Competing with Big Data.pdf][paper]] [[./papers/tipping/CompWithBigDataSlides.pdf][slides]]  [[./papers/tipping/TippingNumeric.zip][numerics]]
 
 Why are vulnerable regimes stable? Defending against coordinated attacks through unpredictability (with Ole Jann) [[./papers/panopticon/panopticon.pdf][paper]] [[./papers/panopticon/hamburg.pdf][slides]] [[./papers/panopticon/presentation25.pdf][slides25]]
-@@html: <br/><span class "tab"> <font size ="2">Former title: "How Jeremy Bentham would defend against self-fulfilling attacks"</font> </span>@@
+@@html: <br/><span class="tab"> <font size ="2">Former title: "How Jeremy Bentham would defend against self-fulfilling attacks"</font> </span>@@
 
 Stochastic mechanisms and quasilinear preferences (with Jan Boone) [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
 
@@ -93,7 +94,7 @@ Facilitating consumer learning in insurance markets: What are the welfare effect
  <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>@@
 
 Monopoly insurance and endogenous information (with Johan Lagerlöf) [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]] [[./papers/endogenous_info/EEA.pdf][slides]], /International Economic Review/ [[https://dx.doi.org/10.1111/iere.12268][doi]], Vol. 59, February 2018, pp. 233-255 
-@@html: <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
+@@html: <br/> <span class="tab"> <font size="2">supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> @@
 
 Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][wp]] [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q & A]], /Economic Journal/ [[https://dx.doi.org/10.1111/ecoj.12242][doi]], Vol. 127 (599), February 2017, pp. 85-104 
 @@html: <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>@@
