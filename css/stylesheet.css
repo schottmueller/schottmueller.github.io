@@ -2,14 +2,14 @@
 @font-face {
     font-display: swap;
     font-family: Quicksand;
-    src: url(https://diego.codes/fonts/Quicksand/Quicksand-Regular.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Quicksand/Quicksand-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face {
     font-display: swap;
     font-family: Quicksand;
-    src: url(https://diego.codes/fonts/Quicksand/Quicksand-Bold.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Quicksand/Quicksand-Bold.ttf);
     font-weight: bold;
 }
 
@@ -17,7 +17,7 @@
 @font-face {
     font-display: swap;
     font-family: Nunito;
-    src: url(https://diego.codes/fonts/Nunito/Nunito-Regular.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
 @font-face {
     font-display: swap;
     font-family: Nunito;
-    src: url(https://diego.codes/fonts/Nunito/Nunito-Bold.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }
@@ -33,7 +33,7 @@
 @font-face {
     font-display: swap;
     font-family: Nunito;
-    src: url(https://diego.codes/fonts/Nunito/Nunito-Italic.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-Italic.ttf);
     font-weight: normal;
     font-style: italic;
 }
@@ -41,7 +41,7 @@
 @font-face {
     font-display: swap;
     font-family: Nunito;
-    src: url(https://diego.codes/fonts/Nunito/Nunito-BoldItalic.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
@@ -50,7 +50,7 @@
 @font-face {
     font-display: swap;
     font-family: Roboto Mono;
-    src: url(https://diego.codes/fonts/Roboto_Mono/RobotoMono-Regular.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -58,7 +58,7 @@
 @font-face {
     font-display: swap;
     font-family: Roboto Mono;
-    src: url(https://diego.codes/fonts/Roboto_Mono/RobotoMono-Bold.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }
@@ -66,7 +66,7 @@
 @font-face {
     font-display: swap;
     font-family: Roboto Mono;
-    src: url(https://diego.codes/fonts/Roboto_Mono/RobotoMono-Italic.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-Italic.ttf);
     font-weight: normal;
     font-style: italic;
 }
@@ -74,11 +74,10 @@
 @font-face {
     font-display: swap;
     font-family: Roboto Mono;
-    src: url(https://diego.codes/fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf);
+    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
-
 
 
 article,
@@ -335,6 +334,7 @@ h6 {
 	text-align: left;
 	font-weight: bold;
 	font-size: 2em;
+	/* display: none;*/
 }
 pre {
     background-color: #fdf6e3;
