@@ -3,304 +3,160 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2019-04-16 Di 17:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Finding mixed Nash equilibria in finite two player games</title>
-<!-- 2015-08-09 Sun 12:07 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Christoph" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christoph" />
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
-<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
-<script type="text/javascript">
-<!--/*--><![CDATA[/*><!--*/
+<script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-        // Only one of the two following lines, depending on user settings
-        // First allows browser-native MathML display, second forces HTML/CSS
-        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
-                     "TeX/noUndefined.js"],
-        tex2jax: {
-            inlineMath: [ ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
-            skipTags: ["script","noscript","style","textarea","pre","code"],
-            ignoreClass: "tex2jax_ignore",
-            processEscapes: false,
-            processEnvironments: true,
-            preview: "TeX"
-        },
-        showProcessingMessages: true,
         displayAlign: "center",
-        displayIndent: "2em",
+        displayIndent: "0em",
 
-        "HTML-CSS": {
-             scale: 100,
-             availableFonts: ["STIX","TeX"],
-             preferredFont: "TeX",
-             webFont: "TeX",
-             imageFont: "TeX",
-             showMathMenu: true,
-        },
-        MMLorHTML: {
-             prefer: {
-                 MSIE:    "MML",
-                 Firefox: "MML",
-                 Opera:   "HTML",
-                 other:   "HTML"
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
              }
-        }
-    });
-/*]]>*///-->
+});
 </script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+
+    <p style="text-align: justify;">
+      
+  <a id="subtitle" href="https://schottmueller.github.io/index.html">Home</a>
+  <a id="subtitle" href="https://schottmueller.github.io/research.html">Research</a>
+  <a id="subtitle" href="https://schottmueller.github.io/teaching.html">Teaching</a>
+  <a id="subtitle" href="https://schottmueller.github.io/misc.html">Misc</a>
+
+  <span> </span>
+</div>
+
+</p>
+
+</div>
+</div>
+</div>
 <div id="content">
 <h1 class="title">Finding mixed Nash equilibria in finite two player games</h1>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Using a numerical approach based on solving an equation system</h2>
+<div id="outline-container-org63b0fce" class="outline-2">
+<h2 id="org63b0fce"><span class="section-number-2">1</span> Using a numerical approach based on solving an equation system</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 In a mixed equilibrium, each player uses only best responses with positive probability.  Denote the mixed strategy of player \(i\) by the vector \(x_i\) (which contains for each action the probability with which it is played). Denoting the expected utility for player \(i\) when playing a best response as \(EU_i^{br}\) (this will of course depend on \(x_{-i}\) which we omit for brevity), we can write the vector 
-$$\Delta_i(x_{-i})=(EU_i(a_1)-EU_i^{br},EU_i(a_2)-EU_i^{br}\dots EU_i(a_n)-EU_i^{br})$$ 
+\[\Delta_i(x_{-i})=(EU_i(a_1)-EU_i^{br},EU_i(a_2)-EU_i^{br}\dots EU_i(a_n)-EU_i^{br})\] 
 as the vector containing for each action of player \(i\) the difference of the expected utility when taking this action and when taking the best response. Clearly, at least one entry in this vector is zero (each entry corresponding to a best response) and all other entries are negative. Therefore, we can describe an equilibrium by the following equations
-$$\Delta_i(x_{-i})x_i=0\qquad \text{for all players } i$$
+\[\Delta_i(x_{-i})x_i=0\qquad \text{for all players } i\]
 together with the feasibility constraints 
-$$\mathbf{0}\leq x_i\leq \mathbf{1}\qquad \text{ and }\qquad x_i\mathbf{1}=1.$$
+\[\mathbf{0}\leq x_i\leq \mathbf{1}\qquad \text{ and }\qquad x_i\mathbf{1}=1.\]
 This is a simple system of equations with constraints and we can use a standard solver to get a solution, i.e. an equilibrium.
 </p>
 
 <div class="org-src-container">
+<pre class="src src-python"><span style="color: #859900; font-weight: bold;">from</span> openopt <span style="color: #859900; font-weight: bold;">import</span> SNLE, GLP
+<span style="color: #859900; font-weight: bold;">from</span> numpy <span style="color: #859900; font-weight: bold;">import</span> *
 
-<pre class="src src-python"><span style="color: #859900;">from</span> openopt <span style="color: #859900;">import</span> SNLE, GLP
-<span style="color: #859900;">from</span> numpy <span style="color: #859900;">import</span> *
+<span style="color: #268bd2;">payoffs</span> = [[(0,0),(3,1)],[(1,3),(1,1)]]<span style="color: #586e75;">#</span><span style="color: #586e75;">these are the payoffs from the game table; each row in the game table is a list of payoff tuples; the game table is then a list of these rows</span>
 
-<span style="color: #268bd2;">payoffs</span> = [[(0,0),(3,1)],[(1,3),(1,1)]]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">these are the payoffs from the game table; each row in the game table is a list of payoff tuples; the game table is then a list of these rows</span>
-
-<span style="color: #268bd2;">n</span> = <span style="color: #859900;">len</span>(payoffs)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this is the number of actions of P1</span>
-<span style="color: #268bd2;">m</span> = <span style="color: #859900;">len</span>(payoffs[0])<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">this is the number of actions of P2</span>
-<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">next we extract the payoffs of only player 1 from the payoffs above</span>
+<span style="color: #268bd2;">n</span> = <span style="color: #839496; font-weight: bold;">len</span>(payoffs)<span style="color: #586e75;">#</span><span style="color: #586e75;">this is the number of actions of P1</span>
+<span style="color: #268bd2;">m</span> = <span style="color: #839496; font-weight: bold;">len</span>(payoffs[0])<span style="color: #586e75;">#</span><span style="color: #586e75;">this is the number of actions of P2</span>
+<span style="color: #586e75;">#</span><span style="color: #586e75;">next we extract the payoffs of only player 1 from the payoffs above</span>
 <span style="color: #268bd2;">payoff1</span> = []
-<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> payoffs:
+<span style="color: #859900; font-weight: bold;">for</span> i <span style="color: #859900; font-weight: bold;">in</span> payoffs:
     <span style="color: #268bd2;">temp</span> = []
-    <span style="color: #859900;">for</span> j <span style="color: #859900;">in</span> i:
+    <span style="color: #859900; font-weight: bold;">for</span> j <span style="color: #859900; font-weight: bold;">in</span> i:
         temp.append(j[0])
     payoff1.append(temp)
 
-<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">now we extract the payoffs for P2</span>
+<span style="color: #586e75;">#</span><span style="color: #586e75;">now we extract the payoffs for P2</span>
 <span style="color: #268bd2;">payoff2</span> = []
-<span style="color: #859900;">for</span> i <span style="color: #859900;">in</span> payoffs:
+<span style="color: #859900; font-weight: bold;">for</span> i <span style="color: #859900; font-weight: bold;">in</span> payoffs:
     <span style="color: #268bd2;">temp</span> = []
-    <span style="color: #859900;">for</span> j <span style="color: #859900;">in</span> i:
+    <span style="color: #859900; font-weight: bold;">for</span> j <span style="color: #859900; font-weight: bold;">in</span> i:
         temp.append(j[1])
     payoff2.append(temp)
 
-<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">expected utility of P1 when using action a1 while P2 uses the mixed strategy strat2</span>
-<span style="color: #859900;">def</span> <span style="color: #268bd2;">EU1</span>(a1,strat2):
-    <span style="color: #859900;">return</span> dot(payoff1[a1],strat2)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">dot gives the vector "dot-product" of two arrays</span>
-<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">expected utility of P2 when using action a2 while P1 uses the mixed strategy strat1</span>
-<span style="color: #859900;">def</span> <span style="color: #268bd2;">EU2</span>(a2,strat1):
+<span style="color: #586e75;">#</span><span style="color: #586e75;">expected utility of P1 when using action a1 while P2 uses the mixed strategy strat2</span>
+<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">EU1</span>(a1,strat2):
+    <span style="color: #859900; font-weight: bold;">return</span> dot(payoff1[a1],strat2)<span style="color: #586e75;">#</span><span style="color: #586e75;">dot gives the vector "dot-product" of two arrays</span>
+<span style="color: #586e75;">#</span><span style="color: #586e75;">expected utility of P2 when using action a2 while P1 uses the mixed strategy strat1</span>
+<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">EU2</span>(a2,strat1):
     <span style="color: #268bd2;">temp</span> = 0
     <span style="color: #268bd2;">i</span> = 0
-    <span style="color: #859900;">while</span> i&lt;n:
+    <span style="color: #859900; font-weight: bold;">while</span> i&lt;n:
         <span style="color: #268bd2;">temp</span> = temp + payoff2[i][a2]*strat1[i]
         <span style="color: #268bd2;">i</span> += 1
-    <span style="color: #859900;">return</span> temp
+    <span style="color: #859900; font-weight: bold;">return</span> temp
 
-<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">This function takes a vecor x which contains both a mixed strategy of P1 (in the first n elements) and also a mixed strategy of P2 (in the following m elements). The output of the function is the Delta described above but again it returns the Delta for both players</span>
-<span style="color: #859900;">def</span> <span style="color: #268bd2;">Delta</span>(x):
-    <span style="color: #268bd2;">x1</span> = x[:n]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">P1's mixed strategy</span>
-    <span style="color: #268bd2;">x2</span> = x[n:]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">P2's mixed strategy</span>
-    <span style="color: #268bd2;">EU1max</span> = 0.0<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will containt the best response EU of P1</span>
-    <span style="color: #268bd2;">EU1list</span> = []<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">will become Delta_1(x2)</span>
+<span style="color: #586e75;">#</span><span style="color: #586e75;">This function takes a vecor x which contains both a mixed strategy of P1 (in the first n elements) and also a mixed strategy of P2 (in the following m elements). The output of the function is the Delta described above but again it returns the Delta for both players</span>
+<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">Delta</span>(x):
+    <span style="color: #268bd2;">x1</span> = x[:n]<span style="color: #586e75;">#</span><span style="color: #586e75;">P1's mixed strategy</span>
+    <span style="color: #268bd2;">x2</span> = x[n:]<span style="color: #586e75;">#</span><span style="color: #586e75;">P2's mixed strategy</span>
+    <span style="color: #268bd2;">EU1max</span> = 0.0<span style="color: #586e75;">#</span><span style="color: #586e75;">will containt the best response EU of P1</span>
+    <span style="color: #268bd2;">EU1list</span> = []<span style="color: #586e75;">#</span><span style="color: #586e75;">will become Delta_1(x2)</span>
     <span style="color: #268bd2;">i</span> = 0
-    <span style="color: #859900;">while</span> i&lt;n:<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">loop through all actions of P1</span>
+    <span style="color: #859900; font-weight: bold;">while</span> i&lt;n:<span style="color: #586e75;">#</span><span style="color: #586e75;">loop through all actions of P1</span>
         <span style="color: #268bd2;">temp</span> = EU1(i,x2)
-        <span style="color: #268bd2;">EU1max</span> = <span style="color: #859900;">max</span>(temp,EU1max)
+        <span style="color: #268bd2;">EU1max</span> = <span style="color: #839496; font-weight: bold;">max</span>(temp,EU1max)
         EU1list.append(temp)
         <span style="color: #268bd2;">i</span>+=1
-    <span style="color: #268bd2;">EU1list</span> = [z - EU1max <span style="color: #859900;">for</span> z <span style="color: #859900;">in</span> EU1list]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">now EU1list is the Delta_1(x2) described above</span>
+    <span style="color: #268bd2;">EU1list</span> = [z - EU1max <span style="color: #859900; font-weight: bold;">for</span> z <span style="color: #859900; font-weight: bold;">in</span> EU1list]<span style="color: #586e75;">#</span><span style="color: #586e75;">now EU1list is the Delta_1(x2) described above</span>
     <span style="color: #268bd2;">i</span> = 0
     <span style="color: #268bd2;">EU2list</span> = []
     <span style="color: #268bd2;">EU2max</span> = 0.0
-    <span style="color: #859900;">while</span> i&lt;m:
+    <span style="color: #859900; font-weight: bold;">while</span> i&lt;m:
         <span style="color: #268bd2;">temp</span> = EU2(i,x1)
-        <span style="color: #268bd2;">EU2max</span> = <span style="color: #859900;">max</span>(temp,EU2max)
+        <span style="color: #268bd2;">EU2max</span> = <span style="color: #839496; font-weight: bold;">max</span>(temp,EU2max)
         EU2list.append(temp)
         <span style="color: #268bd2;">i</span>+=1
-    <span style="color: #268bd2;">EU2list</span> = [y - EU2max <span style="color: #859900;">for</span> y <span style="color: #859900;">in</span> EU2list]
+    <span style="color: #268bd2;">EU2list</span> = [y - EU2max <span style="color: #859900; font-weight: bold;">for</span> y <span style="color: #859900; font-weight: bold;">in</span> EU2list]
     <span style="color: #268bd2;">EUlist</span> = EU1list + EU2list
-    <span style="color: #859900;">return</span> EUlist
+    <span style="color: #859900; font-weight: bold;">return</span> EUlist
 
-<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">multiplies the vectors x and Delta(x); this product has to be 0 in equilibrium</span>
-<span style="color: #859900;">def</span> <span style="color: #268bd2;">product</span>(x):
-    <span style="color: #859900;">return</span> dot(x,Delta(x))
+<span style="color: #586e75;">#</span><span style="color: #586e75;">multiplies the vectors x and Delta(x); this product has to be 0 in equilibrium</span>
+<span style="color: #859900; font-weight: bold;">def</span> <span style="color: #268bd2;">product</span>(x):
+    <span style="color: #859900; font-weight: bold;">return</span> dot(x,Delta(x))
 
-<span style="color: #268bd2;">lb</span> = [0.0]*(n+m)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">lower bound to ensure that all probabilities are above 0</span>
-<span style="color: #268bd2;">ub</span> = [1.0]*(n+m)<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">upper bound ensures that all probs are below 1</span>
-<span style="color: #268bd2;">Aeq</span> = [[1.0]*n+[0.0]*m,[0.0]*n+[1.0]*m]<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">constraints that ensure that both the  mixed strategy of P1 and P2 sum to 1</span>
+<span style="color: #268bd2;">lb</span> = [0.0]*(n+m)<span style="color: #586e75;">#</span><span style="color: #586e75;">lower bound to ensure that all probabilities are above 0</span>
+<span style="color: #268bd2;">ub</span> = [1.0]*(n+m)<span style="color: #586e75;">#</span><span style="color: #586e75;">upper bound ensures that all probs are below 1</span>
+<span style="color: #268bd2;">Aeq</span> = [[1.0]*n+[0.0]*m,[0.0]*n+[1.0]*m]<span style="color: #586e75;">#</span><span style="color: #586e75;">constraints that ensure that both the  mixed strategy of P1 and P2 sum to 1</span>
 <span style="color: #268bd2;">beq</span> = [1.0,1.0]
-<span style="color: #268bd2;">x0</span> = [1.0/n]*n+[1.0/m]*m<span style="color: #586e75; font-style: italic;">#</span><span style="color: #586e75; font-style: italic;">arbitrary starting value for the algorithm </span>
+<span style="color: #268bd2;">x0</span> = [1.0/n]*n+[1.0/m]*m<span style="color: #586e75;">#</span><span style="color: #586e75;">arbitrary starting value for the algorithm </span>
 
 <span style="color: #268bd2;">p</span> = SNLE(product,x0,lb=lb,ub=ub,Aeq=Aeq,beq=beq)
 <span style="color: #268bd2;">r</span> = p.solve(<span style="color: #2aa198;">'nssolve'</span>)
 
-<span style="color: #859900;">if</span> r.stopcase==1:
-    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'equilibrium: P1 plays'</span>,r.xf[:n],3,<span style="color: #2aa198;">' and P2 plays'</span>,r.xf[n:]
-<span style="color: #859900;">else</span>:
-    <span style="color: #859900;">print</span> <span style="color: #2aa198;">'Error: solver cannot find an equilibrium'</span>
+<span style="color: #859900; font-weight: bold;">if</span> r.stopcase==1:
+    <span style="color: #859900; font-weight: bold;">print</span> <span style="color: #2aa198;">'equilibrium: P1 plays'</span>,r.xf[:n],3,<span style="color: #2aa198;">' and P2 plays'</span>,r.xf[n:]
+<span style="color: #859900; font-weight: bold;">else</span>:
+    <span style="color: #859900; font-weight: bold;">print</span> <span style="color: #2aa198;">'Error: solver cannot find an equilibrium'</span>
+
+
 </pre>
 </div>
-
-<pre class="example">
-------------------------- OpenOpt 0.5621 -------------------------
-problem: unnamed   type: SNLE
-solver: nssolve
-  iter  objFunVal  log10(maxResidual)  
-    0  5.000e-01            -100.00 
-   10  3.497e-02            -100.00 
-   20  1.437e-04             -15.18 
-   30  2.790e-06             -15.18 
-   35  9.109e-07             -15.18 
-istop: 15 (solution with required ftol and contol has been reached)
-Solver:   Time Elapsed = 0.1 	CPU Time Elapsed = 0.1
-objFunValue: -9.1094197e-07 (feasible, MaxResidual = 6.66134e-16)
-equilibrium: P1 plays [ 0.66666588  0.33333412] 3  and P2 plays [ 0.66666673  0.33333327]
-</pre>
 
 <p>
 Note that the program above will give you only one equilibrium and not all equilibria. In principle, this could be changed by either trying many different starting values or by using a "global" equation solver that can find all solutions. 
 </p>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
- <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
 </div>
 </body>
 </html>

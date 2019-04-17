@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-04-16 Di 17:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game Theory: Hard evidence\footnote{License: CC Attribution ShareAlike 4.0}</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christoph Schottmüller" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+
+    <p style="text-align: justify;">
+      
+  <a id="subtitle" href="https://schottmueller.github.io/index.html">Home</a>
+  <a id="subtitle" href="https://schottmueller.github.io/research.html">Research</a>
+  <a id="subtitle" href="https://schottmueller.github.io/teaching.html">Teaching</a>
+  <a id="subtitle" href="https://schottmueller.github.io/misc.html">Misc</a>
+
+  <span> </span>
+</div>
+
+</p>
+
+</div>
+</div>
+</div>
+<div id="content">
+<h1 class="title">Game Theory: Hard evidence\footnote{License: CC Attribution ShareAlike 4.0}</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgde4472e">1. Introduction</a>
+<ul>
+<li><a href="#orge531f3a">1.1. Introduction</a></li>
+</ul>
+</li>
+<li><a href="#org5717676">2. Unraveling</a>
+<ul>
+<li><a href="#org9b1bf73">2.1. A simple example</a></li>
+<li><a href="#org8a9f04f">2.2. A more general setup</a></li>
+<li><a href="#org0feb737">2.3. Unraveling theorem in the more general setup</a></li>
+</ul>
+</li>
+<li><a href="#org9eb8516">3. Partial Unraveling</a>
+<ul>
+<li><a href="#orgf7ec40d">3.1. Costly verification I</a></li>
+<li><a href="#org25510df">3.2. Costly verification II</a></li>
+<li><a href="#org7681521">3.3. Dye's model I</a></li>
+<li><a href="#orgccad299">3.4. Dye's model II</a></li>
+<li><a href="#org8b1c1a4">3.5. Dye's model III</a></li>
+<li><a href="#org216b3bb">3.6. Dye's model IV</a></li>
+</ul>
+</li>
+<li><a href="#orgfc80804">4. Limited Communication</a>
+<ul>
+<li><a href="#org39e53a5">4.1. Limited Communication  I</a></li>
+<li><a href="#org438aed3">4.2. Limited Communication  II</a></li>
+</ul>
+</li>
+<li><a href="#org93823af">5. An investment example (BDL)</a>
+<ul>
+<li><a href="#orgbff065e">5.1. Investment decisions I</a></li>
+<li><a href="#orgf0b9018">5.2. Investment decisions II</a></li>
+<li><a href="#org2bd1967">5.3. Investment decisions III</a></li>
+</ul>
+</li>
+<li><a href="#org31643b3">6. Revision questions and exercise</a>
+<ul>
+<li><a href="#org356699d">6.1. Revision questions</a></li>
+<li><a href="#org8eea4c3">6.2. Exercise I</a></li>
+<li><a href="#org495600b">6.3. Exercise II</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgde4472e" class="outline-2">
+<h2 id="orgde4472e"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orge531f3a" class="outline-3">
+<h3 id="orge531f3a"><span class="section-number-3">1.1</span> Introduction</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>hard evidence
+<ul class="org-ul">
+<li>A has private information but can disclose it truthfully to B</li>
+</ul></li>
+<li>examples
+<ul class="org-ul">
+<li>financial reports by companies</li>
+<li>disclose income by showing tax statement</li>
+<li>certify quality by an expert/rating agency (possibly costly)</li>
+</ul></li>
+<li>questions
+<ul class="org-ul">
+<li>what information should you (not) disclose?</li>
+<li>when are mandatory disclosure or privacy rules optimal?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5717676" class="outline-2">
+<h2 id="org5717676"><span class="section-number-2">2</span> Unraveling</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org9b1bf73" class="outline-3">
+<h3 id="org9b1bf73"><span class="section-number-3">2.1</span> A simple example</h3>
+<div class="outline-text-3" id="text-2-1">
+<ol class="org-ol">
+<li>a manager A privately learns the value of the firm \(v\in V=\{v_1,\dots,v_n\}\) with \(v_1<v_2<\dots<v_n\)</li>
+<li>A can disclose his information to the board B</li>
+<li>B pays a bonus to A depending on the expected value of the firm (the higher B expects \(v\) to be the higher the bonus)</li>
+</ol>
+
+<p>
+\vspace*{1cm}
+</p>
+
+<p>
+What is the (perfect Bayesian) equilibrium of the game?
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org8a9f04f" class="outline-3">
+<h3 id="org8a9f04f"><span class="section-number-3">2.2</span> A more general setup</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>A's payoff is \(\pi(v,b)\) where \(b\) is B's belief (probability distribution over  \(V=\{v_1,\dots,v_n\}\)) in stage 3</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgb3a77c1"></a>Assumptions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-2-2-1">
+<ul class="org-ul">
+<li>\(\pi\) increases in \(v\)</li>
+<li><p>
+\(\pi\) "increases" in \(b\): \(\pi(v,b)>\pi(v,b')\) if \(b\neq b'\) first order stochastically dominates \(b'\):
+</p>
+
+<p>
+\[\sum_{v_j\leq v}b(v_j)\leq \sum_{v_j\leq v}b'(v_j)\qquad\text{ for all }v\]
+</p></li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgb147b92"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-2-2-2">
+<ul class="org-ul">
+<li>A can certify some subset of \(V\) in stage 2 (the true \(v\) must be in the set he certifies)
+<ul class="org-ul">
+<li>example:  A can certify "\(v\) is in \(\{v_2,v_4\}\)" if \(v=v_2\)</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org5a9e172"></a>Assumption<br />
+<div class="outline-text-4" id="text-2-2-3">
+<p>
+A can certify that the value is at least \(v\), i.e. if \(v=v_i\) then the set \(\{v_i,v_{i+1},\dots,v_n\}\) is certifiable
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org0feb737" class="outline-3">
+<h3 id="org0feb737"><span class="section-number-3">2.3</span> Unraveling theorem in the more general setup</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org9180a7d"></a>Unraveling&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_theorem">B_theorem</span></span><br />
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+The equilibrium involves full information revelation and pessimistic beliefs.
+</p>
+</div>
+</li>
+<li><a id="org8617395"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-2-3-2">
+<ul class="org-ul">
+<li>pessimistic beliefs: for any certified set, B beliefs that \(v\) is the lowest \(v_i\) in the set</li>
+</ul>
+
+<p>
+\textbf{Proof. } 
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9eb8516" class="outline-2">
+<h2 id="org9eb8516"><span class="section-number-2">3</span> Partial Unraveling</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgf7ec40d" class="outline-3">
+<h3 id="orgf7ec40d"><span class="section-number-3">3.1</span> Costly verification I</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>say disclosure comes at cost \(c>0\)</li>
+<li>for which \(v_i\) will A disclose, for which not?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org25510df" class="outline-3">
+<h3 id="org25510df"><span class="section-number-3">3.2</span> Costly verification II</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>let \(v'\) be the highest \(\tilde{v}\) that satisfies</li>
+</ul>
+<p>
+\[\hspace*{2cm}\mathbb{E}[v| v\leq \tilde{v}] <c\]
+</p>
+<ul class="org-ul">
+<li>equilibrium:
+<ul class="org-ul">
+<li>not disclose for \(v\leq v'\)</li>
+<li>disclose for \(v> v'\)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7681521" class="outline-3">
+<h3 id="org7681521"><span class="section-number-3">3.3</span> Dye's model I</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>back to simple disclosure: A cannot certify sets but at best the actual \(v\)</li>
+<li>A knows \(v\) with probability \(q\)</li>
+<li>A does not know \(v\) with probability \(1-q\)</li>
+<li>prior belief over \(\{v_1,\dots,v_n\}\) is denoted by \(f\) (with full support)</li>
+<li>A's payoff is \(\alpha v+\bar{v}\) where \(\alpha\geq 0\) and \(\bar v\) is B's expectation over \(v\) in stage 3</li>
+<li>same timing as in simple example (note that A cannot disclose anything if he does not know \(v\))</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgccad299" class="outline-3">
+<h3 id="orgccad299"><span class="section-number-3">3.4</span> Dye's model II</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgc09b369"></a>partial disclosure&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_example">B_example</span></span><br />
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li>\(V=\{1,2,9\}\) and \(f(v_i)=1/3\) for \(v_i\in V\)</li>
+<li>\(q=3/4\) and \(\alpha=1\)</li>
+<li>Equilibrium: A discloses if \(v=9\) and does not disclose otherwise:
+<ul class="org-ul">
+<li>given this, what is the prob of non-disclosure?</li>
+</ul></li>
+</ul>
+
+<ul class="org-ul">
+<li>if non-disclosure is observed what is probability that A does not know \(v\)?</li>
+</ul>
+
+<ul class="org-ul">
+<li>if non-disclosure is observed what is probability that \(v=1\), that \(v=2\)?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is \(\bar{v}\) when observing non-disclosure?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is A's payoff of not disclosing if \(v=2\)?</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org8b1c1a4" class="outline-3">
+<h3 id="org8b1c1a4"><span class="section-number-3">3.5</span> Dye's model III</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>let \(v_i\) be defined such that</li>
+</ul>
+
+<p>
+\[\hspace*{1cm}\mathbb{E}[v|\mbox{ v has no evidence or }v\leq v_i\}] \geq v_i\]
+\[\hspace*{1cm}\mathbb{E}[v|\mbox{ v has no evidence or }v\leq v_i\}] \leq v_{i+1}\]
+</p>
+
+<ul class="org-ul">
+<li>this \(v_i\) exists
+<ul class="org-ul">
+<li>LHS is above RHS for \(v_i = v_1\)</li>
+<li>LHS is below RHS for \(v_i = v_n\)</li>
+</ul></li>
+</ul>
+</div>
+
+<ol class="org-ol">
+<li><a id="org735ceac"></a>Partial disclosure&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_theorem">B_theorem</span></span><br />
+<div class="outline-text-4" id="text-3-5-1">
+<p>
+It is an equilibrium that all types above \(v_i\) disclose and those below do not.
+</p>
+</div>
+</li>
+
+<li><a id="org1715345"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-3-5-2">
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org216b3bb" class="outline-3">
+<h3 id="org216b3bb"><span class="section-number-3">3.6</span> Dye's model IV</h3>
+<div class="outline-text-3" id="text-3-6">
+<ul class="org-ul">
+<li>say \(v\) is an asset value or stock price that is traded</li>
+<li>suppose there is a stage 4 where \(v\) becomes known (asset pays out, project finishes, end of year report)</li>
+<li>how is strategic disclosure different from "disclose everything"?
+<ul class="org-ul">
+<li>strategic:
+<ul class="org-ul">
+<li>price of asset drops in stage 2/3 if no disclosure (no news is bad news)</li>
+<li>without disclosure: uncertainty/volatility about asset value in 4</li>
+</ul></li>
+<li>disclose everything:
+<ul class="org-ul">
+<li>price stays constant (in 2/3) if no news</li>
+<li>price drops if bad news but then no uncertainty about asset value in 4</li>
+</ul></li>
+</ul></li>
+<li>empirical test for strategic disclosure: does a price drop lead to more volatility?</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgfc80804" class="outline-2">
+<h2 id="orgfc80804"><span class="section-number-2">4</span> Limited Communication</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org39e53a5" class="outline-3">
+<h3 id="org39e53a5"><span class="section-number-3">4.1</span> Limited Communication  I</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>a course has 2 topics</li>
+<li>student A can either understand or not understand a topic (\(V=\{0,1\}\) for each topic)</li>
+<li>for each topic the probability of understanding \(f(1)=1/2\) (and values are independent across topics)</li>
+<li>the exam has limited length: A can communicate at most 1 topic to teacher B</li>
+<li>with probability \(1-q=1/4\) there is miscommunication and the teacher cannot understand/receive what the student says in the exam (even if A understands the topic)</li>
+<li>A gets a grade equal to B's ex post expected number of topics A has understood</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org438aed3" class="outline-3">
+<h3 id="org438aed3"><span class="section-number-3">4.2</span> Limited Communication  II</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>what is the probability that "understanding" can be communicated if A chooses the topic of the exam?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is B's belief in case \(v=1\) is (not) communicated if A chooses the topic?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is the probability that "understanding" can be communicated if B chooses the topic of the exam randomly?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is B's belief in case \(v=1\) is (not) communicated if B chooses the topic randomly?</li>
+</ul>
+
+<ul class="org-ul">
+<li>does the grade distribution have more variance if A or if B chooses the topic?</li>
+</ul>
+
+<ul class="org-ul">
+<li>who should choose the topic if the grades should be as informative as possible about the the student's understanding?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org93823af" class="outline-2">
+<h2 id="org93823af"><span class="section-number-2">5</span> An investment example (BDL)</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgbff065e" class="outline-3">
+<h3 id="orgbff065e"><span class="section-number-3">5.1</span> Investment decisions I</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>say A can choose between two technologies
+<ul class="org-ul">
+<li>technology 1 gives \(v=4\) for sure</li>
+<li>technology 2 gives \(v=6\) and \(v=0\) with probability 1/2 each</li>
+</ul></li>
+<li>A's objective is to maximize \(\bar{v}\) (i.e. \(\alpha=0\) for simplicity)</li>
+<li>A has evidence with probability \(q\) as before</li>
+<li>the value realizes in stage 4 and goes to B</li>
+</ul>
+
+<p>
+\vspace*{0.5cm}
+</p>
+<ul class="org-ul">
+<li>What is the efficient technology choice?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf0b9018" class="outline-3">
+<h3 id="orgf0b9018"><span class="section-number-3">5.2</span> Investment decisions II</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>Is it an equilibrium to choose technology 1?
+<ul class="org-ul">
+<li>in such an equilibrium what is \(\bar{v}\) without disclosure?</li>
+</ul></li>
+</ul>
+
+<ul class="org-ul">
+<li>what is A's payoff when he chooses technology 2?</li>
+</ul>
+
+<ul class="org-ul">
+<li>Is it an equilibrium to choose technology 2?
+<ul class="org-ul">
+<li>what will A disclose in such an equilibrium?</li>
+</ul></li>
+</ul>
+
+<ul class="org-ul">
+<li>in such an equilibrium what is \(\bar{v}\) without disclosure?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is A's expected payoff?</li>
+</ul>
+
+<ul class="org-ul">
+<li>what is A's expected payoff from deviating to technology 1?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2bd1967" class="outline-3">
+<h3 id="org2bd1967"><span class="section-number-3">5.3</span> Investment decisions III</h3>
+<div class="outline-text-3" id="text-5-3">
+<ul class="org-ul">
+<li>general result: A engages in excessive risk taking
+<ul class="org-ul">
+<li>enjoy upside risk</li>
+<li>hide downside risk by not disclosing</li>
+
+<li>roughly: 
+<ul class="org-ul">
+<li>\(\hat v\) be the belief if no disclosure</li>
+<li>A chooses \(\max\{v,\hat v\}\) &rarr; convex function of \(v\)</li>
+<li>A is risk lover</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org31643b3" class="outline-2">
+<h2 id="org31643b3"><span class="section-number-2">6</span> Revision questions and exercise</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-org356699d" class="outline-3">
+<h3 id="org356699d"><span class="section-number-3">6.1</span> Revision questions</h3>
+<div class="outline-text-3" id="text-6-1">
+<ul class="org-ul">
+<li>what is information unraveling and why might it occur?</li>
+<li>what could prevent total information unraveling and why?</li>
+<li>explain Dye's model setup</li>
+<li>why is it more informative if the examiner chooses the topic and not the student?</li>
+<li>why might entrepreneurs choose too risky projects?</li>
+</ul>
+
+<p>
+\vspace*{0.5cm}
+</p>
+
+<ul class="org-ul">
+<li>reading: nothing particularly, I used Eddie Dekel's slides (<a href="https://sites.google.com/site/eddiedekelsite/pres_address_2016_slides/pres_address_2016_slides.pdf?attredirects=0&amp;d=1">https://sites.google.com/site/eddiedekelsite/pres_address_2016_slides/pres_address_2016_slides.pdf?attredirects=0&amp;d=1</a>) and section 5.1.5 in Bolton/Dewatripont's "Contract theory" book as sources. You can find more references in these two sources.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8eea4c3" class="outline-3">
+<h3 id="org8eea4c3"><span class="section-number-3">6.2</span> Exercise I</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+An entrepreneur (E) has to sell his project to a perfectly competitive and risk neutral financial market before it matures. With probability \(p\) the project is good and makes a profit of 1. With probability \(1-p\) the project is bad and makes zero profits. With probability \(q\) the entrepreneur finds out whether his project is good before he sells it and in this case he has evidence to document the project value.
+</p>
+
+<ul class="org-ul">
+<li>When will E document the value?</li>
+</ul>
+
+<ul class="org-ul">
+<li>What is the market price of the project in case there is (no) evidence?</li>
+</ul>
+
+<ul class="org-ul">
+<li>What is the market price of the project in case it is documented to be good?</li>
+</ul>
+
+<ul class="org-ul">
+<li>What is the expected market price of the project?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org495600b" class="outline-3">
+<h3 id="org495600b"><span class="section-number-3">6.3</span> Exercise II</h3>
+<div class="outline-text-3" id="text-6-3">
+<ul class="org-ul">
+<li>Say, E is risk averse and obtains Bernoulli utility \(u(m)\) when selling the project at price \(m\) where \(u\) is strictly concave. Does E benefit or suffer from the possibility of learning the project value?</li>
+</ul>
+
+<ul class="org-ul">
+<li>Let \(u(m)=\sqrt{m}\). Suppose E has to choose (before the game above is played) one of the following two projects below. Which will he choose? Is this efficient?
+<ul class="org-ul">
+<li>P1: \(p=1/4\) and \(q=7/8\)</li>
+<li>P2: \(p=0.16\) and \(q=0\)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

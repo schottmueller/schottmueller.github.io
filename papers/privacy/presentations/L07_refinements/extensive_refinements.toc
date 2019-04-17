@@ -1,5 +1,0 @@
-\beamer@endinputifotherversion {3.33pt}
-\select@language {english}
-\beamer@sectionintoc {1}{Intermezzo: Imperfect Recall}{4}{0}{1}
-\beamer@sectionintoc {2}{Behavioral strategies}{8}{0}{2}
-\beamer@sectionintoc {3}{Perfect equilibrium}{10}{0}{3}

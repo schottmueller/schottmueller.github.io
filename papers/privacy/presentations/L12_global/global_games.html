@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-04-16 Di 17:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Game Theory: Global Games</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christoph Schottmüller" />
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+
+    <p style="text-align: justify;">
+      
+  <a id="subtitle" href="https://schottmueller.github.io/index.html">Home</a>
+  <a id="subtitle" href="https://schottmueller.github.io/research.html">Research</a>
+  <a id="subtitle" href="https://schottmueller.github.io/teaching.html">Teaching</a>
+  <a id="subtitle" href="https://schottmueller.github.io/misc.html">Misc</a>
+
+  <span> </span>
+</div>
+
+</p>
+
+</div>
+</div>
+</div>
+<div id="content">
+<h1 class="title">Game Theory: Global Games</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgd40ab5a">1. Global Games: Stag Hunt</a>
+<ul>
+<li><a href="#org60e0f01">1.1. Stag Hunt</a></li>
+<li><a href="#org82949e5">1.2. Two approaches</a></li>
+<li><a href="#orgdf60849">1.3. Global Games: Carlsson and van Damme (1993)</a></li>
+<li><a href="#org0328525">1.4. Intermezzo: Cutoff Strategies</a></li>
+<li><a href="#orgf5f6ba5">1.5. Global Games and iterative elimination of strictly dominated strategies</a></li>
+<li><a href="#org52f210d">1.6. Global Games and Knowledge</a></li>
+</ul>
+</li>
+<li><a href="#orgaaac2fe">2. An investment example</a>
+<ul>
+<li><a href="#org322a741">2.1. An investment example</a></li>
+</ul>
+</li>
+<li><a href="#org37d7de1">3. Revision questions and exercises</a>
+<ul>
+<li><a href="#orgb5d119f">3.1. Review questions</a></li>
+<li><a href="#org19caa05">3.2. Exercises</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgd40ab5a" class="outline-2">
+<h2 id="orgd40ab5a"><span class="section-number-2">1</span> Global Games: Stag Hunt</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org60e0f01" class="outline-3">
+<h3 id="org60e0f01"><span class="section-number-3">1.1</span> Stag Hunt</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org2dbd033"></a>Example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_exampleblock">B_exampleblock</span></span><br />
+<div class="outline-text-4" id="text-1-1-1">
+  \begin{figure}[h]
+    \centering
+   \begin{game}{2}{2}
+          \>  H2 \> S2\\
+     H1   \> 3,3 \> 3,0\\
+    S1   \> 0,3 \> 4,4
+   \end{game}
+  \caption{Stag hunt}
+\end{figure}
+
+<ul class="org-ul">
+<li>two pure NE (+ 1 mixed NE) \(\Rightarrow\) which should we predict as outcome of the game?</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org82949e5" class="outline-3">
+<h3 id="org82949e5"><span class="section-number-3">1.2</span> Two approaches</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>payoff dominance</li>
+<li>risk dominance
+<ul class="org-ul">
+<li>multiply the deviation losses of both players in a given equilibrium and select the equilibrium where the product is highest (\(here: (3-0)^2>(4-3)^2\))</li>
+<li>intuitively: which equilibrium is supported by a larger set of beliefs? i.e. if the other player mixes \((1/2,1/2)\), what do you choose?</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdf60849" class="outline-3">
+<h3 id="orgdf60849"><span class="section-number-3">1.3</span> Global Games: Carlsson and van Damme (1993)</h3>
+<div class="outline-text-3" id="text-1-3">
+\begin{figure}[h]
+ \centering
+ \begin{game}{2}{2}
+ \> H2 \> S2\\
+ H1   \>$x,x$\>$x,0$\\
+ S1 \>$0,x$\>$4,4$
+\end{game}
+\end{figure}
+
+<ul class="org-ul">
+<li>state of the world \(x\in[-1,5]\) is unknown to players</li>
+<li>assume each state is equally likely (\(x\) distributed uniformly on \([-1,5]\))</li>
+<li>both players observe a private signal \(x_i\in[x-\varepsilon ,x+\varepsilon ]\) for some \(\varepsilon >0\)</li>
+<li>assume the two \(x_i\) are independently drawn from a uniform distribution on \([x-\varepsilon ,x+\varepsilon ]\)</li>
+<li>interpretation: players are not exactly sure which game they play</li>
+</ul>
+
+<p>
+\framebreak
+</p>
+
+<p>
+assume \(\varepsilon=0.1\)
+</p>
+<ul class="org-ul">
+<li>you get a signal \(x_1=-0.5\)
+<ul class="org-ul">
+<li>what do you believe about the state of the world?</li>
+<li>what do you believe about the other player's signal?</li>
+<li>which action should you take?</li>
+</ul></li>
+
+<li>you get signal \(x_1<0\)
+<ul class="org-ul">
+<li>&hellip;</li>
+</ul></li>
+
+<li>you get a signal \(x_1=0\)
+<ul class="org-ul">
+<li>&hellip;</li>
+</ul></li>
+
+<li>what is the biggest \(x_1\) for which you play \(S1\) for sure?</li>
+</ul>
+
+<p>
+\framebreak
+</p>
+<ul class="org-ul">
+<li>you get signal \(x_1>4\)
+<ul class="org-ul">
+<li>what do you believe about the state of the world?</li>
+<li>what do you believe about the other player's signal?</li>
+<li>which action should you take?</li>
+</ul></li>
+
+<li>what is the smallest \(x_1\) for which you play \(H1\) for sure?</li>
+</ul>
+
+<p>
+\framebreak
+</p>
+
+<ul class="org-ul">
+<li>result does not depend on \(\varepsilon =0.1\) but is true for any \(\varepsilon >0\) that is not too big</li>
+<li>if \(\varepsilon \rightarrow 0\), we get a unique prediction for any stag hunt game</li>
+<li>Carlsson and van Damme show that the global game approach selects the risk dominant equilibrium in \(2\times2\) games with two strict equilibria</li>
+<li>result does not depend on uniform distributions</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0328525" class="outline-3">
+<h3 id="org0328525"><span class="section-number-3">1.4</span> Intermezzo: Cutoff Strategies</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>A strategy in the global game is a function that associates an action with each signal</li>
+</ul>
+<p>
+\[s_i(x_i): \;[-1,5]\rightarrow\{Hi,Si\}\]
+</p>
+<ul class="org-ul">
+<li>we define a <i>cutoff strategy</i> with cutoff \(\bar s\) as</li>
+</ul>
+<p>
+\[ s_i(x_i)=\begin{cases}
+Hi & \text{ if }x_i\geq \bar s_i\\
+Si & \text{ if }x_i<\bar s_i
+\end{cases}\]
+</p>
+
+<p>
+\framebreak
+</p>
+
+<p>
+if \(i\) plays a cutoff strategy with cutoff \(\bar s_i\in(-\varepsilon,4+\varepsilon)\) which cutoff strategy is a best response of \(j\) (i.e. what is the best response cutoff \(\bar s_j\))?
+</p>
+<ul class="org-ul">
+<li>if \(j\) gets the signal \(x_j=\bar s_j\), he should be indifferent between Hj and Sj</li>
+<li>can \(j\) be indifferent if \(\bar s_i\leq \bar s_j-2\varepsilon\)?</li>
+<li>can \(j\) be indifferent if \(\bar s_i\geq \bar s_j+2\varepsilon\)?</li>
+<li>after observing \(x_j\), what does \(j\) believe about the distribution of \(x_i\)?</li>
+</ul>
+
+<ul class="org-ul">
+<li>can \(\bar s_j=\bar s_i\) be a best response? what would \(j\) think about the probability that \(i\) plays Si when receiving signal \(x_j=\bar s_j\) in this case?</li>
+</ul>
+
+<ul class="org-ul">
+<li>if \(\bar s_i<2\), (i) should \(\bar s_j\) be above or below \(\bar s_i\) to make \(j\) indifferent? (ii) could \(\bar s_j>2\) make \(j\) indifferent?</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf5f6ba5" class="outline-3">
+<h3 id="orgf5f6ba5"><span class="section-number-3">1.5</span> Global Games and iterative elimination of strictly dominated strategies</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>back to the global game: which strategies are strictly dominated?</li>
+</ul>
+
+<ul class="org-ul">
+<li>given that the other player does not play strictly dominated strategies, which of my strategies are strictly dominated?</li>
+<li>iterative elimination of dominated strategies</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgffdc84f"></a>Result&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-1-5-1">
+<p>
+Iterative elimination of strictly dominated strategies leads to a unique prediction in the global game.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+
+<div id="outline-container-org52f210d" class="outline-3">
+<h3 id="org52f210d"><span class="section-number-3">1.6</span> Global Games and Knowledge</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>if \(i\) receives signal \(x_i\), what does he know about
+<ul class="org-ul">
+<li>state of the world</li>
+<li>which states \(j\) considers possible</li>
+<li>which states \(j\) thinks \(i\) considers possible</li>
+<li>&hellip;</li>
+</ul></li>
+</ul>
+
+<ul class="org-ul">
+<li>global games capture &#x2013; in a tractable way &#x2013; the idea that 
+<ul class="org-ul">
+<li>payoffs are not common knowledge</li>
+<li>beliefs are not common knowledge</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgaaac2fe" class="outline-2">
+<h2 id="orgaaac2fe"><span class="section-number-2">2</span> An investment example</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org322a741" class="outline-3">
+<h3 id="org322a741"><span class="section-number-3">2.1</span> An investment example</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>Coordination problems as above are relevant in many settings</li>
+<li>2 investors</li>
+<li>investors decide (simultaneously) whether to invest in a project or not (\(A_i=\{I,N\}\))</li>
+<li>investing carries a cost of 1</li>
+<li>the project succeeds only if both invest</li>
+<li>a successfull project generates revenue of 4 which is equally split</li>
+<li>not investing in the project gives a payoff of \(r\)</li>
+</ul>
+\begin{figure}[h]
+       \centering
+      \begin{game}{2}{2}
+             \>  I \> N\\
+       I  \> $1,1$ \> $-1,r$\\
+       N   \> $r,-1$ \> $r,r$
+      \end{game}
+     \caption{Investment game}
+   \end{figure}
+
+<ul class="org-ul">
+<li>for which values of \(r\) does an investor have a dominant strategy?</li>
+<li>say, both investors have the prior that \(r\) is distributed uniformly on \([-2,2]\) and receive a private signal \(x_i\) which is uniformly distributed on \([r-0.1,r+0.1]\)</li>
+<li>what is the belief of \(i\) after observing \(x_i\) concerning 
+<ul class="org-ul">
+<li>the state \(r\)</li>
+<li>the signal of the other investor?</li>
+</ul></li>
+<li>for which values of \(x_i\) is \(I\) strictly dominated by \(N\)?</li>
+<li>given that the other investor does not use dominated strategies, why is \(I\) strictly dominated by \(N\) for values of \(x_i\) slightly below 1?</li>
+<li>What is the equilibrium (in cutoff strategies)?</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org37d7de1" class="outline-2">
+<h2 id="org37d7de1"><span class="section-number-2">3</span> Revision questions and exercises</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgb5d119f" class="outline-3">
+<h3 id="orgb5d119f"><span class="section-number-3">3.1</span> Review questions</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>What is the Stag Hunt game and what is the basic problem described by this game?</li>
+<li>What is the main game theoretic challenge in the Stag Hunt?</li>
+<li>What is a global game?</li>
+<li>What does a player know in a global game? What is common knowledge?</li>
+<li>How does the global game approach select an equilibrium?</li>
+<li>Why is it surprising that the global game approach selects a unique equilibrium?</li>
+<li>reading: Carlsson and van Damme, ECTA 93, p. 989-993; *Morris and Shin, 2000, p. 1-15; *Morris and Shin, 1998</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org19caa05" class="outline-3">
+<h3 id="org19caa05"><span class="section-number-3">3.2</span> Exercises</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Compare equilibrium selection by the global game approach with equilibrium refinement by perfect equilibrium.</li>
+</ul>
+
+<ul class="org-ul">
+<li>This exercise is about a model of speculating against a fixed exchange rate: Two players have to decide whether they want to speculate against the peg or not. If both players speculate against, the central bank is unable to defend the peg and the speculators make a profit of \(x\). If only one player speculates against the peg, the central bank will successfully defend the peg and the speculating player receives \(x-1\). This gives payoffs as below</li>
+</ul>
+\begin{figure}[h]
+       \centering
+      \begin{game}{2}{2}
+             \>  S \> N\\
+        S  \> $x,x$ \> $x-1,0$\\
+       N   \> $0,x-1$ \> $0,0$
+      \end{game}
+     \caption{Speculating against a currency peg}
+   \end{figure}
+<p>
+Each player does not know \(x\) but receives a signal \(x_i\) which is uniformly distributed on \([x-0.1,x+0.1]\) (the two signals are independent).
+</p>
+<ul class="org-ul">
+<li>For which values of \(x\) is S a dominant action?</li>
+<li>For which values of \(x\) is N a dominant action?</li>
+<li>Suppose player 1 observes \(x_1=0.9\). What does he believe about the distribution of \(x\) (assume that players had a uniform prior on \([-1,2]\) about the true state \(x\) before observing \(x_i\))? What does he believe about the distribution of \(x_2\)?</li>
+</ul>
+
+<ul class="org-ul">
+<li>Suppose player 1 believes that player 2 plays \(S\) whenever \(x_2\geq 1\). What should player 1 do when observing signal \(x_1=0.9\)?</li>
+</ul>
+
+<ul class="org-ul">
+<li>Suppose player 1 believes that player 2 plays S whenever \(x_2\geq \bar x_2\) (and let \(\bar x_2\geq 1/2\)). For which values of \(x_1\) should player 1 definitely play S himself? *What is 1's best response?</li>
+</ul>
+
+<ul class="org-ul">
+<li>Can you find a symmetric Nash equilibrium in this game? (recall that a strategy is a function assigning an action to each signal)</li>
+</ul>
+
+<ul class="org-ul">
+<li>*Show that only cutoff strategies are optimal and that the equilibrium of the previous subquestion is the unique Nash equilibrium. Show that this NE is the unique strategy surviving iterative elimination of strictly dominated strategies. (hint: check the Morris/Shin paper for a solution)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

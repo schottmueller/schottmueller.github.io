@@ -3,143 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-26 Wed 11:07 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2019-04-16 Di 17:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Game Theory: Supermodular Games\footnote{License: CC Attribution ShareAlike 4.0}</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Christoph Schottmüller" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christoph Schottmüller" />
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -161,45 +30,64 @@ for the JavaScript code in this tag.
 });
 </script>
 <script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+
+    <p style="text-align: justify;">
+      
+  <a id="subtitle" href="https://schottmueller.github.io/index.html">Home</a>
+  <a id="subtitle" href="https://schottmueller.github.io/research.html">Research</a>
+  <a id="subtitle" href="https://schottmueller.github.io/teaching.html">Teaching</a>
+  <a id="subtitle" href="https://schottmueller.github.io/misc.html">Misc</a>
+
+  <span> </span>
+</div>
+
+</p>
+
+</div>
+</div>
+</div>
 <div id="content">
 <h1 class="title">Game Theory: Supermodular Games\footnote{License: CC Attribution ShareAlike 4.0}</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline6">1. Introduction</a>
+<li><a href="#org7ebfcb6">1. Introduction</a>
 <ul>
-<li><a href="#orgheadline1">1.1. Motivation I</a></li>
-<li><a href="#orgheadline2">1.2. Motivation II</a></li>
-<li><a href="#orgheadline5">1.3. Example: Search</a></li>
+<li><a href="#orgcc487ba">1.1. Motivation I</a></li>
+<li><a href="#org8f91f23">1.2. Motivation II</a></li>
+<li><a href="#orgc412025">1.3. Example: Search</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline33">2. Model</a>
+<li><a href="#org63f7176">2. Model</a>
 <ul>
-<li><a href="#orgheadline7">2.1. Model Setup: Simple smooth supermodular games</a></li>
-<li><a href="#orgheadline10">2.2. What are the effects of \(\frac{\partial^2 u_i}{\partial a_i\partial a_j}\geq 0\)?</a></li>
-<li><a href="#orgheadline11">2.3. Serially undominated strategies (another solution concept&hellip;)</a></li>
-<li><a href="#orgheadline13">2.4. Example: serially undominated strategies</a></li>
-<li><a href="#orgheadline16">2.5. Main result</a></li>
-<li><a href="#orgheadline17">2.6. Proof of Supermodularity Result 1</a></li>
-<li><a href="#orgheadline20">2.7. Extending the result</a></li>
-<li><a href="#orgheadline21">2.8. Is the corollary useful?</a></li>
-<li><a href="#orgheadline24">2.9. Bertrand with differentiated goods</a></li>
-<li><a href="#orgheadline26">2.10. Comparative statics I</a></li>
-<li><a href="#orgheadline27">2.11. Comparative Statics II</a></li>
-<li><a href="#orgheadline30">2.12. "Supermodularizing": Tricks I</a></li>
-<li><a href="#orgheadline31">2.13. "Supermodularizing": Tricks II</a></li>
-<li><a href="#orgheadline32">2.14. Extensions</a></li>
+<li><a href="#org39da167">2.1. Model Setup: Simple smooth supermodular games</a></li>
+<li><a href="#orgf1318d2">2.2. What are the effects of \(\frac{\partial^2 u_i}{\partial a_i\partial a_j}\geq 0\)?</a></li>
+<li><a href="#org7b53c36">2.3. Serially undominated strategies (another solution concept&hellip;)</a></li>
+<li><a href="#org47afbf8">2.4. Example: serially undominated strategies</a></li>
+<li><a href="#orgefc411c">2.5. Main result</a></li>
+<li><a href="#org5f66f4c">2.6. Proof of Supermodularity Result 1</a></li>
+<li><a href="#orgb63bab2">2.7. Extending the result</a></li>
+<li><a href="#org157697c">2.8. Is the corollary useful?</a></li>
+<li><a href="#org5c54d31">2.9. Bertrand with differentiated goods</a></li>
+<li><a href="#org91686ac">2.10. Comparative statics I</a></li>
+<li><a href="#orgf9e00d5">2.11. Comparative Statics II</a></li>
+<li><a href="#org33ddcaa">2.12. "Supermodularizing": Tricks I</a></li>
+<li><a href="#orgb98b80e">2.13. "Supermodularizing": Tricks II</a></li>
+<li><a href="#org3f2041d">2.14. Extensions</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline37">3. Revision questions and exercises</a>
+<li><a href="#org745d733">3. Revision questions and exercises</a>
 <ul>
-<li><a href="#orgheadline34">3.1. Revision questions</a></li>
-<li><a href="#orgheadline35">3.2. Exercises I</a></li>
-<li><a href="#orgheadline36">3.3. Exercises II</a></li>
+<li><a href="#org7da9e1d">3.1. Revision questions</a></li>
+<li><a href="#org92bcbcd">3.2. Exercises I</a></li>
+<li><a href="#org6bd4fae">3.3. Exercises II</a></li>
 </ul>
 </li>
 </ul>
@@ -208,11 +96,12 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-org7ebfcb6" class="outline-2">
+<h2 id="org7ebfcb6"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgheadline1" class="outline-3">
-<h3 id="orgheadline1"><span class="section-number-3">1.1</span> Motivation I</h3>
+</div>
+<div id="outline-container-orgcc487ba" class="outline-3">
+<h3 id="orgcc487ba"><span class="section-number-3">1.1</span> Motivation I</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>several solution concepts:
@@ -228,8 +117,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2"><span class="section-number-3">1.2</span> Motivation II</h3>
+<div id="outline-container-org8f91f23" class="outline-3">
+<h3 id="org8f91f23"><span class="section-number-3">1.2</span> Motivation II</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>comparative statics:
@@ -247,33 +136,41 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5"><span class="section-number-3">1.3</span> Example: Search</h3>
+<div id="outline-container-orgc412025" class="outline-3">
+<h3 id="orgc412025"><span class="section-number-3">1.3</span> Example: Search</h3>
 <div class="outline-text-3" id="text-1-3">
-</div><ol class="org-ol"><li><a id="orgheadline3"></a>Example: Simple search market&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br  /><div class="outline-text-4" id="text-1-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgfeebc8a"></a>Example: Simple search market&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-1-3-1">
 <ul class="org-ul">
 <li>\(N\) traders exert effort \(x_i\) to search for other trader</li>
 <li>if two traders find each other, each gets benefit 1</li>
 <li>probability that trader \(i\) finds other trader is \(\min\left\{1,\alpha x_i\left( \sum_{j\neq i}x_j+\beta \right) \right\}\) where \(\alpha>0\) and &beta;&gt;0 are such that \(0<\alpha ((N-1)+\beta)<1\)</li>
 <li>costs of effort are \(x_i^2\)</li>
 </ul>
-</div></li>
-<li><a id="orgheadline4"></a>:B<sub>ignoreheading</sub>:<br  /><div class="outline-text-4" id="text-1-3-2">
+</div>
+</li>
+<li><a id="org6060189"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-1-3-2">
 <ul class="org-ul">
 <li>Given the effort of the others, how much effort should \(i\) exert?</li>
 <li>If trader \(j\) exerts more effort, how does this affect the optimal effort of \(i\)?</li>
 <li>If the search technology improves, will a trader exert more or less effort?</li>
 <li>Could our answers depend on the solution concept used?</li>
 </ul>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
-<div id="outline-container-orgheadline33" class="outline-2">
-<h2 id="orgheadline33"><span class="section-number-2">2</span> Model</h2>
+<div id="outline-container-org63f7176" class="outline-2">
+<h2 id="org63f7176"><span class="section-number-2">2</span> Model</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7"><span class="section-number-3">2.1</span> Model Setup: Simple smooth supermodular games</h3>
+</div>
+<div id="outline-container-org39da167" class="outline-3">
+<h3 id="org39da167"><span class="section-number-3">2.1</span> Model Setup: Simple smooth supermodular games</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>\(N\) players</li>
@@ -289,31 +186,37 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="section-number-3">2.2</span> What are the effects of \(\frac{\partial^2 u_i}{\partial a_i\partial a_j}\geq 0\)?</h3>
+<div id="outline-container-orgf1318d2" class="outline-3">
+<h3 id="orgf1318d2"><span class="section-number-3">2.2</span> What are the effects of \(\frac{\partial^2 u_i}{\partial a_i\partial a_j}\geq 0\)?</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
-<li>"Increasing differences":                                         
+<li>"Increasing differences":					 
 <ul class="org-ul">
 <li>let \(a_1>a_1'\), then \(u_1(a_1,a_2,a_3,\dots)-u_1(a_1',a_2,a_3,\dots)=\int_{a_1'}^{a_1}\frac{\partial u_1}{\partial a_1}(x,a_2,a_3,\dots)\,dx\) is increasing in \(a_2\) because of \(\frac{\partial^2 u_1}{\partial a_1\partial a_2}\geq 0\)</li>
 </ul></li>
 <li>check: verify that the <i>simple search market</i> satisfies increasing differences</li>
 </ul>
 </div>
-<ol class="org-ol"><li><a id="orgheadline8"></a>Result&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br  /><div class="outline-text-4" id="text-2-2-1">
+<ol class="org-ol">
+<li><a id="org022da4b"></a>Result&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-2-2-1">
 <p>
 Let \(a_i>a_i'\). If \(u_i(a_i,a_{-i})>u_i(a_i',a_{-i})\), then \(u_i(a_i,a_{-i}')>u_i(a_i',a_{-i}')\) for all \(a_{-i}'\geq a_{-i}\).     
 </p>
-</div></li>
-<li><a id="orgheadline9"></a>:B<sub>ignoreheading</sub>:<br  /><div class="outline-text-4" id="text-2-2-2">
+</div>
+</li>
+<li><a id="org6be149a"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-2-2-2">
 <ul class="org-ul">
 <li>Roughly: Best responses are increasing.</li>
 </ul>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="section-number-3">2.3</span> Serially undominated strategies (another solution concept&hellip;)</h3>
+<div id="outline-container-org7b53c36" class="outline-3">
+<h3 id="org7b53c36"><span class="section-number-3">2.3</span> Serially undominated strategies (another solution concept&hellip;)</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>same as iterative elimination of strictly dominated strategies \\ BUT only pure strategies are used</li>
@@ -329,10 +232,13 @@ Let \(a_i>a_i'\). If \(u_i(a_i,a_{-i})>u_i(a_i',a_{-i})\), then \(u_i(a_i,a_{-i}
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-3">
-<h3 id="orgheadline13"><span class="section-number-3">2.4</span> Example: serially undominated strategies</h3>
+<div id="outline-container-org47afbf8" class="outline-3">
+<h3 id="org47afbf8"><span class="section-number-3">2.4</span> Example: serially undominated strategies</h3>
 <div class="outline-text-3" id="text-2-4">
-</div><ol class="org-ol"><li><a id="orgheadline12"></a>Difference between serially undominated strategies and iterative elimination of strictly dominated actions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br  /><div class="outline-text-4" id="text-2-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orga25e082"></a>Difference between serially undominated strategies and iterative elimination of strictly dominated actions&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-2-4-1">
 \begin{table}[h]
 \centering
  \begin{game}{3}{3}
@@ -342,22 +248,28 @@ M   \>3,0   \> 3,5   \>6,1 \\
 B   \>4,1   \>3,0    \>2,16  
 \end{game}
 \end{table}
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16"><span class="section-number-3">2.5</span> Main result</h3>
+<div id="outline-container-orgefc411c" class="outline-3">
+<h3 id="orgefc411c"><span class="section-number-3">2.5</span> Main result</h3>
 <div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
 <li>let  \(\underline u_i\) denote the minimum of \(U_i\) and  \(\bar u_i\) the maximum of \(U_i\)</li>
 </ul>
 </div>
-<ol class="org-ol"><li><a id="orgheadline14"></a>Supermodularity Result 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_theorem">B_theorem</span></span><br  /><div class="outline-text-4" id="text-2-5-1">
+<ol class="org-ol">
+<li><a id="org67320e0"></a>Supermodularity Result 1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_theorem">B_theorem</span></span><br />
+<div class="outline-text-4" id="text-2-5-1">
 <p>
 The strategy profile \((\underline u_1,\underline u_2,\dots)\) is a Nash equilibrium. The strategy profile \((\bar u_1,\bar u_2,\dots)\) is also a Nash equilibrium.
 </p>
-</div></li>
-<li><a id="orgheadline15"></a>:B<sub>ignoreheading</sub>:<br  /><div class="outline-text-4" id="text-2-5-2">
+</div>
+</li>
+<li><a id="org62410be"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-2-5-2">
 <ul class="org-ul">
 <li>Why is this important?
 <ul class="org-ul">
@@ -370,11 +282,13 @@ The strategy profile \((\underline u_1,\underline u_2,\dots)\) is a Nash equilib
 <li>if \(\underline u_i\) and \(\bar u_i\) are close, all these solution concepts give similar predictions!</li>
 </ul></li>
 </ul>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17"><span class="section-number-3">2.6</span> Proof of Supermodularity Result 1</h3>
+<div id="outline-container-org5f66f4c" class="outline-3">
+<h3 id="org5f66f4c"><span class="section-number-3">2.6</span> Proof of Supermodularity Result 1</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 We show that \((\underline u_1,\underline u_2,\dots)\) is NE. 
@@ -388,7 +302,7 @@ We show that \((\underline u_1,\underline u_2,\dots)\) is NE.
 </p>
 
 <ul class="org-ul">
-<li>Can a deviation to \(a_i''\in(\underline u_i,\bar u_i]\) be profitable?<br  /></li>
+<li>Can a deviation to \(a_i''\in(\underline u_i,\bar u_i]\) be profitable?<br /></li>
 </ul>
 <p>
 Suppose it was, i.e. \(u_i(a_i'',\underline u_{-i})-u_i(\underline u_i,\underline u_{-i})>0\). Then,&hellip;
@@ -404,8 +318,8 @@ Suppose it was, i.e. \(u_i(a_i'',\underline u_{-i})-u_i(\underline u_i,\underlin
 </div>
 </div>
 
-<div id="outline-container-orgheadline20" class="outline-3">
-<h3 id="orgheadline20"><span class="section-number-3">2.7</span> Extending the result</h3>
+<div id="outline-container-orgb63bab2" class="outline-3">
+<h3 id="orgb63bab2"><span class="section-number-3">2.7</span> Extending the result</h3>
 <div class="outline-text-3" id="text-2-7">
 <ul class="org-ul">
 <li>Result 1 is only useful if \(\bar u_i\) and \(\underline u_i\) are close
@@ -421,7 +335,9 @@ Suppose it was, i.e. \(u_i(a_i'',\underline u_{-i})-u_i(\underline u_i,\underlin
 </ul></li>
 </ul>
 </div>
-<ol class="org-ol"><li><a id="orgheadline18"></a>Corollary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br  /><div class="outline-text-6" id="text-2-7-0-0-1">
+<ol class="org-ol">
+<li><a id="orgc4762fc"></a>Corollary&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-6" id="text-2-7-0-0-1">
 <p>
 If a supermodular game  either
 </p>
@@ -433,16 +349,20 @@ If a supermodular game  either
 <p>
 then each player has a unique rationalizable action and the game can be solved by iterative elimination of strictly dominated actions. 
 </p>
-</div></li>
-<li><a id="orgheadline19"></a>:B<sub>ignoreheading</sub>:<br  /><div class="outline-text-6" id="text-2-7-0-0-2">
+</div>
+</li>
+<li><a id="org032ea06"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-6" id="text-2-7-0-0-2">
 <p>
 (why?)
 </p>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-orgheadline21" class="outline-3">
-<h3 id="orgheadline21"><span class="section-number-3">2.8</span> Is the corollary useful?</h3>
+<div id="outline-container-org157697c" class="outline-3">
+<h3 id="org157697c"><span class="section-number-3">2.8</span> Is the corollary useful?</h3>
 <div class="outline-text-3" id="text-2-8">
 <ul class="org-ul">
 <li>Take <i>simple search market</i> with 2 agents.
@@ -456,29 +376,36 @@ then each player has a unique rationalizable action and the game can be solved b
 </ul>
 </div>
 </div>
-<div id="outline-container-orgheadline24" class="outline-3">
-<h3 id="orgheadline24"><span class="section-number-3">2.9</span> Bertrand with differentiated goods</h3>
+<div id="outline-container-org5c54d31" class="outline-3">
+<h3 id="org5c54d31"><span class="section-number-3">2.9</span> Bertrand with differentiated goods</h3>
 <div class="outline-text-3" id="text-2-9">
-</div><ol class="org-ol"><li><a id="orgheadline22"></a>Example: price competition&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br  /><div class="outline-text-4" id="text-2-9-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgb767f82"></a>Example: price competition&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-2-9-1">
 <p>
 Two firms compete by setting prices. Demand for firm \(i\) is
 \[D_i(p_1,p_2)=\gamma-p_i+\beta p_j\]
 with \(0<\beta< 1\) and \(\gamma>0\). Costs for firm \(i\) are \(c_i D_i(p_1,p_2)\). Both firms maximize profits.
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline23"></a>:B<sub>ignoreheading</sub>:<br  /><div class="outline-text-4" id="text-2-9-2">
+<li><a id="org491f83a"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-2-9-2">
 <ul class="org-ul">
 <li>Is the game supermodular?</li>
 <li>Does it have a unique pure strategy Nash equilibrium?</li>
 <li>What are the sets of rationalizable actions and correlated equilibria?</li>
 </ul>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
 
-<div id="outline-container-orgheadline26" class="outline-3">
-<h3 id="orgheadline26"><span class="section-number-3">2.10</span> Comparative statics I</h3>
+<div id="outline-container-org91686ac" class="outline-3">
+<h3 id="org91686ac"><span class="section-number-3">2.10</span> Comparative statics I</h3>
 <div class="outline-text-3" id="text-2-10">
 <ul class="org-ul">
 <li>Now we want to ask questions like:
@@ -486,22 +413,26 @@ with \(0<\beta< 1\) and \(\gamma>0\). Costs for firm \(i\) are \(c_i D_i(p_1,p_2
 <li>how does the equilibrium effort in the search market change if \(\alpha\) increases?</li>
 <li>how do the equilibrium prices in the Bertrand game change if \(c_i\) changes (or \(\beta\)) changes?</li>
 </ul></li>
-<li>now: utility functions depend on actions and a parameter &tau; <br  /></li>
+<li>now: utility functions depend on actions and a parameter &tau; <br /></li>
 </ul>
 <p>
 \[u_i(a_i,a_{-i},\tau)\]
 hence, lower and upper bounds on serially undominated strategies \(\underline u_i\) and \(\bar u_i\) are functions of \(\tau\)
 </p>
 </div>
-<ol class="org-ol"><li><a id="orgheadline25"></a>Supermodularity Result 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_theorem">B_theorem</span></span><br  /><div class="outline-text-4" id="text-2-10-1">
+<ol class="org-ol">
+<li><a id="orgc30092a"></a>Supermodularity Result 2&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_theorem">B_theorem</span></span><br />
+<div class="outline-text-4" id="text-2-10-1">
 <p>
 If \(\frac{\partial^2 u_i}{\partial a_i\partial \tau}\geq 0\) for all \(i\), then \(\underline{u}_i\) and \(\bar u_i\) are increasing in \(\tau\).
 </p>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-orgheadline27" class="outline-3">
-<h3 id="orgheadline27"><span class="section-number-3">2.11</span> Comparative Statics II</h3>
+<div id="outline-container-orgf9e00d5" class="outline-3">
+<h3 id="orgf9e00d5"><span class="section-number-3">2.11</span> Comparative Statics II</h3>
 <div class="outline-text-3" id="text-2-11">
 <ul class="org-ul">
 <li>result 2 is especially useful if \(\underline u_i(\tau)=\bar u_i(\tau)\)</li>
@@ -515,32 +446,38 @@ If \(\frac{\partial^2 u_i}{\partial a_i\partial \tau}\geq 0\) for all \(i\), the
 <li>assume 2 players and interior equilibrium (i.e. \(\partial u_i/\partial a_i=0\) in equilibrium)</li>
 <li>assume strictly concave utility functions, i.e. \(\partial^2 u_i/\partial a_i^2<0\)</li>
 <li>if \(\tau\) increases, how does this affect marginal utility \(\partial u_i/\partial a_i\)?</li>
-<li>can both \(a_1\) and \(a_2\) decrease if \(\tau\) increases?</li>
 <li>can \(a_1\) increase and \(a_2\) decrease if \(\tau\) increases?</li>
 </ul></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline30" class="outline-3">
-<h3 id="orgheadline30"><span class="section-number-3">2.12</span> "Supermodularizing": Tricks I</h3>
+<div id="outline-container-org33ddcaa" class="outline-3">
+<h3 id="org33ddcaa"><span class="section-number-3">2.12</span> "Supermodularizing": Tricks I</h3>
 <div class="outline-text-3" id="text-2-12">
-</div><ol class="org-ol"><li><a id="orgheadline28"></a>Example: Cournot&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br  /><div class="outline-text-4" id="text-2-12-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgdc1203b"></a>Example: Cournot&#xa0;&#xa0;&#xa0;<span class="tag"><span class="B_block">B_block</span></span><br />
+<div class="outline-text-4" id="text-2-12-1">
 <p>
 Two firms with zero marginal costs set quantities \(q_i\). The resulting market price is \(1-q_1-q_2\). Firm \(i\) maximizes its profit \(q_i(1-q_i-q_j)\).
 </p>
-</div></li>
+</div>
+</li>
 
-<li><a id="orgheadline29"></a>:B<sub>ignoreheading</sub>:<br  /><div class="outline-text-4" id="text-2-12-2">
+<li><a id="org31aaadd"></a>:B<sub>ignoreheading</sub>:<br />
+<div class="outline-text-4" id="text-2-12-2">
 <ul class="org-ul">
 <li>Is this game supermodular?</li>
 <li>Any idea what to do?</li>
 </ul>
-</div></li></ol>
+</div>
+</li>
+</ol>
 </div>
 
-<div id="outline-container-orgheadline31" class="outline-3">
-<h3 id="orgheadline31"><span class="section-number-3">2.13</span> "Supermodularizing": Tricks II</h3>
+<div id="outline-container-orgb98b80e" class="outline-3">
+<h3 id="orgb98b80e"><span class="section-number-3">2.13</span> "Supermodularizing": Tricks II</h3>
 <div class="outline-text-3" id="text-2-13">
 <ul class="org-ul">
 <li>We use again the price competition model but now we assume a logit demand</li>
@@ -565,8 +502,8 @@ which do not satisfy \(\partial^2 \pi_i/\partial p_1\partial p_2\geq 0\)
 </div>
 </div>
 
-<div id="outline-container-orgheadline32" class="outline-3">
-<h3 id="orgheadline32"><span class="section-number-3">2.14</span> Extensions</h3>
+<div id="outline-container-org3f2041d" class="outline-3">
+<h3 id="org3f2041d"><span class="section-number-3">2.14</span> Extensions</h3>
 <div class="outline-text-3" id="text-2-14">
 <ul class="org-ul">
 <li>What if each player takes several actions?\\ e.g. a firm sets price, quality and warranty length</li>
@@ -584,11 +521,12 @@ which do not satisfy \(\partial^2 \pi_i/\partial p_1\partial p_2\geq 0\)
 </div>
 
 
-<div id="outline-container-orgheadline37" class="outline-2">
-<h2 id="orgheadline37"><span class="section-number-2">3</span> Revision questions and exercises</h2>
+<div id="outline-container-org745d733" class="outline-2">
+<h2 id="org745d733"><span class="section-number-2">3</span> Revision questions and exercises</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgheadline34" class="outline-3">
-<h3 id="orgheadline34"><span class="section-number-3">3.1</span> Revision questions</h3>
+</div>
+<div id="outline-container-org7da9e1d" class="outline-3">
+<h3 id="org7da9e1d"><span class="section-number-3">3.1</span> Revision questions</h3>
 <div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>Why are we interested in supermodular games?</li>
@@ -604,13 +542,13 @@ reading: Amir (2005) p.636-649;
 </p>
 
 <p>
-*reading: Milgrom and Roberts (1990) (skip all parts talking about "lattices")
+*reading: Milgrom and Roberts (1990) (introduction+sections 2+4)
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline35" class="outline-3">
-<h3 id="orgheadline35"><span class="section-number-3">3.2</span> Exercises I</h3>
+<div id="outline-container-org92bcbcd" class="outline-3">
+<h3 id="org92bcbcd"><span class="section-number-3">3.2</span> Exercises I</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>Exercise 1:
@@ -618,26 +556,22 @@ reading: Amir (2005) p.636-649;
 <li>Take the standard Bertrand model with <i>homogenous</i> goods: 2 firms have costs 0 and set a price \(p_i\). There is one consumer who buys from the firm with the lower price (as long as this price is below his valuation \(v\)). Is this game supermodular?</li>
 <li>Choose a game theoretic model from another course you have taken and check whether the game was supermodular (or could be transformed into a supermodular model using one of the tricks).</li>
 </ol></li>
-<li>Exercise 2:<br  />
+<li>Exercise 2:<br />
 Complete the proof of supermodularity result 1 by showing that \((\bar u_1,\bar u_2,\dots)\) is a Nash equilibrium.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline36" class="outline-3">
-<h3 id="orgheadline36"><span class="section-number-3">3.3</span> Exercises II</h3>
+<div id="outline-container-org6bd4fae" class="outline-3">
+<h3 id="org6bd4fae"><span class="section-number-3">3.3</span> Exercises II</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
-<li>reading: Milgrom/Roberts paper: introduction+ sections 2+4 (you will probably encounter some terms that you don't know and the proofs might look a bit hard; that's ok: just try to read through it and relate it to the things we did in the lecture; section 4 might be easier to follow than section 2)</li>
-<li>*Exercise 3:<br  />
+<li>*Exercise 3:<br />
 Assume in addition to the assumptions so far that \(u_i\) is strictly concave: \(\partial^2 u_i/\partial a_i^2<0\). Show that each \(A_i^k\) (in the iterative elimination of dominated actions) is an interval and conclude that \(U_i\) is an interval.</li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-<div id="postamble" class="status">
- <p>author: Christoph Schottmueller <br> license: Creative Commons Attribution ShareAlike 4.0</p>
 </div>
 </body>
 </html>

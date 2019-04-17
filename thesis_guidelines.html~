@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-04-01 Mo 15:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thesis Guidelines</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Prof. Dr. Christoph Schottmüller" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Thesis Guidelines</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org04633a5">1. Finding a topic</a>
+<ul>
+<li><a href="#org392dcea">1.1. Most common thesis types (supervised at the chair for microeconomics)</a></li>
+<li><a href="#org90b4822">1.2. Is my topic (candidate) appropriate for a thesis?</a></li>
+</ul>
+</li>
+<li><a href="#org94ccdcf">2. Writing a proposal</a></li>
+<li><a href="#orgce882cc">3. Supervision</a></li>
+<li><a href="#org439a3f5">4. Writing</a></li>
+<li><a href="#orgd6511dd">5. Some general remarks</a></li>
+<li><a href="#org457f002">6. Useful sources for how to write/model</a></li>
+</ul>
+</div>
+</div>
+<p>
+If you want to write a thesis at the CHair of Microeconomics, you should have successfully completed one of the <i>seminar</i> courses offered by the chair.
+</p>
+
+<div id="outline-container-org04633a5" class="outline-2">
+<h2 id="org04633a5"><span class="section-number-2">1</span> Finding a topic</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The most important part is that you are interested in your topic. After all you will spend quite some with it. You can draw on many sources in order to find a topic:
+</p>
+<ul class="org-ul">
+<li>the news. Some economic or political problem might pop up that you find interesting. Magazines with somewhat longer articles (like the Economist or the New Yorker) could be especially helpful.</li>
+<li>your student job. Your job might give you a lot of background and inside information on certain questions which gives you a head start when analyzing.</li>
+<li>your hobbies. You are an avid stamp collector and want to write about some interesting features of the market for stamps? Why not?</li>
+<li>books; and I do not necessarily mean textbooks. I had the idea for a paper of mine while reading the description of Bentham's panopticon in a book that had nothing to do with economics. When reading the description I realized that this was a strategic problem that would merit some game theoretic modeling.</li>
+<li>academic papers. Analyzing a variation of a published paper is a good approach for a thesis. Survey articles as published in <a href="https://www.aeaweb.org/journals/jel">Journal of Economic Literature</a>, <a href="https://www.aeaweb.org/journals/jep">Journal of Economic Perspectives</a>, Elsevier's <a href="https://www.sciencedirect.com/science/handbooks/sub/economics/all">Handbook of Economics</a> series and also the <a href="http://www.dictionaryofeconomics.com">New Palgrave Dictionary of Economics</a> might give you a decent background on a topic you are considering.</li>
+<li>policy and legal documents. An economic analysis of certain proposals (or decisions in competition policy cases) can make an interesting thesis.</li>
+<li>your course work. However, students tend to over-rely on this last channel.</li>
+</ul>
+
+<p>
+You also might keep in mind what you want to do after your studies. Your thesis can be an entry ticket into a certain kind of career/sector, e.g. future employers might be more inclined to interview you if they can see that you wrote a thesis on a topic that is relevant to them.
+</p>
+</div>
+
+<div id="outline-container-org392dcea" class="outline-3">
+<h3 id="org392dcea"><span class="section-number-3">1.1</span> Most common thesis types (supervised at the chair for microeconomics)</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The following list is not exhaustive but if you have something different in mind we should talk about it first.
+</p>
+
+<ul class="org-ul">
+<li>You pick a topic, e.g. from the news, you find interesting and analyze it using a game-theoretical model (some computational or empirical parts are, of course, fine as well; however, we can usually not procure the data for empirical analysis).</li>
+<li>You start from a published paper, describe the results and add a small original contribution of your own that you compare with the paper. This style of thesis is described in detail in the <a href="./files/seminarWriting.pdf">guidelines</a> on how to write a literature based seminar paper. The only differences is that a Master thesis will go more in depth (both in the part on litereature and in the own contribution) and allows for a more elaborate own contribution.</li>
+<li>You analyze a competition policy decision. This will usually be a decision by DG Comp, the General Court ( formerly known as Court of First Instance) or the European Court of Justice. You check whether the reasoning in the decision makes economic sense by modeling the reasoning using models from IO, game theory and contract theory. (Please, note that the definition of the relevant market takes usually a lot more space in these decisions than it should in your thesis.)</li>
+<li>Comparative literature survey. This is usually not the first choice because it is very difficult to do this properly. The idea is that you show why different results are obtained in different papers and how this depends on their assumptions. Hence, you try not to summarize one paper after another but to explain the logic underlying a whole literature.<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org90b4822" class="outline-3">
+<h3 id="org90b4822"><span class="section-number-3">1.2</span> Is my topic (candidate) appropriate for a thesis?</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+After identifying a potential topic you should ask yourself "Can I make this into a thesis?" Microeconomic modeling is to a large extent simply a way to tell a story about trade-offs. Consequently, you should ask yourself the following questions:
+</p>
+<ul class="org-ul">
+<li>what is the story?</li>
+<li>who are the players?
+<ul class="org-ul">
+<li>what is their information?</li>
+<li>what are their actions?</li>
+</ul></li>
+<li><b>what trade-offs do players face?</b></li>
+<li>what strategic effects may result; how do players respond strategically to other players</li>
+<li>is there a simple framework in which I can capture this story/trade-off/strategic effect?</li>
+<li>is there the potential to learn something new?</li>
+<li>what could be a possible result/conclusion of the thesis? (it will eventually be very different, but to formulate a possible result helps you to see what kind of things you might strive for and whether the topic is sufficiently rich for a thesis)</li>
+<li>can you explain to your friends why this is a good thesis topic?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org94ccdcf" class="outline-2">
+<h2 id="org94ccdcf"><span class="section-number-2">2</span> Writing a proposal</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+When you have thought through the questions above, you write up a research proposal of one or two pages (summing up your thoughts/answers and particularly addressing the questions mentioned in the section "Is my topic (candidate) appropriate for a thesis?") and send this proposal to the responsible person at my chair (currently Marius Gramb). It should contain your main question, answers to (some of) the questions above (1.2), and some first ideas regarding the methods with which you want to tackle the problem. We will read it and then we meet to discuss the proposal (or refer you to a colleague of mine who is better suitable to supervise your project). We might conclude that the proposal should be changed a bit or we might immediately go ahead and do the paper work, talk about a rough schedule etc.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgce882cc" class="outline-2">
+<h2 id="orgce882cc"><span class="section-number-2">3</span> Supervision</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+We do not have a fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
+</p>
+<ul class="org-ul">
+<li>We want to see a proposal (~1-2 pages); preferably before meeting for the first time. (If we meet before you have a proposal, we usually cannot tell you much more than is written in this document.)</li>
+
+<li>We have a midterm review to take stock and to see how you are doing on time.</li>
+</ul>
+
+<p>
+It is very tempting to ask your supervisor all the time what to do next. However, keep in mind that a thesis is an <i>independent</i> piece of work and the novelty of <i>your ideas</i> is part of the evaluation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org439a3f5" class="outline-2">
+<h2 id="org439a3f5"><span class="section-number-2">4</span> Writing</h2>
+<div class="outline-text-2" id="text-4">
+<ul class="org-ul">
+<li>Have a clear structure.</li>
+<li>It is a good idea to state one (or several) research question(s) at the beginning, answer this/these question(s) in the analysis and summarize the answers in the conclusion. (Note that you do not have to know all these questions when you start working on the thesis, some things will pop up while working.)</li>
+<li>Make sure to use some tool(s) that is (are) taught in an elective course you took. This way you avoid writing a thesis that is not at the appropriate level.</li>
+<li>Use a consistent citation style. Economists mainly use the <i>author (year)</i> style.</li>
+<li>Use the <i>proposition-proof</i> style; i.e. state a result formally in a proposition (or lemma or theorem), explain it intuitively in the main text and add a formal proof (possibly in an appendix).</li>
+<li>Include a literature section where you place your thesis in the related literature. Google Scholar is probably the easiest way to find related literature. The most relevant articles tend to be published in very good journals. A very subjective and certainly incomplete list of decent journals (for microeconomics papers) is the following: American Economic Review, Econometrica, Review of Economic Studies, Journal of Political Economy, Quarterly Journal of Economics, Journal of Economic Theory, Theoretical Economics, RAND Journal of Economics, Games and Economic Behavior, Economic Journal, Journal of the European Economic Association, International Economic Review.
+<ul class="org-ul">
+<li>To be able to download academic papers without having to pay for it yourself, you have to be either on campus or connect to the university via VPN.</li>
+<li>The <a href="https://www.vwlbibliothek.uni-koeln.de/">economics library</a> offers courses in literature search and scientific working methods. Please contact the library staff if you feel that you need help in these areas.</li>
+</ul></li>
+
+<li>In terms of style, structure etc., it may be a good idea to mimick papers published in the journals above.</li>
+<li>You do yourself and your readers a favor if you write in LaTeX (and use BibTeX). The LaTeX <a href="https://en.wikibooks.org/wiki/LaTeX">wikibook</a> will be a great ressource in this case. Some LaTeX template with explanations can be found on my <a href="https://schottmueller.github.io/#teaching">website</a>.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgd6511dd" class="outline-2">
+<h2 id="orgd6511dd"><span class="section-number-2">5</span> Some general remarks</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Keep in mind that a model is a conscious over-simplification of reality. If you want to analyze a certain problem, it is usually not helpful to try to stack everything you have heard about this problem in one model (and then make it dynamic in continuous time etc.). Such models tend to be intractable and therefore absolutely useless. Focus on some specific aspect/effect and try to get the smallest possible model in which you can see the effect. You can generalize later on if you like (and time permits).</li>
+<li>Your thesis can contain several small models if you want to explain several effects. There is no need to stack everything into one grand model, see above.</li>
+<li>You should reserve a decent amount of time at the end for editing only. For a master thesis I would recommend no less than two weeks. Part of the evaluation of a thesis is whether it is well written.</li>
+
+<li>You should write in English.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org457f002" class="outline-2">
+<h2 id="org457f002"><span class="section-number-2">6</span> Useful sources for how to write/model</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Hal Varian's "How to build an economic model in your spare time", <a href="http://people.ischool.berkeley.edu/~hal/Papers/how.pdf">link</a></li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+Switching to this format can be an option if you cannot manage to get anything sensible out of a model (thesis type: start from a published paper) but you have read the related papers so well that you have a clear idea of the literature. 
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Prof. Dr. Christoph Schottmüller</p>
+<p class="date">Created: 2019-04-01 Mo 15:38</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
