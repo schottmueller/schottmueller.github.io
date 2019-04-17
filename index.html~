@@ -3,231 +3,37 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-04-11 Do 08:11 -->
+<!-- 2019-04-17 Mi 15:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="christoph" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<meta name="keywords" content="Christoph Schottmueller Schottmuller Schottmüller research economics Volkswirtschaftslehre Universität university Koeln Köln Koln Tilburg Copenhagen" />
+<link rel="stylesheet" href="./css/stylesheet.css">
 </head>
 <body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+ 
+
+    <p style="text-align: justify;margin-bottom: -0.6cm;margin-top: -0.4cm;" >      
+
+  <a id="subtitle" href="https://schottmueller.github.io/index.html">Home</a>
+  <a id="subtitle" href="https://schottmueller.github.io/research.html">Research</a>
+  <a id="subtitle" href="https://schottmueller.github.io/teaching.html">Teaching</a>
+  <a id="subtitle" href="https://schottmueller.github.io/misc.html">Misc</a>
+
+   <span> </span>
+  
+    </p>
+
+    </div>
+  </div>
+  
+<hr style="clear:both;margin-bottom: 0.4cm;"/>
+</div>
 <div id="content">
 <p>
  
@@ -235,41 +41,25 @@ for the JavaScript code in this tag.
 <meta name="description" content="Personal website of Christoph Schottmueller">
 <meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University">
 <meta content="en-gb" http-equiv="Content-Language">
-<style type="text/css">
-<!--
-.tab { margin-left: 20px; }
-.tab160 { margin-left: 160px; }
-.tab180 { margin-left: 180px; }
-.tab240 { margin-left: 240px; }
-body {background-color : #F0F0F0; font-face: "Open Sans", Arial, Helvetica, sans-serif;}
-h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top:-5px; margin-bottom:-10px; }
--->
-</style>
 </head>
 
 </p>
 
-
 <p>
 
-<span style="float: right;">
-[<a href="#research">research</a>] [<a href="#teaching">teaching</a>] [<a href="#links">links</a>] 
-</span>
-<hr style="clear:both"/>
-<section id="contact">
 <p style="float: left;">
-<img src="./profile2.png" alt="Profile Picture"  height="290px" style="border:5px double #777777">
+<img src="./img/profile2.png" alt="Profile Picture"  height="290px" style="border:5px double #777777;margin-top: -0.4cm;">
 </p>
 <div class="tab240">
-<br/>
-<b>Christoph Schottmüller</b> is professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
 <p>
+<b >Christoph Schottmüller</b> is professor at the <a href="https://www.wiso.uni-koeln.de/en/en/">University of Cologne</a>.
+</p>
 address: <br/>   
     <span class="tab"> University of Cologne </span> <br/>
    <span class="tab"> Lehrstuhl Mikroökonomik (Prof. Schottmüller), SSC </span> <br/>
     <span class="tab"> Albertus Magnus Platz </span> <br/>
     <span class="tab">  50923 Köln </span> 
-</p>
+<br/>
 office: SSC 4.207 <br/>
 <SCRIPT LANGUAGE="Javascript">
   document.write('email: ' + '<A HREF="mai' + 'lto' + String.fromCharCode(58) + 'c.schottmueller');
@@ -278,296 +68,21 @@ office: SSC 4.207 <br/>
 </SCRIPT> <!-- to protect against crawlers -->
 <NOSCRIPT>email: <code>c [dot] schottmueller [at] uni-koeln</code> <code>[dot]</code> <code>de</code>  </NOSCRIPT>
 <br/> 
-OpenPGP:<br/>
-   <span class="tab">fingerprint: 4440 CA9B D857 D953 FCE7 DAB1 C647 DAB1 8A74 E0AD</span> <br/>
-   <span class="tab">public key <a href="files/c.schottmuellerATuni-koeln.de0xC647DAB18A74E0ADpub.asc">here</a></span> <br/>
-<br/>
-<br/>
+   <span class="tab"> OpenPGP  <a href="files/c.schottmuellerATuni-koeln.de0xC647DAB18A74E0ADpub.asc">public key</a></span> <br/>
+<p>
 <b> <a href="cv.pdf">CV</a> </b>
-</div>
-</section>
-<hr style="clear:both"/>
-<section id="research">
-
-</p>
-
-
-
-<div id="outline-container-org0d4543a" class="outline-2">
-<h2 id="org0d4543a">Research</h2>
-<div class="outline-text-2" id="text-org0d4543a">
-</div>
-<div id="outline-container-orgc35d609" class="outline-3">
-<h3 id="orgc35d609">Work in progress</h3>
-<div class="outline-text-3" id="text-orgc35d609">
-<p>
-Welfare optimal information structures in bilateral trade, <a href="./papers/msInfo/MSinfo.pdf">draft</a>
- <br/><span class="tab"> <font size="2"> <a href="./papers/msInfo/binary.jl">code</a> for binary type space, <a href="./papers/msInfo/MSOptWebsite.jl">code</a> for uniform type distribution</font> </span>
 </p>
 </div>
-</div>
-
-<div id="outline-container-orgcdafcbc" class="outline-3">
-<h3 id="orgcdafcbc">Working Papers</h3>
-<div class="outline-text-3" id="text-orgcdafcbc">
-<p>
-Why Echo Chambers are Useful (with Ole Jann), <a href="./papers/echoChamber/echo_chambers.pdf">paper</a> <a href="./papers/echoChamber/supMatEchoChambers.pdf">supplementary material</a>
- <br/> <span class="tab"> <font size="2"> covered on <a href="https://marginalrevolution.com/marginalrevolution/2018/11/maybe-echo-chambers-evolving-efficient.html">Marginal Revolution</a> and <a href="https://stumblingandmumbling.typepad.com/stumbling_and_mumbling/2018/10/echo-chambers-a-defence.html"> Stumbling and Mumbling</a>  </font> </span> 
-</p>
-
-<p>
-Competing with big data (with Jens Prüfer) <a href="./papers/tipping/Competing with Big Data.pdf">paper</a> <a href="./papers/tipping/CompWithBigDataSlides.pdf">slides</a>  <a href="./papers/tipping/TippingNumeric.zip">numerics</a>
-</p>
-
-<p>
-Why are vulnerable regimes stable? Defending against coordinated attacks through unpredictability (with Ole Jann) <a href="./papers/panopticon/panopticon.pdf">paper</a> <a href="./papers/panopticon/hamburg.pdf">slides</a> <a href="./papers/panopticon/presentation25.pdf">slides25</a>
- <br/><span class="tab"> <font size ="2">Former title: "How Jeremy Bentham would defend against self-fulfilling attacks"</font> </span>
-</p>
-
-<p>
-Stochastic mechanisms and quasilinear preferences (with Jan Boone) <a href="./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf">paper</a> (inactive)
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-org421e507" class="outline-3">
-<h3 id="org421e507">Publications</h3>
-<div class="outline-text-3" id="text-org421e507">
-<p>
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone) <a href="./papers/selective_contracting/selective-contracting.pdf">paper</a> <a href="./papers/selective_contracting/presentation.pdf">slides</a>,  accepted for publication in the <i>International Economic Review</i>, <a href="https://doi.org/10.1111/iere.12383">doi</a>
-</p>
-
-<p>
-An informational theory of privacy (with Ole Jann) <a href="./papers/privacy/privacy.pdf">paper</a> <a href="./papers/privacy/supplementary_privacy.pdf">supplementary material</a> <a href="./papers/privacy/presentations/EEA17.pdf">slides</a>, accepted for publication in the <i>Economic Journal</i>
-</p>
-
-<p>
-Too good to be truthful: Why competent advisers are fired <a href="./papers/dynAdvReputation/reputation.pdf">paper</a> <a href="./papers/dynAdvReputation/supMatReputation.pdf">supplementary material</a>, <i>Journal of Economic Theory</i>  <a href="https://doi.org/10.1016/j.jet.2019.03.006">doi</a>, Vol. 181, May 2019, pp. 333&#x2013;360
-</p>
-
-<p>
-Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf) <a href="./papers/endogenous_info/insurance-binary.pdf">paper</a>, <i>Scandinavian Journal of Economics</i> <a href="https://dx.doi.org/10.1111/sjoe.12231">doi</a>, Vol. 120 (2), April 2018, pp. 465-502
- <br/>
- <span class="tab">  <font size="2"> supplementary material: <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example290414.py">here</a> </font></span>
-</p>
-
-<p>
-Monopoly insurance and endogenous information (with Johan Lagerlöf) <a href="./papers/endogenous_info/Continuum-Round2-v2.pdf"">paper</a> <a href="./papers/endogenous_info/EEA.pdf">slides</a>, <i>International Economic Review</i> <a href="https://dx.doi.org/10.1111/iere.12268">doi</a>, Vol. 59, February 2018, pp. 233-255 
- <br/> <span class="tab"> <font size="2"> new supplementary material: <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">here</a>, Python code: <a href="papers/endogenous_info/current_example1113.py">here</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">here</a> </font> </span> 
-</p>
-
-<p>
-Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), <a href="./papers/health_insurance_no_sc/health_no_sc_2013.pdf">wp</a> <a href="./papers/health_insurance_no_sc/health_ins_no_sc_web.html"> Q &amp; A</a>, <i>Economic Journal</i> <a href="https://dx.doi.org/10.1111/ecoj.12242">doi</a>, Vol. 127 (599), February 2017, pp. 85-104 
- <br/><span class="tab">  <font size="2"> supplementary material: see <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">here</a> </font></span>
-</p>
-
-<p>
-Procurement with specialized firms (with Jan Boone) <a href="./papers/procurement_specialized_firms/procurement_specialized.pdf">wp</a>, <i>RAND Journal of Economics</i> <a href="https://dx.doi.org/10.1111/1756-2171.12143">doi</a>, Vol. 47, Fall 2016, pp. 661-687 
- <br/>
- <span class="tab">  <font size="2"> supplementary material: <a href="papers/procurement_specialized_firms/supplementary4.pdf">here</a> </font></span>
-</p>
-
-
-<p>
-Adverse selection without single crossing: monotone solutions,  <a href="./papers/adv_sel_no_single_crossing/revision3c2.pdf">preprint</a> including webappendix, <i>Journal of Economic Theory</i> <a href="http://dx.doi.org/10.1016/j.jet.2015.04.002">doi</a>, Vol. 158, July 2015, pp. 127-164
-<br/>
- <span class="tab">  <font size="2"> supplementary material: <a href="papers/adv_sel_no_single_crossing/numerical_example_1_corrected.nb">main text example</a>, <a href="papers/adv_sel_no_single_crossing/demand_elasticities_example2d.py">interior binding ic</a>, <a href="papers/adv_sel_no_single_crossing/numerical_example_2.nb">bunching example</a> </font></span> <br/>
-</p>
-
-<p>
-Correlated equilibria in homogeneous good Bertrand competition (with Ole Jann), <a href="./papers/correlated_eq_bertrand/bertrand.pdf">preprint</a>, <i>Journal of Mathematical Economis</i> <a href="http://dx.doi.org/10.1016/j.jmateco.2015.01.005">doi</a>, Vol. 57, March 2015, pp. 31-37
-</p>
-
-
-<p>
-Cost incentives for doctors: A double-edged sword, <a href="./papers/cost_incentives_doctors/revision2b.pdf">preprint</a>, <a href="./papers/cost_incentives_doctors/cost_incentives_for_doctors.html">Q &amp; A</a>, <i>European Economic Review</i> <a href="http://dx.doi.org/10.1016/j.euroecorev.2013.03.001">doi</a>, Vol. 61, July 2013, pp. 43-58 
-</p>
-
-
-<p>
-
-</div>
-</section>
-<hr style="clear:both"/>
-<section id="teaching">
+<div style="margin-bottom: -0.5cm;"> </div>
 
 </p>
 </div>
-</div>
-</div>
+<div id="postamble" class="status">
 
-<div id="outline-container-org9508747" class="outline-2">
-<h2 id="org9508747">Teaching</h2>
-<div class="outline-text-2" id="text-org9508747">
-</div>
-<div id="outline-container-org05835e0" class="outline-3">
-<h3 id="org05835e0">University of Cologne</h3>
-<div class="outline-text-3" id="text-org05835e0">
-<p>
-2019-: Seminar topics in the economics of information and privacy, <a href="https://web.tresorit.com/l#9QSX9y9YqLfuBuZ4oNjakg">description</a>
-</p>
+<hr style="clear:both;margin-top: -0.4cm;"/>
 
-<p>
-2018-: Imperfect Information in Health Care Markets, <a href="https://github.com/schottmueller/infohealthecon/blob/master/plan.org">course website</a>
-</p>
-
-<p>
-2018-: Advanced Microeconomics II (research track), <a href="https://github.com/schottmueller/advMicro/blob/master/home.org">course website</a>
-</p>
-
-<p>
-2018-: Seminar Competition Policy
-</p>
-</div>
-</div>
-
-<div id="outline-container-org235e76d" class="outline-3">
-<h3 id="org235e76d">University of Copenhagen</h3>
-<div class="outline-text-3" id="text-org235e76d">
-<p>
-2018: Advanced Industrial Organization
-</p>
-
-<p>
-2014-2017: Mechanism design (MSc) <a href="https://github.com/MechDes/2017/blob/master/index.org">course website</a> 
-</p>
-
-<p>
-2012-2017: Game theory (MSc) <a href="https://github.com/KUGameTheory/gt2017/blob/master/index.org">course website</a> 
-</p>
-
-<p>
-2017: Seminar Economics of Privacy <a href="https://github.com/schottmueller/seminarprivacy/blob/master/index.org">course website</a>
-</p>
-
-<p>
-2013: Health insurance (MSc Public Health) <a href="./files/outline.pdf">outline</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-org7fc1e5e" class="outline-3">
-<h3 id="org7fc1e5e">Material for students</h3>
-<div class="outline-text-3" id="text-org7fc1e5e">
-<p>
-My <a href="./thesis_guidelines.html">guidelines</a> for thesis supervision (MSc). Please, read before contacting my chair. Some <a href="./files/writingSeminar.pdf">guidelines</a> on how to write a literature based seminar paper may also be helpful when writing a Master thesis.
-</p>
-
-<p>
-I created a template for students who want to get started with LaTeX. Read the "Getting Started" part of the <a href="https://en.wikibooks.org/wiki/LaTeX">wikibook</a> first. Then have a look at the following files: <a href="./teaching/LaTeXTemplate.tex">.tex</a> (with explanations of common usage), <a href="./teaching/privacy.bib">.bib</a> (bibliography), example <a href="./teaching/Vprime.png">graphic</a>, <a href="./teaching/LaTeXTemplate.pdf">.pdf</a> (the compiled output), plain  <a href="./teaching/LaTeXTemplatePlain.tex">.tex</a> template. If the use of BibTeX for citations is unclear, check Martin Osborne's <a href="https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM">guide</a>.
-</p>
-
-<p>
-I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the <a href="https://julialang.org">julia</a> programming language but no prior knowledge of programming is required. The notebooks can be found <a href="https://github.com/schottmueller/juliaForMicroTheory">here</a>. If you want to learn programming in julia from scratch, you may want to check out this <a href="https://benlauwens.github.io/ThinkJulia.jl/latest/book.html">tutorial</a>. (For, more examples where Julia is used to solve problems in (macro)economics, see <a href="https://lectures.quantecon.org/jl/">here</a>.)
-</p>
-
-<p>
-
-</div>
-</section>
-<hr style="clear:both"/>
-<section id="links">
-
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-orgf3c7dac" class="outline-2">
-<h2 id="orgf3c7dac">Links</h2>
-<div class="outline-text-2" id="text-orgf3c7dac">
-<p>
-Institutions I am/was affiliated with:
-</p>
-<ul class="org-ul">
-<li><a href="https://www.wiso.uni-koeln.de/">University of Cologne</a></li>
-<li><a href="http://www.econ.ku.dk/english/">Department of Economics, University of Copenhagen</a></li>
-<li><a href="http://www.tilburguniversity.edu/about-tilburg-university/schools/economics-and-management/organisation/departments/economics/">Department of Economics, Tilburg University</a></li>
-<li><a href="http://www.tilburguniversity.edu/research/institutes-and-research-groups/tilec/">TILEC</a> (Tilburg Law and Economics Center)</li>
-</ul>
-
-
-<p>
-Coauthors:
-</p>
-<ul class="org-ul">
-<li><a href="https://janboone.github.io/homepage/">Jan Boone</a></li>
-<li><a href="http://olejann.net/">Ole Jann</a></li>
-<li><a href="http://www.johanlagerlof.com/">Johan Lagerlöf</a></li>
-<li><a href="http://prufer.net/">Jens Prüfer</a></li>
-</ul>
-
-
-<p>
-Software and IT:
-</p>
-<ul class="org-ul">
-<li>How to use OpenPGP <a href="http://lifehacker.com/180878/how-to-encrypt-your-email">with Thunderbird</a> or using <a href="http://www.mailvelope.com/">webmail</a> (like gmail etc.).</li>
-<li>For graphs, I use the <a href="http://www.ctan.org/tex-archive/graphics/pgf/">tikz</a> package. Jacques Crémer has written an excellent <a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">mini-introduction</a> to tikz. <a href="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/">qtikz</a> is a nice little software that makes graph creation with tikz even simpler by providing some WYSIWYG feeling.</li>
-<li>For writing games, the packages provided by <a href="http://www.economics.utoronto.ca/osborne/latex/">Martin Osborne</a> are helpful.</li>
-<li>I use <a href="http://www.julialang.org">julia</a> to solve examples numerically. (In the past, I also used <a href="https://www.python.org/">python</a>.)</li>
-</ul>
-
-<p>
-
-</div>
-</section>
-<hr style="clear:both"/>
-<section id="misc">
-
-</p>
-</div>
-</div>
-
-<div id="outline-container-orge272755" class="outline-2">
-<h2 id="orge272755">Miscellaneous</h2>
-<div class="outline-text-2" id="text-orge272755">
-</div>
-<div id="outline-container-org87f5c45" class="outline-3">
-<h3 id="org87f5c45">Code</h3>
-<div class="outline-text-3" id="text-org87f5c45">
-<p>
-I have written some python code to solve school choice matching problems as well as some simple programs to solve finite strategic form games of complete information. Both can be found on <a href="https://github.com/schottmueller/gametheory">github</a>. Neither is computationally fast as both were only made for teaching purposes. Check the .org files as they contain lots of explanations.
-</p>
-
-<p>
-For some of my papers, I used <a href="https://julialang.org">julia</a> for numerical analysis.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org949f477" class="outline-3">
-<h3 id="org949f477">Presentations</h3>
-<div class="outline-text-3" id="text-org949f477">
-<ul class="org-ul">
-<li>Economics of Privacy <a href="./misc/slides3.odp">slides</a></li>
-<li>Hart "A theory of firm scope" QJE 2010 <a href="./misc/IO_reading_group_Hart.pdf">slides</a></li>
-<li>Segal/Whinston "Robust Predictions for Bilateral Contracting with Externalities" <a href="./misc/segal_whinston_robust_presentation.pdf">slides</a></li>
-</ul>
-
-
-<p>
-
-</div>
-</section>
-<hr style="clear:both"/>
-<section id="disc">
-
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-org8f0a80e" class="outline-2">
-<h2 id="org8f0a80e">Disclaimer</h2>
-<div class="outline-text-2" id="text-org8f0a80e">
-<p>
-<i>Links</i>: Christoph Schottmüller disassociates himself from the content of any of the linked websites. 
-</p>
-
-<p>
-<i>Data collection and privacy</i>: Christoph Schottmüller does not collect any user data. This website is, however, powered by <a href="https://www.github.com">Github</a>. Github may collect, store, analyze, use and sell visitor data and track visitors using own or third party tools. I refer the user to the Github <a href="https://help.github.com/terms">terms of service</a> and the Github <a href="https://github.com/site/privacy">privacy statement</a> for details.
-</p>
-</div>
+<div style="text-align: right;margin-top:-0.1cm">
+  <a href="https://schottmueller.github.io/disclaimer.html"> <small>Disclaimer</small> </a>
 </div>
 </div>
 </body>
