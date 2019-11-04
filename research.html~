@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-04-23 Di 13:11 -->
+<!-- 2019-09-02 Mo 13:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Research</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="christoph" />
+<meta name="author" content="Christoph Schottmüller" />
 <meta name="keywords" content="Christoph Schottmueller research paper" />
 <link rel="stylesheet" href="./css/stylesheet.css">
 </head>
@@ -71,17 +71,17 @@ Stochastic mechanisms and quasilinear preferences (with Jan Boone), <a href="./p
 <h2 id="org9fca528">Publications</h2>
 <div class="outline-text-2" id="text-org9fca528">
 <p>
-Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone), <a href="./papers/selective_contracting/selective-contracting.pdf">paper</a>,  accepted for publication in the <i>International Economic Review</i>, <a href="https://doi.org/10.1111/iere.12383">doi</a>
- <br/><span class="tab"> <font size ="2"> <a href="./papers/selective_contracting/presentation.pdf">slides</a></font> </span>
-</p>
-
-<p>
 An informational theory of privacy (with Ole Jann), <a href="./papers/privacy/privacy.pdf">paper</a>, accepted for publication in the <i>Economic Journal</i>
  <br/><span class="tab"> <font size ="2"> <a href="./papers/privacy/supplementary_privacy.pdf]">supplementary material<a/>, <a href="./papers/privacy/presentations/EEA17.pdf">slides</a></font> </span>
 </p>
 
 <p>
-Too good to be truthful: Why competent advisers are fired, <a href="./papers/dynAdvReputation/reputation.pdf">paper</a>, <i>Journal of Economic Theory</i>  <a href="https://doi.org/10.1016/j.jet.2019.03.006">doi</a>, Vol. 181, May 2019, pp. 333&#x2013;360
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone), <a href="./papers/selective_contracting/selective-contracting.pdf">paper</a>, <i>International Economic Review</i>, <a href="https://doi.org/10.1111/iere.12383">doi</a>, Vol. 60 (3), August 2019, pp. 1209-1247
+ <br/><span class="tab"> <font size ="2"> <a href="./papers/selective_contracting/presentation.pdf">slides</a></font> </span>
+</p>
+
+<p>
+Too good to be truthful: Why competent advisers are fired, <a href="./papers/dynAdvReputation/reputation.pdf">paper</a>, <i>Journal of Economic Theory</i>  <a href="https://doi.org/10.1016/j.jet.2019.03.006">doi</a>, Vol. 181, May 2019, pp. 333-360
  <br/><span class="tab"> <font size ="2"> <a href="./papers/dynAdvReputation/supMatReputation.pdf">supplementary material</a></font> </span>
 </p>
 
@@ -120,7 +120,7 @@ Correlated equilibria in homogeneous good Bertrand competition (with Ole Jann), 
 
 
 <p>
-Cost incentives for doctors: A double-edged sword, <a href="./papers/cost_incentives_doctors/revision2b.pdf">preprint</a>, <a href="./papers/cost_incentives_doctors/cost_incentives_for_doctors.html">Q &amp; A</a>, <i>European Economic Review</i> <a href="http://dx.doi.org/10.1016/j.euroecorev.2013.03.001">doi</a>, Vol. 61, July 2013, pp. 43-58 
+Cost incentives for doctors: A double-edged sword, <a href="./papers/cost_incentives_doctors/revision2b.pdf">preprint</a>, <a href="./papers/cost_incentives_doctors/cost_incentives_for_doctors.html"> Q&amp;A</a>, <i>European Economic Review</i> <a href="http://dx.doi.org/10.1016/j.euroecorev.2013.03.001">doi</a>, Vol. 61, July 2013, pp. 43-58 
 </p>
 </div>
 </div>
