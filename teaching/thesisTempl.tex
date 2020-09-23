@@ -55,16 +55,32 @@
 \makeatother
 %%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%% Frontmatter %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
-% You  have to fill in the right information below
-
-\title{Your Title}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% INSERT TITLE INFO HERE%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%allows to reference your title and name later on
+\usepackage{titling}
+%title of the thesis
+\title{Your great thesis title}
+%author
 \author{Your Name}
-\date{\today} %you can use something like \date{August 17, 2017} to get a date that is not today's date
+% date: you can substitute "\today", which prints today's date, with some date of your choosing
+\date{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%% designing header and footer (if you prefer not to have a header and have page numbers at the bottome, just delete the following lines)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{\theauthor} %left header is author name
+\fancyhead[R]{\thetitle} %right header is thesis title
+\fancyfoot[C]{\thepage} %center fotter is page number 
+
+% if you want to remove the line separating header and text, remove the "%" on the next line
+%\renewcommand{\headrulewidth}{0pt} 
+%\renewcommand{\footrulewidth}{0pt}
+%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%
@@ -72,20 +88,58 @@
 
 \begin{document}
 
-%"\maketitle" inserts title, author and date into the document
-\maketitle
+%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.25\textwidth]{UoCseal}\par\vspace{1cm}
+	{\scshape\LARGE University of Cologne \par}
+	\vspace{1cm}
+	{\scshape\Large Master Thesis in Economics\par}
+	\vspace{1.5cm}
+	{\huge\bfseries \thetitle \par}
+	\vspace{2cm}
+	{\Large\itshape \theauthor \par}
+	\vfill
+        \begin{tabular}{ccc}
+          supervisor:&\hspace*{2cm}&second reader:\\
+          Prof. Dr. \textsc{C. Schottmüller}&&\textsc{M. Gramb}
+        \end{tabular}
+	%supervisor:\par
+	%Prof. Dr. \textsc{C. Schottmüller}\par
+        %\vspace*{0.25cm}
+        %second reader:\par
+        %\textsc{M. Gramb}
 
+	\vfill
+        Submitted for Examination in the Study Programme \emph{Economics (M.Sc.)} \\at the \emph{Faculty of Management, Economics and Social Sciences}\\
+        \vspace*{0.5cm}
+% Bottom of the page
+	{\large Cologne, \thedate\par}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%% Table of Contents etc. %%%%%%%%%
+\pagenumbering{Roman}
+\tableofcontents %creates table of contents
+\newpage
+\listoffigures %creates list of figures (delete this line if unnecessary)
+\listoftables %creates list of tables (delete this line if unnecessary)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\pagenumbering{arabic}
 \section{Introduction}\label{sec:intro}
 
 Here goes your introduction. This document can be used as a template (in this case you want to delete all my text from here to the \verb|\bibliographystyle{chicago}| comand) but I will also give some examples of how to cite and reference, and how to use mathematics in \LaTeX. Ideally, you should look at the .pdf and the .tex file at the same time to see what the code generates. 
 
 \subsection{Literature Review}\label{sec:literature}
 
-The literature review goes here. Let me give some examples how to cite in \LaTeX\ using BibTeX: The ``Chicago view'' of privacy is based on \cite{stigler1980introduction} and \cite{posner1981economics}. A page in a book  is cited as \citet[p. 34]{solove2010privacy}. Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide).
+The literature review goes here. Let me give some examples how to cite in \LaTeX\ using BibTeX: I cite  \cite{stigler1980introduction} and \cite{posner1981economics} as examples. A page in a book  is cited as \citet[p. 34]{solove2010privacy}. Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide).
 
 The advantage of BibTeX is twofold: First, you spell the author names and the publication years correctly. Second, the reference list is automatically generated and formatted nicely.
 
-\section{Model}\label{sec:model}
+\section{Mathematics}\label{sec:math}
 
 Mathematics within a line of text is put between \$ marks. For example, \verb|$\frac{3}{4}$| yields the fraction $\frac{3}{4}$ or $\lim_{x\rightarrow \infty}e^{-x}=0$ is generated by\\ % "\\" forces a linebreak; you should normally not use it
 \verb|$\lim_{x\rightarrow \infty}e^{-x}=0$|. Subindeces as in $x_1$ are written as \verb|$x_1$|. Here is how you use math environments:
@@ -106,7 +160,7 @@ A mathematical result, like a proposition, is written in a similar environment a
   Let $f: \,[0,1]\rightarrow[0,1]$ be an increasing function. Then, $f$ has a fixed point.
 \end{proposition}
 
-\section{Your Extension}\label{sec:ext}
+\section{Figures and Tables}\label{sec:ext}
 
 You can include a graphic with the command \verb|\includegraphics{filename}| (recommended file formats are png, eps or pdf). Usually it is a good idea to place the graphic in a figure environment as here:
 
@@ -124,13 +178,27 @@ Sometimes you need to have a nicely formatted table. I give a simple example; se
 \begin{center}
   \begin{table}[h]
     \centering
-    \begin{tabular}{|l|c|c|c|} \hline
+    \begin{tabular}{|l|l|c|l|} \hline
   Country &Capital  & Population    & Source \\ \hline
   China   & Beijing & 1,404,556,640 & National population clock\\
   Japan   & Tokio   & 125,930,000   & Monthly provisional estimate \\
   Germany & Berlin  & 83,157,201    & National quarterly estimate\\ \hline
 \end{tabular}
 \caption{Countries and their population}
+\label{tab:pop}
+\end{table}
+\end{center}
+
+\begin{center}
+  \begin{table}[h]
+    \centering
+    \begin{tabular}{l|l|c|l} 
+  Country &Capital  & Population    & Source \\ \hline
+  China   & Beijing & 1,404,556,640 & National population clock\\
+  Japan   & Tokio   & 125,930,000   & Monthly provisional estimate \\
+  Germany & Berlin  & 83,157,201    & National quarterly estimate
+\end{tabular}
+\caption{Countries and their population a bit simpler}
 \label{tab:pop}
 \end{table}
 \end{center}
@@ -142,8 +210,16 @@ All scientific writing should be done in \LaTeX.
 %start what follows on a new page
 \newpage
 
-%\section*{name} creates a section without section number
-\section*{Appendix}
+%after this command new sections will be labeled alphabetically
+\appendix
+
+\begin{center}
+  \begin{Large}
+Appendix
+\end{Large}
+\end{center}
+
+\section{Proofs}\label{sec:proofs}
 \noindent\textbf{Proof of proposition \ref{prop:fp01}:} Let 
 \begin{equation} \label{eq:A}
 A=\{x:\;x\leq f(x)\}.
@@ -151,6 +227,10 @@ A=\{x:\;x\leq f(x)\}.
 Note that $0\in A$ and therefore $A\neq\emptyset$. Let $x^*=\sup A$. Then $f(x^*)\geq x^*$ by the definition of $A$, see equation (\ref{eq:A}), and because $f$ is increasing.
 
 Also $f(x^*)\leq x^*$: if not, i.e. $f(x^*)>x^*$, then $x^*+\varepsilon  < f(x^*+\varepsilon )$ for some $x^* +\varepsilon \in(x^*,f(x^*) ]\cap [0,1]$ because $f$ is increasing which contradicts the definition of $x^*$. Hence, $x^*=f(x^*)$.\qed
+
+\section{Second Appendix}\label{sec:otherAppendix}
+
+Another section in the appendix.
 
 %start what follows on a new page
 \newpage
