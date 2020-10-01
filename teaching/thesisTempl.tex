@@ -135,9 +135,11 @@ Here goes your introduction. This document can be used as a template (in this ca
 
 \subsection{Literature Review}\label{sec:literature}
 
-The literature review goes here. Let me give some examples how to cite in \LaTeX\ using BibTeX: I cite  \cite{stigler1980introduction} and \cite{posner1981economics} as examples. A page in a book  is cited as \citet[p. 34]{solove2010privacy}. Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide).
+The literature review goes here. Let me give some examples how to cite in \LaTeX\ using BibTeX: I cite  \cite{stigler1980introduction} and \cite{posner1981economics} as examples. A page in a book  is cited as \citet[p. 34]{solove2010privacy}. Note that all the cited articles, books etc. have to have an entry in the .bib file where you define the label used for citing and store all the information necessary for creating the reference list at the end of the document. You can usually copy and paste the entries for the .bib file from Google Scholar or JSTOR (and otherwise you do it by hand following Martin Osborne's guide). 
 
 The advantage of BibTeX is twofold: First, you spell the author names and the publication years correctly. Second, the reference list is automatically generated and formatted nicely.
+
+Let me also comment on some common problems. First, how to cite a website? I suggest to cite websites as in \cite{LaTeXwiki} and articles on news websites or blogs as in \cite{nzzArt}. Second, capitalization in the reference list: The here chosen bibstyle will put all but the first letter of the title (of a journal article) in lower case. This should be avoided for names etc. To do so put capital letters in between curly brackets in the .bib file, e.g. ``On \{N\}ash equilibrium'' instead of ``On Nash equilbirium''. You can see an example for this in the BibTeX entry \cite{nzzArt}.
 
 \section{Mathematics}\label{sec:math}
 
@@ -150,6 +152,13 @@ Mathematics within a line of text is put between \$ marks. For example, \verb|$\
 
 You reference the definition as ``definition \ref{def:fp}'' (that is \verb|definition \ref{def:fp}| in the source file where \verb|def:fp| is the label of the definition above). Similarly, you can reference sections as \verb|section \ref{sec:intro}| which yields ``section \ref{sec:intro}''. Also subsection \ref{sec:literature} can be referenced using \verb|subsection \ref{sec:literature}|. The advantage of such references over writing ``section 1.1'' directly is that your references will automatically adjust if you change something in the structure of your document; for example, if you insert another section.
 (Note that you have to compile \LaTeX\ twice before it gets a new reference properly formatted.)
+
+Note that you can generate numbered equations that can be similarly referenced as follows:
+\begin{equation}
+  \label{eq:fixedPoint}
+  f(x)=x.
+\end{equation}
+This equation can be referenced as equation \ref{eq:fixedPoint}.
 
 \section{Results}\label{sec:results}
 
