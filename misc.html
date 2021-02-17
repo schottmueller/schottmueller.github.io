@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-11-04 Mo 14:54 -->
+<!-- 2021-02-17 Mi 14:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Miscellaneous</title>
@@ -36,9 +36,9 @@
 </div>
 <div id="content">
 
-<div id="outline-container-org3743ab7" class="outline-2">
-<h2 id="org3743ab7">Links</h2>
-<div class="outline-text-2" id="text-org3743ab7">
+<div id="outline-container-org16554d1" class="outline-2">
+<h2 id="org16554d1">Academic Links</h2>
+<div class="outline-text-2" id="text-org16554d1">
 </div>
 <div id="outline-container-org0d5d55f" class="outline-3">
 <h3 id="org0d5d55f">Institutions I am/was affiliated with:</h3>
@@ -63,33 +63,53 @@
 </ul>
 </div>
 </div>
+</div>
 
 
-<div id="outline-container-org5e8e711" class="outline-3">
-<h3 id="org5e8e711">Software and IT:</h3>
-<div class="outline-text-3" id="text-org5e8e711">
+<div id="outline-container-orgabed210" class="outline-2">
+<h2 id="orgabed210">Software and IT</h2>
+<div class="outline-text-2" id="text-orgabed210">
+<p>
+Some useful links:
+</p>
 <ul class="org-ul">
 <li>How to use OpenPGP <a href="http://lifehacker.com/180878/how-to-encrypt-your-email">with Thunderbird</a> or using <a href="http://www.mailvelope.com/">webmail</a> (like gmail etc.).</li>
 <li>For graphs, I use the <a href="http://www.ctan.org/tex-archive/graphics/pgf/">tikz</a> package. Jacques Crémer has written an excellent <a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">mini-introduction</a> to tikz. <a href="http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/">qtikz</a> is a nice little software that makes graph creation with tikz even simpler by providing some WYSIWYG feeling.</li>
 <li>For writing games, the packages provided by <a href="http://www.economics.utoronto.ca/osborne/latex/">Martin Osborne</a> are helpful.</li>
-<li>I use <a href="http://www.julialang.org">julia</a> to solve examples numerically. (In the past, I also used <a href="https://www.python.org/">python</a>.)</li>
+<li>For some of my papers, I used <a href="https://julialang.org">julia</a> for numerical analysis. You can find ressources to learn Julia at <a href="https://julialang.org/learning/">https://julialang.org/learning/</a>. (In the past, I also used <a href="https://www.python.org/">python</a>.)</li>
+<li>Emacs links: 
+<ul class="org-ul">
+<li>A blog <a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html">post</a> describing how to set up email on Emacs.</li>
+<li>A <a href="https://cestlaz.github.io/stories/emacs/">series</a> of blog posts and videos on learning Emacs step by step.</li>
+</ul></li>
 </ul>
 </div>
+
+<div id="outline-container-org95bf48f" class="outline-3">
+<h3 id="org95bf48f">My setup</h3>
+<div class="outline-text-3" id="text-org95bf48f">
+<p>
+Following Jan Boone's example, I use <a href="https://www.gnu.org/software/emacs/">Emacs</a> for all my text editing needs: I write my papers in Emacs using <a href="https://www.latex-project.org/">LaTeX</a>, my slides and website in Emacs <a href="https://orgmode.org/">org-mode</a> (which is then exported to LaTeX-<a href="https://github.com/josephwright/beamer">Beamer</a>/HTML respectively), julia code for numerical analysis using <a href="https://github.com/JuliaEditorSupport/julia-emacs">julia-mode</a>, even Emails using <a href="https://www.emacswiki.org/emacs/mu4e">mu4e</a> and <a href="https://github.com/OfflineIMAP/offlineimap">offlineIMAP</a>(though this is not exactly straightforward and I use Thunderbird on my notebook instead), version control through <a href="https://git-scm.com/">git</a> via the Emacs' <a href="https://magit.vc/">magit</a> mode. The main advantage of Emacs from my point of view is that it provides a rather efficient way for doing whatever in a unified manner. The disadvantage is that it takes some time to learn Emacs properly (even after years of using it I would label myself as a <i>beginner</i>). 
+</p>
+
+<p>
+When it comes to writing papers, I absolutely insist that this is done using LaTeX (and I do not accept Scientific Workplace as it totally destroys the readability of LaTeX code but I have a coauthor using Lyx which I find acceptable, another coauthor used the <a href="http://www.bakoma-tex.com/menu/about.php">BaKoMa</a> editor which gives some WYSIWYG feeling). For version control, I use git. I started using git to avoid the problem of having dozens of versions of the same paper in a folder named "xxxApril.tex", "xxxApril2.tex" etc. but nowadays I see the main advanatage in projects with several coauthors where you can quickly see the changes made by your coauthor. For such collaborative work I find it ideal if everyone uses git and the files are shared via github. 
+</p>
 </div>
 </div>
 
-<div id="outline-container-orgcbff749" class="outline-2">
-<h2 id="orgcbff749">Code</h2>
-<div class="outline-text-2" id="text-orgcbff749">
+
+
+<div id="outline-container-org3f95aa5" class="outline-3">
+<h3 id="org3f95aa5">Python code game theory</h3>
+<div class="outline-text-3" id="text-org3f95aa5">
 <p>
 I have written some python code to solve school choice matching problems as well as some simple programs to solve finite strategic form games of complete information. Both can be found on <a href="https://github.com/schottmueller/gametheory">github</a>. Neither is computationally fast as both were only made for teaching purposes. Check the .org files as they contain lots of explanations.
 </p>
+</div>
+</div>
+</div>
 
-<p>
-For some of my papers, I used <a href="https://julialang.org">julia</a> for numerical analysis. You can find ressources to learn Julia at <a href="https://julialang.org/learning/">https://julialang.org/learning/</a>.
-</p>
-</div>
-</div>
 
 <div id="outline-container-org0be787a" class="outline-2">
 <h2 id="org0be787a">Presentations</h2>
