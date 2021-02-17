@@ -88,7 +88,8 @@
 
 \begin{document}
 
-%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%
+%% better leave the "titlepage" code alone unless you want to delete it altogether 
 \begin{titlepage}
 	\centering
 	\includegraphics[width=0.25\textwidth]{UoCseal}\par\vspace{1cm}
@@ -104,12 +105,6 @@
           supervisor:&\hspace*{2cm}&second reader:\\
           Prof. Dr. \textsc{C. Schottmüller}&&\textsc{M. Gramb}
         \end{tabular}
-	%supervisor:\par
-	%Prof. Dr. \textsc{C. Schottmüller}\par
-        %\vspace*{0.25cm}
-        %second reader:\par
-        %\textsc{M. Gramb}
-
 	\vfill
         Submitted for Examination in the Study Programme \emph{Economics (M.Sc.)} \\at the \emph{Faculty of Management, Economics and Social Sciences}\\
         \vspace*{0.5cm}
@@ -128,6 +123,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
+%%%%%%Start of the actual content%%%%%%%%
 \pagenumbering{arabic}
 \section{Introduction}\label{sec:intro}
 
@@ -158,7 +154,16 @@ Note that you can generate numbered equations that can be similarly referenced a
   \label{eq:fixedPoint}
   f(x)=x.
 \end{equation}
-This equation can be referenced as equation \ref{eq:fixedPoint}.
+This equation can be referenced as equation (\ref{eq:fixedPoint}).
+
+To get several equations in a row with aligned equality signs you can use the align environment where \verb|&| indicates the position that should be aligned and \verb|\\| indicates a linebreak, i.e. the sart of the next equation:
+
+\begin{align}
+  f(x)&=x \label{eq:f} \\
+  g(x)&=x^2+x+5     \label{eq:g}
+\end{align}
+
+Each equation can be referenced on it sown like equation (\ref{eq:f}) or equation (\ref{eq:g}) here.
 
 \section{Results}\label{sec:results}
 
@@ -169,13 +174,44 @@ A mathematical result, like a proposition, is written in a similar environment a
   Let $f: \,[0,1]\rightarrow[0,1]$ be an increasing function. Then, $f$ has a fixed point.
 \end{proposition}
 
+\section{Font face and miscellaneous formatting}
+\label{sec:formatting}
+
+If you want to \emph{emphasize} a certain word or part of a sentence, you do so using the command \verb|\emph{whatever you want to emphasize}|. You can also use \textbf{bold fonts} using the command \verb|\textbf{whatever should be in bold}|. 
+\par
+Another useful hint concerns paragraph formatting. If you want to start a new paragraph, you either have to leave a blank line in your code (hit Enter twice) or you use the command \verb|\par|. A normal linebreak occurs if you use \verb|\\| but please do not use this to start a new paragraph as does not indent the first line of the next paragraph which is considered bad style. (I do it here nevertheless, so you see the difference.)\\
+At some point you may want to use an enumeration. \LaTeX provides the enumerate environment for this:
+\begin{enumerate}
+  \item first item
+  \item second item
+  \item third item.
+\end{enumerate}
+
+You can even have subenumerations inside an enumeration:
+\begin{enumerate}
+  \item first item
+  \item second item with following subitems
+    \begin{enumerate}
+      \item subitem one
+      \item subitem two
+    \end{enumerate}
+  \item third item
+\end{enumerate}
+
+For lists that are not numbered, there is  the itemize envrionment:
+\begin{itemize}
+  \item first item
+  \item second item
+  \item third item.
+\end{itemize}
+
 \section{Figures and Tables}\label{sec:ext}
 
 You can include a graphic with the command \verb|\includegraphics{filename}| (recommended file formats are png, eps or pdf). Usually it is a good idea to place the graphic in a figure environment as here:
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.6]{Vprime}
+  \includegraphics[scale=0.6]{Vprime} %the scale parameter adjusts the size of the figure (to check, try out 1 instead of 0.6 and compile) 
   \caption{A nice figure}
   \label{fig:zigzag}
 \end{figure}
@@ -233,10 +269,14 @@ Appendix
 \begin{equation} \label{eq:A}
 A=\{x:\;x\leq f(x)\}.
 \end{equation}
-Note that $0\in A$ and therefore $A\neq\emptyset$. Let $x^*=\sup A$. Then $f(x^*)\geq x^*$ by the definition of $A$, see equation (\ref{eq:A}), and because $f$ is increasing.
+As $f$ maps into $[0,1]$, $0\leq f(0)\in[0,1]$ and therefore $0\in A$ and $A\neq\emptyset$. Let $x^*=\sup A$.
 
-Also $f(x^*)\leq x^*$: if not, i.e. $f(x^*)>x^*$, then $x^*+\varepsilon  < f(x^*+\varepsilon )$ for some $x^* +\varepsilon \in(x^*,f(x^*) ]\cap [0,1]$ because $f$ is increasing which contradicts the definition of $x^*$. Hence, $x^*=f(x^*)$.\qed
+ $f(x^*)\leq x^*$: suppose not, i.e. suppose $f(x^*)>x^*$, let $\varepsilon =f(x^*)-x^*>0$ and observe that $x^*+\varepsilon <f(x^*)  \leq f(x^*+\varepsilon )$ because $f$ is increasing. Hence, $x^*+\varepsilon \in A$ which contradicts the definition of $x^*$.
 
+$f(x^*)\geq x^*$:  if $x^*\in A$, this holds by the the definition of $A$, see equation (\ref{eq:A}). But $x^*\in A$ has to hold by teh definition of $x^*$ as otherwise $f$ would have to discontinously drop downward at $x^*$ contradicting that $f$ is increasing.
+
+Hence, $x^*=f(x^*)$. \qed
+ 
 \section{Second Appendix}\label{sec:otherAppendix}
 
 Another section in the appendix.
