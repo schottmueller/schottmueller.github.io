@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-02-16 Fri 16:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Imperfect Information in Health Care Markets</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christoph Schottmüller" />
+<link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+<ul class="menu">
+ <li class="inmenu"> <a class="lmenu" id="subtitle" href="./index.html">Home</a></li>
+ <li class="inmenu"> <a class="lmenu" id="subtitle" href="./research.html">Research</a></li>
+ <li class="inmenu">   <a class="lmenu" id="subtitle" href="./misc.html">Misc</a>  </li>
+ <li class="dropdown"> <a class="lmenu" id="subtitle" href="./teaching.html">Teaching</a>
+   <div class="dropdown-content">
+      <a href="./micromsc.html">Microeconomics (MSc)</a>
+      <a href="./advmicro.html">Microeconomics (MER)</a>
+      <a href="./infostrat.html">Information and Strategy</a>
+      <a href="./project.html">Project (BSc)</a>
+      <a href="./infohealth.html">Imperfect Information in Health Care Markets</a>
+      <a href="./thesis_guidelines.html">Thesis Supervision</a>
+    </div>
+ </li>
+</ul>
+   <span> </span>
+
+    </div>
+  </div>
+  
+<hr style="clear:both;margin-bottom: 0.4cm; margin-top: -1cm"/>
+</div>
+<div id="content">
+<h1 class="title">Imperfect Information in Health Care Markets</h1>
+
+<div id="outline-container-org4020551" class="outline-2">
+<h2 id="org4020551">News</h2>
+<div class="outline-text-2" id="text-org4020551">
+<ul class="org-ul">
+<li>There will be no exercise session on Jan 22.</li>
+<li>Some notes on how to solve the case studies are added below.</li>
+<li>Due to likely disruptions of public transport, the sessions in the week Jan 8- will be broadcasted on zoom. Please note that (i) internet is rather unstable and occasionally even defect and (ii) microphone quality is bad in lecture room settings. Therefore, please attend on campus if you can.
+<ul class="org-ul">
+<li>exercise session Jan 8: <a href="https://uni-koeln.zoom.us/j/97244593786?pwd=ODQ4cTduYUFYWjE2TXlSa2p6blNtQT09">https://uni-koeln.zoom.us/j/97244593786?pwd=ODQ4cTduYUFYWjE2TXlSa2p6blNtQT09</a>
+Meeting ID: 972 4459 3786
+Password: 281565</li>
+
+<li>lecture Jan 10: <a href="https://uni-koeln.zoom.us/j/98887156866?pwd=cUZsUWlCdkhNc0YwVC9MUFMyTVJIQT09">https://uni-koeln.zoom.us/j/98887156866?pwd=cUZsUWlCdkhNc0YwVC9MUFMyTVJIQT09</a>
+Meeting ID: 988 8715 6866
+Password: 354952</li>
+</ul></li>
+
+<li>The lecture on October 11 was given online. You can download the <a href="https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF">recording</a>.</li>
+</ul>
+
+<ul class="org-ul">
+<li>Exam dates are Feb 14, 14:00 (100 HS II, 100/U1/HSII) and March 20, 9:00 (HS XXIII, 101/EG/17). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).</li>
+</ul>
+
+<ul class="org-ul">
+<li>Note that there will be an exercise session on October 9 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfd6a114" class="outline-2">
+<h2 id="orgfd6a114">Prerequisites and background</h2>
+<div class="outline-text-2" id="text-orgfd6a114">
+<p>
+Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierende der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
+</p>
+
+<p>
+If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above mentioned topics (and often links to more in depth material). 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9053119" class="outline-2">
+<h2 id="org9053119">Course materials</h2>
+<div class="outline-text-2" id="text-org9053119">
+<p>
+Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publicly available as it is essentially funded by public money. The material below is likely to get updated over the course of the term.
+</p>
+
+<p>
+Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") <a href="https://github.com/schottmueller/infohealthecon/tree/master/slides">here</a>.
+</p>
+
+<ul class="org-ul">
+<li>The <b>course plan</b> as <a href="https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf">pdf</a> on which you can also find a list of <b>references</b>.</li>
+
+<li>The <b>exercises</b> are available as <a href="https://github.com/schottmueller/infohealthecon/files/10466268/exercises.pdf">pdf</a> and as <a href="https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org">org</a> file. Exercises for the first week are available <a href="https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf">here</a>.</li>
+
+<li><b>Slides</b>
+<ul class="org-ul">
+<li>intro <a href="https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf">slides</a></li>
+<li>demand for insurance <a href="https://github.com/schottmueller/infohealthecon/files/7381024/02insuranceDemand.pdf">slides</a></li>
+<li>(adverse) selection <a href="https://github.com/schottmueller/infohealthecon/files/7424095/0307adverseSelection.pdf">slides</a>,   numerical <a href="https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb">example</a> no single crossing</li>
+<li>moral hazard <a href="https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf">slides</a></li>
+<li>physician-patient <a href="https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf">slides</a></li>
+</ul></li>
+
+<li><b>Screencasts</b>
+<ul class="org-ul">
+<li><a href="https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF">recording</a> lecture 1</li>
+<li><a href="https://uni-koeln.sciebo.de/s/I4hWkZNgdtqAPDF">derivation</a> Rothschild-Stiglitz equilibrium</li>
+<li>how to get <a href="https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH">descriptive statistics</a> and do <a href="https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA">regressions</a> in LibreOffice Calc</li>
+<li>bonus <a href="https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV">screencast</a> on endogenous treatment choice</li>
+</ul></li>
+
+<li><b>Data sets and instructions</b> for case studies:
+<ul class="org-ul">
+<li>exercises (as pdf) and datasets for the empirical lectures are <a href="https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW">here</a> available for download</li>
+<li>some notes on how to work on the <a href="https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org">longterm care insurance</a> case study and the <a href="https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org">deductibles</a> case study (in Julia)</li>
+</ul></li>
+
+<li>An <a href="https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf">old exam</a> is available.</li>
+
+<li>material created by other people:
+<ul class="org-ul">
+<li>a <a href="https://youtu.be/pUkRo9COd38?feature=shared">video</a> on (adverse) selection</li>
+</ul></li>
+
+<li><b>Notes</b>
+<ul class="org-ul">
+<li>concerning the <a href="https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA">lecture</a></li>
+<li>concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
+<ul class="org-ul">
+<li><a href="https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf">Exercise Session 1</a></li>
+<li><a href="https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf">Exercise Session 2</a></li>
+<li><a href="https://github.com/schottmueller/infohealthecon/files/13071322/Health_Care_Session_3.pdf">Exercise Session 3</a></li>
+<li><a href="https://github.com/schottmueller/infohealthecon/files/13206543/Health_Care_Session_4.pdf">Exercise Session 4</a></li>
+<li><a href="https://github.com/schottmueller/infohealthecon/files/13268522/Health_Care_Session_5.pdf">Exercise Session 5</a></li>
+<li><a href="https://github.com/schottmueller/infohealthecon/files/13336085/Health_Care_Session_6.pdf">Exercise Session 6</a></li>
+<li><a href="https://github.com/schottmueller/infohealthecon/files/13416688/Health_Care_Session_7.pdf">Exercise Session 7</a></li>
+<li><a href="https://uni-koeln.sciebo.de/s/toBOJ1w7vS0IYJE">Exercise Session 8-12</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org7a91b0b" class="outline-2">
+<h2 id="org7a91b0b">Course setup</h2>
+<div class="outline-text-2" id="text-org7a91b0b">
+<p>
+In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
+</p>
+
+<p>
+Students learn economic methods to analyze health care markets theoretically and also gain some insight in how to design empirical tests of the predictions of the theoretical models. 
+</p>
+
+<p>
+The course consists of a lecture and an exercise session. Models, their solutions and implications as well as empirical evidence are presented in the lecture. In the exercise classes, solution to exercises are discussed. Students are expected to work on the exercises beforehand. Exercises consist mainly of calculation exercises using (variations of) models introduced in class but also discussion questions on specific applications. 
+</p>
+
+<p>
+The exam will &#x2013; in style &#x2013; be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
+</p>
+</div>
+
+<div id="outline-container-orgf9d383b" class="outline-3">
+<h3 id="orgf9d383b">Lecture times:</h3>
+<div class="outline-text-3" id="text-orgf9d383b">
+<ul class="org-ul">
+<li>lecture: Wednesday, 10:00-11:30 in 100/EG/HSXII</li>
+<li>exercise classes: Monday, 14:00-15:30 100/EG/HSXII</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc0f216b" class="outline-3">
+<h3 id="orgc0f216b">Textbooks</h3>
+<div class="outline-text-3" id="text-orgc0f216b">
+<p>
+The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health (library link to <a href="https://link.springer.com/book/10.1007%2F978-3-540-68540-1">ebook</a>). cite:morrisey2008health (link to <a href="https://search.ebscohost.com/login.aspx?direct=true&amp;db=nlebk&amp;AN=217420&amp;site=ehost-live">ebook</a>) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc969d11" class="outline-2">
+<h2 id="orgc969d11">Detailed schedule</h2>
+<div class="outline-text-2" id="text-orgc969d11">
+<p>
+This is a plan and as every good plan it may be adjusted if necessary.
+</p>
+</div>
+<div id="outline-container-org5af5831" class="outline-3">
+<h3 id="org5af5831">Intro (2 lectures)</h3>
+<div class="outline-text-3" id="text-org5af5831">
+</div>
+<ul class="org-ul">
+<li><a id="orgefb23ff"></a>Choice, preferences, utilities, welfare, models<br />
+<div class="outline-text-4" id="text-orgefb23ff">
+<ul class="org-ul">
+<li>mathematical prerequisites: functions, expected value of a discrete random variable, summation sign</li>
+<li>economic prerequisites: preferences, utility maximization, Pareto efficiency, welfare</li>
+<li>choice, preferences, utility</li>
+<li>choice under uncertainty and expected utility</li>
+<li>welfare</li>
+<li>models</li>
+<li>reading:</li>
+</ul>
+</div>
+</li>
+<li><a id="orga013932"></a>Insurance demand<br />
+<div class="outline-text-4" id="text-orga013932">
+<ul class="org-ul">
+<li>mathematical prerequisites: inverse functions, derivatives, monotonicity as well as concavity and convexity</li>
+<li>certainty equivalent and risk premium</li>
+<li>drivers of insurance demand</li>
+<li>(coverage choice and state dependent utility)</li>
+<li>reading: ch. 3 cite:morrisey2008health</li>
+<li>supplementary reading: ch. 9, cite:eisenfuhr2013rationales</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org23ceae0" class="outline-3">
+<h3 id="org23ceae0">Selection (5)</h3>
+<div class="outline-text-3" id="text-org23ceae0">
+</div>
+<ul class="org-ul">
+<li><a id="org5be9787"></a>Selection with fixed coverage<br />
+<div class="outline-text-4" id="text-org5be9787">
+<ul class="org-ul">
+<li>economic prerequisites: demand function</li>
+<li>model</li>
+<li>welfare consequences</li>
+<li>gender specific premia</li>
+<li>some evidence for selection</li>
+<li>reading: p. 115-123 cite:einav2011selection, ch. 5.3.1 and 5.3.2 cite:zweifel2009health</li>
+</ul>
+</div>
+</li>
+<li><a id="org7d74ddf"></a>Screening with coverage: Rothschild-Stiglitz<br />
+<div class="outline-text-4" id="text-org7d74ddf">
+<ul class="org-ul">
+<li>mathematical prerequisites: repeat implicit function theorem, concavity and convexity</li>
+<li>shape of indifference curves</li>
+<li>equilibrium</li>
+<li>comparative statics</li>
+<li>derivation of eq in screencast</li>
+<li>reading:  ch. 5.3.3 cite:zweifel2009health</li>
+<li>supplementary reading: cite:rothschild1976equilibrium</li>
+</ul>
+</div>
+</li>
+<li><a id="org55628c4"></a>Genetic Tests<br />
+<div class="outline-text-4" id="text-org55628c4">
+<ul class="org-ul">
+<li>two kinds of risks</li>
+<li>in RS model</li>
+<li>supplementary reading: cite:doh96, cite:lagerlof2018monopoly</li>
+</ul>
+</div>
+</li>
+<li><a id="org00d1efa"></a>Premium risk, community rating and risk adjustment<br />
+<div class="outline-text-4" id="text-org00d1efa">
+<ul class="org-ul">
+<li>mathematical prerequisites: linear regression ("ordinary least squares") and R<sup>2</sup></li>
+<li>premium risk model</li>
+<li>segue into risk adjustment</li>
+<li>discussion: how could German health insurers attract a profitable clientele?</li>
+<li>reading: ch. 5.3.4 in cite:zweifel2009health</li>
+<li>supplementary reading: ch. 7 in cite:zweifel2009health, ch. 6 in cite:morrisey2008health, (cite:behrend2007risk, cite:PMM2000755)</li>
+</ul>
+</div>
+</li>
+<li><a id="org5a8fcf9"></a>Advantageous selection<br />
+<div class="outline-text-4" id="text-org5a8fcf9">
+<ul class="org-ul">
+<li>case study: selection into long term care insurance in the US</li>
+<li>fixed coverage model</li>
+<li>(bonus screencast: treatment choice and utilization)</li>
+<li>reading: cite:finkelstein2006multiple</li>
+<li>supplementary reading: cite:hemenway1990propitious, cite:fang2008sources, cite:boone2017health</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org346a601" class="outline-3">
+<h3 id="org346a601">Moral hazard (3)</h3>
+<div class="outline-text-3" id="text-org346a601">
+</div>
+<ul class="org-ul">
+<li><a id="orgbf537fe"></a>The question of moral hazard and empirical evidence<br />
+<div class="outline-text-4" id="text-orgbf537fe">
+<ul class="org-ul">
+<li>mathematical prerequisites: significance in statistical tests (e.g. t-test)</li>
+<li>slope of demand</li>
+<li>RAND and arc elasticity of demand</li>
+<li>Oregon</li>
+<li>welfare</li>
+<li>ex ante moral hazard</li>
+<li>reading: sections 1,2 and 3.1 in cite:einav2018moral</li>
+</ul>
+</div>
+</li>
+<li><a id="orgdd31fdc"></a>Treatment choice and the donut hole<br />
+<div class="outline-text-4" id="text-orgdd31fdc">
+<ul class="org-ul">
+<li>mathematical prerequisites: (continuous) distributions (density, distribution function)</li>
+<li>simple model of treatment choice</li>
+<li>donut hole</li>
+<li>out of sample predictions</li>
+<li>utilization management and gatekeeping</li>
+<li>reading: section 3.2-end cite:einav2018moral</li>
+</ul>
+</div>
+</li>
+<li><a id="orgcb7ebd1"></a>Case study: moral hazard in NL<br />
+<div class="outline-text-4" id="text-orgcb7ebd1">
+<ul class="org-ul">
+<li>diff-in-diff estimate for arc elasticity of demand</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-orgda4f4b1" class="outline-3">
+<h3 id="orgda4f4b1">Physician-patient interaction (4)</h3>
+<div class="outline-text-3" id="text-orgda4f4b1">
+</div>
+<ul class="org-ul">
+<li><a id="orgdc6dbf6"></a>Supplier induced demand: theory<br />
+<div class="outline-text-4" id="text-orgdc6dbf6">
+<ul class="org-ul">
+<li>density model</li>
+<li>some empirical evidence</li>
+<li>second wave of SID studies</li>
+<li>reading: ch. 8 cite:zweifel2009health</li>
+<li>supplementary reading: section 5 in cite:mcguire2000physician, cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing</li>
+</ul>
+</div>
+</li>
+<li><a id="org16a3519"></a>Supplier induced demand: empirics<br />
+<div class="outline-text-4" id="text-org16a3519">
+<ul class="org-ul">
+<li>How Danish physicians react to incentives</li>
+<li>Case study: German hospitals</li>
+</ul>
+</div>
+</li>
+<li><a id="orgd136199"></a>Credence good model<br />
+<div class="outline-text-4" id="text-orgd136199">
+<ul class="org-ul">
+<li>problems/assumptions and appropriate incentives</li>
+<li>discussion: DRG system like liability? implications?</li>
+<li>reading: cite:dulleck2006doctors</li>
+</ul>
+</div>
+</li>
+<li><a id="org63af767"></a>Cost saving incentives and communication<br />
+<div class="outline-text-4" id="text-org63af767">
+<ul class="org-ul">
+<li>physician remuneration, trust and the Hippocratic oath</li>
+<li>supplementary reading: cite:schottmueller2013cifd</li>
+</ul>
+
+
+<p>
+bibliographystyle:chicago
+bibliography:/home/christoph/stuff/bibliography/references.bib
+</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+<hr style="clear:both;margin-top: -0.4cm;"/>
+
+<div style="text-align: right;margin-top:-0.1cm">
+  <a href="https://schottmueller.github.io/disclaimer.html"> <small>Disclaimer</small> </a>
+</div>
+</div>
+</body>
+</html>

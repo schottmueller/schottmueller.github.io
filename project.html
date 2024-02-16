@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-02-16 Fri 16:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projektkurs Volkswirtschaftslehre: let the computer do the calculations</title>
+<meta name="generator" content="Org mode" />
+<link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+<ul class="menu">
+ <li class="inmenu"> <a class="lmenu" id="subtitle" href="./index.html">Home</a></li>
+ <li class="inmenu"> <a class="lmenu" id="subtitle" href="./research.html">Research</a></li>
+ <li class="inmenu">   <a class="lmenu" id="subtitle" href="./misc.html">Misc</a>  </li>
+ <li class="dropdown"> <a class="lmenu" id="subtitle" href="./teaching.html">Teaching</a>
+   <div class="dropdown-content">
+      <a href="./micromsc.html">Microeconomics (MSc)</a>
+      <a href="./advmicro.html">Microeconomics (MER)</a>
+      <a href="./infostrat.html">Information and Strategy</a>
+      <a href="./project.html">Project (BSc)</a>
+      <a href="./infohealth.html">Imperfect Information in Health Care Markets</a>
+      <a href="./thesis_guidelines.html">Thesis Supervision</a>
+    </div>
+ </li>
+</ul>
+   <span> </span>
+
+    </div>
+  </div>
+  
+<hr style="clear:both;margin-bottom: 0.4cm; margin-top: -1cm"/>
+</div>
+<div id="content">
+<h1 class="title">Projektkurs Volkswirtschaftslehre: let the computer do the calculations</h1>
+
+<div id="outline-container-org4db1bb5" class="outline-2">
+<h2 id="org4db1bb5">News</h2>
+<div class="outline-text-2" id="text-org4db1bb5">
+<ul class="org-ul">
+<li>List of exercises that are part of the portfolio notebook (i.e. the notebook with exercise solutions you have to hand in at the end of the term):
+<ul class="org-ul">
+<li>Week 2: E2, E3</li>
+<li>Week 3: E3, E4</li>
+<li>Week 4: E1, E2, E3</li>
+<li>Week 5: E1, E2, E3</li>
+<li>Week 6: E1, E2</li>
+<li>Week 7: E1, E3</li>
+<li>Week 8: E2, E3</li>
+</ul></li>
+
+<li>The registration deadline for the "examination" on KLIPS was extended. Please, register now.</li>
+<li>A sample <a href="https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf">project description</a> is available now.</li>
+<li>On June 22, the project course will be held by Dr. Marius Gramb as I am traveling.</li>
+<li>Unfortunately, some of the commands in the data discovery file were deprecated and therefore I had to change the file.</li>
+<li>In week 1, we talk a bit about the course and try to install julia on your computer. <b>Please note that you need to bring a notebook to class every week in order to be able to work.</b> (It does not matter whether your operating system is Windows, MacOS, Linux or FreeBSD. However, tablets or phones with mobile operating systems like Android and iOS will not work.)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgce646e6" class="outline-2">
+<h2 id="orgce646e6">Description</h2>
+<div class="outline-text-2" id="text-orgce646e6">
+<p>
+Modern economics relies heavily on mathematical models. Solving these models by hand is usually burdensome and often outright infeasible. In these cases, computers can be used to analyse and solve economic models numerically. This project course gives an introduction to solving models numerically with the help of the computer. It is suitable for students with no (or little) prior knowledge of numerical analysis and/or programming.
+</p>
+
+<p>
+The first part of the course gives an introduction to programming using the programming language "julia". The second part shows how to use julia to do numerical analysis (solving equations, maximizing functions, creating plots etc.). In the third part, students undertake a small project in which they use the skills acquired in the first two parts.
+</p>
+
+<p>
+Students are asked to watch video tutorials (part 1) or "notebooks" (part 2) at home. In class questions on these are answered and students work on small exercises.
+</p>
+
+<p>
+The skills acquired in this course will be particularly useful for writing term papers or a thesis but are also valued on the job market.
+</p>
+
+<p>
+<b>Time and place:</b> Thursdays 10:00-11:30, SSC basement, seminar room S37 (102/U1/-1.314)
+</p>
+
+<p>
+<b>Grading:</b> Your portfolio consists of the following elements. First, a "julia cheat sheet" which is a document in which you write down the julia commands and functions you have learned together with a brief description of what they do or an example. Second, a jupyter notebook with solutions to the exercises. You will work on this during class. Third, your project which will be presented in class and handed in as a jupyter notebook.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb587021" class="outline-2">
+<h2 id="orgb587021">Preliminary plan</h2>
+<div class="outline-text-2" id="text-orgb587021">
+<p>
+The following plan will probably be adapted a few times over the course of the semester. I use the following abbreviations:
+</p>
+<ul class="org-ul">
+<li>jpfnb:  <a href="https://juliaacademy.com/p/julia-programming-for-nervous-beginners">"Julia Programming for Nervous Beginners"</a></li>
+<li><p>
+jfmt: <a href="https://github.com/schottmueller/juliaForMicroTheory">"Julia for micro theory"</a>
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-left">content</th>
+<th scope="col" class="org-left">to do before next week's class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">info, installing julia, jupyter notebooks</td>
+<td class="org-left">"week 1" of jpfnb</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">strings, data containers</td>
+<td class="org-left">"week 2" of jpfnb</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">numbers, functions</td>
+<td class="org-left">"week 3" of jpfnb</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">loops, if/else</td>
+<td class="org-left">"week 4" of jpfnb, notebooks 0-2 jfmt</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">plotting and maximizing functions, interact.jl</td>
+<td class="org-left">notebooks 3,4,6,7 jfmt</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">equation solving, multivariate maximization</td>
+<td class="org-left">notebook 8 jfmt, notebooks <a href="./dataDiscovery.html">data</a> (skip sections 3.3, 4.3,4.5-4.7)</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">data and statistics</td>
+<td class="org-left">notebooks on  <a href="https://github.com/schottmueller/juliaForMicroTheory/blob/master/hypothesisTesting.org">hypothesis testing</a> (only sections 1 and 2) and on <a href="https://github.com/schottmueller/juliaForMicroTheory/blob/master/regression.org">regressions</a></td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">OLS</td>
+<td class="org-left">notebook 5 jfmt</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">some applications</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">project work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">project work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">project work</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">project presentations</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org00656f5" class="outline-2">
+<h2 id="org00656f5">Material and links</h2>
+<div class="outline-text-2" id="text-org00656f5">
+</div>
+<div id="outline-container-orgfb1e573" class="outline-3">
+<h3 id="orgfb1e573">Setting up Julia</h3>
+<div class="outline-text-3" id="text-orgfb1e573">
+<ul class="org-ul">
+<li><a href="https://julialang.org/downloads/">website</a> for downloading julia</li>
+<li><a href="https://uni-koeln.sciebo.de/s/B0U2oCT7IP4YMcE">screencasts</a> on how to download and install julia</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga9bff9c" class="outline-3">
+<h3 id="orga9bff9c">Material</h3>
+<div class="outline-text-3" id="text-orga9bff9c">
+<ul class="org-ul">
+<li>julia-academy course "<a href="https://juliaacademy.com/p/julia-programming-for-nervous-beginners">Julia Programming for Nervous Beginners</a>" used in the first few weeks; you can find the course notes <a href="https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes">here</a></li>
+<li><a href="https://github.com/schottmueller/juliaForMicroTheory">notebooks</a> "julia for microeconomic theory"</li>
+<li><a href="https://raw.githack.com/schottmueller/projectJulia/main/exercises.html">exercises</a> to be solved in class</li>
+<li><a href="https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf">project description</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org842bd43" class="outline-3">
+<h3 id="org842bd43">Beyond this course</h3>
+<div class="outline-text-3" id="text-org842bd43">
+<ul class="org-ul">
+<li><a href="https://julia.quantecon.org/intro.html">QuantEcon</a> is a graduate course in quantitative economics using julia. The material is beyond the scope of this course but might give you an idea how the tools taught in this course are used in economic research.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+<hr style="clear:both;margin-top: -0.4cm;"/>
+
+<div style="text-align: right;margin-top:-0.1cm">
+  <a href="https://schottmueller.github.io/disclaimer.html"> <small>Disclaimer</small> </a>
+</div>
+</div>
+</body>
+</html>
