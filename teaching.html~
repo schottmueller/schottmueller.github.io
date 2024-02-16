@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-02-16 Fr 14:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teaching</title>
+<meta name="author" content="christoph" />
+<meta name="keywords" content="Christoph Schottmueller teaching economics university Cologne Köln Koeln" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/stylesheet.css">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="preamble" class="status">
+  <div class="banner">
+ 
+
+    <p style="text-align: justify;margin-bottom: -0.6cm;margin-top: -0.4cm;" >      
+
+  <a class="lmenu" id="subtitle" href="./index.html">Home</a>
+  <a class="lmenu" id="subtitle" href="./research.html">Research</a>
+  <a class="lmenu" id="subtitle" href="./teaching.html">Teaching</a>
+  <a class="lmenu" id="subtitle" href="./misc.html">Misc</a>
+
+   <span> </span>
+  
+    </p>
+
+    </div>
+  </div>
+  
+<hr style="clear:both;margin-bottom: 0.4cm;"/>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-orgbb49d39" class="outline-2">
+<h2 id="orgbb49d39">University of Cologne</h2>
+<div class="outline-text-2" id="text-orgbb49d39">
+</div>
+<div id="outline-container-orgb68380a" class="outline-3">
+<h3 id="orgb68380a">Courses</h3>
+<div class="outline-text-3" id="text-orgb68380a">
+<p>
+2023-: Project course: let the computer do the calculations
+</p>
+
+<p>
+2021-: Microeconomics, <a href="https://github.com/schottmueller/microMSc/blob/main/home.org">course website</a>
+</p>
+
+<p>
+2019-: Information and Strategy, <a href="https://github.com/schottmueller/infoStrat/blob/master/home.org">course website</a>
+</p>
+
+<p>
+2019-: Seminar topics in the economics of information and privacy, <a href="https://web.tresorit.com/l#9QSX9y9YqLfuBuZ4oNjakg">description</a>
+</p>
+
+<p>
+2018-: Imperfect Information in Health Care Markets, <a href="https://github.com/schottmueller/infohealthecon/blob/master/plan.org">course website</a>
+</p>
+
+<p>
+2018-: Advanced Microeconomics II (Research Master), <a href="https://github.com/schottmueller/advMicro/blob/master/home.org">course website</a>
+</p>
+
+<p>
+2018: Seminar Competition Policy
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2a43605" class="outline-3">
+<h3 id="org2a43605">Thesis supervision</h3>
+<div class="outline-text-3" id="text-org2a43605">
+<p>
+My <a href="./thesis_guidelines.html">guidelines</a> for <b>thesis supervision</b>. Please, read before contacting my chair. If you write your thesis at my chair, have a look at the \(\LaTeX\) templates below and maybe also at the seminar guidelines or the numerical tools.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11b5814" class="outline-3">
+<h3 id="org11b5814">Material for students</h3>
+<div class="outline-text-3" id="text-org11b5814">
+</div>
+<div id="outline-container-orgbcf44db" class="outline-4">
+<h4 id="orgbcf44db">Seminar guidelines</h4>
+<div class="outline-text-4" id="text-orgbcf44db">
+<p>
+Some <a href="./files/writingSeminar.pdf">guidelines</a> on how to write a <b>literature based seminar paper</b> may also be helpful when writing a Master thesis. For formatting suggestions, see the \(\LaTeX\) section below.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0824d37" class="outline-4">
+<h4 id="org0824d37">\(\LaTeX\)</h4>
+<div class="outline-text-4" id="text-org0824d37">
+<p>
+I created a template for students who want to get started with \(\LaTeX\). Read the "Getting Started" part as well as the page on "Document Structure" of the <a href="https://en.wikibooks.org/wiki/LaTeX">wikibook</a> first. These parts also cover the installation of \(\LaTeX\) and of a useable text editor (for beginners I recommend TeXmaker as an editor). Reading and installation should take you less than 90 minutes and those might be the best invested 90 minutes of your student life. Then have a look at the following files: <a href="./teaching/LaTeXTemplate.tex">.tex</a> (with explanations of common usage), <a href="./teaching/privacy.bib">.bib</a> (bibliography file), example <a href="./teaching/Vprime.png">graphic</a>, <a href="./teaching/LaTeXTemplate.pdf">.pdf</a> (the compiled output), plain  <a href="./teaching/LaTeXTemplatePlain.tex">.tex</a> template. If the use of BibTeX for citations is unclear, check Martin Osborne's <a href="https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM">guide</a>.
+</p>
+
+<p>
+The template above is relatively simple and well suited for term papers or a Bachelor project. There is another template for Master theses which contains a title page, table of contents etc.:  <a href="./teaching/thesisTempl.tex">.tex</a>, <a href="./teaching/thesisTempl.pdf">.pdf</a>, you need the same example <a href="./teaching/Vprime.png">graphic</a>  and <a href="./teaching/privacy.bib">bibliography</a> as above and also the <a href="./teaching/UoCseal.pdf">seal</a> of the university in the same folder as the .tex file.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org169b70d" class="outline-4">
+<h4 id="org169b70d">Numerical tools for economists</h4>
+<div class="outline-text-4" id="text-org169b70d">
+<p>
+I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the <a href="https://julialang.org">julia</a> programming language but no prior knowledge of programming is required. The notebooks can be found <a href="https://github.com/schottmueller/juliaForMicroTheory">here</a>. If you want to learn programming in julia from scratch, you may want to check out this <a href="https://benlauwens.github.io/ThinkJulia.jl/latest/book.html">tutorial</a>. (For, more examples where Julia is used to solve problems in (macro)economics, see <a href="https://lectures.quantecon.org/jl/">here</a>.)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgefb3db8" class="outline-4">
+<h4 id="orgefb3db8">Mathematics</h4>
+<div class="outline-text-4" id="text-orgefb3db8">
+<p>
+Microeconomic theory makes heavy use of mathematics. The following books are recommended background reading in mathematics:
+</p>
+<ul class="org-ul">
+<li>for Bachelor students in economics: Simon and Blume, "Mathematics for Economists", W.W. Norton &amp; Company, 1994</li>
+<li>for Master students in economics: (part I and II in) de la Fuente, "Mathematical Methods and Models in Economics", Cambridge University Press, 2000</li>
+<li>for PhD students in economics: Ok, "Real Analysis with Economic Applications", Princeton University Press, 2007</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org731c1a3" class="outline-2">
+<h2 id="org731c1a3">University of Copenhagen</h2>
+<div class="outline-text-2" id="text-org731c1a3">
+<p>
+2018: Advanced Industrial Organization
+</p>
+
+<p>
+2014-2017: Mechanism design (MSc) <a href="https://github.com/MechDes/2017/blob/master/index.org">course website</a> 
+</p>
+
+<p>
+2012-2017: Game theory (MSc) <a href="https://github.com/KUGameTheory/gt2017/blob/master/index.org">course website</a> 
+</p>
+
+<p>
+2017: Seminar Economics of Privacy <a href="https://github.com/schottmueller/seminarprivacy/blob/master/index.org">course website</a>
+</p>
+
+<p>
+2013: Health insurance (MSc Public Health) <a href="./files/outline.pdf">outline</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+<hr style="clear:both;margin-top: -0.4cm;"/>
+
+<div style="text-align: right;margin-top:-0.1cm">
+  <a href="https://schottmueller.github.io/disclaimer.html"> <small>Disclaimer</small> </a>
+</div>
+</div>
+</body>
+</html>
