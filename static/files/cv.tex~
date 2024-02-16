@@ -1,0 +1,359 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[a4paper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{eurosym}
+
+\usepackage{ae,aecompl}
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+%\usepackage[sc]{mathpazo}
+%\usepackage[urw-garamond]{mathdesign}
+\usepackage[utf8]{inputenc}
+
+% Set your name here
+\def\name{Christoph Schottm\"uller}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {Christoph Schottmueller, professor, microeconomic theory,cv},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+%%if letter take these measures
+% \geometry{
+%   body={6.5in, 9.0in},
+%   left=1.0in,
+%   top=1.0in
+% }
+
+\geometry{
+  %body={6.5in, 10.0in},
+  left=0.9in,
+  right=0.9in,
+  top=0.9in,
+  bottom=0.9in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+ \sectionfont{\rmfamily\mdseries\Large}
+ \subsectionfont{\rmfamily\mdseries\itshape\large}
+%%alternative
+%\sectionfont{\scshape\mdseries\Large}
+%\subsectionfont{\scshape\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+%{\huge \scshape \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{https://www.microtheory.uni-koeln.de/en/}{Lehrstuhl Mikro\"okonomik} \\
+  \href{https://www.wiso.uni-koeln.de/en/en}{University of Cologne} \\
+  Albertus Magnus Platz\\
+  50923 K\"oln\\Germany
+\end{minipage}
+\hspace*{-.5cm} % necessary if website address is so long that it won't fit otherwise
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll} 
+   Office: & SSC 4.207\\
+    Phone: & (+49) 221 470-6068 \\
+    %Fax: & (+45) 35 32 35 32 \\
+    Email: & {\tt{c.schottmueller@uni-koeln.de}}\\
+    OpenPGP key ID: &  85F0 9B43\\
+%%%%%%%\href{mailto:christoph.schottmuller@econ.ku.dk}{\tt christoph.schottmuller@econ.ku.dk} \\
+    Website: & \href{https://schottmueller.github.io/}{\tt https://schottmueller.github.io/}
+  \end{tabular}
+\end{minipage}
+
+
+\section*{Employment}
+
+\begin{itemize}
+\item Professor (W3), University of Cologne, 2018--
+  \item Associate Professor, Department of Economics, University of Copenhagen, 2017--2018
+\item Assistant Professor, Department of Economics, University of Copenhagen, 2012--2017
+\end{itemize}
+
+\section*{Affiliations}
+\begin{itemize}
+\item C-SEB, principal investigator, 2018--
+\item Tilburg Law and Economics Center (Tilec), extramural fellow, 2012--
+\item Tilburg Law and Economics Center (Tilec), junior member, 2008--2012
+\item Center of Health Economics and Policy Copenhagen, researcher, 2014--2018
+\end{itemize}
+
+\section*{Education}
+
+\begin{itemize}
+   \item PhD Economics (with distinction), Tilburg University, 2012
+
+   \item visiting PhD student, Toulouse School of Economics, 08/2010--01/2011
+
+   \item Diplomvolkswirt (integrated BSc and MSc Economics), University of Mannheim, 2008
+\end{itemize}
+
+
+\section*{Publications}
+
+%\subsection*{Journal Articles}
+%
+\begin{itemize}
+\item Optimal information structures in bilateral trade, \emph{Theoretical Economics}, Vol. 18, No. 1, January 2023, pp. 421--461
+  
+\item Competing with big data (with Jens Pr\"ufer), \emph{Journal of Industrial Economics}, Vol. 69, No. 4, December 2021, pp. 967--1008
+  
+\item Regime change games with an active defender (with Ole Jann), \emph{Games and Economic Behavior}, Vol. 129, September 2021, pp. 96--113
+  
+\item An informational theory of privacy (with Ole Jann), \emph{Economic Journal}, Vol. 130 (625), January 2020, pp. 93--124
+  
+\item Health provider networks, quality and costs (with Jan Boone), \emph{International Economic Review}, Vol. 60 (3), August 2019, pp. 1209--1247
+
+\item Too good to be truthful: Why competent advisers are fired, \emph{Journal of Economic Theory}, Vol. 181, May 2019, pp. 333--360
+  
+\item Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerl\"of), \emph{Scandinavian Journal of Economics}, Vol. 120 (2), April 2018, pp. 465--502
+  
+\item Monopoly insurance and endogenous information (with Johan Lagerl\"of), \emph{International Economic Review}, Vol. 59, February 2018, pp. 233--255
+
+\item Health insurance without single crossing: Why healthy
+people have high coverage (with Jan Boone), \textit{Economic Journal}, Vol. 127(599), February 2017, pp. 85--104
+
+\item Procurement with specialized firms (with Jan Boone), \textit{RAND Journal of Economics,} Vol. 47, Fall 2016, pp. 661--687
+
+\item Adverse selection without single crossing: monotone solutions, \textit{Journal of Economic Theory,} Vol. 158, July 2015, pp. 127--164
+
+\item Correlated equilibria in homogenous good Bertrand competition (with Ole Jann), \textit{Journal of Mathematical Economics,}  Vol. 57, March 2015, pp. 31--37
+
+\item Cost incentives for doctors: A double-edged sword, \textit{European Economic Review,} Vol. 61, July 2013, pp. 43--58
+
+\end{itemize}
+
+
+
+
+\section*{Working Papers}
+
+\begin{itemize}
+\item Anonymous or personal? A simple model of repeated personalized advice (with Marius Gramb)
+  
+\item Why echo chambers are useful (with Ole Jann)
+  
+\item Stochastic mechanisms and quasilinear preferences (with Jan Boone); inactive
+
+\end{itemize}
+
+ %\section*{Work in Progress}
+
+ %\begin{itemize}
+
+% \item The LME warehousing regime - is there a need for reform? (with Benno B\"uhler)
+% \end{itemize}
+
+\section*{Teaching} 
+
+\subsection*{University of Cologne}
+\begin{itemize}
+\item Microeconomics (MSc), 2021--
+\item Information and Strategy (MSc), 2019--
+\item Seminar Economics of Information and Privacy (MSc), 2019--2022
+\item Imperfect Information in Health Care Markets (MSc Health Economics), 2018--
+\item Advanced Microeconomics II (Research Master), 2018--
+\item Seminar Competition Policy (BSc), 2018
+\end{itemize}
+
+\subsection*{University of Copenhagen}
+
+Successfully completed the course ``Teaching and Learning in Higher Education'' (workload: 200h), 2014
+
+\begin{itemize}
+  \item Advanced Industrial Organization (MSc), 2018
+\item Mechanism design (MSc), 2014--2017
+\item Health insurance (MSc Public Health), 2013
+\item Game theory (MSc), 2012--2017 (with an additional topics module for PhD students in 2014)
+\end{itemize}
+
+% \subsection*{Tilburg University}
+
+% \begin{itemize}
+% \item Microeconomics 1 (BSc), 2011, teaching assistant
+% \item Microeconomics 4: Information economics (BSc),
+%   2011, teaching assistant
+% \item Competitiveness of the European Union (MSc), 2008
+%   and 2009, teaching assistant
+% \item Culture, society and economics (BA liberal arts), 2008 and 2009, teaching assistant
+% \end{itemize}
+
+% \subsection*{University of Mannheim}
+
+% \begin{itemize}
+% \item Mathematics for freshmen (BSc), 2004, 2005 and 2007
+% \end{itemize}
+
+\section*{Supervision}
+
+\begin{itemize}
+\item BSc thesis: several on various topics
+\item MSc thesis: more than 20 on various topics
+\item PhD thesis (first supervisor): Sophia Hornberger (2022--), Thanh Nguyen (2022--), Marius Gramb (2018--)
+\item PhD thesis (second supervisor/referee):  Lennart Struth (2021--), Yiqiu Chen (2022), Markus M\"oller (2022), Lisa Just (2021)
+\item member of PhD committees: Lukas Schmidt (2021), Viola Ackfeld (2020), Johannes Viehmann (2019), Johannes Wagner (2018), J\"orgen Kratz (Lund University, 2018), Sebastian Dengler (Tilburg University, 2017), Xu Lang (Tilburg University, 2016)
+\end{itemize}
+
+\section*{Presentations}
+
+\begin{itemize}
+  \item 2022: University of Bielefeld
+  \item 2021: University of Groningen
+  \item 2020: World Congress of the Econometric Society
+  \item 2019: 4th Workshop on Platforms (Bologna)
+  \item 2018: University of Konstanz, Meeting of the European Economic Association Cologne
+\item 2017: TILEC-GovReg Workshop on ``Economic Governance of Data-driven Markets'', Meeting of the European Economic Association Lisbon, ZEW Conference on Information and Communication Technologies Mannheim, University of Hamburg, 8th Berlin IO day, University of Bergen, Universit\"at zu K\"oln, Konkurrence\o konomisk Forum (Copenhagen)  
+\item 2016: Lund University, SING Odense, Games Maastricht, Meeting of the European Economic Association Geneva, Econometric Society European Meeting Geneva, Hausdorff Center of Mathematics Bonn, Tilburg University
+\item 2015: Humboldt University Berlin, Royal Economic Society Conference Manchester, Tilec, CPB, 16th European Health Economics Workshop Toulouse, Meeting of the European Economic Association Mannheim 
+\item 2014: Meeting of the European Economic Association Toulouse, Tilec 
+\item 2013: University of Edinburgh, EARIE \'{E}vora 
+\item 2012: Adelaide University, Monash University, UT Sydney, Lund
+  University, University of Copenhagen, Aalto University,
+  University of  Southern Denmark
+\item  2011: European Winter Meeting of the Econometric Society in Tel
+  Aviv, EARIE Stockholm, Summer school "Market Failure and Market
+  Design" Louvain-la-Neuve, Spring Meeting of Young Economists
+  Groningen, ENTER Jamboree
+  Tilburg
+\item  2010: Brown Bag Seminar Toulouse School of Economics, Brazilian
+  Workshop of the Game Theory Society S\~{a}o Paulo (poster), NAKE Workshop
+  Utrecht, CLEEN Workshop Amsterdam
+\end{itemize}
+
+% \section*{Honors and Grants}
+% \begin{itemize}
+% \item 
+% \item Participant European Winter Meeting of the Econometric Society, 2011\\
+% \hspace*{1cm} -- One of 16 selected European job market
+% candidates
+% \item Center exchange grant (5000 \euro), 2010
+% \item Travel grant Brazilian Workshop of the Game Theory Society
+% (1800 \euro),
+% 2010
+% \item Scholarship Konrad Adenauer Foundation (merit-based), 2005--2008
+% \end{itemize}
+
+% \section*{Experience}
+
+% \begin{itemize}
+% \item Student representative in the economic theory professor search
+%   committee (University
+%   of Mannheim), 2008
+% \item  Student representative in the microeconomics professor search
+%   committee (University of
+%   Mannheim), 2008
+% \item  Research assistant at the \textit{Center for European Economic
+%     Research} (ZEW), 2005--2006
+% \end{itemize}
+
+\section*{Professional Activities}
+\begin{itemize}
+\item Director of the economics library at the University of Cologne, 2019-
+\item Member of the library council, 2019-
+\item DFG Gutachter (Graduiertenkolleg 2023)
+  \item Head of the university election commission at the Faculty of Management, Economics and Social Sciences, 2019
+\item Grant recipient and principal investigator, ``Personalization and the dynamics of online search'', Danish Council for Independent Research, 1.372.911 DKK ($\approx$180.000\euro), 2017
+\item Coordinator microeconomics seminar at the University of Copenhagen, 2013--2018
+\item Co-organizer microeconomic theory reading group (2015)
+  \item Program Committee: Tilec-GovReg Workshop ``Economic Governance of Data Driven Markets'' 2017
+\item Referee for American Economic Journal: Microeconomics, American Economic Review, Economica, Econometrica, Economic Journal, International Economic Review, Journal of Economic Theory, Journal of the European Economic Association, Journal of Health Economics, Journal of Institutional and Theoretical Economics, Journal of Mathematical Economics, Journal of Political Economy, Journal of Public Economics, Mathematical Social Sciences, RAND Journal of Economics, Review of Industrial Organization
+\end{itemize}
+
+
+\section*{Personal}
+
+\begin{itemize}
+%\item Year of birth: 1985 % alternatively "Born on May 10, 1985"
+\item Citizenship: German
+\item Languages: English, German, Dutch (intermediate)
+\end{itemize}
+
+
+% Footer
+\null\vfill %puts the date at the bottom of the page; use "\bigskip" instead if you want to have it just a bit below the last line
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
+
+
+
+Media/Policy coverage:
+Competing with big data:
+https://esb.nu/esb/20037398/new-year-s-article-2018-maintaining-focus-amid-blurring-boundaries
+http://antitrustdigest.net/jens-prufer-and-christoph-schottmuller-competition-with-big-data-center-discussion-paper-2017-007/
+https://www.tilburgresearch.nl/en/a-google-monopoly-stands-in-the-way-of-innovation
+CITATIONS in policy docs:
+https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/rapporten/2017/06/13/big-data-and-competition/big-data-and-competition.pdf (policy report for Dutch ministry)
+http://www.europarl.europa.eu/RegData/etudes/IDAN/2017/607362/IPOL_IDA(2017)607362_EN.pdf (cited in European parliament report ``Data Flows – Future Scenarios'')
+https://www.acm.nl/sites/default/files/documents/2017-10/acm-a-closer-look-at-online-video-platforms-2017-10-16.pdf (cited in report ``A closer look at
+Online video platforms'' by Netherlands Authority for Consumers and Markets)
+https://doi.org/10.1007/s11151-018-9671-7 (cited in ``Recent Developments at DG Competition: 2017/2018'' by DG Comp people)
+
+Echo Chambers:
+https://marginalrevolution.com/marginalrevolution/2018/11/maybe-echo-chambers-evolving-efficient.html
+https://stumblingandmumbling.typepad.com/stumbling_and_mumbling/2018/10/echo-chambers-a-defence.html
+https://thingfinder.blogspot.com/2018/11/polarized-preferences-create-need-for.html

@@ -1,0 +1,56 @@
+#+Title: Teaching
+#+OPTIONS:    H:3 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc title:nil 
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
+#+LANGUAGE:   en
+#+KEYWORDS: Christoph Schottmueller teaching economics university Cologne Köln Koeln
+
+* University of Cologne
+** Courses
+2023-: Project course: let the computer do the calculations
+
+2021-: Microeconomics, [[https://github.com/schottmueller/microMSc/blob/main/home.org][course website]]
+   
+2019-: Information and Strategy, [[https://github.com/schottmueller/infoStrat/blob/master/home.org][course website]]
+
+2019-: Seminar topics in the economics of information and privacy, [[https://web.tresorit.com/l#9QSX9y9YqLfuBuZ4oNjakg][description]]
+
+2018-: Imperfect Information in Health Care Markets, [[https://github.com/schottmueller/infohealthecon/blob/master/plan.org][course website]]
+
+2018-: Advanced Microeconomics II (Research Master), [[https://github.com/schottmueller/advMicro/blob/master/home.org][course website]]
+
+2018: Seminar Competition Policy
+
+**  Thesis supervision
+
+My [[./thesis_guidelines.html][guidelines]] for *thesis supervision*. Please, read before contacting my chair. If you write your thesis at my chair, have a look at the $\LaTeX$ templates below and maybe also at the seminar guidelines or the numerical tools.
+
+** Material for students
+*** Seminar guidelines
+    Some [[./files/writingSeminar.pdf][guidelines]] on how to write a *literature based seminar paper* may also be helpful when writing a Master thesis. For formatting suggestions, see the $\LaTeX$ section below.
+
+*** $\LaTeX$
+
+I created a template for students who want to get started with $\LaTeX$. Read the "Getting Started" part as well as the page on "Document Structure" of the [[https://en.wikibooks.org/wiki/LaTeX][wikibook]] first. These parts also cover the installation of $\LaTeX$ and of a useable text editor (for beginners I recommend TeXmaker as an editor). Reading and installation should take you less than 90 minutes and those might be the best invested 90 minutes of your student life. Then have a look at the following files: [[./teaching/LaTeXTemplate.tex][.tex]] (with explanations of common usage), [[./teaching/privacy.bib][.bib]] (bibliography file), example [[./teaching/Vprime.png][graphic]], [[./teaching/LaTeXTemplate.pdf][.pdf]] (the compiled output), plain  [[./teaching/LaTeXTemplatePlain.tex][.tex]] template. If the use of BibTeX for citations is unclear, check Martin Osborne's [[https://www.economics.utoronto.ca/osborne/latex/BIBTEX.HTM][guide]].
+
+The template above is relatively simple and well suited for term papers or a Bachelor project. There is another template for Master theses which contains a title page, table of contents etc.:  [[./teaching/thesisTempl.tex][.tex]], [[./teaching/thesisTempl.pdf][.pdf]], you need the same example [[./teaching/Vprime.png][graphic]]  and [[./teaching/privacy.bib][bibliography]] as above and also the [[./teaching/UoCseal.pdf][seal]] of the university in the same folder as the .tex file.
+
+*** Numerical tools for economists
+
+I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]]. If you want to learn programming in julia from scratch, you may want to check out this [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][tutorial]]. (For, more examples where Julia is used to solve problems in (macro)economics, see [[https://lectures.quantecon.org/jl/][here]].)
+
+*** Mathematics 
+Microeconomic theory makes heavy use of mathematics. The following books are recommended background reading in mathematics:
+- for Bachelor students in economics: Simon and Blume, "Mathematics for Economists", W.W. Norton & Company, 1994
+- for Master students in economics: (part I and II in) de la Fuente, "Mathematical Methods and Models in Economics", Cambridge University Press, 2000
+- for PhD students in economics: Ok, "Real Analysis with Economic Applications", Princeton University Press, 2007
+* University of Copenhagen
+2018: Advanced Industrial Organization
+
+2014-2017: Mechanism design (MSc) [[https://github.com/MechDes/2017/blob/master/index.org][course website]] 
+
+2012-2017: Game theory (MSc) [[https://github.com/KUGameTheory/gt2017/blob/master/index.org][course website]] 
+
+2017: Seminar Economics of Privacy [[https://github.com/schottmueller/seminarprivacy/blob/master/index.org][course website]]
+
+2013: Health insurance (MSc Public Health) [[./files/outline.pdf][outline]]
+

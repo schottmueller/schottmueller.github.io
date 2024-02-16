@@ -1,0 +1,35 @@
+#+TITLE:     Cost Incentives for Doctors
+#+AUTHOR:    Christoph Schottmüller
+#+EMAIL:     christoph@localhost.localdomain
+#+DATE:      
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+The paper is published in the /European Economic Review/  Vol. 61, July 2013, pp. 43-58. You can find it [[http://dx.doi.org/10.1016/j.euroecorev.2013.03.001][here]].
+
+* What is the background?
+The empirical health economics literature has established that doctors respond to financial incentives. (I use the word "doctor" interchangeable with the word "physician" in this paper.) Higher financial incentives for doctors to save costs have therefore been suggested  in order to restrict the cost explosion in the health care sector. These incentives can take different forms and have been used in many countries. One example would be a bonus when costs are lower than some forecast; another one would be fixed budgets; a third are boni based on an integrated care organizations' profits.
+
+* What is the theoretical argument for cost containment incentives?
+The main argument is a standard moral hazard argument: Patients do not care enough about costs because they are insured. If doctors prescribe what is optimal for the patient, they will consequently also not care sufficiently about costs. Hence, insurance causes an ex post moral hazard: From a welfare point of view, too expensive treatments are used. If, however, the doctor has some incentives to also take costs into account, this moral hazard problem can be reduced.
+
+* What do doctors think?
+Doctors have traditionally been hostile towards financial incentives to contain costs. They have argued that this puts them into an awkward position: Traditionally, doctors have been viewed as agents of their patients bound by the Hippocratic oath to serve the patient's best interest. They see this position compromised by having to weigh the patient's interests against financial incentives connected to cost containment.
+
+* What is the main point of the paper?
+I argue that the doctors have a fair point and cost containment incentives have a downside which is not explored in health economics: The whole idea of these incentives is to misalign the objectives of the patient (who is insured and therefore wants to have expensive treatments) with the interests of the doctor. This misalignment leads, however, to mistrust. More precisely, given non-aligned objectives, a strategic situation emerges where the patient tries to convince the doctor to give him more expensive treatments than the doctor would like to prescribe to him. This is bad because the patient's information is essential in diagnostics. For example, a patient might exaggerate his symptoms in order to justify the prescription of a more expensive medication. This, however, might increase the chance of a wrong diagnosis. In short, the misalignment of incentives reduces the quality of the communication between doctor and patient (as this communication is now of a strategic nature). Worse communication leads to worse diagnoses and this can reduce welfare.
+
+One anecdote: When telling the idea to a colleague, she told me: "Yes, I just did this when I went to my GP because I had a cold. I told him I was lying in bed for a week already though I am only suffering two days. But they refuse to do something here if you have it less than a week."
+
+
+* What is the solution?
+The paper does not argue that cost containment incentives should never be used. However, they should be lower than what one would expect if the effect on communication are not taken into account.

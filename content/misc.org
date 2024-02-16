@@ -1,0 +1,47 @@
+#+Title: Miscellaneous
+#+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc title:nil
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
+#+LANGUAGE:   en
+#+KEYWORDS: Christoph Schottmueller links 
+
+* Academic Links
+
+** Institutions I am/was affiliated with:
+- [[https://www.wiso.uni-koeln.de/][University of Cologne]]
+- [[http://www.econ.ku.dk/english/][Department of Economics, University of Copenhagen]]
+- [[http://www.tilburguniversity.edu/about-tilburg-university/schools/economics-and-management/organisation/departments/economics/][Department of Economics, Tilburg University]]
+- [[http://www.tilburguniversity.edu/research/institutes-and-research-groups/tilec/][TILEC]] (Tilburg Law and Economics Center)
+
+** Coauthors:
+- [[https://janboone.github.io/homepage/][Jan Boone]]
+- [[https://mariusgramb.github.io/ ][Marius Gramb]]
+- [[http://olejann.net/][Ole Jann]]
+- [[http://www.johanlagerlof.com/][Johan Lagerlöf]]
+- [[http://prufer.net/][Jens Prüfer]]
+
+* Software and IT
+Some useful links:
+- How to use OpenPGP [[http://lifehacker.com/180878/how-to-encrypt-your-email][with Thunderbird]] or using [[http://www.mailvelope.com/][webmail]] (like gmail etc.).
+- For graphs, I use the [[http://www.ctan.org/tex-archive/graphics/pgf/][tikz]] package. Jacques Crémer has written an excellent [[http://cremeronline.com/LaTeX/minimaltikz.pdf][mini-introduction]] to tikz. [[http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/][qtikz]] is a nice little software that makes graph creation with tikz even simpler by providing some WYSIWYG feeling.
+- For writing games in LaTeX, the packages provided by [[http://www.economics.utoronto.ca/osborne/latex/][Martin Osborne]] are helpful.
+- For some of my papers, I used [[https://julialang.org][julia]] for numerical analysis. You can find ressources to learn Julia at https://julialang.org/learning/. (In the past, I also used [[https://www.python.org/][python]].)
+- Emacs links: 
+  - A blog [[http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html][post]] describing how to set up email on Emacs.
+  - A [[https://cestlaz.github.io/stories/emacs/][series]] of blog posts and videos on learning Emacs step by step.
+
+** My setup
+Following Jan Boone's example, I use [[https://www.gnu.org/software/emacs/][Emacs]] for all my text editing needs: I write my papers in Emacs using [[https://www.latex-project.org/][LaTeX]], my slides and website in Emacs [[https://orgmode.org/][org-mode]] (which is then exported to LaTeX-[[https://github.com/josephwright/beamer][Beamer]]/HTML respectively), julia code for numerical analysis using [[https://github.com/JuliaEditorSupport/julia-emacs][julia-mode]], even Emails using [[https://www.emacswiki.org/emacs/mu4e][mu4e]] and [[https://github.com/OfflineIMAP/offlineimap][offlineIMAP]](though this is not exactly straightforward and I use Thunderbird on my notebook instead), version control through [[https://git-scm.com/][git]] via the Emacs' [[https://magit.vc/][magit]] mode. The main advantage of Emacs from my point of view is that it provides a rather efficient way for doing whatever in a unified manner. The disadvantage is that it takes some time to learn Emacs properly (even after years of using it I would label myself as a /beginner/). 
+
+When it comes to writing papers, I absolutely insist that this is done using LaTeX (and I do not accept Scientific Workplace as it totally destroys the readability of LaTeX code but I have a coauthor using Lyx which I find acceptable, another coauthor used the [[http://www.bakoma-tex.com/menu/about.php][BaKoMa]] editor which gives some WYSIWYG feeling). For version control, I use git. I started using git to avoid the problem of having dozens of versions of the same paper in a folder named "xxxApril.tex", "xxxApril2.tex" etc. but nowadays I see the main advantage in projects with several coauthors where you can quickly see the changes made by your coauthor. For such collaborative work I find it optimal if everyone uses git and the files are shared via github. 
+
+
+
+** Python code game theory
+I have written some python code to solve school choice matching problems as well as some simple programs to solve finite strategic form games of complete information. Both can be found on [[https://github.com/schottmueller/gametheory][github]]. Neither is computationally fast as both were only made for teaching purposes. Check the .org files as they contain lots of explanations.
+
+
+* Presentations
+- Economics of Privacy [[./files/misc/slides3.odp][slides]]
+- Hart "A theory of firm scope" QJE 2010 [[./files/misc/IO_reading_group_Hart.pdf][slides]]
+- Segal/Whinston "Robust Predictions for Bilateral Contracting with Externalities" [[./files/misc/segal_whinston_robust_presentation.pdf][slides]]
+

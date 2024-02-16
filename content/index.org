@@ -1,0 +1,43 @@
+#+TITLE: Christoph Schottmüller  
+#+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc title:nil 
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
+#+LANGUAGE:   en
+#+KEYWORDS: Christoph Schottmueller Schottmuller Schottmüller research economics Volkswirtschaftslehre Universität university Koeln Köln Koln Tilburg Copenhagen
+
+
+@@html: 
+<head>
+<meta name="description" content="Personal website of Christoph Schottmueller">
+<meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University">
+<meta content="en-gb" http-equiv="Content-Language">
+</head>
+@@
+
+@@html:
+<p style="float: left;">
+<img src="./img/chessBW.jpg" alt="Profile Picture"  height="275px" style="border:5px double #777777;margin-top: -0.5cm;">
+</p>
+<div class="tab220">
+<p>
+<b>Christoph Schottmüller</b> is professor at the <a href="https://wiso.uni-koeln.de/en/en/">University of Cologne</a>.
+</p>
+office address: <br/>
+   <span class="tab"> LS Mikroökonomik (Prof. Schottmüller) </span> <br/>
+    <span class="tab"> SSC 4.207 </span> <br/>
+    <span class="tab"> Universitätsstr. 22a </span> <br/>
+    <span class="tab">  50937 Köln </span> 
+<br/>
+<br/>
+<SCRIPT LANGUAGE="Javascript">
+  document.write('email: ' + '<A HREF="mai' + 'lto' + String.fromCharCode(58) + 'c.schottmueller');
+  document.write(String.fromCharCode(64) + 'uni-koe' + 'ln.de">c.schottmueller' + String.fromCharCode(64));
+  document.write('uni-koel' + 'n.de</A>');
+</SCRIPT> <!-- to protect against crawlers -->
+<NOSCRIPT>email: <code>c [dot] schottmueller [at] uni-koeln</code> <code>[dot]</code> <code>de</code>  </NOSCRIPT>
+<br/> 
+<p>
+<b> <a href="./files/cv.pdf">CV</a> </b>
+</p>
+</div>
+@@
+

@@ -1,0 +1,63 @@
+#+Title: Research
+#+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc title:nil
+#+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
+#+LANGUAGE:   en
+#+KEYWORDS: Christoph Schottmueller research paper
+
+* Working Papers
+Welfare optimal information structures in public good provision, [[./papers/pubGoodInfo/pgi.pdf][paper]]
+
+Anonymous or personal? A simple model of repeated personalized advice (with Marius Gramb), [[./papers/dynAdvice/advLearning.pdf][paper]]
+
+Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambers.pdf][paper]] 
+@@html: <br/> <span class="tabsmall">  <a href="./papers/echoChamber/supMatEchoChambers.pdf">supplementary material</a> <br/>covered on <a href="https://marginalrevolution.com/marginalrevolution/2018/11/maybe-echo-chambers-evolving-efficient.html">Marginal Revolution</a> and <a href="https://stumblingandmumbling.typepad.com/stumbling_and_mumbling/2018/10/echo-chambers-a-defence.html"> Stumbling and Mumbling</a>  </span> @@
+
+Stochastic mechanisms and quasilinear preferences (with Jan Boone), [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
+
+* Publications
+Optimal information structures in bilateral trade, [[https://econtheory.org/ojs/index.php/te/article/view/20230421][paper]], /Theoretical Economics/, Vol. 18 (1), January 2023, pp. 421-461
+@@html: <br/><span class="tabsmall">  <a href="./papers/msInfo/binary.jl">code</a> for binary type space, <a href="./papers/msInfo/MSOptWebsite.jl">code</a> for uniform type distribution </span>@@
+
+Competing with big data (with Jens Prüfer), [[./papers/tipping/Competing with Big Data.pdf][paper]], /Journal of Industrial Economics/, [[https://doi.org/10.1111/joie.12259][doi]], Vol. 69, No. 4, December 2021, pp. 967-1008 
+@@html: <br/> <span class="tabsmall">  <a href="./papers/tipping/CompWithBigDataSlides.pdf"> slides</a>,  <a href="./papers/tipping/TippingNumeric.zip">numerics </a> (julia version < 0.7) </span> @@
+
+Regime change games with an active defender (with Ole Jann), [[./papers/panopticon/panopticon.pdf][paper]], /Games and Economic Behavior/, [[https://doi.org/10.1016/j.geb.2021.05.008][doi]], Vol. 129, September 2021, pp. 96-113
+@@html: <br/><span class="tabsmall"> <a href="./papers/panopticon/hamburg.pdf">slides</a>, <a href="./papers/panopticon/presentation25.pdf">slides25</a> </span>@@
+
+An informational theory of privacy (with Ole Jann), [[./papers/privacy/privacy.pdf][paper]], /Economic Journal/, [[http://dx.doi.org/10.1093/ej/uez045][doi]], Vol. 130 (625), January 2020, pp. 93-124
+@@html: <br/><span class="tabsmall"><a href="./papers/privacy/supplementary_privacy.pdf]">supplementary material<a/>, <a href="./papers/privacy/presentations/EEA17.pdf">slides</a> </span>@@
+
+Do health insurers contract the best providers? Provider networks, quality and costs (with Jan Boone), [[./papers/selective_contracting/selective-contracting.pdf][paper]], /International Economic Review/, [[https://doi.org/10.1111/iere.12383][doi]], Vol. 60 (3), August 2019, pp. 1209-1247
+@@html: <br/><span class="tabsmall"><a href="./papers/selective_contracting/presentation.pdf">slides</a> </span>@@
+
+Too good to be truthful: Why competent advisers are fired, [[./papers/dynAdvReputation/reputation.pdf][paper]], /Journal of Economic Theory/  [[https://doi.org/10.1016/j.jet.2019.03.006][doi]], Vol. 181, May 2019, pp. 333-360
+@@html: <br/><span class="tabsmall"><a href="./papers/dynAdvReputation/supMatReputation.pdf">supplementary material</a> </span>@@
+
+Facilitating consumer learning in insurance markets: What are the welfare effects? (with Johan Lagerlöf), [[./papers/endogenous_info/insurance-binary.pdf][paper]], /Scandinavian Journal of Economics/ [[https://dx.doi.org/10.1111/sjoe.12231][doi]], Vol. 120 (2), April 2018, pp. 465-502
+@@html: <br/>
+ <span class="tabsmall"> <a href="papers/endogenous_info/Insurance-binary-Supp-Mat.pdf">supplementary material</a>,  <a href="papers/endogenous_info/current_example290414.py">Python code</a> </span>@@
+
+Monopoly insurance and endogenous information (with Johan Lagerlöf), [[./papers/endogenous_info/Continuum-Round2-v2.pdf"][paper]], /International Economic Review/ [[https://dx.doi.org/10.1111/iere.12268][doi]], Vol. 59, February 2018, pp. 233-255 
+@@html: <br/> <span class="tab"> <a href="papers/endogenous_info/Continuum-Round2-sup-mat-v2.pdf">supplementary material</a>,  <a href="papers/endogenous_info/current_example1113.py">Python code 1</a> and <a href="papers/endogenous_info/current_example_1113_discont_graph.py" target="_blank">Python code 2</a>,  <a href="./papers/endogenous_info/EEA.pdf">slides</a> </span> @@
+
+Health insurance without single crossing: why healthy people have high coverage (with Jan Boone), [[./papers/health_insurance_no_sc/health_no_sc_2013.pdf][paper]], [[./papers/health_insurance_no_sc/health_ins_no_sc_web.html][ Q&A]], /Economic Journal/ [[https://dx.doi.org/10.1111/ecoj.12242][doi]], Vol. 127 (599), February 2017, pp. 85-104 
+@@html: <br/><span class="tabsmall">  <a href="https://sites.google.com/site/janboonehomepage/home/webappendices">supplementary material</a> </span>@@
+
+Procurement with specialized firms (with Jan Boone), [[./papers/procurement_specialized_firms/procurement_specialized.pdf][paper]], /RAND Journal of Economics/ [[https://dx.doi.org/10.1111/1756-2171.12143][doi]], Vol. 47, Fall 2016, pp. 661-687 
+@@html: <br/>
+ <span class="tabsmall"> <a href="papers/procurement_specialized_firms/supplementary4.pdf">supplementary material</a> </span>@@
+
+
+Adverse selection without single crossing: monotone solutions,  [[./papers/adv_sel_no_single_crossing/revision3c2.pdf][preprint]] including webappendix, /Journal of Economic Theory/ [[http://dx.doi.org/10.1016/j.jet.2015.04.002][doi]], Vol. 158, July 2015, pp. 127-164
+@@html:<br/>
+ <span class="tabsmall"> supplementary material: <a href="papers/adv_sel_no_single_crossing/numerical_example_1_corrected.nb">main text example</a>, <a href="papers/adv_sel_no_single_crossing/demand_elasticities_example2d.py">interior binding ic</a>, <a href="papers/adv_sel_no_single_crossing/numerical_example_2.nb">bunching example</a> </span> <br/>@@
+
+Correlated equilibria in homogeneous good Bertrand competition (with Ole Jann), [[./papers/correlated_eq_bertrand/bertrand.pdf][preprint]], /Journal of Mathematical Economis/ [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][doi]], Vol. 57, March 2015, pp. 31-37
+
+
+Cost incentives for doctors: A double-edged sword, [[./papers/cost_incentives_doctors/revision2b.pdf][preprint]], [[./papers/cost_incentives_doctors/cost_incentives_for_doctors.html][ Q&A]], /European Economic Review/ [[http://dx.doi.org/10.1016/j.euroecorev.2013.03.001][doi]], Vol. 61, July 2013, pp. 43-58 
+
+
+
+
+

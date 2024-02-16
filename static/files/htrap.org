@@ -1,0 +1,91 @@
+#+TITLE: How to read a paper in microeconomics
+#+AUTHOR: Christoph Schottmüller
+#+Options: H:1 toc:nil
+#+Latex_Header: \usepackage{natbib,ae,aecompl,amsmath,amsthm} 
+#+Latex_Header: \usepackage[a4paper,margin=2.5cm]{geometry}
+
+This document suggests a way of reading a theoretical paper in microeconomics. It should be stressed that many of the steps below are non-sensical for papers in other sub-branches of economic research. Depending on the paper, some steps may not apply and other steps may be useful instead even for papers within microeconomics. That is, one should view the questions below only as a rough guide and keep in mind that there is no single approach that fits all possible papers.
+* Guide
+** What is the paper roughly about?
+*** Title
+*** Abstract
+*** For experts: authors, references, "thank you footnote"\hspace*{5cm}\linebreak
+ This makes only sense if one knows who is working on what and/or if one knows some papers on the reference list.
+
+** Quick skim
+*** What is the structure of the paper?
+*** What methods are used? (only theory? is there also empirics, an experiment or simulations?)
+*** Are there interesting graphs?
+
+** First evaluation
+*** What can you expect to learn from this paper?
+*** Does it connect to other things you know/read?
+*** /if part of independent literature search:/ Is this the right paper for my purposes?
+
+** What are the research questions?
+*** Skim through introduction and conclusion (possibly re-read abstract)
+*** How is the paper motivated? (other literature, real world phenomena, stylized facts)
+*** Check the literature section: how is the paper different from the prior literature? do the authors disagree with some prior work or do they extend it?
+*** What could be applications?
+*** State the main research question(s). Are there subquestions?
+
+** What are the results?
+*** Read respective parts of conclusion and introduction
+*** Look for typographically highlighted major results (theorems, propositions)\linebreak
+ The paragraph above or below such a result will often contain a "human readable" explanantion of what this result means.
+*** Check graphs and tables
+
+** Are there policy implications or applications?
+*** Read respective parts of introduction and conclusion and possibly result section
+*** Skim discussion section (if there is any)
+*** Try yourself to come up with applications and implications!
+
+** Interim evaluation
+*** /if part of independent literature search:/  Should you get deeper into this paper? 
+
+** How did they get to the results?
+*** What kind of model is used? 
+**** who are the players?
+**** what are their actions?
+**** who has what information?
+**** what is the timing?
+**** what are the main assumptions?
+**** how does the model relate to models you know?
+
+*** Read the major results (theorems, propositions) and the verbal explanations of these results and skim the minor results (lemmas).
+
+*** Find the parts where the authors explain the mechanism/reasoning/logic behind their main results and read it carefully.\hspace*{11cm}\linebreak
+ This can be in the introduction or in the analysis/results section. If you cannot find it in the introduction check the text around the main result(s) or at the end of the analysis/results section. (If it is hard to understand the reasoning, you may at this point decide to read the main analysis/results section from start to end.) 
+
+*** For experts: How do the assumptions drive the results?\linebreak
+ Can you see why a certain assumption is necessary to obtain a certain result/mechanism/logic?
+
+** For experts: Proofs  and derivations
+*** Do the authors use a (proof) technique you want to learn?
+*** Is the mechanism/reasoning/logic unclear?
+
+** Final evaluation
+*** Are the research questions answered? how?
+*** For which applications are the assumptions (not) reasonable? (sometimes authors address this in a "discussion" section)
+*** For which applications is the mechanism/reasoning/logic (not) convincing? (sometimes authors address this in a "discussion" section)
+*** Do you agree with the policy implications?
+*** How does the paper connect with other models/papers/arguments you know?
+*** Is there something the authors could/should have done differently? What is a logical next step in the literature, i.e. how could a paper building upon this paper look like?
+
+** For experts: Follow up
+*** Did the paper reference other work that you should read?
+*** Did you identify some gap in the literature that is worthwhile filling?
+
+
+* Further hints and additional exercises
+
+** *Introduction:* 
+A major difference between academic work and other writing is the introduction. In academic work the introduction is /not/ meant to merely introduce the topic and definitely not meant to create suspense. Instead the introduction contains more or less everything. Yes, the topic is motivated there and the research questions should be stated but it continues from there: usually the methods used to analyze the problem as well as the results are summarized. Towards the end of the intorduction there is usually a comparison with the existing literature to clarify what the contribution of this specific paper is. In this sense, the intorduction also has the role of an /executive summary/. The purpose of the introduction is not to make the reader read the rest of the paper but to inform him to such an extent about the paper that he (i) can make an informed decision about which parts of the paper (if any) he should read and (ii) knows the main message of the paper even if he does not read any further.
+
+*Exercise:* Go through the introduction paragraph by paragraph and write down a subheading for each paragraph. (What does this paragraph achieve? Why is it there?) Is there some structure in the introduction? After doing this for several papers, you may want to compare these structures.
+
+** *Summaries:*
+It can be useful to summarize the paper after reading it. The main reason is that you may need the paper again later on (e.g. you have to reference it as part of your Master thesis). Your summary should be such that in this case you do not have to look at the paper again but can simply read your summary to refresh your mind. Note that there is no "ideal summary". What should (not) be part of it depends very much on what you want to do with this summary and what background knowledge you expect yourself to have when reading it again later.[fn::Of course, summarizing a paper can be a useful exercise in itself as you may realize that you did not understand some aspects of the paper entirely while writing the summary.] 
+My own paper summaries tend to be one page long.
+
+*Exercise:* Write a one page summary of the paper. 

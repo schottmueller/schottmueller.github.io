@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Health insurance without single crossing: Why healthy people have high coverage</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Health insurance without single crossing: Why healthy people have high coverage"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content=""/>
+<meta name="author" content="Jan Boone and Christoph Schottmueller"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<style type="text/css">#outline-container-introduction{ clear:both; }</style>
+<SCRIPT SRC="../jsMath/easy/load.js"></SCRIPT>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Health insurance without single crossing: Why healthy people have high coverage</h1>
+
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">What is the starting point?</a></li>
+<li><a href="#sec-2">What do you add to the usual self selection models?</a></li>
+<li><a href="#sec-3">How does adding treatment choice change the self selection story?</a></li>
+<li><a href="#sec-4">What are the main selection results?</a></li>
+<li><a href="#sec-5">What are the policy implications? Are they different from earlier attempts to resolve the puzzle of no positive correlation?</a></li>
+<li><a href="#sec-6">What is the violation of single crossing and why is it central to your results? (technical)</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">What is the starting point?</h2>
+<div class="outline-text-2" id="text-1">
+
+<p>If your parents and grandparents had certain types of cancer, you are at a high risk to have cancer yourself. As a good cancer therapy is expensive, you better make sure to be well insured. This effect is called <i>adverse selection:</i> People with high risks have higher incentives to buy insurance. One should therefore expect that there is a positive correlation between insurance coverage and risk because high risk consumers self select into generous insurance plans. However, the empirical literature on health insurance does not find such a positive correlation. Some authors have concluded from this that self selection does not play a significant role in health insurance which sounds surprising given the cancer example above.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">What do you add to the usual self selection models?</h2>
+<div class="outline-text-2" id="text-2">
+
+<p>We add a <i>treatment choice</i>. That is, a patient who has fallen ill can decide how much/expensive treatment he seeks. If a patient has full insurance, he will obviously choose the best available treatment. If the patient has only partial insurance, i.e. he has to make a copayment, he might opt for a cheaper treatment or no treatment at all. This effect is well documented in the medical literature where surveys show that a substantial part of chronically ill patients do not take their prescribed medication due to financial problems.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">How does adding treatment choice change the self selection story?</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>There are two crucial facts that we utilize: First, wealth is positively correlated with health, that is, healthy individuals are richer (or richer individuals are healthier). Second, health is a normal good, i.e. a patient will spend mor emoney on treatments if he is wealthier.
+</p>
+<p>
+To make things simple think of two individuals: One is rich and has a low health risk while the other is poor and has a high health risk. Who of the two individuals is more affected if we reduce the copayments in a given insurance contract? On the one hand, the poor/high-risk consumer is more likely to need treatment which means he benefits more often from the copayment reduction. On the other hand, the rich/low-risk consumer will use more expensive treatments when falling ill which means he might benefit more from a reduction in copayments. The first effect dominates at high coverage levels (say full coverage) because both individuals choose the same treatments there. For low coverage levels, the second effect might dominate.
+</p>
+<p>
+This means it is unclear which of our two individuals has the higher willingness to pay for marginally increasing coverage. (It is also unclear which of the two individuals has the higher willingness to pay for a given insurance contract and the answer will generally depend on the coverage level.)
+</p>
+<p>
+In terms of selection, it is unclear whether the poor/high-risk individual will choose to buy more coverage than the rich/low-risk individual: On the one hand, he needs treatment more often. On the other hand, he does not utilize the insurance that much when falling ill. We call this the <i>utilization effect</i>.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4">What are the main selection results?</h2>
+<div class="outline-text-2" id="text-4">
+
+<p>We show that the correlation between risk and equilibrium coverage depends on the level of competition in the insurance market:
+</p><ol>
+<li>In a perfectly competitive insurance market, poor/high-risk individuals will in equilibrium buy insurance contracts with at least as high coverage as rich/low-risk individuals.
+</li>
+<li>If insurers have some market power, the equilibrium can be such that poor/high-risk individuals will buy insurance contracts with less coverage than rich/low-risk individuals. Poor/low-risk individuals might even remain uninsured in equilibrium.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5">What are the policy implications? Are they different from earlier attempts to resolve the puzzle of no positive correlation?</h2>
+<div class="outline-text-2" id="text-5">
+
+<p>In our model, increasing health insurance coverage for the poor above the market equilibrium can be welfare enhancing. That is, some individuals are under-insured in the market equilibrium. This gives a natural motivation for the Affordable Care Act.
+</p>
+<p>
+Earlier attempts (the <i>advantageous selection</i> literature) reach different conclusions: In this literature, people do not consider endogenous treatment choice but take differences in risk aversion as starting point. More precisely, individuals differ not so much in risk but very much in risk aversion. Therefore, more risk averse individuals (who also have slightly lower risks than less risk averse individuals) buy the insurance contracts with the highest insurance coverage. While this also yields a negative correlation between risk and coverage, the policy implications are much different: If someone is underinsured in such a model, it is because he is not very risk averse which means that he hardly needed insurance in the first place. Even more striking, individuals can be overinsured in a competitive equilibrium in these models, i.e. mandating higher insurance coverage will reduce welfare. While the advantageous selection models fit certain insurance markets (car insurance etc.), they seem not very applicable to the health insurance context.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6">What is the violation of single crossing and why is it central to your results? (technical)</h2>
+<div class="outline-text-2" id="text-6">
+
+<p>Single crossing means that the high-risk type has a higher willingness to pay for marginally reducing copayments (starting from any (!) given insurance contract). This is not true in our model because of the utilization effect: As described above, it will which individual has the higher willingness to pay for reducing copayments will generally depend on the initial copayments. 
+</p>
+<p>
+If single crossing was not violated, the high-risk individual would always choose (weakly) higher coverage than the low risk individual: Suppose the low-risk type preferred from two given insurance contracts the one with the lower copayments. This means that his willingness to pay for reducing the copayment is higher than the premium difference. If single crossing holds, thesame has then to be true for the high-risk type. Hence, the positive correaltion property can only be overturned when single crossing is violated.
+</p></div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: </p>
+<p class="author">Author: Jan Boone and Christoph Schottmueller</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
