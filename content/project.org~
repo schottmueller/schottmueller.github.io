@@ -1,0 +1,66 @@
+#+Title: Projektkurs Volkswirtschaftslehre: let the computer do the calculations
+
+* News
+- List of exercises that are part of the portfolio notebook (i.e. the notebook with exercise solutions you have to hand in at the end of the term):
+  - Week 2: E2, E3
+  - Week 3: E3, E4
+  - Week 4: E1, E2, E3
+  - Week 5: E1, E2, E3
+  - Week 6: E1, E2
+  - Week 7: E1, E3
+  - Week 8: E2, E3
+    
+- The registration deadline for the "examination" on KLIPS was extended. Please, register now. 
+- A sample [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]] is available now.
+- On June 22, the project course will be held by Dr. Marius Gramb as I am traveling. 
+- Unfortunately, some of the commands in the data discovery file were deprecated and therefore I had to change the file.
+- In week 1, we talk a bit about the course and try to install julia on your computer. *Please note that you need to bring a notebook to class every week in order to be able to work.* (It does not matter whether your operating system is Windows, MacOS, Linux or FreeBSD. However, tablets or phones with mobile operating systems like Android and iOS will not work.)
+
+* Description
+
+Modern economics relies heavily on mathematical models. Solving these models by hand is usually burdensome and often outright infeasible. In these cases, computers can be used to analyse and solve economic models numerically. This project course gives an introduction to solving models numerically with the help of the computer. It is suitable for students with no (or little) prior knowledge of numerical analysis and/or programming.
+
+The first part of the course gives an introduction to programming using the programming language "julia". The second part shows how to use julia to do numerical analysis (solving equations, maximizing functions, creating plots etc.). In the third part, students undertake a small project in which they use the skills acquired in the first two parts.
+
+Students are asked to watch video tutorials (part 1) or "notebooks" (part 2) at home. In class questions on these are answered and students work on small exercises.
+
+The skills acquired in this course will be particularly useful for writing term papers or a thesis but are also valued on the job market.
+
+*Time and place:* Thursdays 10:00-11:30, SSC basement, seminar room S37 (102/U1/-1.314)
+
+*Grading:* Your portfolio consists of the following elements. First, a "julia cheat sheet" which is a document in which you write down the julia commands and functions you have learned together with a brief description of what they do or an example. Second, a jupyter notebook with solutions to the exercises. You will work on this during class. Third, your project which will be presented in class and handed in as a jupyter notebook.
+
+* Preliminary plan
+The following plan will probably be adapted a few times over the course of the semester. I use the following abbreviations:
+- jpfnb:  [[https://juliaacademy.com/p/julia-programming-for-nervous-beginners]["Julia Programming for Nervous Beginners"]]
+- jfmt: [[https://github.com/schottmueller/juliaForMicroTheory]["Julia for micro theory"]]
+   |------+------------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
+   | Week | content                                        | to do before next week's class                                                                                       |
+   |------+------------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
+   |    1 | info, installing julia, jupyter notebooks      | "week 1" of jpfnb                                                                                                    |
+   |    2 | strings, data containers                       | "week 2" of jpfnb                                                                                                    |
+   |    3 | numbers, functions                             | "week 3" of jpfnb                                                                                                    |
+   |    4 | loops, if/else                                 | "week 4" of jpfnb, notebooks 0-2 jfmt                                                                                |
+   |    5 | plotting and maximizing functions, interact.jl | notebooks 3,4,6,7 jfmt                                                                                               |
+   |    6 | equation solving, multivariate maximization    | notebook 8 jfmt, notebooks [[./dataDiscovery.org][data]] (skip sections 3.3, 4.3,4.5-4.7) |
+   |    7 | data and statistics                            | notebooks on  [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/hypothesisTesting.org][hypothesis testing]] (only sections 1 and 2) and on [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/regression.org][regressions]]                                                                            |
+   |    8 | OLS                                            | notebook 5 jfmt                                                                                                      |
+   |    9 | some applications                 |                                                                                                                      |
+   |   10 | project work                                   |                                                                                                                      |
+   |   11 | project work                                   |                                                                                                                      |
+   |   12 | project work                                   |                                                                                                                      |
+   |   13 | project presentations                          |                                                                                                                      |
+   
+
+
+* Material and links
+** Setting up Julia
+- [[https://julialang.org/downloads/][website]] for downloading julia
+- [[https://uni-koeln.sciebo.de/s/B0U2oCT7IP4YMcE][screencasts]] on how to download and install julia
+** Material
+- julia-academy course "[[https://juliaacademy.com/p/julia-programming-for-nervous-beginners][Julia Programming for Nervous Beginners]]" used in the first few weeks; you can find the course notes [[https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes][here]]
+- [[https://github.com/schottmueller/juliaForMicroTheory][notebooks]] "julia for microeconomic theory"
+- [[https://raw.githack.com/schottmueller/projectJulia/main/exercises.html][exercises]] to be solved in class
+-  [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]]   
+** Beyond this course
+- [[https://julia.quantecon.org/intro.html][QuantEcon]] is a graduate course in quantitative economics using julia. The material is beyond the scope of this course but might give you an idea how the tools taught in this course are used in economic research.

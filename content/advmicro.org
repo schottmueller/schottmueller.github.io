@@ -1,0 +1,171 @@
+#+TITLE: Advanced Microeconomics (Master Economic Research)
+#+AUTHOR: Christoph Schottmüller
+#+OPTIONS: H:2 num:nil toc:nil
+#+Latex_Header: \usepackage{natbib}
+* News
+- Please watch screencasts 01-03 before the first lecture and have a look at the corresponding exercises.
+#  - Exam grades will be published soon. PhD students can pick up their certificates at the secretariat (SSC 4.302-4.304) but due to technical problems not before July 26 (maybe call in beforehand to make sure that someone is in).
+    
+# - The second exam is planned for September 30, 14:00. Registration via KLIPS is open now. PhD students should register via mail to [c dot schottmueller at uni minus koeln dot de].
+# - On July ?, we use the class for question hour. If you want to have an answer for sure, please send me your questions before July ?.
+# - resit date: October 7, 16:00-17:00 in SSC 4.210
+ - exam date: July 18, 14:00-15:00 in the usual lecture room
+
+* Time and place
+ - Thursday, 14:00-17:30, Seminarraum 3.03 (118/03/3.03)
+
+* Setup
+Please, watch the screencasts provided below before coming to class. You have the option to ask questions about the material in the screencasts (and I might ask you a few questions to see whether things are clear). We will then do the exercises. In terms of /preparation/, you have to watch the screencasts and read through the exercises on the respective topic and think roughly 10 minutes about each of them. (Don't be discouraged if you do not manage to solve them quickly. Some of them are a bit tricky.)  One organizational remark: as we have only one projector, it is useful to bring a printout of the exercises with you to class. 
+ 
+* Material
+- [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts for lecture material
+
+- [[https://github.com/schottmueller/advMicro/files/3255945/exam.pdf][old exam]] 
+- Exercises: [[https://web.tresorit.com/l/fHuQ1#QdeCbHMRepN8nScN6s4cUw][pdf]],  [[https://web.tresorit.com/l/qeT48#mMP9IaB3YTvSmJ1IKWeASw][solutions]] for some exercises not covered in class
+- Slides:
+  - [[https://github.com/schottmueller/advMicro/files/3028996/dominRatio.pdf][Dominance and rationalizability]]
+  - [[https://github.com/schottmueller/advMicro/files/4419534/NashEq.pdf][Nash Theorem]]
+  - [[https://github.com/schottmueller/advMicro/files/3080379/BNE.pdf][BNE]]
+  - [[https://github.com/schottmueller/advMicro/files/3111105/auctions.pdf][auctions]]
+  - [[https://github.com/schottmueller/advMicro/files/1966289/spne.pdf][SPNE]]
+  - [[https://github.com/schottmueller/advMicro/files/1987255/pbe.pdf][PBE]]
+  - [[https://github.com/schottmueller/advMicro/files/2000878/signal.pdf][signaling]]
+  - [[https://github.com/schottmueller/advMicro/files/2052823/revelationPrinc.pdf][revelation principle]]
+  - [[https://github.com/schottmueller/advMicro/files/6849535/domStratMechDes.pdf][dominant strat. implementation]]
+  - [[https://github.com/schottmueller/advMicro/files/2054659/ms.pdf][Myerson Satterthwaite]]
+  - [[https://github.com/schottmueller/advMicro/files/2054661/screening.pdf][screening]]
+  - [[https://github.com/schottmueller/advMicro/files/2115403/revenueEquivalence.pdf][optimal auctions]]
+  - [[https://github.com/schottmueller/advMicro/files/3345210/optTradeLimits.pdf][optimal trading mechanism and limit results]], [[https://github.com/schottmueller/advMicro/blob/master/Public%20good.ipynb][numerics]]
+  - [[https://github.com/schottmueller/advMicro/files/2149786/CremerMcLean.pdf][correlated information]]
+
+#  - [[https://github.com/schottmueller/advMicro/files/2052819/cheapTalk.pdf][cheap talk]]
+#  - [[https://github.com/schottmueller/advMicro/files/3062253/corrEq.pdf][correlated eq.]]
+#  - [[https://github.com/schottmueller/advMicro/files/2140707/infoDesign.pdf][information design]]
+#  - [[https://github.com/schottmueller/advMicro/files/2140709/buyerOptLearning.pdf][buyer optimal learning]]
+- Handouts etc.:
+  - [[https://web.tresorit.com/l/AMKQB#HEQU9TL0-KiyAtKbMX0GCQ][math handout]]
+  - [[https://web.tresorit.com/l#adZffHp8odlHv3TH8i48cA][notes]] (occassionally updated)
+  - [[https://github.com/schottmueller/advMicro/files/2110550/envelopeMonoNonLinPric.pdf][envelope]] theorem and monotonicity constraint
+
+* Prerequisites
+I assume that you have some introductory knowledge of game theory on the level of cite:gibbons1992primer. In particular, you should know the material in chapters 1 and 2 in Gibbons' book (strategic form games, dominance, mixed strategies, mixed and pure Nash equilibrium, extensive form games, game trees, backwards induction, subgame perfect Nash equilibrium) and be able to apply it in simple games. From Advanced Microeconomics I, we build upon the part about /decision making under uncertainty/ (expected utility theorem). In terms of mathematics, it is helpful to master the material of the course /Advanced Mathematics for Economists/. Having said that, most of the used math tools will not be far beyond high school maths. At the minimum you have to know (partial) differentiation, integration and optimization of functions and basic statistics (discrete and continuous probability distributions, expected values as well as Bayes' rule and conditional probabilities). More importantly, you should also have some idea of what a mathematical proof is. There is a handout on maths covering some of the prerequisites and topics that people tend to forget about quickly. 
+
+* Books
+
+Most material is covered in cite:mas1995microeconomic which is abbreviated MWG in the following. Roughly speaking, we will cover chapters 8, 9, 13 and 23 from this book.
+
+Some other interesting books on game theory covering the course material partially are
+- cite:fudenberg1991game (FT): Covers an impressive amount of material in considerable depth at PhD level. Some of the proofs are, however, not fully worked out.
+- cite:maschler2013game (MSZ): Impresses with very clear proofs and fully worked out examples. Do, however, not expect to find much economics in this book.
+- cite:osborne1994course (OR). A very nice book that is freely available for download from the authors' websites. 
+
+For mechanism design, cite:boergers2015 is an excellent source which naturally covers much more than we do in the course.
+
+References for the papers and books in an old [[https://github.com/schottmueller/advMicro/files/2737411/home.pdf][pdf version]] of this site.
+
+* Schedule
+
+The following plan is...well a plan...and as such it might be adapted to unforseen circumstances if necessary.
+
+** Static games of complete information I
+- strategic form games and their interpretation (OR ch. 1 and 2.1)
+- iterative elimination of strictly dominated strategies (MWG 8.B)
+- rationalizability (MWG 8.C)
+- refresher reading (optional): MWG ch. 7
+
+** Static games of complete information II
+- mixed strategy Nash equilibrium (MWG 8.D)
+- Brouwer's fixed point theorem and existence of Nash equilibrium (MSZ 5.3; MWG 8.Appendix gives a proof using Kakutani's fixed point theorem)
+
+# ** Static games of complete information III
+# - correlated equilibrium (MSZ 8)
+** Static games of incomplete information I
+- Bayesian Nash equilibrium (MWG 8.E)
+- simple examples of BNE
+# - purification 
+
+** Static games of incomplete information II: Auctions
+- first price auction (Gibbons 3.2B or MWG Example 23.B.5)
+- second price auction (MWG Example 23.B.6)
+- common value auction 
+- further not required reading: if you are interested in experiments: Ngangoue and Weizsäcker "Learning from unrealized versus realized prices", [[https://www.wiwi.hu-berlin.de/de/professuren/vwl/microeconomics/people/gweizsaecker/paper_gweizsaecker_learningprice.pdf][working paper]], 2018); a detailed source for what we did is Krishna's book "Auction Theory" (academic Press 2010), chapter 2 and 6.
+# - double auction (Gibbons 3.2C or FT Example 6.4 p. 219)
+
+# ** Common knowledge I
+# - common knowledge
+# - Rubinstein's email game
+
+# ** Common knowledge II: Global games
+# - stag hunt
+# - global games
+
+** Dynamic games I
+- backwards induction and subgame perfect equilibrium (MWG 9.A and 9.B)
+- one shot deviation principle (MWG 9.B)
+- Rubinstein bargaining  (MWG 9.Appendix A)
+- forward induction (MWG 9.D)
+
+** Dynamic games II
+- beliefs and sequential rationality (MWG 9.C)
+- perfect Bayesian equilibrium (MWG 9.C)
+- sequential equilibrium (MWG 9.C)
+- alternative not required reading: OR ch. 12  is a well written piece on the issues mentioned in the lecture; OR ch. 11 covers some more foundational issues that we skipped
+
+** Signaling and refinements
+- Spence signaling model (MWG 13.C and MWG 13.Appendix)
+
+# ** Adverse selection
+# - Akerlof's lemons market (MWG 13.B)
+# - Rothschild-Stiglitz insurance market (cite:rothschild1976equilibrium)
+
+# ** Cheap talk
+# - Crawford and Sobel (cite:crawford1982cheap) (the paper is not super easy to read; so I do not expect you to go through all the details)
+# - further not required reading: see the [[https://doi.org/10.1057/978-1-349-95189-5_2525][article]] in the New Palgrave Dictionary of Economics on Cheap Talk for a quick overview over the literature, for more on the delegation example see Alonso, Ricardo, and Niko Matouschek. "Optimal delegation." Review of Economic Studies 75.1 (2008): 259-293. (and several other papers by these authors)
+** Mechanism design I: revelation principle
+- mechanism design problem (MWG 23.B)
+- revelation principle (MWG 23.B)
+
+** Mechanism design II: dominant strategy implementation
+- Gibbard Satterthwaite theorem (MWG 23.C)
+- Pivot (and VCG) mechanism  (MWG 23.C)
+
+# ** Mechanism design III: AGV
+# - Bayesian implementation (MWG 23.D)
+# - expected externality mechanism (MWG 23.D up to p. 887)
+
+** Mechanism design III: Myerson- Satterthwaite
+- Bayesian implementation (MWG 23.D)
+- envelope theorem (MWG 23.D p. 887-889)
+- Myerson-Satterthwaite theorem (MWG 23.E)
+
+** Mechanism design IV: screening
+- non-linear pricing by a monopolist (see handout) 
+- a classic reference on this topic is cite:maskin1984monopoly, MWG cover a different screening problem in Example 23.F.1 and MWG pp. 897-903 is recommended reading
+
+** Mechanism design V: optimal auctions
+- revenue equivalence (MWG 23.D p.889-)
+- optimal independent, private value auctions (MWG Example 23.F.2)
+
+** Mechanism design VI: welfare optimal mechanisms and limits
+- welfare maximizing mechanism in bilateral trade
+- limits when number of agents gets large in bilateral trade and public good setting
+- references: Börgers 3.4.3; Fudenberg and Tirole "Game Theory" ch. 7.4.5+7.4.6
+# ** Mechanism design VII: correlated information
+# - belief extraction
+# - Cremer-McLean mechanism (cite:cre88) or Börgers ch. 6.4
+
+# ** Information design I: Bayesian persuasion
+# - Bayesian persuasion (cite:bergemann17_infor_desig)
+# - Further non-required reading: cite:kamenica11_bayes_persuas, cite:bergemann16_infor_desig_bayes_persuas_bayes_correl_equil
+
+# ** Information design II: interlude
+#  - value of information in experimentation
+#  - stochastic dominance orderings
+ # - Blackwell's theorem (cite:blackwell53)
+
+# ** Information design II
+# - stochastic dominance
+# - buyer optimal information design, e.g. cite:roe17
+
+bibliographystyle:chicago
+bibliography:/home/christoph/stuff/bibliography/references.bib

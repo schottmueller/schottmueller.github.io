@@ -1,0 +1,204 @@
+#+TITLE: Imperfect Information in Health Care Markets
+#+AUTHOR: Christoph Schottmüller
+#+Options: toc:nil H:2
+#+Latex_Header: \usepackage{natbib}
+
+* News
+- There will be no exercise session on Jan 22.
+- Some notes on how to solve the case studies are added below.  
+- Due to likely disruptions of public transport, the sessions in the week Jan 8- will be broadcasted on zoom. Please note that (i) internet is rather unstable and occasionally even defect and (ii) microphone quality is bad in lecture room settings. Therefore, please attend on campus if you can.
+  - exercise session Jan 8: https://uni-koeln.zoom.us/j/97244593786?pwd=ODQ4cTduYUFYWjE2TXlSa2p6blNtQT09
+   Meeting ID: 972 4459 3786
+   Password: 281565
+
+  - lecture Jan 10: https://uni-koeln.zoom.us/j/98887156866?pwd=cUZsUWlCdkhNc0YwVC9MUFMyTVJIQT09
+    Meeting ID: 988 8715 6866
+    Password: 354952
+  
+- The lecture on October 11 was given online. You can download the [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]].
+# - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
+#  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
+- Exam dates are Feb 14, 14:00 (100 HS II, 100/U1/HSII) and March 20, 9:00 (HS XXIII, 101/EG/17). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
+#  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
+#  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
+  - Note that there will be an exercise session on October 9 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.
+# - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
+# - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
+# - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
+# - some points on the exam:
+#  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
+#  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
+#  - Explain your answers. In calculation exrcises the explanations can be brief and complete sentences are not required. 
+# - On Jan. 15, we will discuss the empirical case study in the lecture (see the "exercises"). I will use LibreOffice Calc in class and provide a solution in Julia online. Please try to solve it yourself beforehand.
+# - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
+# - Information on the exam: 
+#  - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
+#  - The second exam date is March 22, 8:45-9:45 in Aula I.
+#  - The exam will take place on February 3, 16:15-17:15 in HS B.
+#  - Students asked me to indicate some exercise questions that could be exam questions with a rough idea of how many points these exercises would give. I give some examples in the following, however, the point estimates are rough and may differ from the way points are awarded int he exam. 
+ #   - Insurance demand: exercise 5 and 6 (10 points each)
+ #   - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
+ #   - moral hazard: exercise 4 (10 points) 
+
+* Prerequisites and background
+Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierende der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
+
+If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above mentioned topics (and often links to more in depth material). 
+
+* Course materials
+
+Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publicly available as it is essentially funded by public money. The material below is likely to get updated over the course of the term.
+
+Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
+
+- The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]] on which you can also find a list of *references*.
+
+- The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/10466268/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]].
+  
+- *Slides*
+  - intro [[https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf][slides]]
+  - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/7381024/02insuranceDemand.pdf][slides]]
+  - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/7424095/0307adverseSelection.pdf][slides]],   numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
+  - moral hazard [[https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf][slides]]
+  - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
+
+- *Screencasts*
+  - [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]] lecture 1
+  - [[https://uni-koeln.sciebo.de/s/I4hWkZNgdtqAPDF][derivation]] Rothschild-Stiglitz equilibrium
+  - how to get [[https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH][descriptive statistics]] and do [[https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA][regressions]] in LibreOffice Calc 
+  - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice 
+
+- *Data sets and instructions* for case studies:
+  - exercises (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
+  - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
+
+- An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
+
+- material created by other people:
+  - a [[https://youtu.be/pUkRo9COd38?feature=shared][video]] on (adverse) selection  
+
+- *Notes*
+  - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
+  - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
+    - [[https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf][Exercise Session 1]]
+    - [[https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf][Exercise Session 2]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13071322/Health_Care_Session_3.pdf][Exercise Session 3]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13206543/Health_Care_Session_4.pdf][Exercise Session 4]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13268522/Health_Care_Session_5.pdf][Exercise Session 5]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13336085/Health_Care_Session_6.pdf][Exercise Session 6]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13416688/Health_Care_Session_7.pdf][Exercise Session 7]]
+    - [[https://uni-koeln.sciebo.de/s/toBOJ1w7vS0IYJE][Exercise Session 8-12]]
+
+# ** Julia notebooks
+# /This is very optional (!!!) but if you are interested/, there are some julia/jupyter [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][notebooks]] that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].
+
+
+* Course setup 
+In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
+
+Students learn economic methods to analyze health care markets theoretically and also gain some insight in how to design empirical tests of the predictions of the theoretical models. 
+
+The course consists of a lecture and an exercise session. Models, their solutions and implications as well as empirical evidence are presented in the lecture. In the exercise classes, solution to exercises are discussed. Students are expected to work on the exercises beforehand. Exercises consist mainly of calculation exercises using (variations of) models introduced in class but also discussion questions on specific applications. 
+
+The exam will -- in style -- be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
+
+** Lecture times: 
+- lecture: Wednesday, 10:00-11:30 in 100/EG/HSXII
+- exercise classes: Monday, 14:00-15:30 100/EG/HSXII
+
+** Textbooks
+The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). cite:morrisey2008health (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
+
+* Detailed schedule
+This is a plan and as every good plan it may be adjusted if necessary.
+** Intro (2 lectures)
+*** Choice, preferences, utilities, welfare, models
+- mathematical prerequisites: functions, expected value of a discrete random variable, summation sign
+- economic prerequisites: preferences, utility maximization, Pareto efficiency, welfare  
+- choice, preferences, utility
+- choice under uncertainty and expected utility
+- welfare
+- models
+- reading: 
+*** Insurance demand
+- mathematical prerequisites: inverse functions, derivatives, monotonicity as well as concavity and convexity
+- certainty equivalent and risk premium
+- drivers of insurance demand
+- (coverage choice and state dependent utility)
+- reading: ch. 3 cite:morrisey2008health
+- supplementary reading: ch. 9, cite:eisenfuhr2013rationales
+
+** Selection (5)
+*** Selection with fixed coverage
+- economic prerequisites: demand function   
+- model
+- welfare consequences
+- gender specific premia
+- some evidence for selection
+- reading: p. 115-123 cite:einav2011selection, ch. 5.3.1 and 5.3.2 cite:zweifel2009health
+*** Screening with coverage: Rothschild-Stiglitz
+- mathematical prerequisites: repeat implicit function theorem, concavity and convexity    
+- shape of indifference curves
+- equilibrium 
+- comparative statics
+- derivation of eq in screencast
+- reading:  ch. 5.3.3 cite:zweifel2009health
+- supplementary reading: cite:rothschild1976equilibrium
+*** Genetic Tests
+- two kinds of risks
+- in RS model
+- supplementary reading: cite:doh96, cite:lagerlof2018monopoly
+*** Premium risk, community rating and risk adjustment
+- mathematical prerequisites: linear regression ("ordinary least squares") and R^2  
+- premium risk model
+- segue into risk adjustment
+- discussion: how could German health insurers attract a profitable clientele?
+- reading: ch. 5.3.4 in cite:zweifel2009health
+- supplementary reading: ch. 7 in cite:zweifel2009health, ch. 6 in cite:morrisey2008health, (cite:behrend2007risk, cite:PMM2000755)
+*** Advantageous selection
+- case study: selection into long term care insurance in the US
+- fixed coverage model
+- (bonus screencast: treatment choice and utilization)
+- reading: cite:finkelstein2006multiple
+- supplementary reading: cite:hemenway1990propitious, cite:fang2008sources, cite:boone2017health
+** Moral hazard (3)
+*** The question of moral hazard and empirical evidence
+- mathematical prerequisites: significance in statistical tests (e.g. t-test) 
+- slope of demand
+- RAND and arc elasticity of demand
+- Oregon
+- welfare
+- ex ante moral hazard
+- reading: sections 1,2 and 3.1 in cite:einav2018moral
+*** Treatment choice and the donut hole
+- mathematical prerequisites: (continuous) distributions (density, distribution function)     
+- simple model of treatment choice
+- donut hole
+- out of sample predictions
+- utilization management and gatekeeping
+- reading: section 3.2-end cite:einav2018moral
+*** Case study: moral hazard in NL
+- diff-in-diff estimate for arc elasticity of demand
+
+** Physician-patient interaction (4)
+*** Supplier induced demand: theory
+- density model
+- some empirical evidence
+- second wave of SID studies
+- reading: ch. 8 cite:zweifel2009health
+- supplementary reading: section 5 in cite:mcguire2000physician, cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing
+*** Supplier induced demand: empirics
+- How Danish physicians react to incentives
+- Case study: German hospitals
+*** Credence good model
+- problems/assumptions and appropriate incentives
+- discussion: DRG system like liability? implications?
+- reading: cite:dulleck2006doctors
+*** Cost saving incentives and communication
+- physician remuneration, trust and the Hippocratic oath
+- supplementary reading: cite:schottmueller2013cifd
+
+
+bibliographystyle:chicago
+bibliography:/home/christoph/stuff/bibliography/references.bib
+
