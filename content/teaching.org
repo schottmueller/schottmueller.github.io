@@ -6,19 +6,19 @@
 
 * University of Cologne
 ** Courses
-2023-: Project course: let the computer do the calculations
+2023-: Project course: let the computer do the calculations, [[./project.org][course website]]
 
-2021-: Microeconomics, [[https://github.com/schottmueller/microMSc/blob/main/home.org][course website]]
+2021-: Microeconomics, [[./micromsc.html][course website]]
    
-2019-: Information and Strategy, [[https://github.com/schottmueller/infoStrat/blob/master/home.org][course website]]
+2019-: Information and Strategy, [[./infostrat.org][course website]]
 
-2019-: Seminar topics in the economics of information and privacy, [[https://web.tresorit.com/l#9QSX9y9YqLfuBuZ4oNjakg][description]]
+2018-: Imperfect Information in Health Care Markets, [[./infohealth.org][course website]]
 
-2018-: Imperfect Information in Health Care Markets, [[https://github.com/schottmueller/infohealthecon/blob/master/plan.org][course website]]
-
-2018-: Advanced Microeconomics II (Research Master), [[https://github.com/schottmueller/advMicro/blob/master/home.org][course website]]
+2018-: Advanced Microeconomics (Master Economic Research), [[./advmicro.org][course website]]
 
 2018: Seminar Competition Policy
+
+2019-2021: Seminar topics in the economics of information and privacy, [[https://web.tresorit.com/l#9QSX9y9YqLfuBuZ4oNjakg][description]]
 
 **  Thesis supervision
 
