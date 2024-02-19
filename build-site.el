@@ -13,6 +13,7 @@
 (package-install 'htmlize)
 ;;org-mode citations
 (package-install 'citeproc-org)
+(require 'oc-csl)
 
 (require 'ox-publish)
  
