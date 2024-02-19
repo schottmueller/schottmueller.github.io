@@ -88,3 +88,8 @@ Some of the lectures are based on parts of books. Noteworthy are
 - [cite:@campbell2018incentives]
 
 For more specific reading material and references to research papers, check the course [[https://github.com/schottmueller/infoStrat/files/7154183/plan21.pdf][plan]].
+
+* Bibliography
+
+#+print_bibliography:
+

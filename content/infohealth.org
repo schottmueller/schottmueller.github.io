@@ -200,5 +200,6 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - physician remuneration, trust and the Hippocratic oath
 - supplementary reading: [cite:@schottmueller2013cifd]
 
+* Bibliography  
 #+print_bibliography:
 

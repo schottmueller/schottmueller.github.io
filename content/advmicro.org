@@ -167,4 +167,5 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 # - stochastic dominance
 # - buyer optimal information design, e.g. cite:roe17
 
+* Bibliography
 #+print_bibliography:
