@@ -1,9 +1,7 @@
 #+TITLE: Microeconomics (MSc Economics)
 #+AUTHOR: Christoph Schottmüller
 #+Options: toc:nil H:2
-#+bibliography: ../static/teaching/privacy.bib
-
-[cite:@posner1981economics]
+#+bibliography: ../static/references.bib
 
 * News
 - The place of examination for the second exam date was changed to HS B.
