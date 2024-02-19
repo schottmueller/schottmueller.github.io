@@ -11,7 +11,8 @@
 ;; Install dependencies
 ;allows fontified source code blocks
 (package-install 'htmlize)
-
+;;org-mode citations
+(package-install 'citeproc-org)
 
 (require 'ox-publish)
  
@@ -51,7 +52,7 @@
           ;; For static files that should remain untouched
           ("website-static"
            :base-directory "./static"
-           :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|jl\\|odp\\|py\\|nb\\|asc\\|ttf\\|tex\\|bib\\|zip"
+           :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|jl\\|odp\\|py\\|nb\\|asc\\|ttf\\|tex\\|bib\\|zip\\|csl"
            :publishing-directory "./public"
            :recursive t
            :publishing-function org-publish-attachment
