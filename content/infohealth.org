@@ -1,7 +1,9 @@
 #+TITLE: Imperfect Information in Health Care Markets
 #+AUTHOR: Christoph Schottmüller
 #+Options: toc:nil H:2
-#+Latex_Header: \usepackage{natbib}
+#+cite_export: basic author-date text
+#+bibliography: ../static/references.bib
+
 
 * News
 - There will be no exercise session on Jan 22.
@@ -107,7 +109,7 @@ The exam will -- in style -- be similar to the questions of the exercise classes
 - exercise classes: Monday, 14:00-15:30 100/EG/HSXII
 
 ** Textbooks
-The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). cite:morrisey2008health (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
+The course is not based on a single textbook. The majority of topics is covered in [cite:@zweifel2009health] (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). [cite:@morrisey2008health] (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
 
 * Detailed schedule
 This is a plan and as every good plan it may be adjusted if necessary.
@@ -125,8 +127,8 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - certainty equivalent and risk premium
 - drivers of insurance demand
 - (coverage choice and state dependent utility)
-- reading: ch. 3 cite:morrisey2008health
-- supplementary reading: ch. 9, cite:eisenfuhr2013rationales
+- reading:  [cite:@morrisey2008health ch. 3]
+- supplementary reading: [cite:@eisenfuhr2013rationales ch. 9]
 
 ** Selection (5)
 *** Selection with fixed coverage
@@ -135,32 +137,32 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - welfare consequences
 - gender specific premia
 - some evidence for selection
-- reading: p. 115-123 cite:einav2011selection, ch. 5.3.1 and 5.3.2 cite:zweifel2009health
+- reading: [cite:@einav2011selection p. 115-123], [cite:@zweifel2009health ch. 5.3.1 and 5.3.2]
 *** Screening with coverage: Rothschild-Stiglitz
 - mathematical prerequisites: repeat implicit function theorem, concavity and convexity    
 - shape of indifference curves
 - equilibrium 
 - comparative statics
 - derivation of eq in screencast
-- reading:  ch. 5.3.3 cite:zweifel2009health
-- supplementary reading: cite:rothschild1976equilibrium
+- reading:   [cite:@zweifel2009health ch. 5.3.3]
+- supplementary reading: [cite:@rothschild1976equilibrium]
 *** Genetic Tests
 - two kinds of risks
 - in RS model
-- supplementary reading: cite:doh96, cite:lagerlof2018monopoly
+- supplementary reading: [cite:@doh96], [cite:@lagerlof2018monopoly]
 *** Premium risk, community rating and risk adjustment
 - mathematical prerequisites: linear regression ("ordinary least squares") and R^2  
 - premium risk model
 - segue into risk adjustment
 - discussion: how could German health insurers attract a profitable clientele?
-- reading: ch. 5.3.4 in cite:zweifel2009health
-- supplementary reading: ch. 7 in cite:zweifel2009health, ch. 6 in cite:morrisey2008health, (cite:behrend2007risk, cite:PMM2000755)
+- reading: [cite:@zweifel2009health ch. 5.3.4]
+- supplementary reading:  [cite:@zweifel2009health ch. 7], [cite:@morrisey2008health ch. 6], [cite:@behrend2007risk], [cite:@PMM2000755]
 *** Advantageous selection
 - case study: selection into long term care insurance in the US
 - fixed coverage model
 - (bonus screencast: treatment choice and utilization)
-- reading: cite:finkelstein2006multiple
-- supplementary reading: cite:hemenway1990propitious, cite:fang2008sources, cite:boone2017health
+- reading: [cite:@finkelstein2006multiple]
+- supplementary reading: [cite:@hemenway1990propitious], [cite:@fang2008sources], [cite:@boone2017health]
 ** Moral hazard (3)
 *** The question of moral hazard and empirical evidence
 - mathematical prerequisites: significance in statistical tests (e.g. t-test) 
@@ -169,14 +171,14 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - Oregon
 - welfare
 - ex ante moral hazard
-- reading: sections 1,2 and 3.1 in cite:einav2018moral
+- reading: [cite:@einav2018moral sections 1,2 and 3.1]
 *** Treatment choice and the donut hole
 - mathematical prerequisites: (continuous) distributions (density, distribution function)     
 - simple model of treatment choice
 - donut hole
 - out of sample predictions
 - utilization management and gatekeeping
-- reading: section 3.2-end cite:einav2018moral
+- reading: [cite:@einav2018moral section 3.2-end]
 *** Case study: moral hazard in NL
 - diff-in-diff estimate for arc elasticity of demand
 
@@ -185,20 +187,18 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - density model
 - some empirical evidence
 - second wave of SID studies
-- reading: ch. 8 cite:zweifel2009health
-- supplementary reading: section 5 in cite:mcguire2000physician, cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing
+- reading: [cite:@zweifel2009health]
+- supplementary reading: [cite:@mcguire2000physician section 5], [cite:@fuchs1978supply; @gruber1996physician; @krasnik1990changing]
 *** Supplier induced demand: empirics
 - How Danish physicians react to incentives
 - Case study: German hospitals
 *** Credence good model
 - problems/assumptions and appropriate incentives
 - discussion: DRG system like liability? implications?
-- reading: cite:dulleck2006doctors
+- reading: [cite:@dulleck2006doctors]
 *** Cost saving incentives and communication
 - physician remuneration, trust and the Hippocratic oath
-- supplementary reading: cite:schottmueller2013cifd
+- supplementary reading: [cite:@schottmueller2013cifd]
 
-
-bibliographystyle:chicago
-bibliography:/home/christoph/stuff/bibliography/references.bib
+#+print_bibliography:
 

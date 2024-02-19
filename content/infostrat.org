@@ -1,7 +1,8 @@
 #+TITLE: Information and Strategy
 #+AUTHOR: Christoph Schottmüller
 #+Options: toc:nil H:2
-#+Latex_Header: \usepackage{natbib}
+#+cite_export: basic author-date text
+#+bibliography: ../static/references.bib
 
 * News
 - The lecture on Nov 16 is canceled due to health reasons.
@@ -78,12 +79,12 @@ The *structure of the course* is as follows: In the first part of the course, th
 
 ** Lecture material
 - adverse selection slides: [[https://github.com/schottmueller/microMSc/blob/main/slides/lemons.org][org]] [[https://web.tresorit.com/l/uHpHt#H4BNhZHSj9-AkWIwpG4BnQ][pdf]]   
-- [[https://github.com/schottmueller/infoStrat/files/3615401/htrap.pdf][guide]] on how to read a paper
+- [[./files/htrap.pdf][guide]] on how to read a paper
 - [[https://github.com/schottmueller/infoStrat/files/7323109/envelopeMonoNonLinPric.pdf][handout]] on screening with a continuum of types
 
 ** Books
 Some of the lectures are based on parts of books. Noteworthy are
-- Bolton P. and Dewatripont M., "Contract theory", MIT Press 2005,
-- Campbell D.E., "Incentives: motivation and the economics of information", Cambridge University Press 2018.
+- [cite:@bolton2005contract] 
+- [cite:@campbell2018incentives]
 
 For more specific reading material and references to research papers, check the course [[https://github.com/schottmueller/infoStrat/files/7154183/plan21.pdf][plan]].

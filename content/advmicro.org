@@ -1,7 +1,9 @@
 #+TITLE: Advanced Microeconomics (Master Economic Research)
 #+AUTHOR: Christoph Schottmüller
 #+OPTIONS: H:2 num:nil toc:nil
-#+Latex_Header: \usepackage{natbib}
+#+cite_export: basic author-date text
+#+bibliography: ../static/references.bib
+
 * News
 - Please watch screencasts 01-03 before the first lecture and have a look at the corresponding exercises.
 #  - Exam grades will be published soon. PhD students can pick up their certificates at the secretariat (SSC 4.302-4.304) but due to technical problems not before July 26 (maybe call in beforehand to make sure that someone is in).
@@ -48,20 +50,18 @@ Please, watch the screencasts provided below before coming to class. You have th
   - [[https://github.com/schottmueller/advMicro/files/2110550/envelopeMonoNonLinPric.pdf][envelope]] theorem and monotonicity constraint
 
 * Prerequisites
-I assume that you have some introductory knowledge of game theory on the level of cite:gibbons1992primer. In particular, you should know the material in chapters 1 and 2 in Gibbons' book (strategic form games, dominance, mixed strategies, mixed and pure Nash equilibrium, extensive form games, game trees, backwards induction, subgame perfect Nash equilibrium) and be able to apply it in simple games. From Advanced Microeconomics I, we build upon the part about /decision making under uncertainty/ (expected utility theorem). In terms of mathematics, it is helpful to master the material of the course /Advanced Mathematics for Economists/. Having said that, most of the used math tools will not be far beyond high school maths. At the minimum you have to know (partial) differentiation, integration and optimization of functions and basic statistics (discrete and continuous probability distributions, expected values as well as Bayes' rule and conditional probabilities). More importantly, you should also have some idea of what a mathematical proof is. There is a handout on maths covering some of the prerequisites and topics that people tend to forget about quickly. 
+I assume that you have some introductory knowledge of game theory on the level of [cite:@gibbons1992primer]. In particular, you should know the material in chapters 1 and 2 in Gibbons' book (strategic form games, dominance, mixed strategies, mixed and pure Nash equilibrium, extensive form games, game trees, backwards induction, subgame perfect Nash equilibrium) and be able to apply it in simple games. From Advanced Microeconomics I, we build upon the part about /decision making under uncertainty/ (expected utility theorem). In terms of mathematics, it is helpful to master the material of the course /Advanced Mathematics for Economists/. Having said that, most of the used math tools will not be far beyond high school maths. At the minimum you have to know (partial) differentiation, integration and optimization of functions and basic statistics (discrete and continuous probability distributions, expected values as well as Bayes' rule and conditional probabilities). More importantly, you should also have some idea of what a mathematical proof is. There is a handout on maths covering some of the prerequisites and topics that people tend to forget about quickly. 
 
 * Books
 
 Most material is covered in cite:mas1995microeconomic which is abbreviated MWG in the following. Roughly speaking, we will cover chapters 8, 9, 13 and 23 from this book.
 
 Some other interesting books on game theory covering the course material partially are
-- cite:fudenberg1991game (FT): Covers an impressive amount of material in considerable depth at PhD level. Some of the proofs are, however, not fully worked out.
-- cite:maschler2013game (MSZ): Impresses with very clear proofs and fully worked out examples. Do, however, not expect to find much economics in this book.
-- cite:osborne1994course (OR). A very nice book that is freely available for download from the authors' websites. 
+- [cite:@fudenberg1991game] (FT): Covers an impressive amount of material in considerable depth at PhD level. Some of the proofs are, however, not fully worked out.
+- [cite:@maschler2013game] (MSZ): Impresses with very clear proofs and fully worked out examples. Do, however, not expect to find much economics in this book.
+- [cite:@osborne1994course] (OR). A very nice book that is freely available for download from the authors' websites. 
 
-For mechanism design, cite:boergers2015 is an excellent source which naturally covers much more than we do in the course.
-
-References for the papers and books in an old [[https://github.com/schottmueller/advMicro/files/2737411/home.pdf][pdf version]] of this site.
+For mechanism design, [cite:@boergers2015] is an excellent source which naturally covers much more than we do in the course.
 
 * Schedule
 
@@ -149,7 +149,7 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 ** Mechanism design VI: welfare optimal mechanisms and limits
 - welfare maximizing mechanism in bilateral trade
 - limits when number of agents gets large in bilateral trade and public good setting
-- references: Börgers 3.4.3; Fudenberg and Tirole "Game Theory" ch. 7.4.5+7.4.6
+- references: Börgers 3.4.3; FT ch. 7.4.5+7.4.6
 # ** Mechanism design VII: correlated information
 # - belief extraction
 # - Cremer-McLean mechanism (cite:cre88) or Börgers ch. 6.4
@@ -167,5 +167,4 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 # - stochastic dominance
 # - buyer optimal information design, e.g. cite:roe17
 
-bibliographystyle:chicago
-bibliography:/home/christoph/stuff/bibliography/references.bib
+#+print_bibliography:
