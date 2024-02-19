@@ -2,7 +2,9 @@
 #+AUTHOR: Christoph Schottmüller
 #+OPTIONS: H:2 num:nil toc:nil
 #+cite_export: basic author-date text
-#+bibliography: ./references.bib
+#+bibliography: ./teaching/privacy.bib
+
+[cite:@posner1981economics]
 
 * News
 - Please watch screencasts 01-03 before the first lecture and have a look at the corresponding exercises.
