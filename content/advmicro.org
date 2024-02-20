@@ -1,8 +1,8 @@
 #+TITLE: Advanced Microeconomics (Master Economic Research)
 #+AUTHOR: Christoph Schottmüller
 #+OPTIONS: H:2 num:nil toc:nil
-#+cite_export: csl ./chicago-author-date.csl
-#+bibliography: ./references.bib
+#+cite_export: csl ../static/chicago-author-date.csl
+#+bibliography: ../static/references.bib
 
 * News
 - Please watch screencasts 01-03 before the first lecture and have a look at the corresponding exercises.
@@ -54,7 +54,7 @@ I assume that you have some introductory knowledge of game theory on the level o
 
 * Books
 
-Most material is covered in cite:mas1995microeconomic which is abbreviated MWG in the following. Roughly speaking, we will cover chapters 8, 9, 13 and 23 from this book.
+Most material is covered in [cite:@mas1995microeconomic] which is abbreviated MWG in the following. Roughly speaking, we will cover chapters 8, 9, 13 and 23 from this book.
 
 Some other interesting books on game theory covering the course material partially are
 - [cite:@fudenberg1991game] (FT): Covers an impressive amount of material in considerable depth at PhD level. Some of the proofs are, however, not fully worked out.
@@ -88,7 +88,7 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 - first price auction (Gibbons 3.2B or MWG Example 23.B.5)
 - second price auction (MWG Example 23.B.6)
 - common value auction 
-- further not required reading: if you are interested in experiments: Ngangoue and Weizsäcker "Learning from unrealized versus realized prices", [[https://www.wiwi.hu-berlin.de/de/professuren/vwl/microeconomics/people/gweizsaecker/paper_gweizsaecker_learningprice.pdf][working paper]], 2018); a detailed source for what we did is Krishna's book "Auction Theory" (academic Press 2010), chapter 2 and 6.
+- further not required reading: if you are interested in experiments: Ngangoue and Weizsäcker "Learning from unrealized versus realized prices", [[https://www.wiwi.hu-berlin.de/de/professuren/vwl/microeconomics/people/gweizsaecker/paper_gweizsaecker_learningprice.pdf][working paper]], 2018); a detailed source for what we did is Krishna's book "Auction Theory" (academic Press 2010)[cite:@krishna2009auction ch. 2 and 6].
 # - double auction (Gibbons 3.2C or FT Example 6.4 p. 219)
 
 # ** Common knowledge I
@@ -140,7 +140,7 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 
 ** Mechanism design IV: screening
 - non-linear pricing by a monopolist (see handout) 
-- a classic reference on this topic is cite:maskin1984monopoly, MWG cover a different screening problem in Example 23.F.1 and MWG pp. 897-903 is recommended reading
+- a classic reference on this topic is [cite:@maskin1984monopoly], MWG cover a different screening problem in Example 23.F.1 and MWG pp. 897-903 is recommended reading
 
 ** Mechanism design V: optimal auctions
 - revenue equivalence (MWG 23.D p.889-)
