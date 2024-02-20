@@ -1,7 +1,7 @@
 #+TITLE: Advanced Microeconomics (Master Economic Research)
 #+AUTHOR: Christoph Schottmüller
 #+OPTIONS: H:2 num:nil toc:nil
-#+cite_export: csl ../static/chicago-author-date.csl
+#+cite_export: csl ../static/econometrica.csl
 #+bibliography: ../static/references.bib
 
 * News

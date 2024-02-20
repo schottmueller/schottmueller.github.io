@@ -1,7 +1,7 @@
 #+TITLE: Imperfect Information in Health Care Markets
 #+AUTHOR: Christoph Schottmüller
 #+Options: toc:nil H:2
-#+cite_export: csl ../static/chicago-author-date.csl
+#+cite_export: csl ../static/econometrica.csl
 #+bibliography: ../static/references.bib
 
 
