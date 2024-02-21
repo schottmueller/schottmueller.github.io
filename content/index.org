@@ -4,7 +4,7 @@
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller Schottmuller Schottmüller research economics Volkswirtschaftslehre Universität university Koeln Köln Koln Tilburg Copenhagen
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
-#+HTML_HEAD_EXTRA: <meta name="description" content="Personal website of Christoph Schottmueller"> <meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Information, Information Economics, Cologne, Koeln, Copenhagen, Tilburg, Economics, University, C-SEB, Tilec"> <meta content="en-gb" http-equiv="Content-Language">
+#+HTML_HEAD_EXTRA: <meta name="description" content="Personal website of Christoph Schottmueller"> <meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University"> <meta content="en-gb" http-equiv="Content-Language">
 
 @@html:
 <p style="float: left;">
