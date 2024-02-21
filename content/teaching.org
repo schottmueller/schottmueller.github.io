@@ -3,6 +3,7 @@
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller teaching economics university Cologne Köln Koeln
+#+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * University of Cologne
 ** Courses

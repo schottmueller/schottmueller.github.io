@@ -3,7 +3,7 @@
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller Schottmuller Schottmüller research economics Volkswirtschaftslehre Universität university Koeln Köln Koln Tilburg Copenhagen
-
+#+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 
 @@html: 
 <head>

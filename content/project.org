@@ -1,6 +1,6 @@
 #+Title: Projektkurs Volkswirtschaftslehre: let the computer do the calculations
 #+Options: toc:nil
-
+#+HTML_HEAD: <link rel="icon" href="./icons/pc.webp">
 * News
 - List of exercises that are part of the portfolio notebook (i.e. the notebook with exercise solutions you have to hand in at the end of the term):
   - Week 2: E2, E3

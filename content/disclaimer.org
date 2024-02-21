@@ -3,7 +3,7 @@
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller disclaimer
-
+#+HTML_HEAD: <link rel="icon" href="./icons/legal.webp">
 * Disclaimer
 /Links/: Christoph Schottmüller is not responsible for the content of any of the linked websites. The linked websites appeared legitimate at the time the link was set. 
 

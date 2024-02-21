@@ -3,6 +3,7 @@
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller research paper
+#+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 
 * Working Papers
 Welfare optimal information structures in public good provision, [[./papers/pubGoodInfo/pgi.pdf][paper]]

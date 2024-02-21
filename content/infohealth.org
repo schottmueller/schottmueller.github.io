@@ -3,7 +3,7 @@
 #+Options: toc:nil H:2
 #+cite_export: csl ../static/econometrica.csl
 #+bibliography: ../static/references.bib
-
+#+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
 - There will be no exercise session on Jan 22.

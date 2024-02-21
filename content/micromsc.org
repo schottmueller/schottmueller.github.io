@@ -3,7 +3,7 @@
 #+Options: toc:nil H:2
 #+cite_export: csl ../static/econometrica.csl
 #+bibliography: ../static/references.bib
-
+#+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
 - The place of examination for the second exam date was changed to HS B.
 - The [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were updated to include (perfect) Bayesian Nash equilibrium. Feedback on the notes is very welcome! (Password was announced in lecture.)

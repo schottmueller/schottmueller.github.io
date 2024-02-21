@@ -3,6 +3,7 @@
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller links 
+#+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 
 * Academic Links
 

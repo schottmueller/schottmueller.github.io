@@ -3,6 +3,7 @@
 #+Options: toc:nil H:2
 #+cite_export: csl ../static/econometrica.csl
 #+bibliography: ../static/references.bib
+#+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
 - The lecture on Nov 16 is canceled due to health reasons.
 - The paper we discuss on Nov. 23 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
