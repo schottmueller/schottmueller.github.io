@@ -5,6 +5,6 @@
 #+KEYWORDS: Christoph Schottmueller disclaimer
 
 * Disclaimer
-/Links/: Christoph Schottmüller disassociates himself from the content of any of the linked websites. 
+/Links/: Christoph Schottmüller is not responsible for the content of any of the linked websites. The linked websites appeared legitimate at the time the link was set. 
 
-/Data collection and privacy/: Christoph Schottmüller does not collect any user data. This website is, however, powered by [[https://www.github.com][Github]]. Github may collect, store, analyze, use and sell visitor data and track visitors using own or third party tools. I refer the user to the Github [[https://help.github.com/terms][terms of service]] and the Github [[https://github.com/site/privacy][privacy statement]] for details.
+/Data collection and privacy/: Christoph Schottmüller does not collect any user data. This website is, however, hosted by [[https://www.github.com][Github]]. Github may collect, store, analyze, use and sell visitor data and track visitors using own or third party tools. I refer the user to the Github [[https://docs.github.com/en/site-policy/github-terms][terms of service]] and the Github [[https://github.com/site/privacy][privacy statement]] for details.
