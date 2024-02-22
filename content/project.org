@@ -25,7 +25,7 @@ Students are asked to watch video tutorials (part 1) or "notebooks" (part 2) at 
 
 The skills acquired in this course will be particularly useful for writing term papers or a thesis but are also valued on the job market.
 
-*Time and place:* Thursdays 10:00-11:30, SSC basement, seminar room S37 (102/U1/-1.314)
+*Time and place:* Thursdays 10:00-11:30, Mensa building, 118/03/3.03
 
 *Grading:* The grade is based on three elements: First, a "julia cheat sheet" which is a document in which you write down the julia commands and functions you have learned together with a brief description of what they do or an example. Second, a jupyter notebook with solutions to the exercises. You will work on this during class. Third, your project which will be presented in class and handed in as a jupyter notebook.
 
