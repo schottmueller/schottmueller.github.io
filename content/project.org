@@ -2,6 +2,7 @@
 #+Options: toc:nil
 #+HTML_HEAD: <link rel="icon" href="./icons/pc.webp">
 * News
+- There is no meeting on April 11 as I am attending an international conference. We will have our first meeting on April 18. 
 # - List of exercises that are part of the portfolio notebook (i.e. the notebook with exercise solutions you have to hand in at the end of the term):
 #  - Week 2: E2, E3
 #  - Week 3: E3, E4
@@ -12,8 +13,8 @@
 #  - Week 8: E2, E3
     
 # - The registration deadline for the "examination" on KLIPS was extended. Please, register now. 
-- A sample [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]] is available now.
 - In week 1, we talk a bit about the course and try to install julia on your computer. *Please note that you need to bring a notebook to class every week in order to be able to work.* (It does not matter whether your operating system is Windows, MacOS, Linux or FreeBSD. However, tablets or phones with mobile operating systems like Android and iOS will not work.)
+- A sample [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]] is available now.
 
 * Description
 
@@ -33,22 +34,21 @@ The skills acquired in this course will be particularly useful for writing term 
 The following plan might be adapted over the course of the semester. I use the following abbreviations:
 - jpfnb:  [[https://juliaacademy.com/p/julia-programming-for-nervous-beginners]["Julia Programming for Nervous Beginners"]]
 - jfmt: [[https://github.com/schottmueller/juliaForMicroTheory]["Julia for micro theory"]]
-   |------+------------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
-   | Week | content                                        | to do before next week's class                                                                                       |
-   |------+------------------------------------------------+----------------------------------------------------------------------------------------------------------------------|
-   |    1 | info, installing julia, jupyter notebooks      | "week 1" of jpfnb                                                                                                    |
-   |    2 | strings, data containers                       | "week 2" of jpfnb                                                                                                    |
-   |    3 | numbers, functions                             | "week 3" of jpfnb                                                                                                    |
-   |    4 | loops, if/else                                 | "week 4" of jpfnb, notebooks 0-2 jfmt                                                                                |
-   |    5 | plotting and maximizing functions, interact.jl | notebooks 3,4,6,7 jfmt                                                                                               |
-   |    6 | equation solving, multivariate maximization    | notebook 8 jfmt, notebooks [[./dataDiscovery.org][data]] (skip sections 3.3, 4.3,4.5-4.7) |
-   |    7 | data and statistics                            | notebooks on  [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/hypothesisTesting.org][hypothesis testing]] (only sections 1 and 2) and on [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/regression.org][regressions]]                                                                            |
-   |    8 | OLS                                            | notebook 5 jfmt                                                                                                      |
-   |    9 | some applications                 |                                                                                                                      |
-   |   10 | project work                                   |                                                                                                                      |
-   |   11 | project work                                   |                                                                                                                      |
-   |   12 | project work                                   |                                                                                                                      |
-   |   13 | project presentations                          |                                                                                                                      |
+   |------+------------------------------------------------+-----------------------------------------------------------------------------|
+   | Week | content                                        | to do before next week's class                                              |
+   |------+------------------------------------------------+-----------------------------------------------------------------------------|
+   |    1 | info, installing julia, jupyter notebooks      | "week 1" of jpfnb                                                           |
+   |    2 | strings, data containers                       | "week 2" of jpfnb                                                           |
+   |    3 | numbers, functions                             | "week 3" of jpfnb                                                           |
+   |    4 | loops, if/else                                 | "week 4" of jpfnb, notebooks 0-2 jfmt                                       |
+   |    5 | plotting and maximizing functions, interact.jl | notebooks 3,4,6,7 jfmt                                                      |
+   |    6 | equation solving, multivariate maximization    | notebook 8 jfmt, notebooks [[./dataDiscovery.org][data]] (skip sections 3.3, 4.3,4.5-4.7)            |
+   |    7 | data and statistics                            | notebooks on  [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/hypothesisTesting.org][hypothesis testing]] (only sections 1 and 2) and on [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/regression.org][regressions]] |
+   |    8 | OLS                                            | notebook 5 jfmt                                                             |
+   |    9 | some applications                              |                                                                             |
+   |   10 | project work                                   |                                                                             |
+   |   11 | project work                                   |                                                                             |
+   |   12 | project presentations                          |                                                                             |
    
 
 
