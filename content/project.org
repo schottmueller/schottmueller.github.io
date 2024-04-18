@@ -58,8 +58,9 @@ The following plan might be adapted over the course of the semester. I use the f
 - [[https://uni-koeln.sciebo.de/s/B0U2oCT7IP4YMcE][screencasts]] on how to download and install julia
 ** Material
 - julia-academy course "[[https://juliaacademy.com/p/julia-programming-for-nervous-beginners][Julia Programming for Nervous Beginners]]" used in the first few weeks; you can find the course notes [[https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes][here]]
+  - pdfs for this course: [[./files/projectJulia/week1.pdf][week 1]],  [[./files/projectJulia/week2.pdf][week 2]], [[./files/projectJulia/week3.pdf][week 3]], [[./files/projectJulia/week4.pdf][week 4]]
 - [[https://github.com/schottmueller/juliaForMicroTheory][notebooks]] "julia for microeconomic theory"
 - [[https://raw.githack.com/schottmueller/projectJulia/main/exercises.html][exercises]] to be solved in class
--  [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]]   
+- [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]]   
 ** Beyond this course
 - [[https://julia.quantecon.org/intro.html][QuantEcon]] is a graduate course in quantitative economics using julia. The material is beyond the scope of this course but might give you an idea how the tools taught in this course are used in economic research.
