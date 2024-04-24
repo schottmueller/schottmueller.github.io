@@ -2,6 +2,7 @@
 #+Options: toc:nil
 #+HTML_HEAD: <link rel="icon" href="./icons/pc.webp">
 * News
+- Due to health issues, there is no meeting on April 25. I will inform you as soon as I am better about a make up meeting.
 - There is no meeting on April 11 as I am attending an international conference. We will have our first meeting on April 18. 
 # - List of exercises that are part of the portfolio notebook (i.e. the notebook with exercise solutions you have to hand in at the end of the term):
 #  - Week 2: E2, E3
