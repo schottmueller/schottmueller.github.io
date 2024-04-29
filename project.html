@@ -3,13 +3,45 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-24 Wed 11:34 -->
+<!-- 2024-04-29 Mon 11:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Projektkurs Volkswirtschaftslehre: let the computer do the calculations</title>
 <meta name="generator" content="Org Mode" />
 <link rel="icon" href="./icons/pc.webp">
 <link rel="stylesheet" href="./css/stylesheet.css">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -39,9 +71,9 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Projektkurs Volkswirtschaftslehre: let the computer do the calculations</h1>
-<div id="outline-container-orgf6e9746" class="outline-2">
-<h2 id="orgf6e9746">News</h2>
-<div class="outline-text-2" id="text-orgf6e9746">
+<div id="outline-container-org492e7c3" class="outline-2">
+<h2 id="org492e7c3">News</h2>
+<div class="outline-text-2" id="text-org492e7c3">
 <ul class="org-ul">
 <li>Due to health issues, there is no meeting on April 25. I will inform you as soon as I am better about a make up meeting.</li>
 <li>There is no meeting on April 11 as I am attending an international conference. We will have our first meeting on April 18.</li>
@@ -54,9 +86,9 @@
 </div>
 </div>
 
-<div id="outline-container-org638492e" class="outline-2">
-<h2 id="org638492e">Description</h2>
-<div class="outline-text-2" id="text-org638492e">
+<div id="outline-container-orgb27f2ec" class="outline-2">
+<h2 id="orgb27f2ec">Description</h2>
+<div class="outline-text-2" id="text-orgb27f2ec">
 <p>
 Modern economics relies heavily on mathematical models. Solving these models by hand is usually burdensome and often outright infeasible. In these cases, computers can be used to analyse and solve economic models numerically. This project course gives an introduction to solving models numerically with the help of the computer. It is suitable for students with no (or little) prior knowledge of numerical analysis and/or programming.
 </p>
@@ -83,9 +115,9 @@ The skills acquired in this course will be particularly useful for writing term 
 </div>
 </div>
 
-<div id="outline-container-org67927d4" class="outline-2">
-<h2 id="org67927d4">Preliminary plan</h2>
-<div class="outline-text-2" id="text-org67927d4">
+<div id="outline-container-org004f8d7" class="outline-2">
+<h2 id="org004f8d7">Preliminary plan</h2>
+<div class="outline-text-2" id="text-org004f8d7">
 <p>
 The following plan might be adapted over the course of the semester. I use the following abbreviations:
 </p>
@@ -191,22 +223,22 @@ jfmt: <a href="https://github.com/schottmueller/juliaForMicroTheory">"Julia for 
 
 
 
-<div id="outline-container-org94846fb" class="outline-2">
-<h2 id="org94846fb">Material and links</h2>
-<div class="outline-text-2" id="text-org94846fb">
+<div id="outline-container-orgf7d7697" class="outline-2">
+<h2 id="orgf7d7697">Material and links</h2>
+<div class="outline-text-2" id="text-orgf7d7697">
 </div>
-<div id="outline-container-orgcd95fcd" class="outline-3">
-<h3 id="orgcd95fcd">Setting up Julia</h3>
-<div class="outline-text-3" id="text-orgcd95fcd">
+<div id="outline-container-org2393ed6" class="outline-3">
+<h3 id="org2393ed6">Setting up Julia</h3>
+<div class="outline-text-3" id="text-org2393ed6">
 <ul class="org-ul">
 <li><a href="https://julialang.org/downloads/">website</a> for downloading julia</li>
 <li><a href="https://uni-koeln.sciebo.de/s/B0U2oCT7IP4YMcE">screencasts</a> on how to download and install julia</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org2558e80" class="outline-3">
-<h3 id="org2558e80">Material</h3>
-<div class="outline-text-3" id="text-org2558e80">
+<div id="outline-container-orgc448038" class="outline-3">
+<h3 id="orgc448038">Material</h3>
+<div class="outline-text-3" id="text-orgc448038">
 <ul class="org-ul">
 <li>julia-academy course "<a href="https://juliaacademy.com/p/julia-programming-for-nervous-beginners">Julia Programming for Nervous Beginners</a>" used in the first few weeks; you can find the course notes <a href="https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes">here</a>
 <ul class="org-ul">
@@ -218,12 +250,138 @@ jfmt: <a href="https://github.com/schottmueller/juliaForMicroTheory">"Julia for 
 </ul>
 </div>
 </div>
-<div id="outline-container-org5141ca3" class="outline-3">
-<h3 id="org5141ca3">Beyond this course</h3>
-<div class="outline-text-3" id="text-org5141ca3">
+<div id="outline-container-org4b63381" class="outline-3">
+<h3 id="org4b63381">Beyond this course</h3>
+<div class="outline-text-3" id="text-org4b63381">
 <ul class="org-ul">
 <li><a href="https://julia.quantecon.org/intro.html">QuantEcon</a> is a graduate course in quantitative economics using julia. The material is beyond the scope of this course but might give you an idea how the tools taught in this course are used in economic research.</li>
 </ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org8f7d54f" class="outline-2">
+<h2 id="org8f7d54f">Selected solutions</h2>
+<div class="outline-text-2" id="text-org8f7d54f">
+</div>
+<div id="outline-container-org981bd8b" class="outline-3">
+<h3 id="org981bd8b">Week 2</h3>
+<div class="outline-text-3" id="text-org981bd8b">
+<ol class="org-ol">
+<li><p>
+Using list comprehension create an array that contains all the lower case characters of the alphabet and bind this array to the variable name <i>alphabet</i>. (<i>Hint:</i> Recall that <i>'a'+0='a'</i>, <i>'a'+1='b'</i> etc.)
+</p>
+
+<p>
+Then create a single string that contains all the letters of the alphabet and bind it to the name <i>alphabetstring</i>. Also create another string variable <i>alphabetcomma</i> that contains all letters of the alphabet separated by comma.
+</p>
+
+<p>
+Next create an array that contains the string "letter number 1 in the alphabet is a" as first element, the string "letter number 2 in the alphabet is b" as its second element and so on until "letter number 26 in the alphabet is z".
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">alphabet = ['a'+i for i in 0:25]
+alphabetstring = join(alphabet)
+alphabetstring = join(alphabet, ", ")
+["letter number $(i) in the alphabet is $(alphabet[i])" for i in 1:26]
+</pre>
+</div></li>
+
+<li><p>
+Use the <i>string</i> function with the keyword <i>pad</i> as well as a list comprehension and the <i>join</i> function to create a string "101001000100001000001000000100000001". Can you also do it without using <i>pad</i> (and without typing it in digit by digit, of course)?
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">join([string(1;pad=i) for i in 1:7])
+string(join(["1"*"0"^i for i in 1:7]),"1")
+</pre>
+</div></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6ec8ea8" class="outline-3">
+<h3 id="org6ec8ea8">Week 3</h3>
+<div class="outline-text-3" id="text-org6ec8ea8">
+<ol class="org-ol">
+<li><p>
+Out of how many code blocks does the following code block consist and what does the function <i>move1</i> do?
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">var = "xyz"
+function move1(input)
+    output = string(input[2:end],input[1])
+    return output
+end
+move1(var)
+</pre>
+</div>
+<p>
+The function moves the first letter to the end of the word.
+</p></li>
+<li><p>
+If we add the following to the code of the previous exercise
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">function move1(input::Number)
+    output = input + 1
+    return output
+end
+</pre>
+</div>
+<p>
+What output do you expect for the following function calls? Think first before trying!
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">move1(3)
+move1(3.0)
+move1("3")
+move1("3.0")
+move1('3')
+move1([1, 2, 3])
+</pre>
+</div>
+<p>
+Adds 1 to a number. The important question is whether the input is a "number" or not. If not, the first definition of <i>move1</i> that moves the first letter to the end is used.
+</p></li>
+<li><p>
+Write a function <i>addfractions(numerator1,denominator1,numerator2,denominator2)</i> that returns the sum of the fractions \(numerator1/denominator1\)  and \(numerator2/denominator2\) as \(numeratorSum,denominatorSum\); e.g. <i>addfractions(1,2,1,3)</i> should return \(5,6\) as \(1/2+1/3=5/6\). (Note that you do not have to cancel common multipliers in the result.)
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">function addfractions(numerator1,denominator1,numerator2,denominator2)
+     denominatorSum = denominator1*denominator2
+     numeratorSum = numerator1*denominator2 + numerator2*denominator1
+     return numeratorSum, denominatorSum
+end
+</pre>
+</div></li>
+
+<li><p>
+Write a function <i>evaluatef</i> that takes two inputs: (i) another function (that I call <i>f</i> in the following), (ii) a range (e.g. 1:5). The function <i>evaluatef</i> should evaluate <i>f</i> at each point of the range and print the output. For example, if \(f(x)=x^2\), then \(evaluatef(f,1:3)\) should print:
+</p>
+<blockquote>
+<p>
+f(1) equals 1
+</p>
+
+<p>
+f(2) equals 4
+</p>
+
+<p>
+f(3) equals 9
+</p>
+</blockquote>
+<p>
+(<i>Hint:</i> to get the text printed line by line you have to recall what we did last week, namely list comprehension and escape sequences.)
+</p>
+<div class="org-src-container">
+<pre class="src src-julia">function evaluatef(f,range)
+   println(join(["f($(i)) equals $(f(i)) \n" for i in range]))
+end
+</pre>
+</div></li>
+</ol>
 </div>
 </div>
 </div>
