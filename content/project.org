@@ -65,3 +65,76 @@ The following plan might be adapted over the course of the semester. I use the f
 - [[https://github.com/schottmueller/projectJulia/files/11769248/projects.pdf][project description]]   
 ** Beyond this course
 - [[https://julia.quantecon.org/intro.html][QuantEcon]] is a graduate course in quantitative economics using julia. The material is beyond the scope of this course but might give you an idea how the tools taught in this course are used in economic research.
+
+
+* Selected solutions
+** Week 2
+2. Using list comprehension create an array that contains all the lower case characters of the alphabet and bind this array to the variable name /alphabet/. (/Hint:/ Recall that /'a'+0='a'/, /'a'+1='b'/ etc.)
+
+   Then create a single string that contains all the letters of the alphabet and bind it to the name /alphabetstring/. Also create another string variable /alphabetcomma/ that contains all letters of the alphabet separated by comma.
+
+   Next create an array that contains the string "letter number 1 in the alphabet is a" as first element, the string "letter number 2 in the alphabet is b" as its second element and so on until "letter number 26 in the alphabet is z".
+  #+begin_src julia :exports code
+   alphabet = ['a'+i for i in 0:25]
+   alphabetstring = join(alphabet)
+   alphabetstring = join(alphabet, ", ")
+   ["letter number $(i) in the alphabet is $(alphabet[i])" for i in 1:26]
+  #+end_src
+
+3. Use the /string/ function with the keyword /pad/ as well as a list comprehension and the /join/ function to create a string "101001000100001000001000000100000001". Can you also do it without using /pad/ (and without typing it in digit by digit, of course)?
+   #+begin_src julia :exports code
+    join([string(1;pad=i) for i in 1:7])
+    string(join(["1"*"0"^i for i in 1:7]),"1")
+   #+end_src
+
+** Week 3
+1. Out of how many code blocks does the following code block consist and what does the function /move1/ do?
+   #+begin_src julia
+     var = "xyz"
+     function move1(input)
+	 output = string(input[2:end],input[1])
+	 return output
+     end
+     move1(var)
+   #+end_src
+   The function moves the first letter to the end of the word.
+2. If we add the following to the code of the previous exercise
+   #+begin_src julia
+     function move1(input::Number)
+	 output = input + 1
+	 return output
+     end
+   #+end_src
+   What output do you expect for the following function calls? Think first before trying!
+   #+begin_src julia
+     move1(3)
+     move1(3.0)
+     move1("3")
+     move1("3.0")
+     move1('3')
+     move1([1, 2, 3])
+   #+end_src
+   Adds 1 to a number. The important question is whether the input is a "number" or not. If not, the first definition of /move1/ that moves the first letter to the end is used.
+3. Write a function /addfractions(numerator1,denominator1,numerator2,denominator2)/ that returns the sum of the fractions $numerator1/denominator1$  and $numerator2/denominator2$ as $numeratorSum,denominatorSum$; e.g. /addfractions(1,2,1,3)/ should return $5,6$ as $1/2+1/3=5/6$. (Note that you do not have to cancel common multipliers in the result.)
+   #+begin_src julia :exports code
+    function addfractions(numerator1,denominator1,numerator2,denominator2)
+ 	 denominatorSum = denominator1*denominator2
+ 	 numeratorSum = numerator1*denominator2 + numerator2*denominator1
+ 	 return numeratorSum, denominatorSum
+    end
+   #+end_src
+
+4. Write a function /evaluatef/ that takes two inputs: (i) another function (that I call /f/ in the following), (ii) a range (e.g. 1:5). The function /evaluatef/ should evaluate /f/ at each point of the range and print the output. For example, if $f(x)=x^2$, then $evaluatef(f,1:3)$ should print:
+    #+begin_quote
+    f(1) equals 1
+    
+    f(2) equals 4
+    
+    f(3) equals 9
+    #+end_quote
+     (/Hint:/ to get the text printed line by line you have to recall what we did last week, namely list comprehension and escape sequences.)
+   #+begin_src julia :exports code
+     function evaluatef(f,range)
+ 	println(join(["f($(i)) equals $(f(i)) \n" for i in range]))
+     end
+   #+end_src
