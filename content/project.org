@@ -2,6 +2,7 @@
 #+Options: toc:nil
 #+HTML_HEAD: <link rel="icon" href="./icons/pc.webp">
 * News
+- We will talk about "week 1" of jpfnb on May 2 and have a make-up zoom-meeting in which we answer questions about the material of "week 2" and the corresponding exercises on May 8 17:30 (Meeting ID: 988 9247 0093 Password: 843160). Solutions to some of the exercises of the first two weeks are on this website below. 
 - Due to health issues, there is no meeting on April 25. I will inform you as soon as I am better about a make up meeting.
 - There is no meeting on April 11 as I am attending an international conference. We will have our first meeting on April 18. 
 # - List of exercises that are part of the portfolio notebook (i.e. the notebook with exercise solutions you have to hand in at the end of the term):
