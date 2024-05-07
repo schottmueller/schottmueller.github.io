@@ -5,6 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
+- Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
 - We will skip the topic "Nash equilibrium" and will talk about "Bayesian Nash equilibrium" on April 25. Please, watch screencasts 07-09 until then. 
 # - As I am attending an international conference, there is no lecture on April 11. The first lecture will be on April 18. Please watch screencasts 01-03 before the lecture on April 18 and have a look at the corresponding exercises.
 #  - Exam grades will be published soon. PhD students can pick up their certificates at the secretariat (SSC 4.302-4.304) but due to technical problems not before July 26 (maybe call in beforehand to make sure that someone is in).
