@@ -5,7 +5,12 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
+
 - Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
+
+- On May 2, we will talk about Bayesian Nash equilibrium. Please, have a look at the provided [[https://web.tresorit.com/l/McPf9#3MzYHARzJK1cB069EeGOqA][solutions]] for some of the BNE exercises before coming to class. To make up for the canceled lecture on April 25, we will have a Zoom meeting on Tuesday evening (May 7) at 17:30 in which we will talk about auctions. To keep the zoom meeting short, I will write down solutions to all the auction exercises beforehand and we will talk in the meeting only about specific questions that you have concerning either the screencast or the exercises/solutions. (Meeting ID: 991 9519 7189;Password: 519315)
+- Due to health issues, there is no lecture on April 25. I will inform you as soon as I am better about a make up meeting.
+
 - We will skip the topic "Nash equilibrium" and will talk about "Bayesian Nash equilibrium" on April 25. Please, watch screencasts 07-09 until then. 
 # - As I am attending an international conference, there is no lecture on April 11. The first lecture will be on April 18. Please watch screencasts 01-03 before the lecture on April 18 and have a look at the corresponding exercises.
 #  - Exam grades will be published soon. PhD students can pick up their certificates at the secretariat (SSC 4.302-4.304) but due to technical problems not before July 26 (maybe call in beforehand to make sure that someone is in).
@@ -25,7 +30,7 @@ Please, watch the screencasts provided below before coming to class. You have th
 - [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts for lecture material
 
 - [[https://github.com/schottmueller/advMicro/files/3255945/exam.pdf][old exam]] 
-- Exercises: [[https://web.tresorit.com/l/fHuQ1#QdeCbHMRepN8nScN6s4cUw][pdf]],  [[https://web.tresorit.com/l/qeT48#mMP9IaB3YTvSmJ1IKWeASw][solutions]] for some exercises not covered in class
+- Exercises: [[https://web.tresorit.com/l/fHuQ1#QdeCbHMRepN8nScN6s4cUw][pdf]], [[https://web.tresorit.com/l/McPf9#3MzYHARzJK1cB069EeGOqA][solutions]] for some exercises not covered in class
 - Slides:
   - [[https://github.com/schottmueller/advMicro/files/3028996/dominRatio.pdf][Dominance and rationalizability]]
   - [[https://github.com/schottmueller/advMicro/files/4419534/NashEq.pdf][Nash Theorem]]
