@@ -5,6 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
+- For June 20, please do not watch the videos on the revelation principle but read the following [[https://uni-koeln.sciebo.de/s/ChU3XxnshnLMEST][notes]] instead. Feedback on the notes is very welcome. (We will, however, cover not the exercises in the notes but the ones on our regular exercise sheet.)
 
 - Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
 
