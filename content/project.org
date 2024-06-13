@@ -46,11 +46,11 @@ The following plan might be adapted over the course of the semester. I use the f
    |    5 | plotting and maximizing functions, interact.jl | notebooks 3,4,6,7 jfmt                                                      |
    |    6 | equation solving, multivariate maximization    | notebook 8 jfmt, notebooks [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/dataDiscovery.org][data]] (skip sections 3.3, 4.3,4.5-4.7)           |
    |    7 | data and statistics                            | notebooks on  [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/hypothesisTesting.org][hypothesis testing]] (only sections 1 and 2) and on [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/regression.org][regressions]] |
-   |    8 | OLS                                            | notebook 5 jfmt                                                             |
-   |    9 | some applications                              |                                                                             |
+   |    8 | OLS                                            |                                                              |
+%  |    9 | some applications                              |                                                                             |
+   |   9 | project work                                   |                                                                             |
    |   10 | project work                                   |                                                                             |
-   |   11 | project work                                   |                                                                             |
-   |   12 | project presentations                          |                                                                             |
+   |   11 | project presentations                          |                                                                             |
    
 
 
