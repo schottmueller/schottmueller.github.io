@@ -5,6 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
+- I updated the [[https://uni-koeln.sciebo.de/s/ND5jNpFeixTYTI0][notes]] on mechanism design.
 
 - Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
 
