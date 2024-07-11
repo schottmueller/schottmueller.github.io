@@ -3,8 +3,6 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/pc.webp">
 * News
 - The project presentations (around 15 minutes per group) take place on July 18. The deadline for your final submission is August 11. The final submission consists of (i) a jupyter notebook with your project, (ii) a jupyter notebook with solutions to the exercises listed below and (iii) your cheat sheet as a pdf document. Please upload all three files to sciebo or another cloud storage provider (like Dropbox, GoogleDrive etc.) and send me a link to the folder via email. The exercises for which solutions have to be handed in are the following:
-  - Week 2: E2
-  - Week 3: E3
   - Week 4: E1, E3
   - Week 5: E1, E2, E3
   - Week 6: E2
