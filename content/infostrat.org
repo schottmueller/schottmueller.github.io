@@ -205,12 +205,15 @@ These are some papers that students may choose to present. If you want to presen
 - [cite:@lipnowski24perfect]
 - [cite:@shishkin2019evidence]
 - [cite:@mathevet2020information]
+- [cite:@alonso2016persuading]
+  
 ** Hard evidence
 - [cite:@demarzo2018test]
 - [cite:@song2003disclosures]
 - [cite:@pram20disclosure]
 - [cite:@nageeb2019voluntary]
 - [cite:@shishkin2019evidence]
+- [cite:@asseyer2024certification]
 
 ** Strategic communication (cheap talk)
 # - cite:farrell1989cheap
