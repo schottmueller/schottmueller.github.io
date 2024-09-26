@@ -5,17 +5,17 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
-- The lecture on Nov 16 is canceled due to health reasons.
-- The paper we discuss on Nov. 23 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
-- The paper we discuss on Nov. 9 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
+# - The lecture on Nov 16 is canceled due to health reasons.
+# - The paper we discuss on Nov. 23 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
+# - The paper we discuss on Nov. 9 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
 # - The paper we discuss on Oct. 19 can be downloaded [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
 # - The first student presentation is already on Dec. 19 where we will also discuss a bit how the presentations could look like. Presentations should take between 30 and 45 minutes (the 45 minutes is including questions and discussion). If you are using slides , please send those to me as *pdf* before your presentation. You have to use your own computer if you use power point or other formats for your slides.   
  # - For Thursday Dec 10, we are discussing a paper that is not published yet. Please, use the version [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]].
 # - This website will be slowly updated over the coming weeks to give students information about the course "Information and Strategy".
 # - On November 18 we will have a practice session on cheap talk. Please, read this [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][paper]] in advance following the steps in the [[https://github.com/schottmueller/infoStrat/files/3615401/htrap.pdf][guide]].
 # - As a lot more students than expected signed up for the course, presentations may be group presentations.   
-- Due to an illness the first week's lecture will not go along as planned on campus. Instead we will have an online lecture on zoom on Oct 12, 9am. The lecture will be recorded. You can download the recording [[https://uni-koeln.sciebo.de/s/0txSevFVvl3Q7Tl][here]].
-- Lecture time and place in WS 2023/24: Thursday (100 HS XIa) 9:00-11:30.
+# - Due to an illness the first week's lecture will not go along as planned on campus. Instead we will have an online lecture on zoom on Oct 12, 9am. The lecture will be recorded. You can download the recording [[https://uni-koeln.sciebo.de/s/0txSevFVvl3Q7Tl][here]].
+- Lecture time and place in WS 2024/25: Thursday (100 HS XVIIa) 9:00-11:30.
 
 * Description
 This course deals with information economics. That is, how do people and/or organizations, that have access to different information sources, strategically interact? We also deal with the natural follow up question: Who will and/or should have access to what information and what kind of information can/will/should be transmitted from one person to another? 
@@ -38,17 +38,102 @@ Presentations have to be in English. Reports can be written in English or German
 Attendance is voluntary and does not affect the grading of your report directly. (Of course, the lectures are intended to prepare you for writing a good report...)  Attending the student presentations is strongly encouraged.
 
 *** Important dates
-- Insert your paper preferences [[https://docs.google.com/spreadsheets/d/1HqaHmdN_IwvYXpi1jSxLkJl1THz5kUEX8bBCaveDRqg/edit?usp=sharing][here]] before November 2, 1:00pm. Papers are assigned in the following week. There is no guarantee that you are assigned one of your preferred papers.
+- Insert your paper preferences [[https://docs.google.com/spreadsheets/d/1HqaHmdN_IwvYXpi1jSxLkJl1THz5kUEX8bBCaveDRqg/edit?usp=sharing][here]] before October 27, 1:00pm. A list of papers ordered by topic as well as a bibliography can be found at the bottom of this page. Papers are assigned in the following week. There is no guarantee that you are assigned one of your preferred papers.
 # - Send an email to the course instructor with your preferred papers (up to 5) by November 11, 8:00am. Papers are assigned in the following week. There is no guarantee that you are assigned one of your preferred papers.
   # Please, also indicate whether you prefer to present on campus or online via zoom.
-- Register for the "examination" via KLIPS by November 9. Deregistration will not be possible after November 12 for scheduling reasons.
+- Register for the "examination" via KLIPS by November 4. Deregistration will not be possible after November 4 for scheduling reasons.
 - Dates for the presentations are announced in November. Student presentations take place in January and February (also end of December if many students sign up).
 - Hand in your paper by February 28 via email. 
 ** Plan
 
-A preliminary plan can be found [[https://github.com/schottmueller/infoStrat/blob/master/plan21.org][here]]. (A less often updated pdf with properly formatted references is available [[https://github.com/schottmueller/infoStrat/files/7154183/plan21.pdf][here]].)
-
 The *structure of the course* is as follows: In the first part of the course, there will mainly be lectures on information economics and its applications. However, we will have a few "practice sessions" in which we discuss a paper that all students should have read/skimmed before. These sessions add to the material of the lecture but are also meant to give you some practice in "how to read a paper (quickly)," i.e. these sessions prepare students for their presentations and reports. The second (and shorter) part of the course consists of student presentations of papers in information economics.
+
+*** Introduction to asymmetric information
+
+We use the first 2-3 weeks to introduce the classics in information economics. We see that asymmetric information can lead to inefficiencies in markets and start to discuss what measures players/markets may use to avoid these inefficiencies (at least partially). However, we also see that the clever use of information asymmetries can make everyone better off in some cases. 
+
+**** Adverse selection: Akerlof's lemons market
+- Akerlof's lemons market
+- the first welfare theorem does not hold if different players have different information 
+- applications: used car markets and warranties, adverse selection in insurance markets
+- sources: chapter 5.3 in cite:campbell2018incentives
+# - practice: excessive self financing or insurance as in cite:einav2011selection
+
+**** Mediation and correlated equilibrium
+- correlated equilibrium
+- an impartial mediator can use asymmetric information to make everyone better off
+- sources for the technical details: chapter 8 in [cite:@maschler2013game]
+- practice: [cite:@jann2015correlated ]
+
+**** Information rents and screening
+- 2 type screening problem and revelation principle
+- information creates "rents" for those who have information but uninformed parties reduce these rents by distorting allocations inefficiently
+- applications: non-linear pricing by a monopolist
+- technical extension: screening with a continuum of types (handout)
+- sources: chapter 2.1.3 and 2.3.3 in  [cite:@bolton2005contract]
+# - practice: cite:boone2009optimal 
+# regulating a monopolist, cite:Bar82
+
+*** Information design
+Sometimes we can determine how informed others (or we ourselves) will be, e.g. a central bank can decide how to test banks in a "stress test" (and the information the market gets from the test depends on how strict the test is), a prosecutor decides which witnesses to hear in court and a school might decide how finely grained its grade system is. Which design should the information designer optimally choose?
+**** Bayesian persuasion
+- Bayesian persuasion and the concavification approach
+- how can you structure other players' information to reach your goals?
+- application: will bad banks fail optimal stress tests?
+- sources: cite:kamenica11_bayes_persuas
+- practice: [cite:@schweizer2018optimal]
+**** Bayes correlated equilibrium
+- the BCE approach to information design
+- sources: section 1-3.2 in [cite:@bergemann19_infor_desig]
+# - practice: tba
+
+*** Strategic communication (cheap talk)
+People might share what they know with others. The recipients of the information might be able to make use of this information when choosing what to do; e.g. you might go to a new restaurant if someone tells you it is great. This, however, opens the door for manipulation: For example, the restaurant owner might pay people to give positive reviews to others. Which sender and which messages can be trusted to what extent?
+**** Homophily and echo chambers
+- discrete state cheap talk
+- People mainly communicate with people that are similar to them. Is this inefficient or could there be an informational reason?
+- application: communication and the internet, echo chambers
+- practice: [cite:@jann2018echo]
+# - practice: cite:farrell1989cheap
+**** Continuous state
+- classic cheap talk model with a continuum of states
+- applications: delegation
+- sources: [cite:@crawford1982cheap]
+- practice: [cite:@schottmueller2013cifd]
+
+*** Hard evidence
+Sometimes one can communicate information credibly by having a third party expert certifying it; e.g. rating agencies can certify the quality of an asset or the creditworthiness of a person, one can take a test - like GRE or TOEFL - to certify certain abilities etc. Who will certify what? Which information will be transmitted and which won't?
+**** complete unraveling
+- the incentive to show that one is better than the rest can lead to complete information unraveling 
+- applications: privacy legislation
+- sources: ch. 5.1 in [cite:@bolton2005contract], (background: [cite:@milgrom1981good])
+**** partial unraveling
+- costly certification and noisy certification (Dye's model)
+- who will certify if the unravelling logic does not apply completely?
+- applications: should students be able to choose among exam questions?, risk taking (BDL) 
+- sources: [[https://sites.google.com/site/eddiedekelsite/pres_address_2016_slides/pres_address_2016_slides.pdf?attredirects=0&d=1][Dekel's slides]], (background: [cite:@dye1985disclosure],[cite:jung1@988disclosure])
+# - practice: cite:ben2014optimal
+# ** certification
+# cite:strausz2005honest,stahl2017certification 
+
+*** Reputation and advice
+
+Interacting repeatedly allows to build a reputation. E.g. if a friend has never lied to you, you may expect him not to lie in the future. The friend has a reputation for honesty. Can a strategic friend (who might occasionally have an incentive to lie to you) be always honest? If there are benefits from being perceived as honest, how will a friend behave today?
+
+**** Chain store paradox and reputation
+- Can players commit to a certain action that they would normally not take when interacting several times?
+- applications: reputation for behavior
+- sources: ch. 9.1-9.2, 9.4 in [cite:@fudenberg1991game]
+# - practice: http://didattica.unibocconi.it/mypage/dwload.php?nomefile=48805_20081010_094047_CENTRAL_BANK_REPUTATION_AND_THE_MONETIZATION_OF_DEFICITS20140415110809.PDF or Barro, Gordon JME 1983
+
+****  Career concerns
+- How will concerns about the future affect a person's decision about how much effort to exert today?
+- sources: [cite:@holmstrom1999managerial]
+
+**** advice
+- Will experts give best possible advice if they are motivated by an incentive to show the world that they are great experts?
+- sources: [cite:@ottaviani2006professional]
+
 
 ** Presentation
 
@@ -68,7 +153,7 @@ The *structure of the course* is as follows: In the first part of the course, th
 
 - At the end you may also discuss directions for further research, highlight weaknesses of the paper or comment on the applicability. This part is not essential for the presentation but you should definitely have it in your report. So, why not try already in the presentation and see whether you get some feedback?
 
-- If you use slides, please send them to me beforehand *in pdf format*. 
+- If you use slides, please send them to me the evening before your presentation (6pm) *in pdf format*. 
 
 - The time frame will probably be around 30 minutes. However, this can depend on the number of students in the course. (In the unlikely event that surprisingly many students take the course, presentations may be in teams. )
 
@@ -81,13 +166,80 @@ The *structure of the course* is as follows: In the first part of the course, th
 - adverse selection slides: [[https://github.com/schottmueller/microMSc/blob/main/slides/lemons.org][org]] [[https://web.tresorit.com/l/uHpHt#H4BNhZHSj9-AkWIwpG4BnQ][pdf]]   
 - [[./files/htrap.pdf][guide]] on how to read a paper
 - [[https://github.com/schottmueller/infoStrat/files/7323109/envelopeMonoNonLinPric.pdf][handout]] on screening with a continuum of types
-
+- reading material is shared via [[https://uni-koeln.sciebo.de/s/xECzExjwU9sC2Db][sciebo]] (password announced in lecture)
+# pw: infoStrat  
+  
 ** Books
 Some of the lectures are based on parts of books. Noteworthy are
 - [cite:@bolton2005contract] 
 - [cite:@campbell2018incentives]
 
-For more specific reading material and references to research papers, check the course [[https://github.com/schottmueller/infoStrat/files/7154183/plan21.pdf][plan]].
+* List of papers for presentation
+
+These are some papers that students may choose to present. If you want to present a paper that is not on the list, please contact the course instructor.
+
+# ** Correlated equilibrium
+# - cite:liu1996correlated
+** Adverse selection and screening
+# - cite:martimort2009market
+- [cite:@che1993design]
+- [cite:@ber07]
+- [cite:@corrao23nonlinear]
+- [cite:@bobkova2024information]
+- [cite:@martimort2009market]
+- [cite:@bijlsma2012competition]
+- [cite:@curello2020screening]
+  
+** Information design
+# - cite:condorelli2020information
+- [cite:@taneva2018information]
+- [cite:@bergemann16_bayes_correl_equil_compar_infor_struc_games]
+- [cite:@bergemann2015limits]
+- [cite:@bergemann2015selling]
+- [cite:@bergemann17_first_price_auction_with_gener_infor_struc]
+- [cite:@baliga2016torture]
+- [cite:@ely2017beeps]
+- [cite:@mylovanov2017optimal]
+- [cite:@goldstein2018stress]
+- [cite:@bergemann18_desig_price_infor]
+- [cite:@lipnowski24perfect]
+- [cite:@shishkin2019evidence]
+- [cite:@mathevet2020information]
+** Hard evidence
+- [cite:@demarzo2018test]
+- [cite:@song2003disclosures]
+- [cite:@pram20disclosure]
+- [cite:@nageeb2019voluntary]
+- [cite:@shishkin2019evidence]
+
+** Strategic communication (cheap talk)
+# - cite:farrell1989cheap
+# - cite:dessein2002authority
+- [cite:@stein1989cheap]
+- [cite:@alonso2008does]
+- [cite:@battaglini2002multiple]
+- [cite:@galeotti2013strategic]
+- [cite:@deimen2019delegated]
+- [cite:@deimen2020authority]
+- [cite:@penn2016engagement]
+- [cite:@dewan2016defense]
+- [cite:@patty2024designing]
+
+** Reputation and advice
+- [cite:@sobel1985theory]
+- [cite:@prendergast1993theory]
+- [cite:@prendergast1996impetuous]
+- [cite:@ely03]
+- [cite:@par05]
+- [cite:@prat2005wrong]
+- [cite:@ottaviani2006reputational]
+- [cite:@bhaskar2019culture]
+- [cite:@jullien2014new]
+- [cite:@aghion2014inducing]
+- [cite:@klein2017will ]
+- [cite:@neeman2019benefit]
+- [cite:@levine2021reputationTrap]
+
 
 * Bibliography
 
