@@ -119,7 +119,7 @@ Sometimes we can determine how informed others (or we ourselves) will be, e.g. a
 - Bayesian persuasion and the concavification approach
 - how can you structure other players' information to reach your goals?
 - application: will bad banks fail optimal stress tests?
-- sources: cite:kamenica11_bayes_persuas
+- sources: [cite:@kamenica11_bayes_persuas]
 - practice: [cite:@schweizer2018optimal]
 *** Bayes correlated equilibrium
 - the BCE approach to information design
