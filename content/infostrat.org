@@ -44,97 +44,6 @@ Attendance is voluntary and does not affect the grading of your report directly.
 - Register for the "examination" via KLIPS by November 4. Deregistration will not be possible after November 4 for scheduling reasons.
 - Dates for the presentations are announced in November. Student presentations take place in January and February (also end of December if many students sign up).
 - Hand in your paper by February 28 via email. 
-** Plan
-
-The *structure of the course* is as follows: In the first part of the course, there will mainly be lectures on information economics and its applications. However, we will have a few "practice sessions" in which we discuss a paper that all students should have read/skimmed before. These sessions add to the material of the lecture but are also meant to give you some practice in "how to read a paper (quickly)," i.e. these sessions prepare students for their presentations and reports. The second (and shorter) part of the course consists of student presentations of papers in information economics.
-
-*** Introduction to asymmetric information
-
-We use the first 2-3 weeks to introduce the classics in information economics. We see that asymmetric information can lead to inefficiencies in markets and start to discuss what measures players/markets may use to avoid these inefficiencies (at least partially). However, we also see that the clever use of information asymmetries can make everyone better off in some cases. 
-
-**** Adverse selection: Akerlof's lemons market
-- Akerlof's lemons market
-- the first welfare theorem does not hold if different players have different information 
-- applications: used car markets and warranties, adverse selection in insurance markets
-- sources: chapter 5.3 in cite:campbell2018incentives
-# - practice: excessive self financing or insurance as in cite:einav2011selection
-
-**** Mediation and correlated equilibrium
-- correlated equilibrium
-- an impartial mediator can use asymmetric information to make everyone better off
-- sources for the technical details: chapter 8 in [cite:@maschler2013game]
-- practice: [cite:@jann2015correlated ]
-
-**** Information rents and screening
-- 2 type screening problem and revelation principle
-- information creates "rents" for those who have information but uninformed parties reduce these rents by distorting allocations inefficiently
-- applications: non-linear pricing by a monopolist
-- technical extension: screening with a continuum of types (handout)
-- sources: chapter 2.1.3 and 2.3.3 in  [cite:@bolton2005contract]
-# - practice: cite:boone2009optimal 
-# regulating a monopolist, cite:Bar82
-
-*** Information design
-Sometimes we can determine how informed others (or we ourselves) will be, e.g. a central bank can decide how to test banks in a "stress test" (and the information the market gets from the test depends on how strict the test is), a prosecutor decides which witnesses to hear in court and a school might decide how finely grained its grade system is. Which design should the information designer optimally choose?
-**** Bayesian persuasion
-- Bayesian persuasion and the concavification approach
-- how can you structure other players' information to reach your goals?
-- application: will bad banks fail optimal stress tests?
-- sources: cite:kamenica11_bayes_persuas
-- practice: [cite:@schweizer2018optimal]
-**** Bayes correlated equilibrium
-- the BCE approach to information design
-- sources: section 1-3.2 in [cite:@bergemann19_infor_desig]
-# - practice: tba
-
-*** Strategic communication (cheap talk)
-People might share what they know with others. The recipients of the information might be able to make use of this information when choosing what to do; e.g. you might go to a new restaurant if someone tells you it is great. This, however, opens the door for manipulation: For example, the restaurant owner might pay people to give positive reviews to others. Which sender and which messages can be trusted to what extent?
-**** Homophily and echo chambers
-- discrete state cheap talk
-- People mainly communicate with people that are similar to them. Is this inefficient or could there be an informational reason?
-- application: communication and the internet, echo chambers
-- practice: [cite:@jann2018echo]
-# - practice: cite:farrell1989cheap
-**** Continuous state
-- classic cheap talk model with a continuum of states
-- applications: delegation
-- sources: [cite:@crawford1982cheap]
-- practice: [cite:@schottmueller2013cifd]
-
-*** Hard evidence
-Sometimes one can communicate information credibly by having a third party expert certifying it; e.g. rating agencies can certify the quality of an asset or the creditworthiness of a person, one can take a test - like GRE or TOEFL - to certify certain abilities etc. Who will certify what? Which information will be transmitted and which won't?
-**** complete unraveling
-- the incentive to show that one is better than the rest can lead to complete information unraveling 
-- applications: privacy legislation
-- sources: ch. 5.1 in [cite:@bolton2005contract], (background: [cite:@milgrom1981good])
-**** partial unraveling
-- costly certification and noisy certification (Dye's model)
-- who will certify if the unravelling logic does not apply completely?
-- applications: should students be able to choose among exam questions?, risk taking (BDL) 
-- sources: [[https://sites.google.com/site/eddiedekelsite/pres_address_2016_slides/pres_address_2016_slides.pdf?attredirects=0&d=1][Dekel's slides]], (background: [cite:@dye1985disclosure],[cite:jung1@988disclosure])
-# - practice: cite:ben2014optimal
-# ** certification
-# cite:strausz2005honest,stahl2017certification 
-
-*** Reputation and advice
-
-Interacting repeatedly allows to build a reputation. E.g. if a friend has never lied to you, you may expect him not to lie in the future. The friend has a reputation for honesty. Can a strategic friend (who might occasionally have an incentive to lie to you) be always honest? If there are benefits from being perceived as honest, how will a friend behave today?
-
-**** Chain store paradox and reputation
-- Can players commit to a certain action that they would normally not take when interacting several times?
-- applications: reputation for behavior
-- sources: ch. 9.1-9.2, 9.4 in [cite:@fudenberg1991game]
-# - practice: http://didattica.unibocconi.it/mypage/dwload.php?nomefile=48805_20081010_094047_CENTRAL_BANK_REPUTATION_AND_THE_MONETIZATION_OF_DEFICITS20140415110809.PDF or Barro, Gordon JME 1983
-
-****  Career concerns
-- How will concerns about the future affect a person's decision about how much effort to exert today?
-- sources: [cite:@holmstrom1999managerial]
-
-**** advice
-- Will experts give best possible advice if they are motivated by an incentive to show the world that they are great experts?
-- sources: [cite:@ottaviani2006professional]
-
-
 ** Presentation
 
 - The goal of the presentation is to teach your fellow students. This implies that you should make the presentation such that it is (i) understandable by your fellow students and (ii) focuses on the interesting bits of the paper. To "teach" does not only mean to state the main results but ideally you should give an intuition/idea why these results hold (at least under the assumptions made in the paper) and also an idea what this means for applications.
@@ -173,6 +82,97 @@ Interacting repeatedly allows to build a reputation. E.g. if a friend has never 
 Some of the lectures are based on parts of books. Noteworthy are
 - [cite:@bolton2005contract] 
 - [cite:@campbell2018incentives]
+
+* Plan
+
+The *structure of the course* is as follows: In the first part of the course, there will mainly be lectures on information economics and its applications. However, we will have a few "practice sessions" in which we discuss a paper that all students should have read/skimmed before. These sessions add to the material of the lecture but are also meant to give you some practice in "how to read a paper (quickly)," i.e. these sessions prepare students for their presentations and reports. The second (and shorter) part of the course consists of student presentations of papers in information economics.
+
+** Introduction to asymmetric information
+
+We use the first 2-3 weeks to introduce the classics in information economics. We see that asymmetric information can lead to inefficiencies in markets and start to discuss what measures players/markets may use to avoid these inefficiencies (at least partially). However, we also see that the clever use of information asymmetries can make everyone better off in some cases. 
+
+*** Adverse selection: Akerlof's lemons market
+- Akerlof's lemons market
+- the first welfare theorem does not hold if different players have different information 
+- applications: used car markets and warranties, adverse selection in insurance markets
+- sources: chapter 5.3 in [cite:@campbell2018incentives]
+# - practice: excessive self financing or insurance as in cite:einav2011selection
+
+*** Mediation and correlated equilibrium
+- correlated equilibrium
+- an impartial mediator can use asymmetric information to make everyone better off
+- sources for the technical details: chapter 8 in [cite:@maschler2013game]
+- practice: [cite:@jann2015correlated ]
+
+*** Information rents and screening
+- 2 type screening problem and revelation principle
+- information creates "rents" for those who have information but uninformed parties reduce these rents by distorting allocations inefficiently
+- applications: non-linear pricing by a monopolist
+- technical extension: screening with a continuum of types (handout)
+- sources: chapter 2.1.3 and 2.3.3 in  [cite:@bolton2005contract]
+# - practice: cite:boone2009optimal 
+# regulating a monopolist, cite:Bar82
+
+** Information design/Bayesian persuasion
+Sometimes we can determine how informed others (or we ourselves) will be, e.g. a central bank can decide how to test banks in a "stress test" (and the information the market gets from the test depends on how strict the test is), a prosecutor decides which witnesses to hear in court and a school might decide how finely grained its grade system is. Which design should the information designer optimally choose?
+*** Bayesian persuasion
+- Bayesian persuasion and the concavification approach
+- how can you structure other players' information to reach your goals?
+- application: will bad banks fail optimal stress tests?
+- sources: cite:kamenica11_bayes_persuas
+- practice: [cite:@schweizer2018optimal]
+*** Bayes correlated equilibrium
+- the BCE approach to information design
+- sources: section 1-3.2 in [cite:@bergemann19_infor_desig]
+# - practice: tba
+
+** Strategic communication (cheap talk)
+People might share what they know with others. The recipients of the information might be able to make use of this information when choosing what to do; e.g. you might go to a new restaurant if someone tells you it is great. This, however, opens the door for manipulation: For example, the restaurant owner might pay people to give positive reviews to others. Which sender and which messages can be trusted to what extent?
+*** Homophily and echo chambers
+- discrete state cheap talk
+- People mainly communicate with people that are similar to them. Is this inefficient or could there be an informational reason?
+- application: communication and the internet, echo chambers
+- practice: [cite:@jann2018echo]
+# - practice: cite:farrell1989cheap
+*** Continuous state
+- classic cheap talk model with a continuum of states
+- applications: delegation
+- sources: [cite:@crawford1982cheap]
+- practice: [cite:@schottmueller2013cifd]
+
+** Hard evidence
+Sometimes one can communicate information credibly by having a third party expert certifying it; e.g. rating agencies can certify the quality of an asset or the creditworthiness of a person, one can take a test - like GRE or TOEFL - to certify certain abilities etc. Who will certify what? Which information will be transmitted and which won't?
+*** complete unraveling
+- the incentive to show that one is better than the rest can lead to complete information unraveling 
+- applications: privacy legislation
+- sources: ch. 5.1 in [cite:@bolton2005contract], (background: [cite:@milgrom1981good])
+*** partial unraveling
+- costly certification and noisy certification (Dye's model)
+- who will certify if the unravelling logic does not apply completely?
+- applications: should students be able to choose among exam questions?, risk taking (BDL) 
+- sources: [[https://sites.google.com/site/eddiedekelsite/pres_address_2016_slides/pres_address_2016_slides.pdf?attredirects=0&d=1][Dekel's slides]], (background: [cite:@dye1985disclosure],[cite:@jung1988disclosure])
+# - practice: cite:ben2014optimal
+# ** certification
+# cite:strausz2005honest,stahl2017certification 
+
+** Reputation and advice
+
+Interacting repeatedly allows to build a reputation. E.g. if a friend has never lied to you, you may expect him not to lie in the future. The friend has a reputation for honesty. Can a strategic friend (who might occasionally have an incentive to lie to you) be always honest? If there are benefits from being perceived as honest, how will a friend behave today?
+
+*** Chain store paradox and reputation
+- Can players commit to a certain action that they would normally not take when interacting several times?
+- applications: reputation for behavior
+- sources: ch. 9.1-9.2, 9.4 in [cite:@fudenberg1991game]
+# - practice: http://didattica.unibocconi.it/mypage/dwload.php?nomefile=48805_20081010_094047_CENTRAL_BANK_REPUTATION_AND_THE_MONETIZATION_OF_DEFICITS20140415110809.PDF or Barro, Gordon JME 1983
+
+***  Career concerns
+- How will concerns about the future affect a person's decision about how much effort to exert today?
+- sources: [cite:@holmstrom1999managerial]
+
+*** advice
+- Will experts give best possible advice if they are motivated by an incentive to show the world that they are great experts?
+- sources: [cite:@ottaviani2006professional]
+
 
 * List of papers for presentation
 
