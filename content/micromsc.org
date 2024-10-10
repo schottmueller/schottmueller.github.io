@@ -43,6 +43,9 @@ All materials are now also available on [[https://uni-koeln.sciebo.de/s/urCdimez
  - schedule [[https://github.com/schottmueller/microMSc/blob/main/schedule.org][org]] [[https://web.tresorit.com/l/M1vPF#qsgBnSpLwC1xwq2yNER_jA][pdf]]
  - old [[https://web.tresorit.com/l/r4RHi#M7EwaRvrKsf0iJEqHlh0Mg][exam]]
 
+** Textbooks
+The provided lecture notes cover all but the first two weeks. The material of those weeks is, for example, covered in [cite:@jehle2001advanced]. On auctions, Paul Klemperer's book [cite:@klemperer2004auctions] is an interesting (optional!) read but goes far beyond the material covered in this course.
+ 
 # pw: micro   
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture       
 * Bibliography  
