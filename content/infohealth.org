@@ -84,18 +84,18 @@ Lecture slides and exercises are posted/updated here over the course of the term
 # /This is very optional (!!!) but if you are interested/, there are some julia/jupyter [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][notebooks]] that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].
 
 
-* Course setup 
-In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
+# * Course setup 
+# In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
 
-Students learn economic methods to analyze health care markets theoretically and also gain some insight in how to design empirical tests of the predictions of the theoretical models. 
+# Students learn economic methods to analyze health care markets theoretically and also gain some insight in how to design empirical tests of the predictions of the theoretical models. 
 
-The course consists of a lecture and an exercise session. Models, their solutions and implications as well as empirical evidence are presented in the lecture. In the exercise classes, solution to exercises are discussed. Students are expected to work on the exercises beforehand. Exercises consist mainly of calculation exercises using (variations of) models introduced in class but also discussion questions on specific applications. 
+# The course consists of a lecture and an exercise session. Models, their solutions and implications as well as empirical evidence are presented in the lecture. In the exercise classes, solution to exercises are discussed. Students are expected to work on the exercises beforehand. Exercises consist mainly of calculation exercises using (variations of) models introduced in class but also discussion questions on specific applications. 
 
-The exam will -- in style -- be similar to the questions of the exercise classes.
+# The exam will -- in style -- be similar to the questions of the exercise classes.
 
 ** Lecture times: 
-- lecture: Wednesday, 10:00-11:30 in 100/EG/HSXII
-- exercise classes: Monday, 14:00-15:30 100/EG/HSXII (rescheduled to Wednesday 14:00 in the weeks of 2024-10-21, 2024-11-18 and 2024-12-16)
+- lecture: Wednesday, 10:00-11:30 in 213/EG/0.14 (H 162)
+- exercise classes: Monday, 14:00-15:30 100/EG/HSXII (rescheduled in the weeks of 2024-10-21, 2024-11-18 and 2024-12-16 see KLIPS)
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in [cite:@zweifel2009health] (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). [cite:@morrisey2008health] (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
