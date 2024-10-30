@@ -69,7 +69,8 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - a [[https://youtu.be/pUkRo9COd38?feature=shared][video]] on (adverse) selection  
 
 - *Notes*
-  - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
+  - old notes concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
+  - [[https://uni-koeln.sciebo.de/s/oaiXnh8H6uPdp25][notes]] (book project -- not all parts are relevant!; password announced in lecture) 
 #  - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
 #    - [[https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf][Exercise Session 1]]
 #    - [[https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf][Exercise Session 2]]
