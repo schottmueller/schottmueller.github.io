@@ -7,7 +7,7 @@
 * News
 # - The lecture on Nov 16 is canceled due to health reasons.
 # - The paper we discuss on Nov. 23 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
-# - The paper we discuss on Nov. 9 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
+ - The paper we discuss on Nov. 7 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
  - The paper we discuss on Oct. 17 can be downloaded [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
 # - The first student presentation is already on Dec. 19 where we will also discuss a bit how the presentations could look like. Presentations should take between 30 and 45 minutes (the 45 minutes is including questions and discussion). If you are using slides , please send those to me as *pdf* before your presentation. You have to use your own computer if you use power point or other formats for your slides.   
  # - For Thursday Dec 10, we are discussing a paper that is not published yet. Please, use the version [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]].
