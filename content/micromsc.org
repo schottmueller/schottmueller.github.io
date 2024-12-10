@@ -38,7 +38,7 @@ All materials are now also available on [[https://uni-koeln.sciebo.de/s/urCdimez
    - adverse selection [[https://github.com/schottmueller/microMSc/blob/main/slides/lemons.org][org]] [[https://uni-koeln.sciebo.de/s/HLoSE2GQoeRglUb][pdf]]
    - perfect Bayesian equilibrium [[https://github.com/schottmueller/microMSc/blob/main/slides/pbe2.org][org]] [[https://uni-koeln.sciebo.de/s/a6Dn2gbweVKcCBG][pdf]]
    - signaling [[https://github.com/schottmueller/microMSc/blob/main/slides/signal.org][org]] [[https://web.tresorit.com/l/G9nZv#9mPApA8ca21xh-rnnTWj_g][pdf]]    
- - exercises [[https://uni-koeln.sciebo.de/s/W3eLF3YiXdfHEog][pdf]]
+ - exercises [[https://uni-koeln.sciebo.de/s/Y6UPXoqMs9csyGN][pdf]]
  - lecture notes via [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] (password announced in lecture) 
  - old additional notes [[https://web.tresorit.com/l/sXAYt#3MXtRbZbcXY1eRYOj5VZbA][pdf]]
  - schedule [[https://github.com/schottmueller/microMSc/blob/main/schedule.org][org]] [[https://web.tresorit.com/l/M1vPF#qsgBnSpLwC1xwq2yNER_jA][pdf]]
