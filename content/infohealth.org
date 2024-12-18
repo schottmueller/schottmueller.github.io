@@ -57,13 +57,13 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Screencasts*
   - [[https://uni-koeln.sciebo.de/s/I4hWkZNgdtqAPDF][derivation]] Rothschild-Stiglitz equilibrium
   - how to get [[https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH][descriptive statistics]] and do [[https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA][regressions]] in LibreOffice Calc 
-  - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice 
+  - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice
+  - [[https://uni-koeln.sciebo.de/s/fYacpmYS41gwDB0][recording]] exercise session Dec 17
 # - [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]] lecture 1
     
 - *Data sets and instructions* for case studies:
   - exercises (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
-  - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study
-    # and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
+  - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
