@@ -30,14 +30,14 @@
 * Material
 All materials are now also available on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]]. (password announced in lecture)
  - slides (might still be edited)
-   - social choice [[https://github.com/schottmueller/microMSc/blob/main/slides/socialChoice.org][org]] [[https://web.tresorit.com/l/3vn7X#pCuyHYev30YGnIOGNlldKQ][pdf]]
-   - markets [[https://github.com/schottmueller/microMSc/blob/main/slides/markets2.org][org]] [[https://uni-koeln.sciebo.de/s/lVuvol95VwyDDJn][pdf]]
-   - choice under uncertainty [[https://github.com/schottmueller/microMSc/blob/main/slides/vNM.org][org]] [[https://web.tresorit.com/l/TQn4j#NyY4iml3GnZnYh25-yBzsg][pdf]]
-   - Bayesian Nash equilibrium [[https://github.com/schottmueller/microMSc/blob/main/slides/bne.org][org]] [[https://uni-koeln.sciebo.de/s/VeQCuLn6bELYy6c][pdf]]
-   - auctions [[https://github.com/schottmueller/microMSc/blob/main/slides/auctions.org][org]] [[https://uni-koeln.sciebo.de/s/OMIXL3i4dZUrk6q][pdf]]
-   - adverse selection [[https://github.com/schottmueller/microMSc/blob/main/slides/lemons.org][org]] [[https://uni-koeln.sciebo.de/s/HLoSE2GQoeRglUb][pdf]]
-   - perfect Bayesian equilibrium [[https://github.com/schottmueller/microMSc/blob/main/slides/pbe2.org][org]] [[https://uni-koeln.sciebo.de/s/a6Dn2gbweVKcCBG][pdf]]
-   - signaling [[https://github.com/schottmueller/microMSc/blob/main/slides/signal.org][org]] [[https://web.tresorit.com/l/G9nZv#9mPApA8ca21xh-rnnTWj_g][pdf]]    
+   - social choice [[https://web.tresorit.com/l/3vn7X#pCuyHYev30YGnIOGNlldKQ][pdf]]
+   - markets [[https://github.com/schottmueller/microMSc/blob/main/slides/markets2.org][pdf]]
+   - choice under uncertainty [[https://web.tresorit.com/l/TQn4j#NyY4iml3GnZnYh25-yBzsg][pdf]]
+   - Bayesian Nash equilibrium [[https://uni-koeln.sciebo.de/s/VeQCuLn6bELYy6c][pdf]]
+   - auctions [[https://uni-koeln.sciebo.de/s/OMIXL3i4dZUrk6q][pdf]]
+   - adverse selection [[https://uni-koeln.sciebo.de/s/HLoSE2GQoeRglUb][pdf]]
+   - perfect Bayesian equilibrium [[https://uni-koeln.sciebo.de/s/a6Dn2gbweVKcCBG][pdf]]
+   - signaling [[https://uni-koeln.sciebo.de/s/AEzMBFyrQQOpugo][pdf]]    
  - exercises [[https://uni-koeln.sciebo.de/s/Y6UPXoqMs9csyGN][pdf]]
  - lecture notes via [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] (password announced in lecture) 
  - old additional notes [[https://web.tresorit.com/l/sXAYt#3MXtRbZbcXY1eRYOj5VZbA][pdf]]
