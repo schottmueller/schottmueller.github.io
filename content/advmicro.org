@@ -26,7 +26,7 @@
 Each week you have either to watch some screencasts or to read a book chapter before coming to class. In class, you then have the possibility to ask questions about the material (and I might ask you a few questions to see whether things are clear). Afterwards we do the exercises. In terms of /preparation/, you have to watch the screencasts (or read the book chapter). Furthermore, you have to read through the exercises on the respective topic and think roughly 10 minutes about each of them. (Don't be discouraged if you do not manage to solve them quickly. Some of them are quite challenging.)  One organizational remark: as we have only one projector, it is useful to bring a printout of the exercises with you to class. 
  
 * Material
-- [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts for lecture material
+- [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts and book chapters
 
 - [[https://github.com/schottmueller/advMicro/files/3255945/exam.pdf][old exam]] 
 - Exercises: [[https://web.tresorit.com/l/fHuQ1#QdeCbHMRepN8nScN6s4cUw][pdf]], [[https://web.tresorit.com/l/McPf9#3MzYHARzJK1cB069EeGOqA][solutions]] for some exercises not covered in class
@@ -58,7 +58,7 @@ Each week you have either to watch some screencasts or to read a book chapter be
 * Prerequisites
 I assume that you have some introductory knowledge of game theory on the level of [cite:@gibbons1992primer]. In particular, you should know the material in chapters 1 and 2 in Gibbons' book (strategic form games, dominance, mixed strategies, mixed and pure Nash equilibrium, extensive form games, game trees, backwards induction, subgame perfect Nash equilibrium) and be able to apply it in simple games. From Advanced Microeconomics I, we build upon the part about /decision making under uncertainty/ (expected utility theorem). In terms of mathematics, it is helpful to master the material of the course /Advanced Mathematics for Economists/. Having said that, most of the used math tools will not be far beyond high school maths. At the minimum you have to know (partial) differentiation, integration and optimization of functions and basic statistics (discrete and continuous probability distributions, expected values as well as Bayes' rule and conditional probabilities). More importantly, you should also have some idea of what a mathematical proof is. There is a handout on maths covering some of the prerequisites and topics that people tend to forget about quickly. 
 
-* Books
+* Other books
 
 Most material is covered in [cite:@mas1995microeconomic] which is abbreviated MWG in the following. Roughly speaking, we will cover chapters 8, 9, 13 and 23 from this book.
 
@@ -131,7 +131,7 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 - mechanism design problem (MWG 23.B)
 - revelation principle (MWG 23.B)
 
-** Mechanism design II: dominant strategy implementation
+** Mechanism design II: public goods
 - Gibbard Satterthwaite theorem (MWG 23.C)
 - Pivot (and VCG) mechanism  (MWG 23.C)
 
@@ -139,7 +139,7 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 # - Bayesian implementation (MWG 23.D)
 # - expected externality mechanism (MWG 23.D up to p. 887)
 
-** Mechanism design III: Myerson- Satterthwaite
+** Mechanism design III: bilateral trade
 - Bayesian implementation (MWG 23.D)
 - envelope theorem (MWG 23.D p. 887-889)
 - Myerson-Satterthwaite theorem (MWG 23.E)
@@ -148,14 +148,14 @@ The following plan is...well a plan...and as such it might be adapted to unforse
 - non-linear pricing by a monopolist (see handout) 
 - a classic reference on this topic is [cite:@maskin1984monopoly], MWG cover a different screening problem in Example 23.F.1 and MWG pp. 897-903 is recommended reading
 
-** Mechanism design V: optimal auctions
-- revenue equivalence (MWG 23.D p.889-)
-- optimal independent, private value auctions (MWG Example 23.F.2)
+# ** Mechanism design V: optimal auctions
+# - revenue equivalence (MWG 23.D p.889-)
+# - optimal independent, private value auctions (MWG Example 23.F.2)
 
-** Mechanism design VI: welfare optimal mechanisms and limits
-- welfare maximizing mechanism in bilateral trade
-- limits when number of agents gets large in bilateral trade and public good setting
-- references: Börgers 3.4.3; FT ch. 7.4.5+7.4.6
+# ** Mechanism design VI: welfare optimal mechanisms and limits
+# - welfare maximizing mechanism in bilateral trade
+# - limits when number of agents gets large in bilateral trade and public good setting
+# - references: Börgers 3.4.3; FT ch. 7.4.5+7.4.6
 # ** Mechanism design VII: correlated information
 # - belief extraction
 # - Cremer-McLean mechanism (cite:cre88) or Börgers ch. 6.4
