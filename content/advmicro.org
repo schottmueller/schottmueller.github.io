@@ -5,27 +5,25 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
-- I updated the [[https://uni-koeln.sciebo.de/s/ND5jNpFeixTYTI0][notes]] on mechanism design.
+- Please watch the screencasts on Dominance and rationalizability (01-03) before coming to the first class.
+# - I updated the [[https://uni-koeln.sciebo.de/s/ND5jNpFeixTYTI0][notes]] on mechanism design.
 
-- Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
+# - Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
 
-- On May 2, we will talk about Bayesian Nash equilibrium. Please, have a look at the provided [[https://web.tresorit.com/l/McPf9#3MzYHARzJK1cB069EeGOqA][solutions]] for some of the BNE exercises before coming to class. To make up for the canceled lecture on April 25, we will have a Zoom meeting on Tuesday evening (May 7) at 17:30 in which we will talk about auctions. To keep the zoom meeting short, I will write down solutions to all the auction exercises beforehand and we will talk in the meeting only about specific questions that you have concerning either the screencast or the exercises/solutions. (Meeting ID: 991 9519 7189;Password: 519315)
-- Due to health issues, there is no lecture on April 25. I will inform you as soon as I am better about a make up meeting.
-
-- We will skip the topic "Nash equilibrium" and will talk about "Bayesian Nash equilibrium" on April 25. Please, watch screencasts 07-09 until then. 
+# - We will skip the topic "Nash equilibrium" and will talk about "Bayesian Nash equilibrium" on April 25. Please, watch screencasts 07-09 until then. 
 # - As I am attending an international conference, there is no lecture on April 11. The first lecture will be on April 18. Please watch screencasts 01-03 before the lecture on April 18 and have a look at the corresponding exercises.
 #  - Exam grades will be published soon. PhD students can pick up their certificates at the secretariat (SSC 4.302-4.304) but due to technical problems not before July 26 (maybe call in beforehand to make sure that someone is in).
     
 # - The second exam is planned for September 30, 14:00. Registration via KLIPS is open now. PhD students should register via mail to [c dot schottmueller at uni minus koeln dot de].
 # - On July ?, we use the class for question hour. If you want to have an answer for sure, please send me your questions before July ?.
 # - resit date: October 7, 16:00-17:00 in SSC 4.210
- - exam date: July 18, 14:00-15:00 in the usual lecture room
+ - exam date: July 17, 14:00-15:00 in the usual lecture room
 
 * Time and place
- - Thursday, 14:00-17:30, Seminarraum 3.03 (118/03/3.03)
+- Thursday, 14:00-17:30, Seminarraum S243 (101/01/1.303)
 
 * Setup
-Please, watch the screencasts provided below before coming to class. You have the option to ask questions about the material in the screencasts (and I might ask you a few questions to see whether things are clear). We will then do the exercises. In terms of /preparation/, you have to watch the screencasts and read through the exercises on the respective topic and think roughly 10 minutes about each of them. (Don't be discouraged if you do not manage to solve them quickly. Some of them are a bit tricky.)  One organizational remark: as we have only one projector, it is useful to bring a printout of the exercises with you to class. 
+Each week you have either to watch some screencasts or to read a book chapter before coming to class. In class, you then have the possibility to ask questions about the material (and I might ask you a few questions to see whether things are clear). Afterwards we do the exercises. In terms of /preparation/, you have to watch the screencasts (or read the book chapter). Furthermore, you have to read through the exercises on the respective topic and think roughly 10 minutes about each of them. (Don't be discouraged if you do not manage to solve them quickly. Some of them are quite challenging.)  One organizational remark: as we have only one projector, it is useful to bring a printout of the exercises with you to class. 
  
 * Material
 - [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts for lecture material
@@ -44,9 +42,9 @@ Please, watch the screencasts provided below before coming to class. You have th
   - [[https://github.com/schottmueller/advMicro/files/6849535/domStratMechDes.pdf][dominant strat. implementation]]
   - [[https://github.com/schottmueller/advMicro/files/2054659/ms.pdf][Myerson Satterthwaite]]
   - [[https://github.com/schottmueller/advMicro/files/2054661/screening.pdf][screening]]
-  - [[https://github.com/schottmueller/advMicro/files/2115403/revenueEquivalence.pdf][optimal auctions]]
-  - [[https://github.com/schottmueller/advMicro/files/3345210/optTradeLimits.pdf][optimal trading mechanism and limit results]], [[https://github.com/schottmueller/advMicro/blob/master/Public%20good.ipynb][numerics]]
-  - [[https://github.com/schottmueller/advMicro/files/2149786/CremerMcLean.pdf][correlated information]]
+#  - [[https://github.com/schottmueller/advMicro/files/2115403/revenueEquivalence.pdf][optimal auctions]]
+#  - [[https://github.com/schottmueller/advMicro/files/3345210/optTradeLimits.pdf][optimal trading mechanism and limit results]], [[https://github.com/schottmueller/advMicro/blob/master/Public%20good.ipynb][numerics]]
+#  - [[https://github.com/schottmueller/advMicro/files/2149786/CremerMcLean.pdf][correlated information]]
 
 #  - [[https://github.com/schottmueller/advMicro/files/2052819/cheapTalk.pdf][cheap talk]]
 #  - [[https://github.com/schottmueller/advMicro/files/3062253/corrEq.pdf][correlated eq.]]
