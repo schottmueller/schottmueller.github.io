@@ -5,6 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
+- We will skip the "Auctions" chapter and deal with "Dynamic Games I" on May 8 (screencasts 12-15).
 - Please watch the screencasts on Dominance and rationalizability (01-03) before coming to the first class.
 # - I updated the [[https://uni-koeln.sciebo.de/s/ND5jNpFeixTYTI0][notes]] on mechanism design.
 
