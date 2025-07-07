@@ -5,9 +5,10 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
-- Starting with the signaling lecture on May 22, please do not watch the screencasts but read the corresponding chapter in the reading material before coming to class. Keep, however, preparing the exercises on the exercise pdf. (If you are interested in some of the exercises from the book, I am, of course, happy to discuss those as well.)
-- We will skip the "Auctions" chapter and deal with "Dynamic Games I" on May 8 (screencasts 12-15).
-- Please watch the screencasts on Dominance and rationalizability (01-03) before coming to the first class.
+- The exam starts at 14:30 (and not at 14:00 as I had wrongly announced on this page before).
+# - Starting with the signaling lecture on May 22, please do not watch the screencasts but read the corresponding chapter in the reading material before coming to class. Keep, however, preparing the exercises on the exercise pdf. (If you are interested in some of the exercises from the book, I am, of course, happy to discuss those as well.)
+# - We will skip the "Auctions" chapter and deal with "Dynamic Games I" on May 8 (screencasts 12-15).
+# - Please watch the screencasts on Dominance and rationalizability (01-03) before coming to the first class.
 # - I updated the [[https://uni-koeln.sciebo.de/s/ND5jNpFeixTYTI0][notes]] on mechanism design.
 
 # - Some [[https://uni-koeln.sciebo.de/s/x11iTai5SSTkq4v][notes]] on game theory were added (the password was announced in the lecture, please ask me if you missed it) where you can check how to determine Bayesian Nash equilibria in sections 1.2.1 and 1.2.2. Comments on these notes are very welcome. 
@@ -19,7 +20,7 @@
 # - The second exam is planned for September 30, 14:00. Registration via KLIPS is open now. PhD students should register via mail to [c dot schottmueller at uni minus koeln dot de].
 # - On July ?, we use the class for question hour. If you want to have an answer for sure, please send me your questions before July ?.
 # - resit date: October 7, 16:00-17:00 in SSC 4.210
- - exam date: July 17, 14:00-15:00 in the usual lecture room
+ - exam date: July 17, 14:30-15:30 in the usual lecture room
 
 * Time and place
 - Thursday, 14:00-17:30, Seminarraum S243 (101/01/1.303)
