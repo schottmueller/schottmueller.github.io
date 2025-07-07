@@ -15,26 +15,21 @@
 
 @@html:
 <p style="float: left;">
-<img src="./img/chessBW.jpg" alt="Profile Picture"  height="275px" style="border:5px double #777777;margin-top: -0.5cm;">
+<img src="./img/chessBW.jpg" alt="Profile Picture"  height="280px" style="border:5px double #777777;margin-top: -0.5cm;">
 </p>
 <div class="tab220">
 <p>
 <b>Christoph Schottmüller</b> is professor at the <a href="https://wiso.uni-koeln.de/en/en/">University of Cologne</a>.
 </p>
 office address: <br/>
+    <span class="tab"> Universitätsstr. 22a (SSC 4.207) </span> <br/>
+<br/>
+mail address: <br/>
    <span class="tab"> LS Mikroökonomik (Prof. Schottmüller) </span> <br/>
-    <span class="tab"> SSC 4.207 </span> <br/>
-    <span class="tab"> Universitätsstr. 22a </span> <br/>
+    <span class="tab"> Universität zu Köln </span> <br/>
+    <span class="tab"> Albertus Magnus Platz </span> <br/>
     <span class="tab">  50937 Köln </span> 
 <br/>
-<br/>
-<SCRIPT LANGUAGE="Javascript">
-  document.write('email: ' + '<A HREF="mai' + 'lto' + String.fromCharCode(58) + 'c.schottmueller');
-  document.write(String.fromCharCode(64) + 'uni-koe' + 'ln.de">c.schottmueller' + String.fromCharCode(64));
-  document.write('uni-koel' + 'n.de</A>');
-</SCRIPT> <!-- to protect against crawlers -->
-<NOSCRIPT>email: <code>c [dot] schottmueller [at] uni-koeln</code> <code>[dot]</code> <code>de</code>  </NOSCRIPT>
-<br/> 
 <p>
 <b> <a href="./files/cv.pdf">CV</a> </b>
 </p>
