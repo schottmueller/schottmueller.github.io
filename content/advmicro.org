@@ -5,6 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
+- An [[https://uni-koeln.sciebo.de/s/iZ7mvTf0Qc1de9d][old exam]] is available.
 - The exam starts at 14:30 (and not at 14:00 as I had wrongly announced on this page before). PhD students who cannot register via KLIPS for the exam should send me an email with their name and student number before the exam.
 # - Starting with the signaling lecture on May 22, please do not watch the screencasts but read the corresponding chapter in the reading material before coming to class. Keep, however, preparing the exercises on the exercise pdf. (If you are interested in some of the exercises from the book, I am, of course, happy to discuss those as well.)
 # - We will skip the "Auctions" chapter and deal with "Dynamic Games I" on May 8 (screencasts 12-15).
@@ -29,6 +30,7 @@
 Each week you have either to watch some screencasts or to read a book chapter before coming to class. In class, you then have the possibility to ask questions about the material (and I might ask you a few questions to see whether things are clear). Afterwards we do the exercises. In terms of /preparation/, you have to watch the screencasts (or read the book chapter). Furthermore, you have to read through the exercises on the respective topic and think roughly 10 minutes about each of them. (Don't be discouraged if you do not manage to solve them quickly. Some of them are quite challenging.)  One organizational remark: as we have only one projector, it is useful to bring a printout of the exercises with you to class. 
  
 * Material
+- [[https://uni-koeln.sciebo.de/s/iZ7mvTf0Qc1de9d][old exam]] 
 - [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts and book chapters
 - [[https://uni-koeln.sciebo.de/s/1Ui8djOwdPD2GB9][link]] to reading material (password announced in lecture)
  # micromer  
