@@ -35,7 +35,7 @@ Each week you have either to watch some screencasts or to read a book chapter be
 - [[https://uni-koeln.sciebo.de/s/1Ui8djOwdPD2GB9][link]] to reading material (password announced in lecture)
  # micromer  
 
-- [[https://github.com/schottmueller/advMicro/files/3255945/exam.pdf][old exam]] 
+# - [[https://github.com/schottmueller/advMicro/files/3255945/exam.pdf][old exam]] 
 - Exercises: [[https://web.tresorit.com/l/fHuQ1#QdeCbHMRepN8nScN6s4cUw][pdf]], [[https://web.tresorit.com/l/McPf9#3MzYHARzJK1cB069EeGOqA][solutions]] for some exercises not covered in class
 - Slides:
   - [[https://github.com/schottmueller/advMicro/files/3028996/dominRatio.pdf][Dominance and rationalizability]]
