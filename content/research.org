@@ -6,16 +6,19 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 
 * Working Papers
+Manufactured Ignorance: How Media Competition Lowers News Quality (with Ole Jann), [[./papers/echo2/hotelling.pdf][paper]]
+
 Political Debate on Social Media: Theory and Evidence (with Ole Jann), [[./papers/twitter/twitter.pdf][paper]]
 
 Welfare optimal information structures in public good provision, [[./papers/pubGoodInfo/pgi.pdf][paper]]
 
-Anonymous or personal? A simple model of repeated personalized advice (with Marius Gramb), [[./papers/dynAdvice/advLearning.pdf][paper]]
-
 Why Echo Chambers are Useful (with Ole Jann), [[./papers/echoChamber/echo_chambers.pdf][paper]] 
 @@html: <br/> <span class="tabsmall">  <a href="./papers/echoChamber/supMatEchoChambers.pdf">supplementary material</a> <br/>covered on <a href="https://marginalrevolution.com/marginalrevolution/2018/11/maybe-echo-chambers-evolving-efficient.html">Marginal Revolution</a> and <a href="https://stumblingandmumbling.typepad.com/stumbling_and_mumbling/2018/10/echo-chambers-a-defence.html"> Stumbling and Mumbling</a>  </span> @@
 
-Stochastic mechanisms and quasilinear preferences (with Jan Boone), [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (inactive)
+
+Anonymous or personal? A simple model of repeated personalized advice (with Marius Gramb), [[./papers/dynAdvice/advLearning.pdf][paper]] (dormant)
+
+Stochastic mechanisms and quasilinear preferences (with Jan Boone), [[./papers/stochastic_mechanism/stochastic_mech_quasilin_pref.pdf][paper]] (dormant)
 
 * Publications
 Optimal information structures in bilateral trade, [[https://econtheory.org/ojs/index.php/te/article/view/20230421][paper]], /Theoretical Economics/, Vol. 18 (1), January 2023, pp. 421-461
