@@ -5,17 +5,17 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
- - There are new lecture notes for the topic "hard evidence" on sciebo.
- - The paper we discuss on Nov. 14 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
- - The paper we discuss on Nov. 7 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
- - The paper we discuss on Oct. 17 can be downloaded [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
+# - There are new lecture notes for the topic "hard evidence" on sciebo.
+# - The paper we discuss on Nov. 14 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
+# - The paper we discuss on Nov. 7 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
+# - The paper we discuss on Oct. 17 can be downloaded [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
 # - The first student presentation is already on Dec. 19 where we will also discuss a bit how the presentations could look like. Presentations should take between 30 and 45 minutes (the 45 minutes is including questions and discussion). If you are using slides , please send those to me as *pdf* before your presentation. You have to use your own computer if you use power point or other formats for your slides.   
  # - For Thursday Dec 10, we are discussing a paper that is not published yet. Please, use the version [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]].
 # - This website will be slowly updated over the coming weeks to give students information about the course "Information and Strategy".
 # - On November 18 we will have a practice session on cheap talk. Please, read this [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][paper]] in advance following the steps in the [[https://github.com/schottmueller/infoStrat/files/3615401/htrap.pdf][guide]].
 # - As a lot more students than expected signed up for the course, presentations may be group presentations.   
 # - Due to an illness the first week's lecture will not go along as planned on campus. Instead we will have an online lecture on zoom on Oct 12, 9am. The lecture will be recorded. You can download the recording [[https://uni-koeln.sciebo.de/s/0txSevFVvl3Q7Tl][here]].
-- Lecture time and place in WS 2024/25: Thursday (100 HS XVIIa) 9:00-11:30.
+- Lecture time and place in WS 2025/26: Thursday (100 HS VIIa) 9:00-11:30.
 
 * Description
 This course deals with information economics. That is, how do people and/or organizations, that have access to different information sources, strategically interact? We also deal with the natural follow up question: Who will and/or should have access to what information and what kind of information can/will/should be transmitted from one person to another? 
@@ -29,24 +29,26 @@ The course has various goals. First, students get to know the blockbuster ideas 
 
 ** Grading
 
-Grading is based on a presentation and a written report. Both the presentation and the report are on a research paper in information economics. The main task is to summarizes the paper and (mainly in the written report) to briefly evaluate the paper, discuss it or comment on it. The page limit for the report is 6 pages. Note that this course is not a so-called "Seminar". The main difference to a seminar is that (i) the majority of the course consists of lectures, (ii) you do not have to produce an own original contribution in the report and consequently the report is shorter than a typical seminar paper. 
+Grading is based on a presentation, a handout and a written report. All of these are on one research paper in information economics.
+The main task is to summarize the paper and clarify the argument/mechanics behind the main result(s) in the presentation and the handout. In the written report, you describe a real world application or example related to the mechanism/result in the paper and discuss how well it fits or does not fit the model of the paper. *Page limits* are 2 pages for the handout and 2 pages for the report (reasonable formatting).
 
-If a student prefers to write a research proposal instead of a report, this is possible as well.
+If a student prefers to write a research proposal based on the paper instead of a report, this is possible as well.
 
 Presentations have to be in English. Reports can be written in English or German.
 
 Attendance is voluntary and does not affect the grading of your report directly. (Of course, the lectures are intended to prepare you for writing a good report...)  Attending the student presentations is strongly encouraged.
 
 *** Important dates
-- Insert your paper preferences [[https://docs.google.com/spreadsheets/d/1HqaHmdN_IwvYXpi1jSxLkJl1THz5kUEX8bBCaveDRqg/edit?usp=sharing][here]] before October 27, 1:00pm. A list of papers ordered by topic as well as a bibliography can be found at the bottom of this page. Papers are assigned in the following week. There is no guarantee that you are assigned one of your preferred papers.
+- Insert your paper preferences [[https://docs.google.com/spreadsheets/d/1HqaHmdN_IwvYXpi1jSxLkJl1THz5kUEX8bBCaveDRqg/edit?usp=sharing][here]] before October 26, 10:00pm. A list of papers ordered by topic as well as a bibliography can be found at the bottom of this page. Papers are assigned in the following week. There is no guarantee that you are assigned one of your preferred papers though I try to make this possible.
 # - Send an email to the course instructor with your preferred papers (up to 5) by November 11, 8:00am. Papers are assigned in the following week. There is no guarantee that you are assigned one of your preferred papers.
   # Please, also indicate whether you prefer to present on campus or online via zoom.
-- Register for the "examination" via KLIPS by November 4. Deregistration will not be possible after November 4 for scheduling reasons.
+- Register for the "examination" via KLIPS by November 5. Deregistration will not be possible after November 5 for scheduling reasons.
 - Dates for the presentations are announced in November. Student presentations take place in January and February (also end of December if many students sign up).
-- Hand in your paper by February 28 via email. 
+- Hand in your handout (and slides if you use slides) the day before your presentation (before 5:00 pm) via email  *as a pdf*. 
+- Hand in your report by February 28 via email  *as a pdf*. 
 ** Presentation
 
-- The goal of the presentation is to teach your fellow students. This implies that you should make the presentation such that it is (i) understandable by your fellow students and (ii) focuses on the interesting bits of the paper. To "teach" does not only mean to state the main results but ideally you should give an intuition/idea why these results hold (at least under the assumptions made in the paper) and also an idea what this means for applications.
+- The goal of the presentation is to teach your fellow students. This implies that you should make the presentation such that it is (i) understandable by your fellow students and (ii) focuses on the interesting bits of the paper. To "teach" does not only mean to state the main results but to give an intuition/idea why these results hold (at least under the assumptions made in the paper) and also an idea what this means for applications.
 
 - You do not have to present all results and extensions of the paper, i.e. you can focus on the main result.
 
@@ -56,13 +58,9 @@ Attendance is voluntary and does not affect the grading of your report directly.
 
 - Assuming that your fellow students attended the lectures, it can be a good idea to compare the model of your paper to the closest model discussed in the lecture (and explain what is different). Seeing the connections can often  help to understand the mechanisms at work better.
 
-- It is difficult to follow a lot of (long) equations. Hence, you should have only equations that help to understand what is going on. If you have an equation on your slides, you should probably explain it term by term (otherwise the audience will not have the time to take it in).
+- It is difficult to follow a lot of (long) equations. Hence, you should have only equations that help to understand what is going on. If you have an equation on your slides, you should explain it term by term (otherwise the audience will not have the time to take it in).
 
-- I do not expect you to replicate all the proofs. This quickly gets boring and hard to follow. In a presentation, it is more important to give an intuition why a result holds than to prove it. (The same is true for your report!)
-
-- At the end you may also discuss directions for further research, highlight weaknesses of the paper or comment on the applicability. This part is not essential for the presentation but you should definitely have it in your report. So, why not try already in the presentation and see whether you get some feedback?
-
-- If you use slides, please send them to me the evening before your presentation (6pm) *in pdf format*. 
+- I do not expect you to replicate (all) the proofs. This quickly gets boring and hard to follow. In a presentation, it is more important to give an intuition why a result holds than to prove it.
 
 - The time frame will probably be around 30 minutes. However, this can depend on the number of students in the course. (In the unlikely event that surprisingly many students take the course, presentations may be in teams. )
 
@@ -73,9 +71,9 @@ Attendance is voluntary and does not affect the grading of your report directly.
 
 ** Lecture material
 - adverse selection slides: [[https://github.com/schottmueller/microMSc/blob/main/slides/lemons.org][org]] [[https://web.tresorit.com/l/uHpHt#H4BNhZHSj9-AkWIwpG4BnQ][pdf]]   
-- [[./files/htrap.pdf][guide]] on how to read a paper
+# - [[./files/htrap.pdf][guide]] on how to read a paper
 - [[https://github.com/schottmueller/infoStrat/files/7323109/envelopeMonoNonLinPric.pdf][handout]] on screening with a continuum of types
-- reading material is shared via [[https://uni-koeln.sciebo.de/s/xECzExjwU9sC2Db][sciebo]] (password announced in lecture)
+- reading material is shared via [[https://uni-koeln.sciebo.de/s/xECzExjwU9sC2Db][sciebo]] (password announced in lecture only)
 # pw: infoStrat  
   
 ** Books
