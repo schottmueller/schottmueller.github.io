@@ -9,17 +9,18 @@
 #+latex_header: \usepackage[tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
 #+latex_header: \usepackage{setspace}\onehalfspacing
 
-To write a thesis supervised at the Chair of Microeconomics, you first have to master the material covered in the following course(s):
+*Bachelor thesis* topics are allocated centrally, see [[https://economics.uni-koeln.de/en/teaching-studies/bachelor-thesis/bachelor-thesis-central-allocation][here]] for more information.
+
+The rest of this website covers *Master thesis* supervision.
+To write a Master thesis supervised by me, you first have to master the material covered in the following course(s):
 
 - the course "Information and Strategy" if you are in the MSc Economics,
-- the seminar "Competition Policy" (Module: SM Project/Seminar Economics and Business) if you are in the BSc Economics,
 - "Imperfect Information in Health Care Markets" if you are in the MSc Health Economics,
-- "Advanced Microeconomics II" (and ideally also "Information and Strategy") if you are in the Master Economic Research.
+- "Advanced Microeconomics II" and/or "Information and Strategy" if you are in the Master Economic Research.
 
-Please, read the guidelines before contacting my chair. If you write your thesis at my chair, have a look at the $\LaTeX$ templates below and maybe also at the seminar guidelines or the numerical tools.
+*Please, read the guidelines below before contacting me or anyone else.*
 
 * Guidelines
-
 
 ** Finding a topic
 The most important part is that you are interested in your topic. After all you will spend quite some time with it. You can draw on many sources in order to find a topic:
@@ -33,12 +34,12 @@ The most important part is that you are interested in your topic. After all you 
 
 You also might keep in mind what you want to do after your studies. Your thesis can be an entry ticket into a certain kind of career/sector, e.g. future employers might be more inclined to interview you if they can see that you wrote a thesis on a topic that is relevant to them.
 
-*** Most common thesis types (supervised at the chair for microeconomics)
+*** Most common thesis types (in microeconomics)
 The following list is not exhaustive but if you have something different in mind we should talk about it first.
 
 - You pick a /topic/, e.g. from the news, you find interesting and analyze it using a game-theoretic or model (some computational or empirical parts are, of course, fine as well; however, we can usually not procure the data for empirical analysis). Note that writing a model usually starts with an interesting mechanism or a trade-off or a strategic effect/consideration that one would then like to capture and analyze in a model. Thinking of a model first and then hoping to be able to solve and to find an accidentally interesting solution in the process is not advised.  
 - You start from a /published paper/, describe the results and add a small original contribution of your own that you compare with the paper. This style of thesis is described in detail in the [[./files/writingSeminar.pdf][guidelines]] on how to write a literature based seminar paper. The only differences is that a Master thesis will go more in depth (both in the part on literature and in the own contribution) and allows for a more elaborate own contribution.
--  You analyze a /competition policy decision/ (mainly Bachelor thesis of people who have taken the seminar in the module Managerial Economics). This will usually be a decision by DG Comp, the General Court (formerly known as Court of First Instance) or the European Court of Justice. You check whether the reasoning in the decision makes economic sense by modeling the reasoning using models from IO, game theory and contract theory. (Please, note that the definition of the relevant market takes usually a lot more space in these decisions than it should in your thesis.)
+-  You analyze a /competition policy decision/. This will usually be a decision by DG Comp, the General Court (formerly known as Court of First Instance) or the European Court of Justice. You check whether the reasoning in the decision makes economic sense by modeling the reasoning using models from IO, game theory and contract theory. (Please, note that the definition of the relevant market takes usually a lot more space in these decisions than it should in your thesis.)
 - Comparative /literature/ survey. This is usually not the first choice because it is very difficult to do this properly. The idea is that you show why different results are obtained in different papers and how this depends on their assumptions. Hence, you try not to summarize one paper after another but to explain the logic underlying a whole literature.[fn:1] 
 
 *** Is my topic (candidate) appropriate for a thesis?
@@ -57,11 +58,11 @@ After identifying a potential topic you should ask yourself "Can I make this int
 
 ** Writing a proposal
 
-When you have thought through the questions above, you write up a research proposal of one or two pages (summing up your thoughts/answers and particularly addressing the questions mentioned in the section "Is my topic (candidate) appropriate for a thesis?") and send this proposal to the responsible person at my chair (normally Sophia Hornberger -- during her sick leave Christoph Schottmüller). It should contain your main question, answers to (some of) the questions above ("Is my topic (candidate) appropriate for a thesis?"), and some first ideas regarding the methods with which you want to tackle the problem. We will read it and then we meet to discuss the proposal (or refer you to a colleague of mine who is better suitable to supervise your project). We might conclude that the proposal should be changed a bit or we might immediately go ahead and do the paper work, talk about a rough schedule etc.
+When you have thought through the questions above, you write up a research proposal of one or two pages (summing up your thoughts/answers and particularly addressing the questions mentioned in the section "Is my topic (candidate) appropriate for a thesis?") and send this proposal to  your intended supervisor. It should contain your main question, answers to (some of) the questions above ("Is my topic (candidate) appropriate for a thesis?"), and some first ideas regarding the methods with which you want to tackle the problem. We can then meet to discuss the proposal (or I refer you to a colleague of mine who is better suitable to supervise your project). We might conclude that the proposal should be changed a bit or we might immediately go ahead and do the paper work, talk about a rough schedule etc.
 
 ** Supervision
-We do not have a fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
-- We want to see a proposal (~1-2 pages); preferably before meeting for the first time. (If we meet before you have a proposal, we usually cannot tell you much more than is written in this document.) 
+There is no fixed format for supervision as the needs will differ from thesis to thesis. However, there is some minimum structure that applies generally:
+- I want to see a proposal (~1-2 pages) before meeting for the first time. 
 
 - We have a midterm review to take stock and to see how you are doing on time.
 
@@ -85,12 +86,12 @@ It is very tempting to ask your supervisor all the time what to do next. However
 ** Some general remarks
 - Remember that a model is a deliberate oversimplification of reality. If you want to analyze a particular problem, it is usually not helpful to try to put everything you have heard about that problem into a model (and then make it dynamic in continuous time with incomplete information and prospect theory preferences, etc.). Such models tend to be intractable and therefore completely useless. Concentrate on a specific aspect/effect and try to get the smallest possible model in which you can see that effect. You can generalize later if you like (and time permits).
 - Your thesis can contain several small models if you want to explain several effects/aspects. There is no need to stack everything into one big model, see above.
-- Many students seem to think that the starting point for a model is some problem in a particular sector, then you try to write down a model that captures the players' decisions, and then you solve for an equilibrium, and that's how theory works. Unfortunately, that's not the way theory works. Typically, if you proceed as described, your model will either be intractable, i.e. you cannot solve for the equilibrium, or the equilibrium will not be interesting and little can be learned from your model. In practice, most theorists start with an interesting strategic effect or mechanism and then try to find a model that captures that effect/mechanism. Of course, the first model you try may also be intractable, but then you know where to simplify (namely, you can simplify anything that is not absolutely necessary for the effect/mechanism you have in mind). The modeling exercise is ultimately just a tool to help you discipline your mind and clarify your thoughts about the interesting effect/mechanism your creative (but sometimes not very accurate) mind has come up with.
-- You should set aside a decent amount of time at the end just for editing. For a master's thesis, I would recommend no less than a full week (maybe two, as this allows you to rearrange things if you are not happy with the structure). Part of the evaluation of a thesis is whether it is well written.
-- You are strongly encouraged to write in English. Note that there are tools available to help you improve your spelling, grammar, and wording. For example, the proprietary, machine learning powered tools "DeepL Write" or even "ChatGPT" are to some extent free to use (at the time of writing) and can improve the writing of most non-native speakers substantially. 
+- Many students seem to think that the starting point for a model is some problem in a particular sector, then you try to write down a model that captures the players' decisions, and then you solve for an equilibrium, and that's how theory works. Unfortunately, that's not the way theory usually works. Typically, if you proceed as described, your model will either be intractable, i.e. you cannot solve for the equilibrium, or the equilibrium will not be interesting and little can be learned from your model. Most theorists start with an interesting strategic effect or mechanism and then try to find a model that captures that effect/mechanism. Of course, the first model you try may also be intractable, but then you know where to simplify (namely, you can simplify anything that is not absolutely necessary for the effect/mechanism you have in mind). The modeling exercise is ultimately just a tool to help you discipline your mind and clarify your thoughts about the interesting effect/mechanism your creative (but sometimes not very accurate) mind has come up with.
+- You should set aside a decent amount of time at the end just for editing. For a Master thesis, I would recommend no less than a full week (maybe two, as this allows you to rearrange things if you are not happy with the structure). Part of the evaluation of a thesis is whether it is well written. 
+- You are strongly encouraged to write in English. Note that there are tools available to help you improve your spelling, grammar, and wording. For example, so-called generative AI models are to some extent free to use (at the time of writing) and can improve the writing of most (non-native) speakers substantially. 
     
 ** Useful sources for how to write/model
-- Hal Varian's "How to build an economic model in your spare time", [[http://people.ischool.berkeley.edu/~hal/Papers/how.pdf][link]]
+- Hal Varian's "How to build an economic model in your spare time": [[http://people.ischool.berkeley.edu/~hal/Papers/how.pdf][link]].
 - There are a lot of books on academic writing on the market but they focus very much on the structure of empirical research papers which is not that relevant to theory. Nevertheless, these books contain useful information on grammar/tenses/linking words etc. Just ignore the parts on document structure.
 
 [fn:1]Switching to this format can be an option if you cannot manage to get anything sensible out of a model (thesis type: start from a published paper) but you have read the related papers so well that you have a clear idea of the literature. 
