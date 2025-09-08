@@ -75,7 +75,7 @@ The following schedule is subject to changes.
 |   13 | signaling II                      |           |                                                                                                      |
 |   14 | Q&A                               |           |                                                                                                      |
 
-On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check wikipedia and you favorite generative AI model before coming to the lecture. If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics and [cite:@sydsaeter2008essential] for mathematics.
+On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check wikipedia and your favorite generative AI model before coming to the lecture. If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics, [cite:@sydsaeter2008essential] for mathematics and [cite:@ross2020first] for probability theory.
   
 
 * Bibliography  
