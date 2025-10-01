@@ -6,14 +6,14 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
-- The optional exam inspection will take place jointly for both exam dates on April 30. For more information, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]].
+# - The optional exam inspection will take place jointly for both exam dates on April 30. For more information, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]].
 # - The exercise session on November 11 is canceled.
 # - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 #  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
-- Exam dates are Feb 4, 11:00 (100 Hörsaal II 100/U1/HS II) and March 19, 16:00 (100 Aula 2 100/01/Aula 2). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
+- Exam dates are Feb 4, 14:30 (100 Hörsaal VIII) and March 17, 10:00 (100 Aula 2 100/01/Aula 2). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
 #  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
 #  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
-  - Note that there will be an exercise session on October 7 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.
+  - Note that there will be a first exercise session on October 15. This exercise session is dedicated to repeating some mathematical concepts used in this course.
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 # - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
@@ -34,13 +34,13 @@
 
 * Course materials
 
-Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publicly available as it is essentially funded by public money. The material below is likely to get updated over the course of the term.
+Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I want to make the material I create publicly available. The material below might get updated over the course of the term.
 
-Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
+# You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 #
 # - The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]].
 
-- The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/10466268/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]].
+- The *exercises* as [[https://github.com/schottmueller/infohealthecon/files/10466268/exercises.pdf][pdf]]. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]].
   
 - *Slides*
   - intro [[https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf][slides]]
@@ -53,8 +53,8 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Screencasts*
   - [[https://uni-koeln.sciebo.de/s/I4hWkZNgdtqAPDF][derivation]] Rothschild-Stiglitz equilibrium
   - how to get [[https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH][descriptive statistics]] and do [[https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA][regressions]] in LibreOffice Calc 
-  - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice
-  - [[https://uni-koeln.sciebo.de/s/fYacpmYS41gwDB0][recording]] exercise session Dec 17
+#  - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice
+#  - [[https://uni-koeln.sciebo.de/s/fYacpmYS41gwDB0][recording]] exercise session Dec 17
 # - [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]] lecture 1
     
 - *Data sets and instructions* for case studies:
@@ -67,8 +67,8 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - a [[https://youtu.be/pUkRo9COd38?feature=shared][video]] on (adverse) selection  
 
 - *Notes*
-  - old notes concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
   - [[https://uni-koeln.sciebo.de/s/oaiXnh8H6uPdp25][notes]] (book project -- not all parts are relevant!; password announced in lecture) 
+#  - old notes concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
 #  - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
 #    - [[https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf][Exercise Session 1]]
 #    - [[https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf][Exercise Session 2]]
@@ -93,16 +93,17 @@ Lecture slides and exercises are posted/updated here over the course of the term
 # The exam will -- in style -- be similar to the questions of the exercise classes.
 
 ** Lecture times: 
-- lecture: Wednesday, 10:00-11:30 in 213/EG/0.14 (H 162)
-- exercise classes: Monday, 14:00-15:30 100/EG/HSXII (rescheduled in the weeks of 2024-10-21, 2024-11-18, 2024-12-16, 2025-01-27 see KLIPS)
+- lecture: Wednesday, 10:00-11:30 in 100/U1/HS V
+- exercise classes: Wednesday, 14:00-15:30 100/U1/HS VIII 
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in [cite:@zweifel2009health] (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). [cite:@morrisey2008health] (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
 
 * Prerequisites and background
-Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we cover in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierende der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics, the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives, know their interpretation, and integrate simple functions before week 1 of the semester.
+Several students asked for references for the prerequisites. I assume that you know some introductory microeconomics, e.g. chapters 1-6 "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian. A working knowledge of high-school mathematics and basic statistics (distribution, expectation, correlation, regression) are also needed.
+# Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierende der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics, the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives, know their interpretation, and integrate simple functions before week 1 of the semester.
 
-If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above mentioned topics (and often links to more in depth material). 
+# If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above mentioned topics (and often links to more in depth material). 
 
 * Detailed schedule
 This is a plan and as every good plan it may be adjusted if necessary.
