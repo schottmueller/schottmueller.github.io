@@ -130,7 +130,7 @@ People might share what they know with others. The recipients of the information
 - discrete state cheap talk
 - People mainly communicate with people that are similar to them. Is this inefficient or could there be an informational reason?
 - application: communication and the internet, echo chambers
-- practice: [cite:@jann2018echo]
+- practice: [cite:@jann2025echo]
 # - practice: cite:farrell1989cheap
 *** Continuous state
 - classic cheap talk model with a continuum of states
@@ -238,7 +238,7 @@ These are some papers that students may choose to present. If you want to presen
 - [cite:@bhaskar2019culture]
 - [cite:@jullien2014new]
 - [cite:@aghion2014inducing]
-- [cite:@klein2017will ]
+# - [cite:@klein2017will ]
 - [cite:@neeman2019benefit]
 - [cite:@levine2021reputationTrap]
 - [cite:@vong2025reputation]
