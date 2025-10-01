@@ -20,6 +20,7 @@
 
 # - There is no exercise class in the first week of the semester, i.e. we start with the lecture on October 10.
 # - We will skip exercise 20 (on the poker game) in the exercise session.
+- There is no exercise session in the first week of the semester (October 15).
 - I do not use ILIAS because I prefer openly accessible material and dislike parts of the terms of service. All material for this course is available on this website.
 - calculator policy: calculators are neither needed nor allowed in the exam
 - exam dates: Feb 5, 2026, 14:30 (HSA1) and March 16, 2026, 10:00 (Aula 2); /registration via KLIPS/
