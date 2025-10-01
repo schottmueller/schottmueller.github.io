@@ -147,13 +147,12 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - mathematical prerequisites: linear regression ("ordinary least squares") and R^2  
 - premium risk model
 - segue into risk adjustment
-- discussion: how could German health insurers attract a profitable clientele?
+- discussion: how could health insurers attract a profitable clientele?
 - reading: [cite:@zweifel2009health ch. 5.3.4]
 - supplementary reading:  [cite:@zweifel2009health ch. 7], [cite:@morrisey2008health ch. 6], [cite:@behrend2007risk], [cite:@PMM2000755]
 *** Advantageous selection
 - case study: selection into long term care insurance in the US
 - fixed coverage model
-- (bonus screencast: treatment choice and utilization)
 - reading: [cite:@finkelstein2006multiple]
 - supplementary reading: [cite:@hemenway1990propitious], [cite:@fang2008sources], [cite:@boone2017health]
 ** Moral hazard (3)
@@ -189,9 +188,6 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - problems/assumptions and appropriate incentives
 - discussion: DRG system like liability? implications?
 - reading: [cite:@dulleck2006doctors]
-*** Cost saving incentives and communication
-- physician remuneration, trust and the Hippocratic oath
-- supplementary reading: [cite:@schottmueller2013cifd]
 
 * Bibliography  
 #+print_bibliography:

@@ -191,6 +191,7 @@ These are some papers that students may choose to present. If you want to presen
 ** Information design
 # - cite:condorelli2020information
 - [cite:@taneva2018information]
+- [cite:@rayo2010optimal]
 - [cite:@bergemann16_bayes_correl_equil_compar_infor_struc_games]
 - [cite:@bergemann2015limits]
 - [cite:@bergemann2015selling]
@@ -201,16 +202,16 @@ These are some papers that students may choose to present. If you want to presen
 - [cite:@goldstein2018stress]
 - [cite:@bergemann18_desig_price_infor]
 - [cite:@lipnowski24perfect]
-- [cite:@shishkin2019evidence]
+- [cite:@shishkin2025evidence]
 - [cite:@mathevet2020information]
 - [cite:@alonso2016persuading]
   
 ** Hard evidence
 - [cite:@demarzo2018test]
 - [cite:@song2003disclosures]
-- [cite:@pram20disclosure]
-- [cite:@nageeb2019voluntary]
-- [cite:@shishkin2019evidence]
+- [cite:@pram21disclosure]
+- [cite:@nageeb2023voluntary]
+- [cite:@shishkin2025evidence]
 - [cite:@asseyer2024certification]
 
 ** Strategic communication (cheap talk)
@@ -240,7 +241,10 @@ These are some papers that students may choose to present. If you want to presen
 - [cite:@klein2017will ]
 - [cite:@neeman2019benefit]
 - [cite:@levine2021reputationTrap]
+- [cite:@vong2025reputation]
 
+# ** Social learning
+# - [cite:@gagnon2024quality]
 
 * Bibliography
 

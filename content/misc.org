@@ -8,7 +8,7 @@
 * Academic Links
 
 ** Institutions I am/was affiliated with:
-- [[https://www.wiso.uni-koeln.de/][University of Cologne]]
+- [[https://economics.uni-koeln.de/en/][University of Cologne]]
 - [[http://www.econ.ku.dk/english/][Department of Economics, University of Copenhagen]]
 - [[http://www.tilburguniversity.edu/about-tilburg-university/schools/economics-and-management/organisation/departments/economics/][Department of Economics, Tilburg University]]
 - [[http://www.tilburguniversity.edu/research/institutes-and-research-groups/tilec/][TILEC]] (Tilburg Law and Economics Center)
@@ -31,7 +31,7 @@ Some useful links:
   - A [[https://cestlaz.github.io/stories/emacs/][series]] of blog posts and videos on learning Emacs step by step.
 
 ** My setup
-Following Jan Boone's example, I use [[https://www.gnu.org/software/emacs/][Emacs]] for all my text editing needs: I write my papers in Emacs using [[https://www.latex-project.org/][LaTeX]], my slides and website in Emacs [[https://orgmode.org/][org-mode]] (which is then exported to LaTeX-[[https://github.com/josephwright/beamer][Beamer]]/HTML respectively), julia code for numerical analysis using [[https://github.com/JuliaEditorSupport/julia-emacs][julia-mode]], even Emails using [[https://www.emacswiki.org/emacs/mu4e][mu4e]] and [[https://github.com/OfflineIMAP/offlineimap][offlineIMAP]](though this is not exactly straightforward and I use Thunderbird on my notebook instead), version control through [[https://git-scm.com/][git]] via the Emacs' [[https://magit.vc/][magit]] mode. The main advantage of Emacs from my point of view is that it provides a rather efficient way for doing whatever in a unified manner. The disadvantage is that it takes some time to learn Emacs properly (even after years of using it I would label myself as a /beginner/). 
+I use [[https://www.gnu.org/software/emacs/][Emacs]] for all my text editing needs: I write my papers in Emacs using [[https://www.latex-project.org/][LaTeX]], my slides and website in Emacs [[https://orgmode.org/][org-mode]] (which is then exported to LaTeX-[[https://github.com/josephwright/beamer][Beamer]]/HTML respectively), julia code for numerical analysis using [[https://github.com/JuliaEditorSupport/julia-emacs][julia-mode]], even Emails using [[https://www.emacswiki.org/emacs/mu4e][mu4e]] and [[https://github.com/OfflineIMAP/offlineimap][offlineIMAP]](though this is not exactly straightforward), version control through [[https://git-scm.com/][git]] via the Emacs' [[https://magit.vc/][magit]] mode. The main advantage of Emacs from my point of view is that it provides a rather efficient way for doing whatever in a unified manner. The disadvantage is that it takes some time to learn Emacs properly (even after years of using it I would label myself as a /beginner/). 
 
 When it comes to writing papers, I absolutely insist that this is done using LaTeX (and I do not accept Scientific Workplace as it totally destroys the readability of LaTeX code but I have a coauthor using Lyx which I find acceptable, another coauthor used the [[http://www.bakoma-tex.com/menu/about.php][BaKoMa]] editor which gives some WYSIWYG feeling). For version control, I use git. I started using git to avoid the problem of having dozens of versions of the same paper in a folder named "xxxApril.tex", "xxxApril2.tex" etc. but nowadays I see the main advantage in projects with several coauthors where you can quickly see the changes made by your coauthor. For such collaborative work I find it optimal if everyone uses git and the files are shared via github. 
 
