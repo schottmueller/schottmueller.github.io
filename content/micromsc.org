@@ -57,7 +57,7 @@ The provided lecture notes cover all topics. An alternative textbook is [cite:@j
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture
 
 * Schedule
-The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter.
+The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter. You should have a look at the exercises before coming to the exercise session.
 | Week | Topic                             | Exercises | Prerequisites                                                                                        |
 |------+-----------------------------------+-----------+------------------------------------------------------------------------------------------------------|
 |  <4> | <30>                              | <20>      | <40>                                                                                                 |
