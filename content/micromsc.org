@@ -33,7 +33,7 @@
   *Prerequisites:* see schedule
   
 * Material
-Slides and lecture notes (including exercises) are now also available on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term. (password announced in lecture only)
+Slides and exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term
 # - slides (might still be edited)
 #   - social choice [[https://web.tresorit.com/l/3vn7X#pCuyHYev30YGnIOGNlldKQ][pdf]]
 #   - markets [[https://github.com/schottmueller/microMSc/blob/main/slides/markets2.org][pdf]]
@@ -47,6 +47,8 @@ Slides and lecture notes (including exercises) are now also available on [[https
 # - lecture notes via [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] (password announced in lecture only) 
 # - old additional notes [[https://web.tresorit.com/l/sXAYt#3MXtRbZbcXY1eRYOj5VZbA][pdf]]
 # - schedule [[https://github.com/schottmueller/microMSc/blob/main/schedule.org][org]] [[https://web.tresorit.com/l/M1vPF#qsgBnSpLwC1xwq2yNER_jA][pdf]]
+# PW: microecon25
+ - lecture [[https://uni-koeln.sciebo.de/s/EQg5F59WPwgcgCk][notes]]  (password announced in lecture only) 
  - old [[https://web.tresorit.com/l/r4RHi#M7EwaRvrKsf0iJEqHlh0Mg][exam]] (note that the course changes slightly from year to year)
 
 ** Textbooks
