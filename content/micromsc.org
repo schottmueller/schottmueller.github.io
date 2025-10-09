@@ -33,7 +33,7 @@
   *Prerequisites:* see schedule
   
 * Material
-Slides and exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term
+Slides, math notes and exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term
 # - slides (might still be edited)
 #   - social choice [[https://web.tresorit.com/l/3vn7X#pCuyHYev30YGnIOGNlldKQ][pdf]]
 #   - markets [[https://github.com/schottmueller/microMSc/blob/main/slides/markets2.org][pdf]]
@@ -54,7 +54,6 @@ Slides and exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sci
 ** Textbooks
 The provided lecture notes cover all topics. An alternative textbook is [cite:@jehle2001advanced]. On auctions, Paul Klemperer's book [cite:@klemperer2004auctions] is an interesting (optional!) read but goes beyond the material covered in this course.
  
-# pw: micro   
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture
 
 * Schedule
@@ -78,7 +77,7 @@ The following schedule is subject to changes.
 |   13 | signaling II                      |           |                                                                                                      |
 |   14 | Q&A                               |           |                                                                                                      |
 
-On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check wikipedia and your favorite generative AI model before coming to the lecture. If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics, [cite:@sydsaeter2008essential] for mathematics and [cite:@ross2020first] for probability theory.
+On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check the math notes on sciebo or wikipedia and your favorite generative AI model before coming to the lecture. If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics, [cite:@sydsaeter2008essential] for mathematics and [cite:@ross2020first] for probability theory.
   
 
 * Bibliography  
