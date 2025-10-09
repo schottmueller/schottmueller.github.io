@@ -33,7 +33,7 @@
   *Prerequisites:* see schedule
   
 * Material
-Slides, math notes and exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term
+Slides and math notes are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term.
 # - slides (might still be edited)
 #   - social choice [[https://web.tresorit.com/l/3vn7X#pCuyHYev30YGnIOGNlldKQ][pdf]]
 #   - markets [[https://github.com/schottmueller/microMSc/blob/main/slides/markets2.org][pdf]]
@@ -48,7 +48,7 @@ Slides, math notes and exercises are on [[https://uni-koeln.sciebo.de/s/urCdimez
 # - old additional notes [[https://web.tresorit.com/l/sXAYt#3MXtRbZbcXY1eRYOj5VZbA][pdf]]
 # - schedule [[https://github.com/schottmueller/microMSc/blob/main/schedule.org][org]] [[https://web.tresorit.com/l/M1vPF#qsgBnSpLwC1xwq2yNER_jA][pdf]]
 # PW: microecon25
- - lecture [[https://uni-koeln.sciebo.de/s/EQg5F59WPwgcgCk][notes]]  (password announced in lecture only) 
+ - lecture [[https://uni-koeln.sciebo.de/s/EQg5F59WPwgcgCk][notes]] including exercises (password announced in lecture only) 
  - old [[https://web.tresorit.com/l/r4RHi#M7EwaRvrKsf0iJEqHlh0Mg][exam]] (note that the course changes slightly from year to year)
 
 ** Textbooks
@@ -57,15 +57,15 @@ The provided lecture notes cover all topics. An alternative textbook is [cite:@j
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture
 
 * Schedule
-The following schedule is subject to changes.
+The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter.
 | Week | Topic                             | Exercises | Prerequisites                                                                                        |
 |------+-----------------------------------+-----------+------------------------------------------------------------------------------------------------------|
-|  <4> | <30>                              | <20>     | <40>                                                                                                 |
+|  <4> | <30>                              | <20>      | <40>                                                                                                 |
 |------+-----------------------------------+-----------+------------------------------------------------------------------------------------------------------|
-|    1 | preference aggregation            | tba       | preferences (completeness, transitivity)                                                             |
-|    2 | markets, prices, equilibrium      |           | consumer problem, marginal rate of substitution, constrained optimization, compact sets              |
-|    3 | decision making under uncertainty |           | discrete probability distribution, expected value, concavity and convexity of functions, closed sets |
-|    4 | Bayesian games I                  |           | probability distribution, expected value, normal form games, Nash equilibrium                        |
+|    1 | preference aggregation            | 1,2,4     | preferences (completeness, transitivity)                                                             |
+|    2 | markets, prices, equilibrium      | 1,2,3     | consumer problem, marginal rate of substitution, constrained optimization, compact sets              |
+|    3 | decision making under uncertainty | 2,3,4     | discrete probability distribution, expected value, concavity and convexity of functions, closed sets |
+|    4 | Bayesian games I                  | tba       | probability distribution, expected value, normal form games, Nash equilibrium                        |
 |    5 | Bayesian games II                 |           |                                                                                                      |
 |    6 | auctions I (IPV)                  |           | inverse functions, continuous probability distributions and their expectation                        |
 |    7 | auctions II (RET)                 |           |                                                                                                      |
