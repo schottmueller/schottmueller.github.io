@@ -50,6 +50,10 @@ Slides and math notes are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sc
 # PW: microecon25
  - lecture [[https://uni-koeln.sciebo.de/s/EQg5F59WPwgcgCk][notes]] including exercises (password announced in lecture only) 
  - old [[https://web.tresorit.com/l/r4RHi#M7EwaRvrKsf0iJEqHlh0Mg][exam]] (note that the course changes slightly from year to year)
+ - links to material created by other people (optional)
+   - [[https://youtu.be/qf7ws2DF-zk?si=683lx5Bkyrb9Q432][video]] on Arrow's theorem
+   - Friedman's [[https://youtu.be/67tHtpac5ws?si=oouNlETRltBPJZTQ][pencil]] video (based on [cite:@read1958pencil])
+   # - [[https://youtu.be/HZGCoVF3YvM?si=1oGM9HcQNKgdgAej][video]] on Bayes' rule
 
 ** Textbooks
 The provided lecture notes cover all topics. An alternative textbook is [cite:@jehle2001advanced]. On auctions, Paul Klemperer's book [cite:@klemperer2004auctions] is an interesting (optional!) read but goes beyond the material covered in this course.
