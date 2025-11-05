@@ -41,6 +41,8 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 # - The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]].
 
 - *Exercises*: first week [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]], further weeks [[https://uni-koeln.sciebo.de/s/rff2zsPa6wkKRQE][here]]
+
+- *Bonus point exercises*: [[https://uni-koeln.sciebo.de/s/EaHJwdQf5LEGGZF][here]] (solutions must be handwritten and submitted in the lecture December 17) 
   
 - *Slides*: [[https://uni-koeln.sciebo.de/s/sPsTPfBcY2rS9kS][here]]
 # numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
@@ -63,7 +65,7 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 
 - *Notes*
   - [[https://uni-koeln.sciebo.de/s/oaiXnh8H6uPdp25][notes]] (book project -- only some parts are relevant!; password announced in lecture) 
-  - option [[https://uni-koeln.sciebo.de/s/tRyH9Jbz2pW4rWY][math]] notes
+  - optional [[https://uni-koeln.sciebo.de/s/tRyH9Jbz2pW4rWY][math]] notes
 # password: infohealthecon    
 #  - old notes concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
 #  - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)

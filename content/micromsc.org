@@ -67,12 +67,12 @@ The following schedule is subject to changes. Exercise numbers refer to the exer
 |  <4> | <30>                              | <20>      | <40>                                                                                                 |
 |------+-----------------------------------+-----------+------------------------------------------------------------------------------------------------------|
 |    1 | preference aggregation            | 1,2,4     | preferences (completeness, transitivity)                                                             |
-|    2 | markets, prices, equilibrium      | 1,2,3     | consumer problem, marginal rate of substitution, constrained optimization, compact sets              |
+|    2 | markets, prices, equilibrium      | 1,2,3     | consumer problem, marginal rate of substitution, constrained optimization, compact sets, demand      |
 |    3 | decision making under uncertainty | 2,3,4     | discrete probability distribution, expected value, concavity and convexity of functions, closed sets |
-|    4 | Bayesian games I                  | tba       | probability distribution, expected value, normal form games, Nash equilibrium                        |
+|    4 | Bayesian games I                  | tba       | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
 |    5 | Bayesian games II                 |           |                                                                                                      |
 |    6 | auctions I (IPV)                  |           | inverse functions, continuous probability distributions and their expectation                        |
-|    7 | auctions II (RET)                 |           |                                                                                                      |
+|    7 | auctions II (RET)                 |           | integration by parts                                                                                 |
 |    8 | auctions III (design)             |           |                                                                                                      |
 |    9 | buffer/exercises                  |           |                                                                                                      |
 |   10 | adverse selection                 |           | supply and demand                                                                                    |
