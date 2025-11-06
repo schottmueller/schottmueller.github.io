@@ -61,7 +61,7 @@ The provided lecture notes cover all topics. An alternative textbook is [cite:@j
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture
 
 * Schedule
-The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter. You should have a look at the exercises before coming to the exercise session.
+The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter (* refers to the chapter "Beliefs and Inference"). You should have a look at the exercises before coming to the exercise session.
 | Week | Topic                             | Exercises | Prerequisites                                                                                        |
 |------+-----------------------------------+-----------+------------------------------------------------------------------------------------------------------|
 |  <4> | <30>                              | <20>      | <40>                                                                                                 |
@@ -69,7 +69,7 @@ The following schedule is subject to changes. Exercise numbers refer to the exer
 |    1 | preference aggregation            | 1,2,4     | preferences (completeness, transitivity)                                                             |
 |    2 | markets, prices, equilibrium      | 1,2,3     | consumer problem, marginal rate of substitution, constrained optimization, compact sets, demand      |
 |    3 | decision making under uncertainty | 2,3,4     | discrete probability distribution, expected value, concavity and convexity of functions, closed sets |
-|    4 | Bayesian games I                  | tba       | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
+|    4 | Bayesian games I                  | 4*,5*,1,2 | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
 |    5 | Bayesian games II                 |           |                                                                                                      |
 |    6 | auctions I (IPV)                  |           | inverse functions, continuous probability distributions and their expectation                        |
 |    7 | auctions II (RET)                 |           | integration by parts                                                                                 |
