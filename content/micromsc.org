@@ -69,8 +69,8 @@ The following schedule is subject to changes. Exercise numbers refer to the exer
 |    1 | preference aggregation            | 1,2,4     | preferences (completeness, transitivity)                                                             |
 |    2 | markets, prices, equilibrium      | 1,2,3     | consumer problem, marginal rate of substitution, constrained optimization, compact sets, demand      |
 |    3 | decision making under uncertainty | 2,3,4     | discrete probability distribution, expected value, concavity and convexity of functions, closed sets |
-|    4 | Bayesian games I                  | 4*,5*,1,2 | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
-|    5 | Bayesian games II                 |           |                                                                                                      |
+|    4 | Bayesian games I                  | 4*,5*,1   | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
+|    5 | Bayesian games II                 | 2,4,5     |                                                                                                      |
 |    6 | auctions I (IPV)                  |           | inverse functions, continuous probability distributions and their expectation                        |
 |    7 | auctions II (RET)                 |           | integration by parts                                                                                 |
 |    8 | auctions III (design)             |           |                                                                                                      |
