@@ -6,9 +6,9 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
 # - There are new lecture notes for the topic "hard evidence" on sciebo.
-# - The paper we discuss on Nov. 14 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
- - The paper we discuss on Nov. 13 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper using the methodology described in the guide on how to read a paper.
- - The paper we discuss on Oct. 23 can be downloaded [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][here]] (you need a vpn to the campus or be on campus to download). Please, read the paper focusing on the main result, contribution and idea behind the result.
+ - The paper we discuss on Nov. 20 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]].
+ - The paper we discuss on Nov. 13 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). 
+ - The paper we discuss on Oct. 23 can be downloaded [[http://dx.doi.org/10.1016/j.jmateco.2015.01.005][here]] (you need a vpn to the campus or be on campus to download). 
 # - The first student presentation is already on Dec. 19 where we will also discuss a bit how the presentations could look like. Presentations should take between 30 and 45 minutes (the 45 minutes is including questions and discussion). If you are using slides , please send those to me as *pdf* before your presentation. You have to use your own computer if you use power point or other formats for your slides.   
  # - For Thursday Dec 10, we are discussing a paper that is not published yet. Please, use the version [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]].
 # - This website will be slowly updated over the coming weeks to give students information about the course "Information and Strategy".
