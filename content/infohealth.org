@@ -56,7 +56,8 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
     
 - *Data sets and instructions* for case studies:
   - questions (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
-  # - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
+  - some [[https://uni-koeln.sciebo.de/s/ApZRZk3pL55yCAD][notes]] on longterm care insurance case study
+  # - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study # and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
