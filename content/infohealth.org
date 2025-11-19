@@ -6,6 +6,7 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
+- There are no exercise sessions in person between November 19 and Christmas. You find instead screencasts on the exercises [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][here]] (some might be added later) and have the possibility to ask questions on those in January.
 # - The optional exam inspection will take place jointly for both exam dates on April 30. For more information, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]].
 # - The exercise session on November 11 is canceled.
 # - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
@@ -41,6 +42,8 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 # - The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]].
 
 - *Exercises*: first week [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]], further weeks [[https://uni-koeln.sciebo.de/s/rff2zsPa6wkKRQE][here]]
+
+- [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][Screencasts]] of exercise session not held in person 
 
 - *Bonus point exercises*: [[https://uni-koeln.sciebo.de/s/EaHJwdQf5LEGGZF][here]] (solutions must be handwritten and submitted in the lecture December 17) 
   
