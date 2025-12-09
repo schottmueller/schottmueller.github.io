@@ -74,11 +74,11 @@ The following schedule is subject to changes. Exercise numbers refer to the exer
 |    6 | auctions I (IPV)                  | 5         | inverse functions, continuous probability distributions and their expectation                        |
 |    7 | auctions II (RET)                 | 1,4,7     | integration by parts                                                                                 |
 |    8 | auctions III (design)             | 3,2,6     |                                                                                                      |
-|    9 | internet ad auctions              |           |                                                                                                      |
-|   10 | adverse selection                 |           | supply and demand                                                                                    |
-|   11 | PBE                               |           | game trees, subgame perfect Nash equilibrium                                                         |
-|   12 | signaling I                       |           |                                                                                                      |
-|   13 | signaling II                      |           |                                                                                                      |
+|    9 | internet ad auctions              | 8,9,10    |                                                                                                      |
+|   10 | adverse selection                 | 1,3,4     | supply and demand                                                                                    |
+|   11 | PBE                               | 6,7       | game trees, subgame perfect Nash equilibrium                                                         |
+|   12 | signaling I                       | 1,2,3     |                                                                                                      |
+|   13 | signaling II                      | 4,5,6     |                                                                                                      |
 |   14 | Q&A                               |           |                                                                                                      |
 
 On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check the math notes on sciebo or wikipedia and your favorite generative AI model before coming to the lecture. If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics, [cite:@sydsaeter2008essential] for mathematics and [cite:@ross2020first] for probability theory.
