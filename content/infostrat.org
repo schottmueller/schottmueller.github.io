@@ -5,7 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
-# - There are new lecture notes for the topic "hard evidence" on sciebo.
+ - Slides and handouts of student presentations can be found [[https://web.tresorit.com/l/LXOjX#duQ2IpeV3UgpaxgA6m0Stg][here]]. (same password as for lecture notes)
  - The paper we discuss on Dec. 18 can be downloaded [[https://doi.org/10.1016/j.jet.2019.03.006][here]] (you need a vpn to the campus or be on campus to download).
  - The paper we discuss on Nov. 20 can be downloaded [[https://schottmueller.github.io/papers/echoChamber/echo_chambers.pdf][here]].
  - The paper we discuss on Nov. 13 can be downloaded [[https://doi.org/10.1287/mnsc.2017.2913][here]] (you need a vpn to the campus or be on campus to download). 
@@ -67,8 +67,8 @@ Attendance is voluntary and does not affect the grading of your report directly.
 
 
 * Course material
-# ** Slides of student presentations
-# - You can find the slides [[https://web.tresorit.com/l/Wekrb#qBdyy0DRm5p_rbrwP1CEYg][here]].
+** Slides of student presentations
+ - You can find the slides [[https://web.tresorit.com/l/LXOjX#duQ2IpeV3UgpaxgA6m0Stg][here]]. (same password as for lecture notes)
 
 ** Lecture material
 - adverse selection slides: [[https://github.com/schottmueller/microMSc/blob/main/slides/lemons.org][org]] [[https://web.tresorit.com/l/uHpHt#H4BNhZHSj9-AkWIwpG4BnQ][pdf]]   
