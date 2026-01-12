@@ -20,6 +20,7 @@
 
 # - There is no exercise class in the first week of the semester, i.e. we start with the lecture on October 10.
 # - We will skip exercise 20 (on the poker game) in the exercise session.
+- Notes and exercises for the topic PBE can be found towards the end of the notes on Bayesian games.
 - There is no exercise session in the first week of the semester (October 15).
 - I do not use ILIAS because I prefer openly accessible material and dislike parts of the terms of service. All material for this course is available on this website.
 - calculator policy: calculators are neither needed nor allowed in the exam
