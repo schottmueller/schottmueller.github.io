@@ -6,6 +6,7 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
+- The results of the bonus point assignment are [[https://uni-koeln.sciebo.de/s/HW4566yiSaPCpzd][available]].
 - There are no exercise sessions in person between November 19 and Christmas. You find instead screencasts on the exercises [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][here]] and have the possibility to ask questions on those in two zoom sessions (December 22, 11:00 and January 5, 11:00; see email in your university mail account for zoom links).
 # - The optional exam inspection will take place jointly for both exam dates on April 30. For more information, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]].
 # - The exercise session on November 11 is canceled.
