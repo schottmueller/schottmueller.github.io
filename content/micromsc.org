@@ -7,7 +7,7 @@
 * News
 # - The optional exam inspection will take place on April 22, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]] for details and registration.
 # - The optional exam inspection is planned to take place on June 5, 10:00-10:30 in SSC 4.210. Please, register between April 26 and May 10 with an email to /ndiaye at wiso.uni-koeln dot de/ inclusing your name, student number and examination date.
-# - The exam inspection will be combined for both exam dates and  take place in April.
+- The exam inspection will be combined for both exam dates and  takes place in April  (precise date and registration will be announced later).
 #  - Screencasts on exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]].
     # [[https://web.tresorit.com/l/MwvWL#cGBt8FG0QCGB_gL8B2pvQw][26c]], [[https://web.tresorit.com/l/fdeXk#JRJtgz-IuaK-hzgTr6T8Iw][27]], [[https://web.tresorit.com/l/e8WnF#-qH2_6NY_MhFYopm_fZ6Zg][28]], [[https://web.tresorit.com/l/HcnLl#GFudqekvaTxUJHKsRqG0zQ][29]] were added.
 # - The website of the examination office contains the relevant information regarding the exam inspection.  

@@ -6,10 +6,10 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
+- The optional exam inspection will take place jointly for both exam dates in April (precise date and registration will be announced later).
 - Calculators for the exam: Calculators are allowed if they are (i) not graphical, (ii) cannot solve equations and (iii) cannot solve optimization problems. (Any freebie calculator that can add, multiply and take roots will do. In fact, it is possible to solve the exam without using a calculator.)
 - The results of the bonus point assignment are [[https://uni-koeln.sciebo.de/s/GA3ewHqnPfrEHXd][available]].
 - There are no exercise sessions in person between November 19 and Christmas. You find instead screencasts on the exercises [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][here]] and have the possibility to ask questions on those in two zoom sessions (December 22, 11:00 and January 5, 11:00; see email in your university mail account for zoom links).
-# - The optional exam inspection will take place jointly for both exam dates on April 30. For more information, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]].
 # - The exercise session on November 11 is canceled.
 # - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 #  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
