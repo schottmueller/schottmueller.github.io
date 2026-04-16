@@ -36,7 +36,7 @@ mail address: <br/>
 </div>
 <div>
 <p>
-Ole Jann and I are writing a textbook /Information Economics: A Course in Practical Theory/, see <a href="https://www.olejann.net/textbook-information-economics/">here</a> for more information.
+Ole Jann and I are writing a textbook <em>Information Economics: A Course in Practical Theory</em>, see <a href="https://www.olejann.net/textbook-information-economics/">here</a> for more information.
 </p>
 </div>
 @@
