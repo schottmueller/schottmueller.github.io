@@ -31,7 +31,7 @@ The skills acquired in this course will be particularly useful for writing term 
 
 * Preliminary plan
 The following plan might be adapted over the course of the semester. I use the following abbreviations:
-- jpfnb:  [[https://juliaacademy.com/p/julia-programming-for-nervous-beginners]["Julia Programming for Nervous Beginners"]]
+- jpfnb:  [[https://www.youtube.com/playlist?list=PLP8iPy9hna6Qpx0MgGyElJ5qFlaIXYf1R]["Julia Programming for Nervous Beginners"]]
 - jfmt: [[https://github.com/schottmueller/juliaForMicroTheory]["Julia for micro theory"]]
    |------+------------------------------------------------+-----------------------------------------------------------------------------|
    | Week | content                                        | to do before next week's class                                              |
@@ -55,7 +55,7 @@ The following plan might be adapted over the course of the semester. I use the f
 - [[https://julialang.org/downloads/][website]] for downloading julia
 - [[https://uni-koeln.sciebo.de/s/B0U2oCT7IP4YMcE][screencasts]] on how to download and install julia
 ** Material
-- julia-academy course "[[https://juliaacademy.com/p/julia-programming-for-nervous-beginners][Julia Programming for Nervous Beginners]]" used in the first few weeks; you can find the course notes [[https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes][here]]
+-  youtube course "[[https://www.youtube.com/playlist?list=PLP8iPy9hna6Qpx0MgGyElJ5qFlaIXYf1R][Julia Programming for Nervous Beginners]]" used in the first few weeks; you can find the course notes [[https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes][here]]
   - pdfs for this course: [[./files/projectJulia/week1.pdf][week 1]],  [[./files/projectJulia/week2.pdf][week 2]], [[./files/projectJulia/week3.pdf][week 3]], [[./files/projectJulia/week4.pdf][week 4]]
 - [[https://github.com/schottmueller/juliaForMicroTheory][notebooks]] "julia for microeconomic theory"
 - [[https://raw.githack.com/schottmueller/projectJulia/main/exercises.html][exercises]] to be solved in class
