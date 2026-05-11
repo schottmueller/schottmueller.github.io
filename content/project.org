@@ -13,7 +13,8 @@
 # - We will talk about "week 1" of jpfnb on May 2 and have a make-up zoom-meeting in which we answer questions about the material of "week 2" and the corresponding exercises on May 8 17:30 (Meeting ID: 988 9247 0093 Password: 843160). Solutions to some of the exercises of the first two weeks are on this website below. 
     
 # - The registration deadline for the "examination" on KLIPS was extended. Please, register now. 
-- In week 1, we talk a bit about the course and try to install julia on your computer. *Please note that you need to bring a notebook to class every week in order to be able to work.* (It does not matter whether your operating system is Windows, MacOS, Linux or FreeBSD. However, tablets or phones with mobile operating systems like Android and iOS will not work.)
+# - In week 1, we talk a bit about the course and try to install julia on your computer. *Please note that you need to bring a notebook to class every week in order to be able to work.* (It does not matter whether your operating system is Windows, MacOS, Linux or FreeBSD. However, tablets or phones with mobile operating systems like Android and iOS will not work.)
+- Due to public holidays, there is no class on May 14 and on June 4.
 
 * Description
 
