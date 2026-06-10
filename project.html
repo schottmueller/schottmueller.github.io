@@ -3,13 +3,45 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2026-06-10 Wed 09:12 -->
+<!-- 2026-06-10 Wed 09:22 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Projektkurs Volkswirtschaftslehre: let the computer do the calculations</title>
 <meta name="generator" content="Org Mode" />
 <link rel="icon" href="./icons/pc.webp">
 <link rel="stylesheet" href="./css/stylesheet.css">
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -39,11 +71,11 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Projektkurs Volkswirtschaftslehre: let the computer do the calculations</h1>
-<div id="outline-container-org7e4a1af" class="outline-2">
-<h2 id="org7e4a1af">News</h2>
-<div class="outline-text-2" id="text-org7e4a1af">
+<div id="outline-container-org3408a02" class="outline-2">
+<h2 id="org3408a02">News</h2>
+<div class="outline-text-2" id="text-org3408a02">
 <ul class="org-ul">
-<li>Solutions for week 6 exercises are <a href="./teachingsolW6.html">here</a>.</li>
+<li>Solutions for week 6 exercises are at the end of the page.</li>
 </ul>
 
 
@@ -52,9 +84,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org73f4f5d" class="outline-2">
-<h2 id="org73f4f5d">Description</h2>
-<div class="outline-text-2" id="text-org73f4f5d">
+<div id="outline-container-org6364de9" class="outline-2">
+<h2 id="org6364de9">Description</h2>
+<div class="outline-text-2" id="text-org6364de9">
 <p>
 Modern economics relies heavily on mathematical models. Solving these models by hand is usually burdensome and often outright infeasible. In these cases, computers can be used to analyse and solve economic models numerically. This project course gives an introduction to solving models numerically with the help of the computer. It is suitable for students with no (or little) prior knowledge of numerical analysis and/or programming.
 </p>
@@ -80,9 +112,9 @@ The skills acquired in this course will be particularly useful for writing term 
 </p>
 </div>
 </div>
-<div id="outline-container-org95e7bbf" class="outline-2">
-<h2 id="org95e7bbf">Preliminary plan</h2>
-<div class="outline-text-2" id="text-org95e7bbf">
+<div id="outline-container-org33fe329" class="outline-2">
+<h2 id="org33fe329">Preliminary plan</h2>
+<div class="outline-text-2" id="text-org33fe329">
 <p>
 The following plan might be adapted over the course of the semester. I use the following abbreviations:
 </p>
@@ -179,22 +211,22 @@ jfmt: <a href="https://github.com/schottmueller/juliaForMicroTheory">"Julia for 
 </ul>
 </div>
 </div>
-<div id="outline-container-org1a29dc9" class="outline-2">
-<h2 id="org1a29dc9">Material and links</h2>
-<div class="outline-text-2" id="text-org1a29dc9">
+<div id="outline-container-org343cbfc" class="outline-2">
+<h2 id="org343cbfc">Material and links</h2>
+<div class="outline-text-2" id="text-org343cbfc">
 </div>
-<div id="outline-container-orge8e64a9" class="outline-3">
-<h3 id="orge8e64a9">Setting up Julia</h3>
-<div class="outline-text-3" id="text-orge8e64a9">
+<div id="outline-container-orga362aec" class="outline-3">
+<h3 id="orga362aec">Setting up Julia</h3>
+<div class="outline-text-3" id="text-orga362aec">
 <ul class="org-ul">
 <li><a href="https://julialang.org/downloads/">website</a> for downloading julia</li>
 <li><a href="https://uni-koeln.sciebo.de/s/B0U2oCT7IP4YMcE">screencasts</a> on how to download and install julia</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc4c947f" class="outline-3">
-<h3 id="orgc4c947f">Material</h3>
-<div class="outline-text-3" id="text-orgc4c947f">
+<div id="outline-container-orgde698c8" class="outline-3">
+<h3 id="orgde698c8">Material</h3>
+<div class="outline-text-3" id="text-orgde698c8">
 <ul class="org-ul">
 <li>youtube course "<a href="https://www.youtube.com/playlist?list=PLP8iPy9hna6Qpx0MgGyElJ5qFlaIXYf1R">Julia Programming for Nervous Beginners</a>" used in the first few weeks; you can find the course notes <a href="https://github.com/JuliaAcademy/JuliaProgrammingForNervousBeginners/tree/main/Course%20Notes">here</a>
 <ul class="org-ul">
@@ -206,13 +238,23 @@ jfmt: <a href="https://github.com/schottmueller/juliaForMicroTheory">"Julia for 
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc9320d5" class="outline-3">
-<h3 id="orgc9320d5">Beyond this course</h3>
-<div class="outline-text-3" id="text-orgc9320d5">
+<div id="outline-container-orga635e98" class="outline-3">
+<h3 id="orga635e98">Beyond this course</h3>
+<div class="outline-text-3" id="text-orga635e98">
 <ul class="org-ul">
 <li><a href="https://julia.quantecon.org/intro.html">QuantEcon</a> is a graduate course in quantitative economics using julia. The material is beyond the scope of this course but might give you an idea how the tools taught in this course are used in economic research.</li>
 </ul>
 </div>
+</div>
+</div>
+<div id="outline-container-org17e2391" class="outline-2">
+<h2 id="org17e2391">Week 6 solution</h2>
+<div class="outline-text-2" id="text-org17e2391">
+<ol class="org-ol">
+<li>Let market demand be \(D(p)=10-p\) if \(p<10\) and \(D(p)=0\) if \(p\geq10\). Let market supply be \(S(p)=2p-2\) if \(p>1\) and 0 else. Use the julia Roots.jl package to compute the market equilibrium (price and quantity). (Hint: Market equilibrium occurs where the difference between demand and supply is zero.) Plot supply and demand to verify your result graphically.</li>
+<li>Recall that the expected value of a continuously distributed random variable is calculated as \(\int_a^b xf(x)\,dx\) where \(f\) is the density of the random variable and \([a,b]\) is the support of the distribution (i.e. the density of the random variable is 0 outside the interval \([a,b]\)). Consider a random variable with triangular density namely \(f(x)=2x\) for \(x\in[0,1]\) and \(f(x)=0\) for \(x\not\in[0,1]\) and use integration with the QuadGK.jl package to compute its expected value.</li>
+<li>A consumer consumes 3 perfectly divisible goods \(x_1\), \(x_2\) and \(x_3\). The price of one unit of good 1 is 1 while the price of one unit of good 2 is 2 and the price of good 3 is \(3\). The utility function of the consumer is \(u(x_1,x_2)=x_1*x_2*x_3\) and his income is 12. Use julia to solve the consumers utility maximization problem, i.e. how many units of each good will the consumer consume? What is his utility level? (Hint: Solve the budget constraint for one of the variables and plug it into the objective. The resulting objective you still have to maximize over two variables.)</li>
+</ol>
 </div>
 </div>
 </div>
