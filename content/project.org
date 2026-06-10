@@ -69,7 +69,7 @@ The following plan might be adapted over the course of the semester. I use the f
 
 * Week 6 solution 
 1. Let market demand be $D(p)=10-p$ if $p<10$ and $D(p)=0$ if $p\geq10$. Let market supply be $S(p)=2p-2$ if $p>1$ and 0 else. Use the julia Roots.jl package to compute the market equilibrium (price and quantity). (Hint: Market equilibrium occurs where the difference between demand and supply is zero.) Plot supply and demand to verify your result graphically. 
-#+begin_src julia :exports none
+#+begin_src julia :exports code
   using Roots
   function D(p)
       if p<10
@@ -91,7 +91,7 @@ The following plan might be adapted over the course of the semester. I use the f
 #+end_src
 
 2. Recall that the expected value of a continuously distributed random variable is calculated as $\int_a^b xf(x)\,dx$ where $f$ is the density of the random variable and $[a,b]$ is the support of the distribution (i.e. the density of the random variable is 0 outside the interval $[a,b]$). Consider a random variable with triangular density namely $f(x)=2x$ for $x\in[0,1]$ and $f(x)=0$ for $x\not\in[0,1]$ and use integration with the QuadGK.jl package to compute its expected value.
-#+begin_src julia :exports none
+#+begin_src julia :exports code
   using QuadGK
   function f(x)
       if 0<x<1
@@ -104,7 +104,7 @@ The following plan might be adapted over the course of the semester. I use the f
 #+end_src
 
 3. A consumer consumes 3 perfectly divisible goods $x_1$, $x_2$ and $x_3$. The price of one unit of good 1 is 1 while the price of one unit of good 2 is 2 and the price of good 3 is $3$. The utility function of the consumer is $u(x_1,x_2)=x_1*x_2*x_3$ and his income is 12. Use julia to solve the consumers utility maximization problem, i.e. how many units of each good will the consumer consume? What is his utility level? (Hint: Solve the budget constraint for one of the variables and plug it into the objective. The resulting objective you still have to maximize over two variables.)  
-#+begin_src julia :exports none
+#+begin_src julia :exports code
   using Optim
   u(x1,x2,x3) = x1*x2*x3
   v(x) = -u(x[1],x[2],(12-x[1]-2*x[2])/3)
