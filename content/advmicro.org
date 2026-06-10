@@ -5,7 +5,15 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 * News
-- Th lecture on June 11 is rescheduled to June 10 4pm, room SSC 4.210. 
+- The lecture on June 11 is rescheduled to June 10 4pm, room SSC 4.210. 
+- We will no longer follow the screencasts in the remainder of the course. Please, read one chapter before every session from the [[https://uni-koeln.sciebo.de/s/AFD8Fregy2D4rA2][notes]] instead (pw announced in lecture). Exercises covered are as follows:
+  | topic                     | exercises |
+  |---------------------------+-----------|
+  | Signaling                 | 2,4,5,6   |
+  | Mech Des: Concepts        | 1,2,5,6   |
+  | Mech Des: Public good     | 1,5,7,9   |
+  | Mech Des: Bilateral trade | 1,2,3,6  |
+  
 # - An [[https://uni-koeln.sciebo.de/s/iZ7mvTf0Qc1de9d][old exam]] is available.
 # - The exam starts at 14:30 (and not at 14:00 as I had wrongly announced on this page before). PhD students who cannot register via KLIPS for the exam should send me an email with their name and student number before the exam.
 # - Starting with the signaling lecture on May 22, please do not watch the screencasts but read the corresponding chapter in the reading material before coming to class. Keep, however, preparing the exercises on the exercise pdf. (If you are interested in some of the exercises from the book, I am, of course, happy to discuss those as well.)
@@ -33,7 +41,7 @@ Each week you have either to watch some screencasts or to read a book chapter be
 * Material
 - [[https://uni-koeln.sciebo.de/s/iZ7mvTf0Qc1de9d][old exam]] 
 - [[https://uni-koeln.sciebo.de/s/gWDbix0LdA3BGM1][link]] to screencasts and book chapters
-- [[https://uni-koeln.sciebo.de/s/1Ui8djOwdPD2GB9][link]] to reading material (password announced in lecture)
+- [[https://uni-koeln.sciebo.de/s/AFD8Fregy2D4rA2][link]] to reading material (password announced in lecture)
  # micromer  
 
 # - [[https://github.com/schottmueller/advMicro/files/3255945/exam.pdf][old exam]] 
