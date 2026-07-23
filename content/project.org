@@ -2,6 +2,12 @@
 #+Options: toc:nil
 #+HTML_HEAD: <link rel="icon" href="./icons/pc.webp">
 * News
+- The exercises for which solutions have to be handed in are the following:
+  - Week 4: E3
+  - Week 5: E1, E2
+  - Week 7: E1, E3
+  - Week 8: E1, E2
+    # - Week 6: E2
 - Note that you have to register for the examination in KLIPS before July 1st.
 - You should have a group for the project by now (groups consist of 2 or 3 people).
 - Timeline examination:
@@ -9,14 +15,8 @@
   - August 14: you hand in via email your cheat-sheet (as pdf), exercises (as jupyter notebook, please clearly mark which exercise is which and also include your name and student ID in the first cell of the notebook) and project (as jupyter notebook, please put names and student IDs of all group members in the first cell, you can send this as a group once and do not have to send it individually) 
 - Solutions for week 6 exercises are at the end of the page.
 
-# - The project presentations (around 15 minutes per group) take place on July 18. The deadline for your final submission is August 11. The final submission consists of (i) a jupyter notebook with your project, (ii) a jupyter notebook with solutions to the exercises listed below and (iii) your cheat sheet as a pdf document. Please upload all three files to sciebo or another cloud storage provider (like Dropbox, GoogleDrive etc.) and send me a link to the folder via email. The exercises for which solutions have to be handed in are the following:
-#  - Week 4: E1, E3
-#  - Week 5: E1, E2, E3
-#  - Week 6: E2
-#  - Week 7: E1, E3
-#  - Week 8: E1, E2
-  
-  
+# - The project presentations (around 15 minutes per group) take place on July 18. The deadline for your final submission is August 11. The final submission consists of (i) a jupyter notebook with your project, (ii) a jupyter notebook with solutions to the exercises listed below and (iii) your cheat sheet as a pdf document. Please upload all three files to sciebo or another cloud storage provider (like Dropbox, GoogleDrive etc.) and send me a link to the folder via email.
+
 # - We will talk about "week 1" of jpfnb on May 2 and have a make-up zoom-meeting in which we answer questions about the material of "week 2" and the corresponding exercises on May 8 17:30 (Meeting ID: 988 9247 0093 Password: 843160). Solutions to some of the exercises of the first two weeks are on this website below. 
     
 # - The registration deadline for the "examination" on KLIPS was extended. Please, register now. 
