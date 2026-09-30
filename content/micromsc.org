@@ -5,7 +5,7 @@
 #+bibliography: ../static/references.bib
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 * News
-- The optional exam inspection will take place on June 2, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]] for details and registration.
+# - The optional exam inspection will take place on June 2, see [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/economics][here]] for details and registration.
 # - The optional exam inspection is planned to take place on June 5, 10:00-10:30 in SSC 4.210. Please, register between April 26 and May 10 with an email to /ndiaye at wiso.uni-koeln dot de/ inclusing your name, student number and examination date.
 # - The exam inspection will be combined for both exam dates and  takes place in April  (precise date and registration will be announced later).
 #  - Screencasts on exercises are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]].
@@ -20,35 +20,22 @@
 
 # - There is no exercise class in the first week of the semester, i.e. we start with the lecture on October 10.
 # - We will skip exercise 20 (on the poker game) in the exercise session.
-- Notes and exercises for the topic PBE can be found towards the end of the notes on Bayesian games.
-- There is no exercise session in the first week of the semester (October 15).
+# - Notes and exercises for the topic PBE can be found towards the end of the notes on Bayesian games.
+- There is no exercise session in the first week of the semester (October 14).
 - I do not use ILIAS because I prefer openly accessible material and dislike parts of the terms of service. All material for this course is available on this website.
 - calculator policy: calculators are neither needed nor allowed in the exam
-- exam dates: Feb 5, 2026, 14:30 (HSA1) and March 16, 2026, 10:00 (Aula 2); /registration via KLIPS/
+- exam dates: Feb 12, 2027, 14:30 (101/EG/7) and March 16, 2027, 10:00 (Aula 1); /registration via KLIPS/
 
 * Course setup
-  *Lecture:* Thursdays, 14:00-15:30 (101 HS XXIII)
+  *Lecture:* Thursdays, 14:00-15:30 (136/01/1.01 HS XXX)
   
-  *Exercise session:* Wednesdays, 14:00-15:30 (118 S269)
+  *Exercise session:* Wednesdays, 14:00-15:30 (136/01/1.01 HS XXX)
 
   *Prerequisites:* see schedule
   
 * Material
-Slides and math notes are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term.
-# - slides (might still be edited)
-#   - social choice [[https://web.tresorit.com/l/3vn7X#pCuyHYev30YGnIOGNlldKQ][pdf]]
-#   - markets [[https://github.com/schottmueller/microMSc/blob/main/slides/markets2.org][pdf]]
-#   - choice under uncertainty [[https://web.tresorit.com/l/TQn4j#NyY4iml3GnZnYh25-yBzsg][pdf]]
-#   - Bayesian Nash equilibrium [[https://uni-koeln.sciebo.de/s/VeQCuLn6bELYy6c][pdf]]
-#   - auctions [[https://uni-koeln.sciebo.de/s/OMIXL3i4dZUrk6q][pdf]]
-#   - adverse selection [[https://uni-koeln.sciebo.de/s/HLoSE2GQoeRglUb][pdf]]
-#   - perfect Bayesian equilibrium [[https://uni-koeln.sciebo.de/s/a6Dn2gbweVKcCBG][pdf]]
-#   - signaling [[https://uni-koeln.sciebo.de/s/AEzMBFyrQQOpugo][pdf]]    
-# - exercises [[https://uni-koeln.sciebo.de/s/Y6UPXoqMs9csyGN][pdf]]
-# - lecture notes via [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] (password announced in lecture only) 
-# - old additional notes [[https://web.tresorit.com/l/sXAYt#3MXtRbZbcXY1eRYOj5VZbA][pdf]]
-# - schedule [[https://github.com/schottmueller/microMSc/blob/main/schedule.org][org]] [[https://web.tresorit.com/l/M1vPF#qsgBnSpLwC1xwq2yNER_jA][pdf]]
-# PW: microecon25
+Slides and math notes are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sciebo]] and maybe updated if necessary over the course of the term. 
+# PW: micro26UzK
  - lecture [[https://uni-koeln.sciebo.de/s/EQg5F59WPwgcgCk][notes]] including exercises (password announced in lecture only)
  - links to material created by other people (optional)
    - [[https://youtu.be/qf7ws2DF-zk?si=683lx5Bkyrb9Q432][video]] on Arrow's theorem
@@ -61,7 +48,7 @@ The provided lecture notes cover all topics. An alternative textbook is [cite:@j
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture
 
 * Schedule
-The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter (* refers to the chapter "Beliefs and Inference"). You should have a look at the exercises before coming to the exercise session.
+The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter. You should have a look at the exercises before coming to the exercise session.
 | Week | Topic                             | Exercises | Prerequisites                                                                                        |
 |------+-----------------------------------+-----------+------------------------------------------------------------------------------------------------------|
 |  <4> | <30>                              | <20>      | <40>                                                                                                 |
@@ -69,8 +56,8 @@ The following schedule is subject to changes. Exercise numbers refer to the exer
 |    1 | preference aggregation            | 1,2,4     | preferences (completeness, transitivity)                                                             |
 |    2 | markets, prices, equilibrium      | 1,2,3     | consumer problem, marginal rate of substitution, constrained optimization, compact sets, demand      |
 |    3 | decision making under uncertainty | 2,3,4     | discrete probability distribution, expected value, concavity and convexity of functions, closed sets |
-|    4 | Bayesian games I                  | 4*,5*,1   | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
-|    5 | Bayesian games II                 | 2,4,5     |                                                                                                      |
+|    4 | Bayesian games I                  | 1,2,4     | probability distribution, expected value, normal form games, game trees, Nash equilibrium            |
+|    5 | Bayesian games II                 | 3,5,7     |                                                                                                      |
 |    6 | auctions I (IPV)                  | 5         | inverse functions, continuous probability distributions and their expectation                        |
 |    7 | auctions II (RET)                 | 1,4,7     | integration by parts                                                                                 |
 |    8 | auctions III (design)             | 3,2,6     |                                                                                                      |
@@ -81,7 +68,7 @@ The following schedule is subject to changes. Exercise numbers refer to the exer
 |   13 | signaling II                      | 4,5,6     |                                                                                                      |
 |   14 | Q&A                               |           |                                                                                                      |
 
-On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check the math notes on sciebo or wikipedia and your favorite generative AI model before coming to the lecture. If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics, [cite:@sydsaeter2008essential] for mathematics and [cite:@ross2020first] for probability theory.
+On /Prerequisites/: If you are not familiar with one of the topics mentioned as prerequisite, please check the math notes on sciebo before coming to the lecture (wikipedia and your favorite LLM might also be useful). If you favor a slower but more thorough approach, consult [cite:@gibbons1992primer] or [cite:@tadelis2013game] for game theory, [cite:@varian2016intermediate] for microeconomics, [cite:@sydsaeter2008essential] for mathematics and [cite:@ross2020first] for probability theory.
   
 
 * Bibliography  

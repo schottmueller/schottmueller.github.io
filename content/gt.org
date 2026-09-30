@@ -1,0 +1,44 @@
+#+TITLE: Game Theory
+#+AUTHOR: Christoph Schottmüller
+#+Options: toc:nil H:2
+#+cite_export: csl ../static/econometrica.csl
+#+bibliography: ../static/references.bib
+#+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
+
+* News
+- There is no exercise class in the first week (Oct 14).
+- exam dates: Feb 9, 9:00 and ?
+* Course material
+- on [[https://uni-koeln.sciebo.de/s/CwojKCkCyfE2i72][sciebo]] (password announced in lecture)
+# PW: gtUzK
+  
+** Lecture times
+- Lecture: Thursday 16:00-17:30 (100/EG/HS XVIII)
+- Exercise: Wednesday 16:00-17:30 (100/EG/HS XVIII)
+** Textbook
+The course is based on a textbook [cite:@gibbons1992primer]. There are many alternative textbooks covering the same material [cite:@tadelis2013game] but they might use a slightly different notation etc. 
+* Schedule
+
+| Week | Title                                                                         |
+|------+-------------------------------------------------------------------------------|
+|  <5> | <50>                                                                          |
+|------+-------------------------------------------------------------------------------|
+|    1 | Introduction, Normal-Form Games, Strict Domination                            |
+|    2 | Nash Equilibrium, Cournot Oligopoly                                           |
+|    3 | Bertrand, Tragedy of the Commons                                              |
+|    4 | Mixed Strategies, Multiple Equilibria                                         |
+|    5 | Dynamic Games with Perfect Information, Stackelberg                           |
+|    6 | Extensive-Form Games, Subgame-Perfect Nash Equilibrium, Imperfect Information |
+|    7 | Ultimatum Game, Sequential Bargaining                                         |
+|    8 | Repeated Games I                                                              |
+|    9 | Repeated Games II                                                             |
+|   10 | Bayesian Games, Bayesian Nash Equilibrium                                     |
+|   11 | Auctions                                                                      |
+|   12 | Dynamic Games with Incomplete Information, Perfect Bayesian Equilibrium       |
+|   13 | Signaling                                                                     |
+|   14 | TBA                                                                           |
+|   15 | Outlook, Open Questions                                                       |
+
+* Bibliography  
+#+print_bibliography:
+
