@@ -7,6 +7,7 @@
 
 * News
 - There is no exercise class in the first week (Oct 14).
+- There is no Ilias folder for this course.
 - exam dates: Feb 9, 9:00 and ?
 * Course material
 - on [[https://uni-koeln.sciebo.de/s/CwojKCkCyfE2i72][sciebo]] (password announced in lecture)
