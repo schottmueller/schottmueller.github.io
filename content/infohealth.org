@@ -6,17 +6,13 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
-- The optional exam inspection will take place jointly for both exam dates in April (precise date and registration will be announced later).
+# - The optional exam inspection will take place jointly for both exam dates in April (precise date and registration will be announced later).
 - Calculators for the exam: Calculators are allowed if they are (i) not graphical, (ii) cannot solve equations and (iii) cannot solve optimization problems. (Any freebie calculator that can add, multiply and take roots will do. In fact, it is possible to solve the exam without using a calculator.)
-- The results of the bonus point assignment are [[https://uni-koeln.sciebo.de/s/GA3ewHqnPfrEHXd][available]].
-- There are no exercise sessions in person between November 19 and Christmas. You find instead screencasts on the exercises [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][here]] and have the possibility to ask questions on those in two zoom sessions (December 22, 11:00 and January 5, 11:00; see email in your university mail account for zoom links).
-# - The exercise session on November 11 is canceled.
-# - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
-#  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
-- Exam dates are Feb 4, 14:30 (100 Hörsaal VIII) and March 17, 10:00 (100 Aula 2 100/01/Aula 2). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
+# - The results of the bonus point assignment are [[https://uni-koeln.sciebo.de/s/GA3ewHqnPfrEHXd][available]].
+- Exam dates are Feb 3, 14:30 (105/01/1.06 HS C) and March 16, 14:00 (100 Aula 2 100/01/Aula 2). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
 #  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
 #  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
-  - Note that there will be a first exercise session on October 15. This exercise session is dedicated to repeating some mathematical concepts used in this course.
+  - Note that there will be a first exercise session on October 14. This exercise session is dedicated to repeating some mathematical concepts used in this course.
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 # - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
@@ -45,9 +41,9 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 
 - *Exercises*: first week [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]], further weeks [[https://uni-koeln.sciebo.de/s/rff2zsPa6wkKRQE][here]]
 
-- [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][Screencasts]] of exercise session not held in person 
+# - [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][Screencasts]] of exercise session not held in person 
 
-- *Bonus point exercises*: [[https://uni-koeln.sciebo.de/s/EaHJwdQf5LEGGZF][here]] (solutions must be handwritten and submitted in the lecture December 17) 
+# - *Bonus point exercises*: [[https://uni-koeln.sciebo.de/s/EaHJwdQf5LEGGZF][here]] (solutions must be handwritten and submitted in the lecture December 17) 
   
 - *Slides*: [[https://uni-koeln.sciebo.de/s/sPsTPfBcY2rS9kS][here]]
 # numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
@@ -98,8 +94,8 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 # The exam will -- in style -- be similar to the questions of the exercise classes.
 
 ** Lecture times: 
-- lecture: Wednesday, 10:00-11:30 in 100/U1/HS V
-- exercise classes: Wednesday, 14:00-15:30 100/U1/HS VIII 
+- lecture: Wednesday, 10:00-11:30 in 213/EG/0.14 H162
+- exercise classes: Wednesday, 14:00-15:30 106/02/2.04 S21 
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in [cite:@zweifel2009health] (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). [cite:@morrisey2008health] (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.

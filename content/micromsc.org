@@ -29,7 +29,7 @@
 * Course setup
   *Lecture:* Thursdays, 14:00-15:30 (136/01/1.01 HS XXX)
   
-  *Exercise session:* Wednesdays, 14:00-15:30 (136/01/1.01 HS XXX)
+  *Exercise class:* Wednesdays, 14:00-15:30 (136/01/1.01 HS XXX)
 
   *Prerequisites:* see schedule
   
@@ -46,6 +46,13 @@ Slides and math notes are on [[https://uni-koeln.sciebo.de/s/urCdimezGeZTWDu][sc
 The provided lecture notes cover all topics. An alternative textbook is [cite:@jehle2001advanced]. On auctions, Paul Klemperer's book [cite:@klemperer2004auctions] is an interesting (optional!) read but goes beyond the material covered in this course.
  
 # - week 1 [[https://uni-koeln.sciebo.de/s/RFvzedbEsMiQ0wN][screencast]] lecture
+
+** Study recommendations
+Check before each lecture the required prerequisites in the schedule below. If you are shaky on the required math, check the relevant parts in the math notes (on sciebo). 
+
+Read the relevant part of the lecture notes after each lecture (some students prefer to read before the lecture which is fine with me as well). Read through the exercises before coming to the exercise class and try to solve them (spend 15 minutes or more per exercise). The goal is not so much to obtain the solution on your own but to figure out what you did and what you did not understand in the lecture (and what you misunderstood...).
+
+Some past students have benefited from making a 1-2 page summary for each lecture (possibly also covering the exercise class). These summaries can speed up your final exam preparation. 
 
 * Schedule
 The following schedule is subject to changes. Exercise numbers refer to the exercises at the end of each lecture note chapter. You should have a look at the exercises before coming to the exercise session.
