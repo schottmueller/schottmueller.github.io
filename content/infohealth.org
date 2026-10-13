@@ -39,7 +39,7 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 #
 # - The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]].
 
-- *Exercises*: first week [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]], further weeks [[https://uni-koeln.sciebo.de/s/rff2zsPa6wkKRQE][here]]
+- *Exercises*: first week [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]], further weeks [[https://uni-koeln.sciebo.de/s/eqcc5jLPnp2YAS9][here]]
 
 # - [[https://uni-koeln.sciebo.de/s/56fEiNw6DKF5Kq9][Screencasts]] of exercise session not held in person 
 
@@ -57,7 +57,7 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
     
 - *Data sets and instructions* for case studies:
   - questions (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
-  - some [[https://uni-koeln.sciebo.de/s/ApZRZk3pL55yCAD][notes]] on longterm care insurance case study
+  # - some [[https://uni-koeln.sciebo.de/s/ApZRZk3pL55yCAD][notes]] on longterm care insurance case study
   # - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study # and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
