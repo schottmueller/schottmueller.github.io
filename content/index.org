@@ -1,43 +1,30 @@
-#+TITLE: Christoph Schottmüller  
-#+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc title:nil 
+#+TITLE: Christoph Schottmüller
+#+OPTIONS:    H:2 num:nil toc:nil \n:nil  TeX:t LaTeX:t skip:nil d:(HIDE) tags:not-in-toc title:nil
 #+STARTUP:    align fold nodlcheck hidestars oddeven lognotestate hideblocks
 #+LANGUAGE:   en
 #+KEYWORDS: Christoph Schottmueller Schottmuller Schottmüller research economics Volkswirtschaftslehre Universität university Koeln Köln Koln Tilburg Copenhagen
+#+DESCRIPTION: Personal website of Christoph Schottmueller
 #+HTML_HEAD: <link rel="icon" href="./icons/favicon.webp">
 
-@@html: 
-<head>
-<meta name="description" content="Personal website of Christoph Schottmueller">
-<meta name="keywords" content="Christoph, Schottmuller, Schottmueller, Microeconomics, Microeconomic Theory, Mechanism Design, Contract Theory, Cologne, Koeln, Copenhagen, Tilburg, Economics, University">
-<meta content="en-gb" http-equiv="Content-Language">
-</head>
-@@
+#+begin_export html
+<div class="intro">
+  <img src="./img/chessBW.jpg" alt="Christoph Schottmüller">
+  <div>
+    <p><b>Christoph Schottmüller</b> is professor at the
+       <a href="https://wiso.uni-koeln.de/en/en/">University of Cologne</a>.</p>
 
-@@html:
-<p style="float: left;">
-<img src="./img/chessBW.jpg" alt="Profile Picture"  height="280px" style="border:5px double #777777;margin-top: -0.5cm;">
-</p>
-<div class="tab220">
-<p>
-<b>Christoph Schottmüller</b> is professor at the <a href="https://wiso.uni-koeln.de/en/en/">University of Cologne</a>.
-</p>
-office address: <br/>
-    <span class="tab"> Universitätsstr. 22a (SSC 4.207) </span> <br/>
-<br/>
-mail address: <br/>
-   <span class="tab"> LS Mikroökonomik (Prof. Schottmüller) </span> <br/>
-    <span class="tab"> Universität zu Köln </span> <br/>
-    <span class="tab"> Albertus Magnus Platz </span> <br/>
-    <span class="tab">  50937 Köln </span> 
-<br/>
-<p>
-<b> <a href="./files/cv.pdf">CV</a> </b>
-</p>
-</div>
-<div>
-<p>
-Ole Jann and I are writing a textbook <em>Information Economics: A Course in Practical Theory</em>, see <a href="https://www.olejann.net/textbook-information-economics/">here</a> for more information.
-</p>
-</div>
-@@
+    <p>office address:<br>
+       Universitätsstr. 22a (SSC 4.207)</p>
 
+    <p>mail address:<br>
+       LS Mikroökonomik (Prof. Schottmüller)<br>
+       Universität zu Köln<br>
+       Albertus Magnus Platz<br>
+       50937 Köln</p>
+
+    <p><b><a href="./files/cv.pdf">CV</a></b></p>
+  </div>
+</div>
+#+end_export
+
+Ole Jann and I are writing a textbook /Information Economics: A Course in Practical Theory/, see [[https://www.olejann.net/textbook-information-economics/][here]] for more information.

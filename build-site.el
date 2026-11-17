@@ -43,6 +43,8 @@
            :headline-levels 4
            :section-numbers nil
            :html-head nil
+           :html-doctype "html5"      ; modern HTML instead of old XHTML
+           :html-html5-fancy t        ; use <figure>, <nav> etc.
            :html-head-include-default-style nil
            :html-head-include-scripts nil
 	   :html-head-extra "<link rel=\"stylesheet\" href=\"./css/stylesheet.css\">"
