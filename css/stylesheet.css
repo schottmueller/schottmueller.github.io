@@ -1,568 +1,238 @@
-/* Quicksand typefaces */
-@font-face {
-    font-display: swap;
-    font-family: Quicksand;
-    src: url(https://schottmueller.github.io/css/fonts/Quicksand/Quicksand-Regular.ttf);
-    font-weight: normal;
+/* ==========================================================
+   Stylesheet for schottmueller.github.io
+   Deliberately short. Each block has a comment saying what it does.
+   ========================================================== */
+
+/* ---- 1. Colours, kept in one place so they are easy to change ---- */
+:root {
+    --text:    #222;     /* body text */
+    --muted:   #666;     /* menu, footer, small print */
+    --accent:  #2f7f7f;  /* links (the teal the site always had) */
+    --line:    #ddd;     /* thin separator lines */
+    --code-bg: #f5f5f2;  /* background of code blocks */
 }
 
-@font-face {
-    font-display: swap;
-    font-family: Quicksand;
-    src: url(https://schottmueller.github.io/css/fonts/Quicksand/Quicksand-Bold.ttf);
-    font-weight: bold;
+/* ---- 2. Basic page: one centred column that never gets too wide ---- */
+*, *::before, *::after {
+    box-sizing: border-box;   /* widths include padding: fewer surprises */
 }
 
-/* Nunito typefaces */
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-Italic.ttf);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    src: url(https://schottmueller.github.io/css/fonts/Nunito/Nunito-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* Roboto Mono typefaces */
-@font-face {
-    font-display: swap;
-    font-family: Roboto Mono;
-    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Roboto Mono;
-    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Roboto Mono;
-    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-Italic.ttf);
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Roboto Mono;
-    src: url(https://schottmueller.github.io/css/fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf);
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-    display: block;
-}
-audio,
-canvas,
-video {
-    display: inline-block;
-}
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-[hidden] {
-    display: none;
-}
 html {
-    font-family: sans-serif;
+    /* The system font of each device (San Francisco on Mac/iPhone,
+       Segoe on Windows, Roboto on Android). Looks modern, loads instantly,
+       needs no font files. */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-body p, body ul{
-	font-size: 1.2rem;
-}
-a:focus {
-    outline: thin dotted;
-}
-a:active,
-a:hover {
-    outline: 0;
-}
-abbr[title] {
-    border-bottom: 1px dotted;
-}
-b,
-strong {
-    font-weight: bold;
-}
-dfn {
-    font-style: italic;
-}
-mark {
-    background: #3f9f9f;
-    color: #fffff8;
-}
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, serif;
-    font-size: 85%;
-}
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-q {
-    quotes: "\201C" "\201D" "\2018" "\2019";
-}
-small {
-    font-size: 80%;
-}
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-sup {
-    top: -0.5em;
-}
-sub {
-    bottom: -0.25em;
 }
 
-img {
-    border: 0;
-	margin: auto;
-	max-width: 100%;
-	max-height: 100%;
-}
-.figure p {
-	color: #657b83;
-	text-align: center;
-	font-size: 90%;
-	font-style: italic;
-}
-
-
-svg:not(:root) {
-    overflow: hidden;
-}
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
-}
-legend {
-    border: 0;
-    padding: 0;
-}
-button,
-input,
-select,
-textarea {
-    font-family: inherit;
-    font-size: 100%;
-    margin: 0;
-}
-button,
-input {
-    line-height: normal;
-}
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-button[disabled],
-input[disabled] {
-    cursor: default;
-}
-input[type="checkbox"],
-input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
-}
-input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-textarea {
-    overflow: auto;
-    vertical-align: top;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-	margin: auto;
-}
-html {
-    font-family: 'Nunito', sans-serif;
-}
-pre,
-code {
-    font-family: 'Roboto Mono', sans-serif;
-}
-
-div.banner{
-	font-family: 'Quicksand', sans-serif;
-    /* font-weight: bold; */
-	text-align: left;
-	color: #657b83;
-    padding-bottom: -2em; /* original: 1em */
-	margin-bottom: -1em; /* original: 0.5em */
-    /* border-bottom: 1px dashed #93a1a1; */
-}
-#name{
-	color: #657b83;
-	text-decoration: none;
-	font-size: 30px;
-}
-/* @media all and (max-width: 650px) { */
-/*   #name { */
-/*     font-size: 3em; */
-/*   } */
-/* } */
-#name:hover {
-    color: #3f9f9f;
-}
-p#subtitle{
-	font-size: 2em;
-    visible: false;
-}
-
-.subtitle{
-	font-size: 0.5em;
-	font-style: italic;
-	font-weight: normal;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	padding-top: 0.6em;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: normal;
-}
-html {
-    background-color: #fffff8;
-    color: #2f2f2f;
-    margin: 1em;
-}
 body {
-    font-size: 13pt;
     margin: 0 auto;
-    max-width: 765px;
-    padding: 1em;
+    max-width: 46rem;          /* about 75 characters per line: easy to read */
+    padding: 0 1.25rem;        /* breathing room on phones */
+    color: var(--text);
+    background: #fff;
+    font-size: 1.0625rem;      /* 17px */
+    line-height: 1.6;
 }
-code {
-    background-color: #fdf6e3;
-	font-size: 85%;
-    padding: 2px;
-	border-radius: 0.3em;
+
+/* ---- 3. Header: name on the left, menu on the right.
+          On a narrow screen the menu simply moves below the name. ---- */
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.25rem 1.5rem;
+    padding: 1.5rem 0 0.75rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.5rem;
 }
-a {
+.site-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text);
+}
+.site-header nav > * {
+    margin-right: 1.25rem;     /* space between the menu items */
+}
+.site-header nav > *:last-child {
+    margin-right: 0;
+}
+.site-header nav a {
+    color: var(--muted);
+}
+.site-header a:hover {
+    color: var(--accent);
     text-decoration: none;
-    color: #3f8f8f;
 }
-a:visited {
-    color: #2f6f6f;
+
+/* Teaching dropdown. Hidden by default; the media query below shows it
+   on hover, but only on devices with a mouse. On phones and tablets,
+   tapping "Teaching" simply opens the teaching page. */
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;                  /* opens towards the left, stays on screen */
+    z-index: 10;
+    padding: 0.4rem 0;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.site-header .dropdown-content a {
+    display: block;
+    padding: 0.35rem 1rem;
+    white-space: nowrap;
+    color: var(--text);
+}
+.site-header .dropdown-content a:hover {
+    background: var(--code-bg);
+    color: var(--accent);
+}
+@media (hover: hover) {
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus-within .dropdown-content {   /* also works with Tab key */
+        display: block;
+    }
+}
+
+/* ---- 4. Text ---- */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 2rem 0 0.75rem;
+}
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+h4, h5, h6 { font-size: 1rem; }
+
+p, ul, ol {
+    margin: 0 0 1rem;
+}
+li {
+    margin-bottom: 0.25rem;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
-    color: #3f9f9f;
+    text-underline-offset: 0.15em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #657b83;
+
+small {
+    font-size: 0.875em;
 }
-.title{
-	text-align: left;
-	font-weight: bold;
-	font-size: 2em;
-	/* display: none;*/
+
+/* Org's document title (only shown on pages without title:nil) */
+.title {
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+/* ---- 5. Home page: photo next to the text on big screens,
+          photo above the text on phones (flex-wrap does this). ---- */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+.intro img {
+    width: 200px;
+    border-radius: 4px;
+}
+.intro > div {
+    flex: 1 1 16rem;           /* text column; drops below photo if too narrow */
+}
+.intro p {
+    margin-bottom: 0.75rem;
+}
+
+/* ---- 6. Research page: the indented line with slides/code links ---- */
+.tabsmall, .tab {
+    display: block;
+    margin-left: 1.25rem;
+    font-size: 0.875em;
+    color: var(--muted);
+}
+
+/* ---- 7. Images, figures, tables, code ---- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+figure, .figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+figcaption, .figure p {
+    color: var(--muted);
+    font-size: 0.9em;
+}
+
+/* Wide tables scroll sideways on phones instead of breaking the page */
+table {
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+th, td {
+    padding: 0.4rem 0.75rem 0.4rem 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    text-align: left;
+}
+th {
+    font-weight: 600;
+}
+
+code, pre {
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+}
+code {
+    background: var(--code-bg);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
 }
 pre {
-    background-color: #fdf6e3;
-    color: #657b83;
-    border: 1pt solid #93a1a1;
-    padding: 1em;
-    box-shadow: 2pt 2pt 4pt #93a1a1;
+    background: var(--code-bg);
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 4px;
 }
 pre code {
-    background-color: #fdf6e3;
-}
-h1 {
-    font-size: 2rem;
-}
-h2 {
-    font-size: 1.7rem;
-}
-h3 {
-    font-size: 1.3rem;
-}
-h4 {
-    font-size: 1.2rem;
-}
-h5 {
-    font-size: 1.1rem;
-}
-h6 {
-    font-size: 1rem;
-}
-p, h1, h2, h3, h4, h5, h6, ul  {
-    /* max-width: 700px; */
-    /* margin: 0 auto; */
-    -moz-hyphens: auto;
-
-}
-.figure {
-    max-width: 765px;
-    margin: 0 auto;
-}
-.tag {
-    background-color: #93a1a1;
-    color: #3f9f9f;
-    padding: 0 0.2em;
-}
-.org-ref-bib-h1,
-.footnotes {
-	font-size: 1.4rem;
-	font-style: italic;
-}
-
-#footer {
-	width: 100%;
-	font-size: 1.2em;
-	margin-bottom: 3em;
-	margin-top: 15%;
-}
-
-#footer ul {
-	display: flex;
-	justify-content: center;
-	align-items:center;
-	height:2em;
-	margin: 0;
-	padding: 0;
-}
-#footer li {
-	list-style: none;
-	display: inline-block;
-	margin: 0 5px;
-}
-
-#footer a {
-	color: #657b83;
-}
-
-#footer a:hover {
-	color: #3f9f9f;
-}
-
-#license-note {
-	color: #657b83;
-	text-align: center;
-	font-size: 75%;
-	padding-top: 3em;
-}
-
-/* Fallback for other elements from solarized-css */
-.todo,
-.next,
-.done {
-    color: #fdf6e3;
-    background-color: #dc322f;
-    padding: 0 0.2em;
-}
-.tag {
-    -webkit-border-radius: 0.35em;
-    -moz-border-radius: 0.35em;
-    border-radius: 0.35em;
-}
-.TODO {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #2aa198;
-}
-.NEXT {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #268bd2;
-}
-.ACTIVE {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #268bd2;
-}
-.DONE {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #859900;
-}
-.WAITING {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #cb4b16;
-}
-.HOLD {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #d33682;
-}
-.NOTE {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #d33682;
-}
-.CANCELLED {
-    -webkit-border-radius: 0.2em;
-    -moz-border-radius: 0.2em;
-    border-radius: 0.2em;
-    background-color: #859900;
-}
-
-
-span{
-  width:100%;
-  height:0.1em;
-  display:inline-block;
-}
-
-.tab { margin-left: 20px; }
-.tabsmall { margin-left: 20px; font-size:75%; }
-.tab160 { margin-left: 160px; }
-.tab180 { margin-left: 180px; }
-.tab220 { margin-left: 220px; }
-
-/* body {background-color : #F0F0F0; font-face: "Open Sans", Arial, Helvetica, sans-serif;} */
-/* h1 {font-size:26px; font-face: "Palatino Linotype", "Book Antiqua", Palatino, serif; margin-top:-5px; margin-bottom:-10px; } */
-
-/*style links used as navigation menu different from normal links*/
-a.lmenu {
-    text-decoration: none;
-    color: #3f8f8f;
-}
-a.lmenu:visited {
-    color: #3f8f8f;
-}
-a.lmenu:hover {
-    text-decoration: none;
-    background-color:  #fdf6e3;
-    color: #3f9f9f;
-}
-a.lmenu:active {
-    text-decoration: none;
-    color: #3f9f9f;
-}
-
-ul.menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-top: -0.7cm;
     padding: 0;
 }
 
-li.inmenu {
-  display: inline;
+/* ---- 8. Footer ---- */
+.site-footer {
+    margin: 3rem 0 2rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.875rem;
+    color: var(--muted);
+    text-align: right;
+}
+.site-footer a {
+    color: var(--muted);
 }
 
-li a, .dropbtn {
-  display: inline-block;
-  color: #3f9f9f;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #fdf6e3;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: #3f9f9f;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #fdf6e3;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Footnotes produced by org */
+.footnotes, #footnotes {
+    font-size: 0.9em;
 }
