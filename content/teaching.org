@@ -7,7 +7,9 @@
 
 * University of Cologne
 ** Courses
-2023-: Project course: let the computer do the calculations, [[./project.org][course website]]
+2026-: Game Theory, [[./gt.org][course website]]
+
+2023-2026: Project course: let the computer do the calculations, [[./project.org][course website]]
 
 2021-: Microeconomics, [[./micromsc.html][course website]]
    
@@ -15,7 +17,7 @@
 
 2018-: Imperfect Information in Health Care Markets, [[./infohealth.org][course website]]
 
-2018-: Advanced Microeconomics (Master Economic Research), [[./advmicro.org][course website]]
+2018-2026: Advanced Microeconomics (Master Economic Research), [[./advmicro.org][course website]]
 
 2018: Seminar Competition Policy
 
@@ -23,7 +25,7 @@
 
 **  Thesis supervision
 
-My [[./thesis_guidelines.html][guidelines]] for *thesis supervision*. Please, read before contacting my chair. If you write your thesis at my chair, have a look at the $\LaTeX$ templates below and maybe also at the seminar guidelines or the numerical tools.
+My [[./thesis_guidelines.html][guidelines]] for *thesis supervision*. Please, read before contacting me. If you write your thesis with me, have a look at the $\LaTeX$ templates below and maybe also at the seminar guidelines or the numerical tools.
 
 ** Material for students
 *** Seminar guidelines
@@ -37,7 +39,7 @@ The template above is relatively simple and well suited for term papers or a Bac
 
 *** Numerical tools for economists
 
-I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]]. If you want to learn programming in julia from scratch, you may want to check out this [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][tutorial]]. (For, more examples where Julia is used to solve problems in (macro)economics, see [[https://lectures.quantecon.org/jl/][here]].)
+I created some jupyter notebooks that explain how you can make professionally looking plots, numerically solve maximization problems and numerically solve (systems of) equations. I think all of this can be extremely helpful when writing a seminar paper or a thesis -- though by now LLMs can admittedly help with these things as well. The backend for all this is the [[https://julialang.org][julia]] programming language but no prior knowledge of programming is required. The notebooks can be found [[https://github.com/schottmueller/juliaForMicroTheory][here]]. If you want to learn programming in julia from scratch, you may want to check out this [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][tutorial]]. (For, more examples where Julia is used to solve problems in (macro)economics, see [[https://lectures.quantecon.org/jl/][here]].)
 
 *** Mathematics 
 Microeconomic theory makes heavy use of mathematics. The following books are recommended background reading in mathematics:

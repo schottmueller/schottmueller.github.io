@@ -22,19 +22,8 @@
 
 * Software and IT
 Some useful links:
+- I endorse [[https://www.gnu.org/software/emacs/][GNU Emacs]] -- an editor that is about as old as I am.
 - For graphs, I use the [[http://www.ctan.org/tex-archive/graphics/pgf/][tikz]] package. Jacques Crémer has written an excellent [[http://cremeronline.com/LaTeX/minimaltikz.pdf][mini-introduction]] to tikz. [[http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/][qtikz]] is a nice little software that makes graph creation with tikz even simpler by providing some WYSIWYG feeling.
-- For writing games in LaTeX, the packages provided by [[http://www.economics.utoronto.ca/osborne/latex/][Martin Osborne]] are helpful.
-- For some of my papers, I used [[https://julialang.org][julia]] for numerical analysis. You can find ressources to learn Julia at https://julialang.org/learning/. (In the past, I also used [[https://www.python.org/][python]].)
-- Emacs links: 
-  - A blog [[http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html][post]] describing how to set up email on Emacs.
-  - A [[https://cestlaz.github.io/stories/emacs/][series]] of blog posts and videos on learning Emacs step by step.
-
-** Python code game theory
-I have written some python code to solve school choice matching problems as well as some simple programs to solve finite strategic form games of complete information. Both can be found on [[https://github.com/schottmueller/gametheory][github]]. Neither is computationally fast as both were only made for teaching purposes. Check the .org files as they contain lots of explanations.
-
-
-* Presentations
-- Economics of Privacy [[./files/misc/slides3.odp][slides]]
-- Hart "A theory of firm scope" QJE 2010 [[./files/misc/IO_reading_group_Hart.pdf][slides]]
-- Segal/Whinston "Robust Predictions for Bilateral Contracting with Externalities" [[./files/misc/segal_whinston_robust_presentation.pdf][slides]]
+- For writing games in LaTeX, the packages provided by [[http://www.economics.utoronto.ca/osborne/latex/][Martin Osborne]] are helpful. For game trees [[https://ctan.org/pkg/istgame?lang=en][istgame.sty]] is really nice.
+- Once upon a time in a pre-LLM age I wrote some [[https://github.com/schottmueller/juliaForMicroTheory][notebooks]] on [[https://julialang.org/][Julia]] for economists.
 
