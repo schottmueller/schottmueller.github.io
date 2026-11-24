@@ -6,6 +6,7 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
+- Lecture on November 25 is canceled due to illness.
 # - The optional exam inspection will take place jointly for both exam dates in April (precise date and registration will be announced later).
 - Calculators for the exam: Calculators are allowed if they are (i) not graphical, (ii) cannot solve equations and (iii) cannot solve optimization problems. (Any freebie calculator that can add, multiply and take roots will do. In fact, it is possible to solve the exam without using a calculator.)
 # - The results of the bonus point assignment are [[https://uni-koeln.sciebo.de/s/GA3ewHqnPfrEHXd][available]].

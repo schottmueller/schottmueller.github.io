@@ -6,7 +6,7 @@
 #+HTML_HEAD: <link rel="icon" href="./icons/teacher.webp">
 
 * News
-- There is no exercise class in the first week (Oct 14).
+- Classes on November 25 and 26 are canceled due to illness.
 - There is no Ilias folder for this course.
 - exam dates: Feb 9, 9:00 and ?
 * Course material
